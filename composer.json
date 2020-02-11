@@ -19,6 +19,9 @@
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
+        "drupal/migrate_plus": "^4.2",
+        "drupal/migrate_tools": "^4.5",
+        "drupal/migrate_upgrade": "^3",
         "drush/drush": "^10.2"
     },
     "require-dev": {
