@@ -16,7 +16,7 @@ services:
       DRUPAL_DOWNLOAD_IF_NOT_PRESENT: 'false'
     ports:
       - "80:80"
-    restart: on-failure
+    # restart: on-failure
     # Share the project into the container for local development. Comment out
     # this line to test the production-ready pre-built container codebase.
     volumes: ['./:/var/www/html:rw,delegated']
@@ -29,7 +29,7 @@ services:
       MYSQL_DATABASE: drupal
       MYSQL_USER: drupal
       MYSQL_PASSWORD: drupal
-    restart: on-failure
+    # restart: on-failure
     ports:
       - "3306:3306"
     volumes:
