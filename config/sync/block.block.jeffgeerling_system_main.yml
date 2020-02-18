@@ -1,0 +1,20 @@
+uuid: 9bae3101-1ec2-444e-9676-501db253516c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - stark
+id: jeffgeerling_system_main
+theme: stark
+region: content
+weight: -11
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

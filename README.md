@@ -24,10 +24,18 @@ After the environment is running, you can visit http://localhost/ and see the Dr
 
 You can install Drupal using the install wizard, but we like to use Drush for more automation:
 
-    docker-compose exec drupal bash -c 'drush site:install minimal --db-url="mysql://drupal:$DRUPAL_DATABASE_PASSWORD@$DRUPAL_DATABASE_HOST/drupal" --site-name="Jeff Geerling" -y'
-
-TODO: Add `--existing-config` once we have configuration dumped.
+    docker-compose exec drupal bash -c 'drush site:install minimal --db-url="mysql://drupal:$DRUPAL_DATABASE_PASSWORD@$DRUPAL_DATABASE_HOST/drupal" --site-name="Jeff Geerling" --existing-config -y'
 
 ### Migrating Content
 
-TODO.
+When you're ready to migrate content from the `drupal7` site database, run:
+
+    drush migrate-import --group=migrate_drupal_7
+
+### Updating Configuration
+
+Any time configuration is changed or any modules or Drupal is upgraded, you should export the site's configuration using the command:
+
+    docker-compose exec drupal bash -c 'drush config:export -y'
+
+And then push any changes to the Git repository before deploying the latest code to the site.

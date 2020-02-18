@@ -1,0 +1,16 @@
+uuid: ac59432a-3013-4da4-82bc-d150784edadf
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access search search_api_page'
+  - 'post comments'
+  - 'use text format filtered_html'

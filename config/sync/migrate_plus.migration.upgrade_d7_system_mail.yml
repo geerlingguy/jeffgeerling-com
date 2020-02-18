@@ -1,0 +1,32 @@
+uuid: f88b0723-0bbb-44a5-924c-86672ab681b8
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_system_mail
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Drupal 7 system mail configuration'
+source:
+  plugin: variable
+  variables:
+    - mail_system
+  source_module: system
+process:
+  interface/default:
+    -
+      plugin: static_map
+      source: mail_system/default-system
+      map:
+        DefaultMailSystem: php_mail
+        MailTestCase: test_mail_collector
+destination:
+  plugin: config
+  config_name: system.mail
+migration_dependencies:
+  required: {  }
+  optional: {  }

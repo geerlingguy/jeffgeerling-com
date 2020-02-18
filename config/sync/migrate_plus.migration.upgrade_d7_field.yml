@@ -1,0 +1,57 @@
+uuid: 9c43b09b-fce1-4068-988f-8bc1271acb66
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_field
+class: Drupal\migrate_drupal\Plugin\migrate\FieldMigration
+field_plugin_method: alterFieldMigration
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Field configuration'
+source:
+  plugin: d7_field
+  constants:
+    status: true
+    langcode: und
+process:
+  entity_type:
+    -
+      plugin: get
+      source: entity_type
+  status:
+    -
+      plugin: get
+      source: constants/status
+  langcode:
+    -
+      plugin: get
+      source: constants/langcode
+  field_name:
+    -
+      plugin: get
+      source: field_name
+  type:
+    -
+      plugin: process_field
+      source: type
+      method: getFieldType
+      map:
+        d7_text:
+          d7_text: d7_text
+        file:
+          file: file
+  cardinality:
+    -
+      plugin: get
+      source: cardinality
+  settings:
+    -
+      plugin: d7_field_settings
+destination:
+  plugin: 'entity:field_storage_config'
+migration_dependencies:
+  required: {  }
+  optional: {  }

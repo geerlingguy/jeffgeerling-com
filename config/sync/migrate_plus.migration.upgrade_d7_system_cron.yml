@@ -1,0 +1,34 @@
+uuid: 0a56d6b4-aae7-465f-b0f1-5d01ec41a0c3
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_system_cron
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Drupal 7 cron settings'
+source:
+  plugin: variable
+  variables:
+    - cron_threshold_warning
+    - cron_threshold_error
+  source_module: system
+process:
+  threshold/requirements_warning:
+    -
+      plugin: get
+      source: cron_threshold_warning
+  threshold/requirements_error:
+    -
+      plugin: get
+      source: cron_threshold_error
+destination:
+  plugin: config
+  config_name: system.cron
+migration_dependencies:
+  required: {  }
+  optional: {  }

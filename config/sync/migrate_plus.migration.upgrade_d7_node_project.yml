@@ -1,0 +1,111 @@
+uuid: fcf1128d-492a-45ce-a47e-008c9651f4e3
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_project
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Nodes (Project)'
+source:
+  plugin: d7_node
+  node_type: project
+process:
+  nid:
+    -
+      plugin: get
+      source: tnid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  comment_node_project/0/status:
+    -
+      plugin: get
+      source: comment
+  body:
+    -
+      plugin: get
+      source: body
+  field_project_type:
+    -
+      plugin: get
+      source: field_project_type
+  field_project_images:
+    -
+      plugin: get
+      source: field_project_images
+  field_project_link:
+    -
+      plugin: get
+      source: field_project_link
+  field_project_highlight:
+    -
+      plugin: get
+      source: field_project_highlight
+  field_project_date:
+    -
+      plugin: get
+      source: field_project_date
+  field_project_highlights:
+    -
+      plugin: get
+      source: field_project_highlights
+destination:
+  plugin: 'entity:node'
+  default_bundle: project
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance

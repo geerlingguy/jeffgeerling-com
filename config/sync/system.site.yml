@@ -1,0 +1,14 @@
+uuid: ccac4136-b392-4b55-9742-b56d2ec35ad0
+name: 'Jeff Geerling'
+mail: geerlingguy@mac.com
+slogan: 'Web Developer and Photographer - St. Louis, MO'
+page:
+  403: /
+  404: /
+  front: /node/2
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

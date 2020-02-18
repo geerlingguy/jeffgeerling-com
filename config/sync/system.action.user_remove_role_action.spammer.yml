@@ -1,0 +1,14 @@
+uuid: 48c2422f-6cd0-4c61-8594-15802cd699b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.spammer
+  module:
+    - user
+id: user_remove_role_action.spammer
+label: 'Remove the spammer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: spammer

@@ -1,0 +1,103 @@
+uuid: 45b94d0e-802d-4de5-86ee-d5ebe07c616e
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_blog_post
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Nodes (Blog Post)'
+source:
+  plugin: d7_node
+  node_type: blog_post
+process:
+  nid:
+    -
+      plugin: get
+      source: tnid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  comment_node_blog_post/0/status:
+    -
+      plugin: get
+      source: comment
+  body:
+    -
+      plugin: get
+      source: body
+  field_tags:
+    -
+      plugin: get
+      source: field_tags
+  field_images:
+    -
+      plugin: get
+      source: field_images
+  field_files:
+    -
+      plugin: sub_process
+      source: field_files
+      process:
+        target_id: fid
+        display: display
+        description: description
+destination:
+  plugin: 'entity:node'
+  default_bundle: blog_post
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance
