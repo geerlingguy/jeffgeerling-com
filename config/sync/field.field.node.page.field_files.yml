@@ -1,0 +1,27 @@
+uuid: 1587fc7e-2fe5-4eda-8f7f-fe2029b5259b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files
+    - node.type.page
+  module:
+    - file
+id: node.page.field_files
+field_name: field_files
+entity_type: node
+bundle: page
+label: Files
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: files
+  file_extensions: 'txt pdf doc docx ppt pptx psd ai gif png jpg jpeg mov mp4 m4a m4v'
+  max_filesize: '24 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

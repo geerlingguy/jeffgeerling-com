@@ -1,0 +1,18 @@
+uuid: 39ace3d6-8891-4c8d-9e92-26e318aa7c17
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_project_highlight
+field_name: field_project_highlight
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,8 @@
+uuid: 4d79f496-668a-4c89-a0ea-71c3144af461
+langcode: en
+status: true
+dependencies: {  }
+name: Tags
+vid: tags
+description: 'Tags to categorize content on the site.'
+weight: 0

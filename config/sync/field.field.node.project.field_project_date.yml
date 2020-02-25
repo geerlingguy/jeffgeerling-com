@@ -1,0 +1,21 @@
+uuid: 5bd6d00e-9422-402d-ad91-9f299f8ba382
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_date
+    - node.type.project
+  module:
+    - datetime
+id: node.project.field_project_date
+field_name: field_project_date
+entity_type: node
+bundle: project
+label: 'Completion Date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
