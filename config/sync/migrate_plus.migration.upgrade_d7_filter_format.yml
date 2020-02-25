@@ -1,0 +1,59 @@
+uuid: 97cbe05e-c1a2-4adb-870d-4845a0173016
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_filter_format
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Filter format configuration'
+source:
+  plugin: d7_filter_format
+process:
+  format:
+    -
+      plugin: get
+      source: format
+  status:
+    -
+      plugin: get
+      source: status
+  name:
+    -
+      plugin: get
+      source: name
+  cache:
+    -
+      plugin: get
+      source: cache
+  weight:
+    -
+      plugin: get
+      source: weight
+  filters:
+    -
+      plugin: sub_process
+      source: filters
+      key: '@id'
+      process:
+        id:
+          plugin: filter_id
+          bypass: true
+          source: name
+          map: {  }
+        settings:
+          plugin: filter_settings
+          source: settings
+        status:
+          plugin: default_value
+          default_value: true
+        weight: weight
+destination:
+  plugin: 'entity:filter_format'
+migration_dependencies:
+  required: {  }
+  optional: {  }

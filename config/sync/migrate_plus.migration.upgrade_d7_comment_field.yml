@@ -1,0 +1,46 @@
+uuid: 80abc091-d921-48a2-9df0-8b86037c6af0
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_comment_field
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Comment field configuration'
+source:
+  plugin: d7_node_type
+  constants:
+    entity_type: node
+    type: comment
+process:
+  entity_type:
+    -
+      plugin: get
+      source: constants/entity_type
+  field_name:
+    -
+      plugin: migration_lookup
+      source: type
+      migration: upgrade_d7_comment_type
+    -
+      plugin: skip_on_empty
+      method: row
+  type:
+    -
+      plugin: get
+      source: constants/type
+  settings/comment_type:
+    -
+      plugin: get
+      source: '@field_name'
+destination:
+  plugin: 'entity:field_storage_config'
+migration_dependencies:
+  required:
+    - upgrade_d7_comment_type
+  optional:
+    - upgrade_d7_comment_type

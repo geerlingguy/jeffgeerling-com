@@ -1,0 +1,82 @@
+uuid: 8013da6e-99a5-493b-9fbc-fcbaf273f575
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_taxonomy_term_project_type
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Taxonomy terms (Project Type)'
+source:
+  plugin: d7_taxonomy_term
+  bundle: project_type
+process:
+  tid:
+    -
+      plugin: get
+      source: tid
+  vid:
+    -
+      plugin: migration_lookup
+      migration: upgrade_d7_taxonomy_vocabulary
+      source: vid
+  name:
+    -
+      plugin: get
+      source: name
+  description/value:
+    -
+      plugin: get
+      source: description
+  description/format:
+    -
+      plugin: get
+      source: format
+  weight:
+    -
+      plugin: get
+      source: weight
+  parent_id:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: parent
+    -
+      plugin: migration_lookup
+      migration:
+        - upgrade_d7_taxonomy_term_tags
+        - upgrade_d7_taxonomy_term_project_type
+  parent:
+    -
+      plugin: default_value
+      default_value: 0
+      source: '@parent_id'
+  forum_container:
+    -
+      plugin: get
+      source: is_container
+  changed:
+    -
+      plugin: get
+      source: timestamp
+  langcode:
+    -
+      plugin: get
+      source: language
+destination:
+  plugin: 'entity:taxonomy_term'
+  default_bundle: project_type
+migration_dependencies:
+  required:
+    - upgrade_d7_taxonomy_vocabulary
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d7_taxonomy_vocabulary
+    - upgrade_d7_taxonomy_term_project_type
+    - upgrade_d7_taxonomy_term_tags
+    - upgrade_d7_taxonomy_term_tags
+    - upgrade_d7_taxonomy_term_project_type

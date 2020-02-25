@@ -1,0 +1,102 @@
+uuid: a079e7ad-3926-4b6e-8a5b-7ff58264d37c
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_field_instance
+class: Drupal\migrate_drupal\Plugin\migrate\FieldMigration
+field_plugin_method: alterFieldInstanceMigration
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Field instance configuration'
+source:
+  plugin: d7_field_instance
+  constants:
+    status: true
+process:
+  type:
+    -
+      plugin: process_field
+      source: type
+      method: getFieldType
+  entity_type:
+    -
+      plugin: get
+      source: entity_type
+  field_name:
+    -
+      plugin: get
+      source: field_name
+  bundle:
+    -
+      plugin: static_map
+      source: bundle
+      bypass: true
+      map:
+        comment_node_forum: comment_forum
+  label:
+    -
+      plugin: get
+      source: label
+  description:
+    -
+      plugin: get
+      source: description
+  required:
+    -
+      plugin: get
+      source: required
+  status:
+    -
+      plugin: get
+      source: constants/status
+  allowed_values:
+    -
+      plugin: sub_process
+      source: allowed_vid
+      process:
+        -
+          plugin: migration_lookup
+          migration: upgrade_d7_taxonomy_vocabulary
+          source: vid
+  settings:
+    -
+      plugin: d7_field_instance_settings
+      source:
+        - settings
+        - widget
+        - field_definition
+  default_value_function:
+    -
+      plugin: get
+      source: ''
+  default_value:
+    -
+      plugin: d7_field_instance_defaults
+      source:
+        - default_value
+        - widget
+  translatable:
+    -
+      plugin: get
+      source: translatable
+  settings/title:
+    -
+      plugin: static_map
+      source: settings/title
+      bypass: true
+      map:
+        disabled: 0
+        optional: 1
+        required: 2
+destination:
+  plugin: 'entity:field_config'
+migration_dependencies:
+  required:
+    - upgrade_d7_field
+  optional:
+    - upgrade_d7_node_type
+    - upgrade_d7_comment_type
+    - upgrade_d7_taxonomy_vocabulary

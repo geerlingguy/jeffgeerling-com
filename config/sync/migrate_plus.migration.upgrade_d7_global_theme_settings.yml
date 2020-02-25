@@ -1,0 +1,73 @@
+uuid: 532db0d6-4bb3-4008-86cf-36e9bf1402cc
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_global_theme_settings
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'D7 global theme settings'
+source:
+  plugin: variable
+  variables:
+    - theme_settings
+  source_module: system
+process:
+  features/logo:
+    -
+      plugin: get
+      source: theme_settings/toggle_logo
+  features/name:
+    -
+      plugin: get
+      source: theme_settings/toggle_name
+  features/slogan:
+    -
+      plugin: get
+      source: theme_settings/toggle_slogan
+  features/node_user_picture:
+    -
+      plugin: get
+      source: theme_settings/toggle_node_user_picture
+  features/comment_user_picture:
+    -
+      plugin: get
+      source: theme_settings/toggle_comment_user_picture
+  features/comment_user_verification:
+    -
+      plugin: get
+      source: theme_settings/toggle_comment_user_verification
+  features/favicon:
+    -
+      plugin: get
+      source: theme_settings/toggle_favicon
+  logo/use_default:
+    -
+      plugin: get
+      source: theme_settings/default_logo
+  logo/path:
+    -
+      plugin: get
+      source: theme_settings/logo_path
+  favicon/use_default:
+    -
+      plugin: get
+      source: theme_settings/default_favicon
+  favicon/path:
+    -
+      plugin: get
+      source: theme_settings/favicon_path
+  favicon/mimetype:
+    -
+      plugin: get
+      source: theme_settings/favicon_mimetype
+destination:
+  plugin: config
+  config_name: system.theme.global
+migration_dependencies:
+  required: {  }
+  optional: {  }

@@ -1,0 +1,54 @@
+uuid: 46caef75-5494-40f3-9039-bbf7d924b4c3
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_system_date
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Drupal 7 system date configuration'
+source:
+  plugin: variable
+  variables:
+    - site_default_country
+    - date_first_day
+    - date_default_timezone
+    - configurable_timezones
+    - empty_timezone_message
+    - user_default_timezone
+  source_module: system
+process:
+  country/default:
+    -
+      plugin: get
+      source: site_default_country
+  first_day:
+    -
+      plugin: get
+      source: date_first_day
+  timezone/default:
+    -
+      plugin: get
+      source: date_default_timezone
+  timezone/user/configurable:
+    -
+      plugin: get
+      source: configurable_timezones
+  timezone/user/warn:
+    -
+      plugin: get
+      source: empty_timezone_message
+  timezone/user/default:
+    -
+      plugin: get
+      source: user_default_timezone
+destination:
+  plugin: config
+  config_name: system.date
+migration_dependencies:
+  required: {  }
+  optional: {  }
