@@ -1,20 +1,26 @@
 module:
   block: 0
   block_content: 0
+  comment: 0
+  datetime: 0
   dblog: 0
   dynamic_page_cache: 0
   field: 0
   file: 0
   filter: 0
+  image: 0
+  link: 0
   migrate: 0
   migrate_drupal: 0
   migrate_plus: 0
   migrate_tools: 0
   migrate_upgrade: 0
   node: 0
+  options: 0
   page_cache: 0
   path_alias: 0
   system: 0
+  taxonomy: 0
   text: 0
   update: 0
   user: 0
