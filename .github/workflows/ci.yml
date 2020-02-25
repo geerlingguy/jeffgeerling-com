@@ -1,0 +1,41 @@
+---
+name: CI
+'on':
+  push:
+    branches:
+      - master
+  pull_request:
+  schedule:
+    - cron: '0 6 * * *'
+
+jobs:
+
+  install:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php_version: ['7.3']
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Set up PHP ${{ matrix.php_version }}
+        uses: actions/setup-php@v2
+        with:
+          php-version: ${{ matrix.php_version }}
+
+      - name: Install dependencies
+        run: composer install
+
+      - name: Build container
+        run: docker build -t jeffgeerling-com:latest .
+
+      - name: Start Docker environment
+        run: docker-compose up -d
+
+      - name: Install Drupal
+        run: >-
+          docker-compose exec drupal bash -c 'drush site:install minimal
+          --db-url="mysql://drupal:$DRUPAL_DATABASE_PASSWORD@$DRUPAL_DATABASE_HOST/drupal"
+          --site-name="Jeff Geerling" --existing-config -y'
