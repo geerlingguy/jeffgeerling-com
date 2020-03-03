@@ -6,7 +6,7 @@ name: CI
       - master
   pull_request:
   schedule:
-    - cron: '0 6 * * 7'
+    - cron: '0 6 * * *'
 
 jobs:
 
