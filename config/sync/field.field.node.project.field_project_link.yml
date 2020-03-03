@@ -1,0 +1,23 @@
+uuid: 5a90aa4a-6959-4139-b4cd-8ae53ef57f5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_link
+    - node.type.project
+  module:
+    - link
+id: node.project.field_project_link
+field_name: field_project_link
+entity_type: node
+bundle: project
+label: URL
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

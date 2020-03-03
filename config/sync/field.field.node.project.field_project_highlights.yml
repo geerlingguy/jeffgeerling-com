@@ -1,0 +1,19 @@
+uuid: 6805cf49-a39d-4d09-8233-6ca021bff8a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_highlights
+    - node.type.project
+id: node.project.field_project_highlights
+field_name: field_project_highlights
+entity_type: node
+bundle: project
+label: Highlights
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

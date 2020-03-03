@@ -1,0 +1,15 @@
+uuid: b066ec3a-baaf-401e-8299-d4ca17f90c4d
+langcode: en
+status: true
+dependencies: {  }
+name: photo-embed
+label: photo-embed
+effects:
+  ab6e06d5-caa3-475d-a37c-0438241d2d65:
+    uuid: ab6e06d5-caa3-475d-a37c-0438241d2d65
+    id: image_scale
+    weight: 1
+    data:
+      width: 720
+      height: 500
+      upscale: false
