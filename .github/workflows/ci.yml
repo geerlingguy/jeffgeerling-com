@@ -45,10 +45,10 @@ jobs:
 
       - name: Add config sync directory config to default.settings.php.
         run: >
-          echo "$settings['config_sync_directory'] = '../config/sync';"
-          >> web/sites/default/default.settings.php
+          echo "<?php\n$settings['config_sync_directory'] = '../config/sync';"
+          >> web/sites/default/settings.local.php
 
-      # Note: -T option avoids creating pseudo-TTY.
+      # Note: -T option required to avoid creating pseudo-TTY.
       - name: Install Drupal
         run: >-
           docker-compose exec -T drupal bash -c 'drush site:install minimal
