@@ -17,6 +17,9 @@ jobs:
         php_version: ['7.3']
 
     steps:
+      - name: Stop the GitHub Actions MySQL instance.
+        run: sudo service mysql stop
+
       - name: Check out code
         uses: actions/checkout@v2
 
@@ -33,6 +36,9 @@ jobs:
 
       - name: Start Docker environment
         run: docker-compose up -d
+
+      - name: Pause for 1 minute while MySQL starts.
+        run: sleep 60
 
       - name: Install Drupal
         run: >-
