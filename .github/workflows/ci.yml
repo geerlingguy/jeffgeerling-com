@@ -47,7 +47,7 @@ jobs:
       - name: Install Drupal
         run: >-
           docker-compose exec -T drupal bash -c 'drush site:install minimal
-          --db-url="mysql://drupal:drupal@127.0.0.1/drupal"
+          --db-url="mysql://drupal:drupal@mysql/drupal"
           --site-name="Jeff Geerling" --existing-config -y'
         env:
          COMPOSE_INTERACTIVE_NO_CLI: '1'
