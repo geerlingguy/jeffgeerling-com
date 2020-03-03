@@ -1,0 +1,45 @@
+uuid: 4651835f-e745-4019-8a1d-3d2dec397e76
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_view_modes
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'View modes'
+source:
+  plugin: d7_view_mode
+process:
+  mode:
+    -
+      plugin: static_map
+      source: view_mode
+      bypass: true
+      map:
+        default: full
+  label:
+    -
+      plugin: static_map
+      source: view_mode
+      bypass: true
+      map:
+        search_index: 'Search index'
+        search_result: 'Search result'
+        rss: RSS
+        print: Print
+        teaser: Teaser
+        full: Full
+        default: Full
+  targetEntityType:
+    -
+      plugin: get
+      source: entity_type
+destination:
+  plugin: 'entity:entity_view_mode'
+migration_dependencies:
+  required: {  }
+  optional: {  }

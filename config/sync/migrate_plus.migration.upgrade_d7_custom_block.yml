@@ -1,0 +1,43 @@
+uuid: 9e029701-5b32-4bca-8f4c-c488dc340f55
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_custom_block
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Custom blocks'
+source:
+  plugin: d7_block_custom
+process:
+  id:
+    -
+      plugin: get
+      source: bid
+  info:
+    -
+      plugin: get
+      source: info
+  body/format:
+    -
+      plugin: migration_lookup
+      migration: upgrade_d7_filter_format
+      source: format
+  body/value:
+    -
+      plugin: get
+      source: body
+destination:
+  plugin: 'entity:block_content'
+  default_bundle: basic
+  no_stub: true
+migration_dependencies:
+  required:
+    - upgrade_d7_filter_format
+    - upgrade_block_content_body_field
+  optional:
+    - upgrade_d7_filter_format

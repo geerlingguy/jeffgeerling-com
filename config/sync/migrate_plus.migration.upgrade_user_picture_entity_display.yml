@@ -1,0 +1,62 @@
+uuid: 33313a28-3da3-4355-b535-40ec4c87685b
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_user_picture_entity_display
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 6'
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'User picture display configuration'
+source:
+  plugin: user_picture_instance
+  constants:
+    entity_type: user
+    bundle: user
+    view_mode: default
+    name: user_picture
+    type: image
+    options:
+      label: hidden
+      settings:
+        image_style: ''
+        image_link: content
+process:
+  entity_type:
+    -
+      plugin: get
+      source: constants/entity_type
+  bundle:
+    -
+      plugin: get
+      source: constants/bundle
+  view_mode:
+    -
+      plugin: get
+      source: constants/view_mode
+  field_name:
+    -
+      plugin: get
+      source: constants/name
+  type:
+    -
+      plugin: get
+      source: constants/type
+  options:
+    -
+      plugin: get
+      source: constants/options
+  options/type:
+    -
+      plugin: get
+      source: '@type'
+destination:
+  plugin: component_entity_display
+migration_dependencies:
+  required:
+    - upgrade_user_picture_field_instance
+  optional: {  }

@@ -1,0 +1,53 @@
+uuid: 6b278923-31b9-48e7-a9f7-13f339ec5786
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_comment_entity_form_display
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Comment field form display configuration'
+source:
+  plugin: d7_node_type
+  constants:
+    entity_type: node
+    form_mode: default
+    options:
+      type: comment_default
+      weight: 20
+process:
+  entity_type:
+    -
+      plugin: get
+      source: constants/entity_type
+  field_name:
+    -
+      plugin: migration_lookup
+      source: type
+      migration: upgrade_d7_comment_type
+    -
+      plugin: skip_on_empty
+      method: row
+  form_mode:
+    -
+      plugin: get
+      source: constants/form_mode
+  options:
+    -
+      plugin: get
+      source: constants/options
+  bundle:
+    -
+      plugin: get
+      source: type
+destination:
+  plugin: component_entity_form_display
+migration_dependencies:
+  required:
+    - upgrade_d7_comment_field_instance
+  optional:
+    - upgrade_d7_comment_type

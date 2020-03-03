@@ -1,0 +1,35 @@
+uuid: 21e44392-f952-4541-8cae-7998f033b973
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_taxonomy_settings
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 6'
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Taxonomy configuration'
+source:
+  plugin: variable
+  variables:
+    - taxonomy_override_selector
+    - taxonomy_terms_per_page_admin
+  source_module: taxonomy
+process:
+  override_selector:
+    -
+      plugin: get
+      source: taxonomy_override_selector
+  terms_per_page_admin:
+    -
+      plugin: get
+      source: taxonomy_terms_per_page_admin
+destination:
+  plugin: config
+  config_name: taxonomy.settings
+migration_dependencies:
+  required: {  }
+  optional: {  }

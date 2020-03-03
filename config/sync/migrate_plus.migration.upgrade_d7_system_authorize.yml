@@ -1,0 +1,29 @@
+uuid: d6d68ec8-1ef7-4a4c-a0ed-7de8021d4221
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_system_authorize
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Drupal 7 file transfer authorize configuration'
+source:
+  plugin: variable
+  variables:
+    - authorize_filetransfer_default
+  source_module: system
+process:
+  filetransfer_default:
+    -
+      plugin: get
+      source: authorize_filetransfer_default
+destination:
+  plugin: config
+  config_name: system.authorize
+migration_dependencies:
+  required: {  }
+  optional: {  }

@@ -1,0 +1,61 @@
+uuid: 089b6f72-1ac1-4fa4-a0cf-54ea4a24d60e
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_block_content_entity_display
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 6'
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Body field display configuration'
+source:
+  plugin: embedded_data
+  data_rows:
+    -
+      entity_type: block_content
+      bundle: basic
+      view_mode: default
+      field_name: body
+      options:
+        label: hidden
+  ids:
+    entity_type:
+      type: string
+    bundle:
+      type: string
+    view_mode:
+      type: string
+    field_name:
+      type: string
+  source_module: block
+process:
+  entity_type:
+    -
+      plugin: get
+      source: entity_type
+  bundle:
+    -
+      plugin: get
+      source: bundle
+  view_mode:
+    -
+      plugin: get
+      source: view_mode
+  field_name:
+    -
+      plugin: get
+      source: field_name
+  options:
+    -
+      plugin: get
+      source: options
+destination:
+  plugin: component_entity_display
+migration_dependencies:
+  required:
+    - upgrade_block_content_body_field
+  optional: {  }
