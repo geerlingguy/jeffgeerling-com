@@ -56,3 +56,7 @@ jobs:
           --site-name="Jeff Geerling" --existing-config -y'
         env:
          COMPOSE_INTERACTIVE_NO_CLI: '1'
+
+      - name: Test loading the home page.
+        run: >
+          curl -s http://localhost/ | grep "Home | Jeff Geerling"
