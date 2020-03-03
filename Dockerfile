@@ -3,15 +3,17 @@ ARG DRUPAL_BASE_IMAGE=geerlingguy/drupal:latest
 # PHP Dependency install via Composer.
 FROM composer as vendor
 
-COPY composer.json composer.json
-COPY composer.lock composer.lock
-COPY web/ web/
+# TODO: For production, copy composer files and web dir.
+# COPY composer.json composer.json
+# COPY composer.lock composer.lock
+# COPY web/ web/
 
-RUN composer install \
-    --ignore-platform-reqs \
-    --no-interaction \
-    --no-dev \
-    --prefer-dist
+# TODO: For production, install dependencies inside container.
+# RUN composer install \
+#     --ignore-platform-reqs \
+#     --no-interaction \
+#     --no-dev \
+#     --prefer-dist
 
 # Build the Docker image for Drupal.
 FROM $DRUPAL_BASE_IMAGE
