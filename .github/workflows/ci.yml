@@ -43,6 +43,11 @@ jobs:
             sleep 1
           done
 
+      - name: Add config sync directory config to default.settings.php.
+        run: >
+          echo "$settings['config_sync_directory'] = '../config/sync';"
+          >> web/sites/default/default.settings.php
+
       # Note: -T option avoids creating pseudo-TTY.
       - name: Install Drupal
         run: >-
