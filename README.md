@@ -30,7 +30,7 @@ You can install Drupal using the install wizard, but we like to use Drush for mo
 
 When you're ready to migrate content from the `drupal7` site database, run:
 
-    drush migrate-import --group=migrate_drupal_7
+    docker-compose exec drupal bash -c 'drush migrate-import --group=migrate_drupal_7'
 
 ### Updating Configuration
 
