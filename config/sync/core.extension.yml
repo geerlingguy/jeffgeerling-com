@@ -10,6 +10,7 @@ module:
   filter: 0
   image: 0
   link: 0
+  markdown: 0
   migrate: 0
   migrate_drupal: 0
   migrate_plus: 0
