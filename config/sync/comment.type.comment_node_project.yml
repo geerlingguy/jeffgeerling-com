@@ -1,8 +1,0 @@
-uuid: 1ef0dc84-9dbb-4dbb-a0ce-558559258b94
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_project
-label: 'Project comment'
-target_entity_type_id: node
-description: null

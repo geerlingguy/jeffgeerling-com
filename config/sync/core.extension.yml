@@ -18,12 +18,14 @@ module:
   node: 0
   options: 0
   page_cache: 0
+  path: 0
   path_alias: 0
   system: 0
   taxonomy: 0
   text: 0
   update: 0
   user: 0
+  views: 10
   minimal: 1000
 theme:
   stark: 0
