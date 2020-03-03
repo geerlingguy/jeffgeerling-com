@@ -32,6 +32,16 @@ When you're ready to migrate content from the `drupal7` site database, run:
 
     docker-compose exec drupal bash -c 'drush migrate-import --group=migrate_drupal_7'
 
+To update the migration configuration (basically reset the entire migration process):
+
+  1. Delete all the `migrate*` files inside `config/sync`.
+  2. Reinstall the site (see 'Installing Drupal' above).
+  3. Run:
+
+     ```
+     docker-compose exec drupal bash -c 'drush migrate-upgrade --legacy-db-key=drupal7 --legacy-root=https://www.jeffgeerling.com --configure-only'
+     ```
+
 ### Updating Configuration
 
 Any time configuration is changed or any modules or Drupal is upgraded, you should export the site's configuration using the command:
