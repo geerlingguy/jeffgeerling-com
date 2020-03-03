@@ -1,14 +1,17 @@
 uuid: 0a181def-1b9a-46b6-b495-091f1fcaefe4
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - markdown
 name: Markdown
 format: markdown
 weight: -10
 filters:
-  filter_null:
-    id: filter_null
-    provider: filter
+  markdown:
+    id: markdown
+    provider: markdown
     status: true
-    weight: -47
-    settings: {  }
+    weight: 0
+    settings:
+      markdown_library: php-markdown

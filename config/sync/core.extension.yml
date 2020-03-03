@@ -12,6 +12,7 @@ module:
   image: 0
   link: 0
   markdown: 0
+  menu_ui: 0
   migrate: 0
   migrate_drupal: 0
   migrate_plus: 0
@@ -28,6 +29,7 @@ module:
   toolbar: 0
   update: 0
   user: 0
+  menu_link_content: 1
   views: 10
   minimal: 1000
 theme:

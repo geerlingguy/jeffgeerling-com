@@ -3,15 +3,17 @@ ARG DRUPAL_BASE_IMAGE=geerlingguy/drupal:latest
 # PHP Dependency install via Composer.
 FROM composer as vendor
 
-COPY composer.json composer.json
-COPY composer.lock composer.lock
-COPY web/ web/
+# TODO: For production, copy composer files and web dir.
+# COPY composer.json composer.json
+# COPY composer.lock composer.lock
+# COPY web/ web/
 
-RUN composer install \
-    --ignore-platform-reqs \
-    --no-interaction \
-    --no-dev \
-    --prefer-dist
+# TODO: For production, install dependencies inside container.
+# RUN composer install \
+#     --ignore-platform-reqs \
+#     --no-interaction \
+#     --no-dev \
+#     --prefer-dist
 
 # Build the Docker image for Drupal.
 FROM $DRUPAL_BASE_IMAGE
@@ -28,8 +30,9 @@ COPY --from=vendor /app/ /var/www/html/
 # COPY load.environment.php /var/www/html/load.environment.php
 # COPY jeffgeerling.settings.php /var/www/html/web/sites/default/settings.php
 
+# TODO: For production, set file permissions properly.
 # Make sure file ownership is correct on the document root.
-RUN chown -R www-data:www-data /var/www/html/web
+# RUN chown -R www-data:www-data /var/www/html/web
 
 # Add Drush Launcher.
 RUN curl -OL https://github.com/drush-ops/drush-launcher/releases/download/0.6.0/drush.phar \

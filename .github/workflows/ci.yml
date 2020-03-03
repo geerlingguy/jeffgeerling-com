@@ -1,0 +1,62 @@
+---
+name: CI
+'on':
+  push:
+    branches:
+      - master
+  pull_request:
+  schedule:
+    - cron: '0 6 * * 0'
+
+jobs:
+
+  install:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php_version: ['7.3']
+
+    steps:
+      - name: Stop the GitHub Actions MySQL instance.
+        run: sudo service mysql stop
+
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Set up PHP ${{ matrix.php_version }}
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php_version }}
+
+      - name: Install dependencies
+        run: composer install
+
+      - name: Build container
+        run: docker build -t jeffgeerling-com:latest .
+
+      - name: Start Docker environment
+        run: docker-compose up -d
+
+      - name: Wait for MySQL to start.
+        run: |
+          while ! mysqladmin ping -h"127.0.0.1" -P"3306" --silent; do
+            sleep 1
+          done
+
+      - name: Add config sync directory config to default.settings.php.
+        run: >
+          printf "<?php\n\$settings['config_sync_directory'] = '../config/sync';\n"
+          >> web/sites/default/settings.local.php
+
+      # Note: -T option required to avoid creating pseudo-TTY.
+      - name: Install Drupal
+        run: >-
+          docker-compose exec -T drupal bash -c 'drush site:install minimal
+          --db-url="mysql://drupal:drupal@mysql/drupal"
+          --site-name="Jeff Geerling" --existing-config -y'
+        env:
+         COMPOSE_INTERACTIVE_NO_CLI: '1'
+
+      - name: Test loading the home page.
+        run: >
+          curl -s http://localhost/ | grep "Jeff Geerling"
