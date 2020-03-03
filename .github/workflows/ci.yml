@@ -59,4 +59,4 @@ jobs:
 
       - name: Test loading the home page.
         run: >
-          curl -s http://localhost/ | grep "Home | Jeff Geerling"
+          curl -s http://localhost/ | grep "Jeff Geerling"
