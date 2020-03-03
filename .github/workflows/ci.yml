@@ -45,7 +45,7 @@ jobs:
 
       - name: Add config sync directory config to default.settings.php.
         run: >
-          printf "<?php\n$settings['config_sync_directory'] = '../config/sync';\n"
+          printf "<?php\n\$settings['config_sync_directory'] = '../config/sync';\n"
           >> web/sites/default/settings.local.php
 
       # Note: -T option required to avoid creating pseudo-TTY.
