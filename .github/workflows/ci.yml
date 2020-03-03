@@ -43,9 +43,10 @@ jobs:
             sleep 1
           done
 
+      # Note: -T option avoids creating pseudo-TTY.
       - name: Install Drupal
         run: >-
-          docker-compose exec drupal bash -c 'drush site:install minimal
+          docker-compose exec -T drupal bash -c 'drush site:install minimal
           --db-url="mysql://drupal:drupal@127.0.0.1/drupal"
           --site-name="Jeff Geerling" --existing-config -y'
         env:
