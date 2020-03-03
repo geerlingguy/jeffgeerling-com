@@ -18,7 +18,7 @@ Make sure you have Docker installed, then run the following commands (in the sam
      docker-compose up -d
      ```
 
-After the environment is running, you can visit http://localhost/ and see the Drupal site.
+After setup is complete (assuming the site is installed), visit http://localhost/ to see the Drupal site.
 
 ### Installing Drupal
 
@@ -26,7 +26,11 @@ You can install Drupal using the install wizard, but we like to use Drush for mo
 
     docker-compose exec drupal bash -c 'drush site:install minimal --db-url="mysql://drupal:$DRUPAL_DATABASE_PASSWORD@$DRUPAL_DATABASE_HOST/drupal" --site-name="Jeff Geerling" --existing-config -y'
 
+> **Note**: It's preferred you store the database connection details in a separate `settings.local.php` file; otherwise, Drupal will try to stuff the connection details into the main `settings.php` file. Sensitive information like database passwords should _not_ be stored in this repository's `settings.php`.
+
 ### Migrating Content
+
+First, make sure you have a local copy of the Drupal 7 database available; see the [drupal7db README](drupal7db/README.md) for setup instructions.
 
 When you're ready to migrate content from the `drupal7` site database, run:
 
