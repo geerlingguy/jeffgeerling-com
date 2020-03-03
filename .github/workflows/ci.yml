@@ -6,7 +6,7 @@ name: CI
       - master
   pull_request:
   schedule:
-    - cron: '0 6 * * *'
+    - cron: '0 6 * * 7'
 
 jobs:
 
@@ -37,11 +37,14 @@ jobs:
       - name: Start Docker environment
         run: docker-compose up -d
 
-      - name: Pause for 1 minute while MySQL starts.
-        run: sleep 60
+      - name: Wait for MySQL to start.
+        run: |
+          while ! mysqladmin ping -h"127.0.0.1" -P"3306" --silent; do
+            sleep 1
+          done
 
       - name: Install Drupal
         run: >-
           docker-compose exec drupal bash -c 'drush site:install minimal
-          --db-url="mysql://drupal:$DRUPAL_DATABASE_PASSWORD@$DRUPAL_DATABASE_HOST/drupal"
+          --db-url="mysql://drupal:drupal@127.0.0.1/drupal"
           --site-name="Jeff Geerling" --existing-config -y'
