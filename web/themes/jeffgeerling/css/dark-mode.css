@@ -65,11 +65,11 @@
   }
 
   ul.primary,
-  #site-name {
+  .site-name {
     border-bottom: 1px solid #464646;
   }
 
-  #site-name a {
+  .site-name a {
     color: #eee;
   }
 
