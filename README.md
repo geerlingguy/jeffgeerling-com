@@ -6,21 +6,11 @@ This is the Drupal codebase that powers JeffGeerling.com.
 
 ## Local Environment
 
-Make sure you have Docker installed, then run the following commands (in the same directory as this README file):
+Make sure you have Vagrant and VirtualBox installed, then run the following commands (in the same directory as this README file):
 
-  1. Build the local Drupal docker image:
+    vagrant up
 
-     ```
-     docker build -t jeffgeerling-com:latest .
-     ```
-
-  2. Start the local development environment with Docker Compose:
-
-     ```
-     docker-compose up -d
-     ```
-
-After setup is complete (assuming the site is installed), visit http://localhost/ to see the Drupal site.
+After setup is complete (assuming the site is installed), visit http://local.jeffgeerling.com/ to see the Drupal site.
 
 ### Installing Drupal
 

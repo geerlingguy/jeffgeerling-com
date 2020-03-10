@@ -21,3 +21,6 @@
 
 # Ignore .env files as they are personal
 /.env
+
+# Ignore .vagrant because it's for local dev
+/.vagrant/

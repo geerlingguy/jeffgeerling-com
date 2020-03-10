@@ -1,0 +1,49 @@
+---
+# Drupal VM configuration.
+vagrant_hostname: local.jeffgeerling.com
+vagrant_machine_name: jeffgeerling
+vagrant_ip: 192.168.88.72
+
+installed_extras:
+  - drush
+  - mailhog
+  - solr
+
+extra_packages: []
+
+php_version: "7.3"
+
+# I'll manage Composer things myself, thankyouverymuch!
+drupal_build_composer_project: false
+drupal_build_composer: false
+drupal_composer_path: false
+drupal_composer_install_dir: "/var/www/drupalvm"
+drupal_core_path: "{{ drupal_composer_install_dir }}/web"
+drupal_composer_dependencies: []
+drupal_enable_modules: []
+
+# Site installation vars.
+drupal_install_site: true
+drupal_install_profile: minimal
+drupal_site_name: Jeff Geerling
+drupal_site_install_extra_args:
+  - --existing-config
+  - -y
+
+# MySQL settings.
+mysql_databases:
+  - name: drupal
+    encoding: utf8mb4
+    collation: utf8mb4_general_ci
+  - name: drupal7
+    encoding: utf8mb4
+    collation: utf8mb4_general_ci
+
+mysql_users:
+  - name: drupal
+    host: "%"
+    password: drupal
+    priv: "*.*:ALL"
+
+# Solr settings.
+solr_version: "7.7.2"

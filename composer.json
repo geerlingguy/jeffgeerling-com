@@ -27,6 +27,7 @@
         "drush/drush": "^9.0"
     },
     "require-dev": {
+        "geerlingguy/drupal-vm": "^5.1"
     },
     "conflict": {
         "drupal/drupal": "*"
