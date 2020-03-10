@@ -6,21 +6,15 @@ This is the Drupal codebase that powers JeffGeerling.com.
 
 ## Local Environment
 
-Make sure you have Docker installed, then run the following commands (in the same directory as this README file):
+The first time you start using this project, you need to create your local settings file:
 
-  1. Build the local Drupal docker image:
+    cp web/sites/default/example.settings.local.php web/sites/default/settings.local.php
 
-     ```
-     docker build -t jeffgeerling-com:latest .
-     ```
+Make sure you have Docker installed, then run the following command (in the same directory as this README file):
 
-  2. Start the local development environment with Docker Compose:
+    docker-compose up -d
 
-     ```
-     docker-compose up -d
-     ```
-
-After setup is complete (assuming the site is installed), visit http://localhost/ to see the Drupal site.
+Visit http://localhost/ to see the Drupal installation.
 
 ### Installing Drupal
 

@@ -4,6 +4,7 @@ version: '3'
 services:
   drupal:
     image: jeffgeerling-com:latest
+    build: .
     container_name: jeffgeerling-com
     environment:
       DRUPAL_DATABASE_HOST: 'mysql'
@@ -11,8 +12,6 @@ services:
       DRUPAL_DATABASE_NAME: 'drupal'
       DRUPAL_DATABASE_USERNAME: 'drupal'
       DRUPAL_DATABASE_PASSWORD: 'drupal'
-      # TODO: Create a new hash salt for this.
-      DRUPAL_HASH_SALT: 'fe918c992fb1bcfa01f32303c8b21f3d0a0'
       DRUPAL_DOWNLOAD_IF_NOT_PRESENT: 'false'
     ports:
       - "80:80"
