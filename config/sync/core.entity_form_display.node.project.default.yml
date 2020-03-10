@@ -11,9 +11,13 @@ dependencies:
     - field.field.node.project.field_project_images
     - field.field.node.project.field_project_link
     - field.field.node.project.field_project_type
+    - image.style.thumbnail
     - node.type.project
   module:
     - comment
+    - datetime
+    - image
+    - link
     - path
     - text
 id: node.project.default
@@ -22,8 +26,8 @@ bundle: project
 mode: default
 content:
   body:
+    weight: 7
     type: text_textarea_with_summary
-    weight: 121
     settings:
       rows: 9
       summary_rows: 3
@@ -43,6 +47,49 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_project_date:
+    weight: 2
+    type: datetime_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_project_highlight:
+    weight: 1
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_project_highlights:
+    weight: 5
+    type: string_textfield
+    settings:
+      size: 100
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_project_images:
+    weight: 6
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_project_link:
+    weight: 4
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_project_type:
+    weight: 3
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   path:
     type: path
     weight: 30
@@ -88,10 +135,4 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden:
-  field_project_date: true
-  field_project_highlight: true
-  field_project_highlights: true
-  field_project_images: true
-  field_project_link: true
-  field_project_type: true
+hidden: {  }

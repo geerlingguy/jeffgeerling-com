@@ -8,9 +8,12 @@ dependencies:
     - field.field.node.blog_post.field_files
     - field.field.node.blog_post.field_images
     - field.field.node.blog_post.field_tags
+    - image.style.thumbnail
     - node.type.blog_post
   module:
     - comment
+    - file
+    - image
     - path
     - text
 id: node.blog_post.default
@@ -19,8 +22,8 @@ bundle: blog_post
 mode: default
 content:
   body:
+    weight: 1
     type: text_textarea_with_summary
-    weight: 121
     settings:
       rows: 9
       summary_rows: 3
@@ -40,6 +43,31 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_files:
+    weight: 4
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_images:
+    weight: 3
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_tags:
+    weight: 2
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
   path:
     type: path
     weight: 30
@@ -85,7 +113,4 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden:
-  field_files: true
-  field_images: true
-  field_tags: true
+hidden: {  }

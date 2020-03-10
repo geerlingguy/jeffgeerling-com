@@ -9,6 +9,7 @@ dependencies:
     - node.type.page
   module:
     - comment
+    - file
     - path
     - text
 id: node.page.default
@@ -17,8 +18,8 @@ bundle: page
 mode: default
 content:
   body:
+    weight: 1
     type: text_textarea_with_summary
-    weight: 121
     settings:
       rows: 9
       summary_rows: 3
@@ -38,6 +39,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_files:
+    weight: 2
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
   path:
     type: path
     weight: 30
@@ -83,5 +91,4 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden:
-  field_files: true
+hidden: {  }
