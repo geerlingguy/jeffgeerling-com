@@ -27,12 +27,10 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php_version }}
+          tools: symfony
 
       - name: Install dependencies
         run: composer install
-
-      - name: Build container
-        run: docker build -t jeffgeerling-com:latest .
 
       - name: Start Docker environment
         run: docker-compose up -d
@@ -43,15 +41,15 @@ jobs:
             sleep 1
           done
 
-      # Note: -T option required to avoid creating pseudo-TTY.
+      - name: Start local web server.
+        run: symfony serve --no-tls -d
+
       - name: Install Drupal
         run: >-
-          docker-compose exec -T drupal bash -c 'drush site:install minimal
-          --db-url="mysql://drupal:drupal@mysql/drupal"
-          --site-name="Jeff Geerling" --existing-config -y'
-        env:
-         COMPOSE_INTERACTIVE_NO_CLI: '1'
+          ./vendor/bin/drush site:install minimal
+          --db-url="mysql://drupal:drupal@127.0.0.1/drupal"
+          --site-name="Jeff Geerling" --existing-config -y
 
       - name: Test loading the home page.
         run: >
-          curl -s http://localhost/ | grep "Jeff Geerling"
+          curl -s http://localhost:8000/ | grep "Jeff Geerling"
