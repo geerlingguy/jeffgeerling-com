@@ -6,6 +6,7 @@ services:
     image: mysql:5
     container_name: drupal7-mysql
     restart: always
+    command: --max_allowed_packet=256M
     environment:
       MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
       MYSQL_DATABASE: drupal
