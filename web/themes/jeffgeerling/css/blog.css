@@ -1,0 +1,161 @@
+
+/**
+ * @file
+ * CSS for Jeff Geerling's website blog.
+ */
+
+/* Blog listings */
+.page-blog #page-title {
+  display: none;
+}
+
+.view-blog .node .comment-add {
+  display: none;
+}
+
+/* Blog images */
+.node-blog-post .insert-image {
+  margin: 0 auto;
+  display: block;
+}
+
+/* Node bottom region */
+.region-node-bottom {
+  background-color: #efefef;
+  padding: 1em 1.5em;
+  margin: 2em 8em;
+}
+
+.region-node-bottom h2 {
+  margin-top: .1em;
+}
+
+.view-related-content ul {
+  font-size: .9em;
+  margin: 0;
+}
+
+/* Tags */
+.field-name-field-tags {
+  margin: 1em 0;
+}
+
+.field-name-field-tags .field-item {
+  display: inline;
+}
+
+.field-name-field-tags .field-item a {
+  background: #eee;
+  color: #444;
+  font-size: .7em;
+  font-family: Helvetica, Arial, sans-serif;
+  display: inline-block;
+  height: 23px;
+  line-height: 22px;
+  padding: 0 14px 0 16px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+}
+
+.field-name-field-tags .field-item a::before {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 4px;
+  left: 6px;
+  position: absolute;
+  width: 4px;
+  top: 9px;
+}
+
+.field-name-field-tags .field-item a::after {
+  background: #fff;
+  border-bottom: 11px solid transparent;
+  border-left: 6px solid #eee;
+  border-top: 12px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.field-name-field-tags .field-item a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.field-name-field-tags .field-item a:hover::after {
+   border-left-color: #333;
+}
+
+/* Comments */
+#comments {
+  background-color: #f6f6ef;
+  padding: 1em 1.5em;
+  margin: 0;
+}
+
+#comments h2.title {
+  margin-top: .1em;
+}
+
+.indented {
+  margin-left: 2.5em;
+}
+
+.indented .indented .indented .indented {
+  margin-left: 0;
+}
+
+.comment {
+  font-size: .9em;
+  margin: 1em 0;
+}
+
+.comment:last-child {
+  margin-bottom: 0;
+}
+
+.comment p {
+  line-height: 1.4em;
+}
+
+.comment code {
+  background-color: transparent;
+}
+
+.submitted {
+  margin-bottom: .5em;
+}
+
+.submitted,
+.comment .links {
+  font-size: .85em;
+  color: #999;
+  margin-top: .5em;
+}
+
+.submitted a,
+.submitted a:visited {
+  text-decoration: none;
+  color: #777;
+}
+
+.comment .links a,
+.comment .links a:visited {
+  color: #777;
+}
+
+/* Comment Form */
+body:not(.page-comment-edit) .comment-form .filter-wrapper {
+  display: none;
+}
+
+/* Responsive Styles -------------------------------------------------------- */
+@media screen and (max-width: 800px) {
+  .region-node-bottom {
+    margin: 2em 0;
+  }
+}

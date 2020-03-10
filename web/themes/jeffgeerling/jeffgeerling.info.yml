@@ -1,0 +1,21 @@
+name: Jeff Geerling
+type: theme
+description: The theme for the website of Jeff Geerling.
+core: 8.x
+base theme: classy
+
+regions:
+  page_top: Page top
+  header: Header
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  node_bottom: Node bottom
+  sidebar_first: Sidebar first
+  sidebar_second: Sidebar second
+  footer: Footer
+  page_bottom: Page bottom
+
+libraries:
+  - jeffgeerling/global-styling
+  # - jeffgeerling/global-scripts

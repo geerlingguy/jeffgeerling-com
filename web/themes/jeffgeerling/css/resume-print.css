@@ -1,0 +1,29 @@
+
+/**
+ * @file
+ * Print CSS for Jeff Geerling's website - Resumé page.
+ */
+
+#page-wrapper #page {
+  border: none;
+}
+
+#page .page-navigation {
+  display: none;
+}
+
+.top-link {
+  display: none !important;
+}
+
+.job .toggle-details {
+  display: none;
+}
+
+.job .attributes {
+  display: block !important;
+}
+
+#page-wrapper #footer {
+  display: none;
+}

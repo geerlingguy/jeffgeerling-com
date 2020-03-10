@@ -1,0 +1,53 @@
+
+/**
+ * @file
+ * CSS for Jeff Geerling's website search.
+ */
+
+/* Search form. */
+.form-item-keys-1 {
+  display: inline-block;
+}
+
+.form-item-keys-1 label {
+  display: none;
+}
+
+/* Search Results */
+ol.search-results {
+  padding: 0;
+}
+
+.search-result {
+  margin: 2em 0;
+  overflow: hidden;
+}
+
+.search-result h3 {
+  margin: 0;
+}
+
+.search-result img {
+  max-height: 100px;
+  width: auto !important;
+}
+
+.search-snippet {
+  margin: 0;
+}
+
+.search-info {
+  color: #777;
+  margin: 0;
+  font-size: .9em;
+}
+
+/* Facets. */
+.block-facetapi {
+  font-size: .8em;
+}
+
+.block-facetapi .item-list li {
+  margin: 0;
+  list-style: none;
+}

@@ -1,13 +1,13 @@
-uuid: b4ca792c-9e74-435e-83f9-bd7b41d3a83b
+uuid: 8d1366d7-1c3d-4cb1-8be5-42e947c9ec61
 langcode: en
 status: true
 dependencies:
   module:
     - user
   theme:
-    - stark
-id: stark_user_login
-theme: stark
+    - jeffgeerling
+id: jeffgeerling_user_login
+theme: jeffgeerling
 region: sidebar_first
 weight: 0
 provider: null
