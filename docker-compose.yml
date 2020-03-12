@@ -18,7 +18,8 @@ services:
     # restart: on-failure
     # Share the project into the container for local development. Comment out
     # this line to test the production-ready pre-built container codebase.
-    volumes: ['./:/var/www/html:rw,delegated']
+    volumes:
+      - shared:/var/www/html
 
   mysql:
     image: mysql:5.7
@@ -33,3 +34,17 @@ services:
       - "3306:3306"
     volumes:
       - /var/lib/mysql
+
+  bg-sync:
+    image: cweagans/bg-sync
+    volumes:
+      - .:/source
+      - shared:/var/www/html
+    environment:
+      - SYNC_DESTINATION=/var/www/html
+      - SYNC_MAX_INOTIFY_WATCHES=50000
+      - SYNC_VERBOSE=1
+    privileged: true
+
+volumes:
+  shared:
