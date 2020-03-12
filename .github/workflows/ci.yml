@@ -35,7 +35,10 @@ jobs:
         run: docker build -t jeffgeerling-com:latest .
 
       - name: Start Docker environment
-        run: docker-compose up -d
+        run: |
+          rm -f docker-compose.override.yml
+          mv .github/docker-compose.override.yml docker-compose.override.yml
+          docker-compose up -d
 
       - name: Wait for MySQL to start.
         run: |

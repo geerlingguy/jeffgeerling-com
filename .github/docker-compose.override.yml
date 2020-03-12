@@ -1,0 +1,7 @@
+---
+version: '3'
+
+services:
+  drupal:
+    volumes:
+      - './:/var/www/html:rw'
