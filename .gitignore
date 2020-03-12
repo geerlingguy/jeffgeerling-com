@@ -21,3 +21,6 @@
 
 # Ignore .env files as they are personal
 /.env
+
+# Ignore docker-sync directory.
+/.docker-sync

@@ -10,8 +10,9 @@ The first time you start using this project, you need to create your local setti
 
     cp web/sites/default/example.settings.local.php web/sites/default/settings.local.php
 
-Make sure you have Docker installed, then run the following command (in the same directory as this README file):
+Make sure you have Docker and `docker-sync` installed (`gem install docker-sync`), then run the following commands (in the same directory as this README file):
 
+    docker-sync start # this could take a while
     docker-compose up -d
 
 Visit http://localhost/ to see the Drupal installation.
