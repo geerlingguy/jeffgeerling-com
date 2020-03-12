@@ -18,7 +18,8 @@ services:
     # restart: on-failure
     # Share the project into the container for local development. Comment out
     # this line to test the production-ready pre-built container codebase.
-    volumes: ['./:/var/www/html:rw,delegated']
+    volumes:
+      - 'nfsmount:/var/www/html'
 
   mysql:
     image: mysql:5.7
@@ -33,3 +34,11 @@ services:
       - "3306:3306"
     volumes:
       - /var/lib/mysql
+
+volumes:
+  nfsmount:
+    driver: local
+    driver_opts:
+      type: nfs
+      o: addr=host.docker.internal,rw,nolock,hard,nointr,nfsvers=3
+      device: ":${PWD}"
