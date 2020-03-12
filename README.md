@@ -2,7 +2,11 @@
 
 ![CI](https://github.com/geerlingguy/jeffgeerling-com/workflows/CI/badge.svg?branch=master&event=push)
 
-This is the Drupal codebase that powers JeffGeerling.com.
+This is the Drupal codebase that powers [JeffGeerling.com](https://www.jeffgeerling.com).
+
+The building of this project and the migration of JeffGeerling.com from Drupal 7 to Drupal 8 has been live-streamed on geerlingguy's YouTube channel; you can watch all the episodes and see episode summaries and resources here: [Migrating JeffGeerling.com from Drupal 7 to Drupal 8 - How-to video series](https://www.jeffgeerling.com/blog/2020/migrating-jeffgeerlingcom-drupal-7-drupal-8-how-video-series).
+
+I decided to open-source my website's codebase to help other Drupal users see how I built and maintain this site. If you like what you see or have been helped in any way by this project, please consider supporting me via [Patreon](https://www.patreon.com/geerlingguy), [GitHub Sponsors](https://github.com/sponsors/geerlingguy), or another [affiliate link](https://www.jeffgeerling.com/affiliates).
 
 ## Local Environment
 
