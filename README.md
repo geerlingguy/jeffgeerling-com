@@ -16,6 +16,10 @@ Make sure you have Docker installed, then run the following command (in the same
 
 Visit http://localhost/ to see the Drupal installation.
 
+> Note: This `docker-compose.yml` configuration uses an NFS mount for better performance on macOS. You need to ensure [NFS is configured properly on your Mac](https://github.com/geerlingguy/jeffgeerling-com/issues/22#issuecomment-597891217) or you'll get errors when you build the environment.
+> 
+> If you're on Linux or want to skip configuring NFS, you can use the `docker-compose.override.yml` file inside `.github/` instead of the one included in the root of the repo.
+
 ### Installing Drupal
 
 You can install Drupal using the install wizard, but we like to use Drush for more automation:
