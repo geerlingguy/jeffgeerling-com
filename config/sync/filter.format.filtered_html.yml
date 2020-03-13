@@ -1,17 +1,13 @@
 uuid: 0111614f-0190-4f7f-a867-1e25772b684f
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - codefilter
 name: 'Filtered HTML'
 format: filtered_html
 weight: -8
 filters:
-  filter_null:
-    id: filter_null
-    provider: filter
-    status: true
-    weight: -46
-    settings: {  }
   filter_autop:
     id: filter_autop
     provider: filter
@@ -40,3 +36,10 @@ filters:
     weight: -45
     settings:
       filter_url_length: 72
+  codefilter:
+    id: codefilter
+    provider: codefilter
+    status: true
+    weight: -46
+    settings:
+      nowrap_expand: '0'
