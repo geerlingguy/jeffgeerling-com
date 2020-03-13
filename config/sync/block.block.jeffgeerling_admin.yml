@@ -1,4 +1,4 @@
-uuid: e45e8db3-92f4-424a-a7b7-db6ce8ba5bc8
+uuid: ce13185d-27d7-42cb-bb48-c7b292a91736
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - system
   theme:
-    - stark
+    - jeffgeerling
 _core:
   default_config_hash: OFEDxrButmQ8Vac1kiVr1gtw6vYKuSJPr9cJQZVKCKg
-id: stark_admin
-theme: stark
+id: jeffgeerling_admin
+theme: jeffgeerling
 region: sidebar_first
 weight: 1
 provider: null

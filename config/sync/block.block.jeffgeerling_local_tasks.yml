@@ -1,13 +1,13 @@
-uuid: bc85771a-bd34-4628-98dd-393719932992
+uuid: b1e2754f-2fcb-48d1-9977-c9c0bd77e972
 langcode: en
 status: true
 dependencies:
   theme:
-    - stark
+    - jeffgeerling
 _core:
   default_config_hash: c-06bbElRY5sKmglk74ppgTW93Et4-EJFyNiUZMb8JY
-id: stark_local_tasks
-theme: stark
+id: jeffgeerling_local_tasks
+theme: jeffgeerling
 region: content
 weight: -20
 provider: null

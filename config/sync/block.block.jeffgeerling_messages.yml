@@ -1,15 +1,15 @@
-uuid: a99f61ce-ac09-4ed8-8be4-213eda64189b
+uuid: 6bcd017e-2236-4140-a352-5981e1662978
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - stark
+    - jeffgeerling
 _core:
   default_config_hash: 5MNdk3fpMKx_xxBTcz2T11DL4XEU1H5SgHl8BsYdFsA
-id: stark_messages
-theme: stark
+id: jeffgeerling_messages
+theme: jeffgeerling
 region: highlighted
 weight: 0
 provider: null

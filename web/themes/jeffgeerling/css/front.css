@@ -1,0 +1,76 @@
+
+/**
+ * @file
+ * CSS for Jeff Geerling's website front page.
+ */
+
+.page-title {
+  display: none;
+}
+
+.portrait {
+  float: left;
+  margin: 0 .5em 0 0;
+}
+
+.front #block-views-projects-block,
+.front #block-views-blog-block,
+.front #block-block-1 {
+  background-color: #efefef;
+  padding: 1em;
+}
+
+.front #block-views-projects-block {
+  margin-bottom: 1.8em;
+}
+
+.front #block-views-projects-block h2,
+.front #block-views-blog-block h2,
+.front #block-block-1 h2 {
+  margin-top: 0;
+}
+
+.front #block-views-projects-block,
+.front #block-views-blog-block {
+  width: 25%;
+  float: right;
+}
+
+.front #block-views-projects-block li,
+.front #block-views-blog-block li {
+  font-size: .85em;
+}
+
+.front #block-block-1 {
+  width: 65%;
+  float: left;
+}
+
+/* Responsive Styles -------------------------------------------------------- */
+@media screen and (max-width: 800px) {
+  .front #block-views-projects-block,
+  .front #block-views-blog-block,
+  .front #block-block-1 {
+    float: none;
+    margin: 0 auto;
+    width: 95%;
+  }
+
+  .front #block-views-projects-block,
+  .front #block-views-blog-block,
+  .front #block-block-1 {
+    margin-bottom: 1em;
+    width: 84%;
+  }
+
+  .front #block-views-projects-block li,
+  .front #block-views-blog-block li {
+    font-size: 1em;
+  }
+
+  .portrait {
+    float: none;
+    display: block;
+    margin: 0 auto 1em;
+  }
+}

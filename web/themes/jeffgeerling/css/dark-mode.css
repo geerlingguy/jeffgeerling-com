@@ -1,0 +1,131 @@
+
+/**
+ * @file
+ * Dark Mode styling for Jeff Geerling's website.
+ */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #ddd;
+    background-color: #222;
+  }
+
+  h2 {
+    color: #eee;
+  }
+
+  a {
+    color: #b3bcdd;
+  }
+
+  a:hover {
+    color: #c6d0f4;
+  }
+
+  a:visited {
+    color: #959cb7;
+  }
+
+  pre,
+  code,
+  div.codeblock {
+    background-color: #323232;
+  }
+
+  div.codeblock {
+    border: 1px solid #444;
+  }
+
+  nav#block-mainmenu li a,
+  nav#block-mainmenu li a:visited {
+    color: #ddd;
+  }
+
+  nav#block-mainmenu li a:hover,
+  nav#block-mainmenu li a.is-active {
+    color: #444;
+  }
+
+  nav#block-mainmenu li a.is-active {
+    background-color: #ddd;
+    color: #444;
+  }
+
+  ul.primary li a {
+    background-color: #444;
+    border-color: #686868;
+    color: #eee;
+  }
+
+  ul.primary li.is-active a,
+  ul.primary li a:hover {
+    background-color: #222;
+    border: 1px solid #686868;
+    border-bottom: 1px solid #222;
+  }
+
+  ul.primary,
+  .site-name {
+    border-bottom: 1px solid #464646;
+  }
+
+  .site-name a {
+    color: #eee;
+  }
+
+  div.messages--status {
+    background-color: #2f312e;
+    border-color: #44562b;
+    color: #73e500;
+  }
+
+  .node header h2 a {
+    color: #eee;
+  }
+
+  .node header h2 a:hover {
+    color: #fff;
+  }
+
+  p.submitted {
+    color: #aaa;
+  }
+
+  .front #block-views-projects-block,
+  .front #block-views-blog-block,
+  .front #block-block-1,
+  .region-node-bottom,
+  #comments {
+    background-color: #323232;
+  }
+
+  .node-unpublished,
+  .comment-unpublished {
+    background-color: #331111;
+  }
+
+  .field-name-field-tags .field-item a {
+    padding: 0 8px 0 16px;
+    background: #444;
+    color: #ddd;
+  }
+
+  .field-name-field-tags .field-item a::before,
+  .field-name-field-tags .field-item a::after {
+    background: #222;
+    border: none;
+  }
+
+  #resume-highlight h2 {
+    color: #eee;
+  }
+
+  .resume-section .job {
+    background-color: #181818;
+  }
+
+  .node-project .field-name-field-project-highlights {
+    background-color: #555;
+    color: #efefef;
+  }
+}
