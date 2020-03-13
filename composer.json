@@ -17,6 +17,7 @@
     "require": {
         "composer/installers": "^1.2",
         "drupal/admin_toolbar": "^2.0",
+        "drupal/codefilter": "1.x-dev",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
@@ -40,6 +41,11 @@
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
+            },
+            "file-mapping": {
+                "[web-root]/sites/development.services.yml": {
+                    "append": "patches/development-services-yml-append.txt"
+                }
             }
         },
         "installer-paths": {

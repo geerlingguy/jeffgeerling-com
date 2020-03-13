@@ -13,7 +13,7 @@ bundle: basic
 mode: default
 content:
   body:
-    weight: 27
+    weight: 28
     settings:
       rows: 9
       summary_rows: 3

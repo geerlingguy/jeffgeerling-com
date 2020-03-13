@@ -8,7 +8,7 @@ dependencies:
     - claro
 _core:
   default_config_hash: QTwkfDaGeBUk6aerktJBDXso4fCsqLTQOuWKXE1xMPU
-id: claro_content
+id: seven_system_main
 theme: claro
 region: content
 weight: 0
@@ -16,7 +16,7 @@ provider: null
 plugin: system_main_block
 settings:
   id: system_main_block
-  label: 'Main page content'
+  label: null
   provider: system
   label_display: '0'
 visibility: {  }

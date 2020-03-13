@@ -1,14 +1,14 @@
-uuid: 8d1366d7-1c3d-4cb1-8be5-42e947c9ec61
+uuid: 456e3561-2e74-4e3b-8bf3-6e8d9efbdeb4
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - user
   theme:
-    - jeffgeerling
-id: jeffgeerling_user_login
-theme: jeffgeerling
-region: sidebar_first
+    - stark
+id: stark_user_login
+theme: stark
+region: ''
 weight: 0
 provider: null
 plugin: user_login_block
