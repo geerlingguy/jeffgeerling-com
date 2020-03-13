@@ -18,4 +18,4 @@ regions:
 
 libraries:
   - jeffgeerling/global-styling
-  # - jeffgeerling/global-scripts
+  - jeffgeerling/front

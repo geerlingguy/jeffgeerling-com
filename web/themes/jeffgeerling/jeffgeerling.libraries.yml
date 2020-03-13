@@ -4,7 +4,9 @@ global-styling:
     theme:
       css/style.css: {}
       css/dark-mode.css: {}
-# global-scripts:
-#   version: 1.x
-#   js:
-#     js/navmenu.js: {}
+
+front:
+  version: 1.x
+  css:
+    theme:
+      css/front.css: {}

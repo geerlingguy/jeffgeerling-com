@@ -202,22 +202,19 @@ table ul.links li {
 }
 
 /* Layout Styles ------------------------------------------------------------ */
-#page-wrapper {
+.layout-container {
   font-size: 1em;
-}
-
-#page {
-  margin: 1em auto;
+  margin: 0 auto 1em;
   padding: 1.5em;
   overflow-y: auto;
   width: 920px;
 }
 
-#header {
-  margin-bottom: 2em;
+header {
+  margin-bottom: 1em;
 }
 
-#page-title {
+.page-title {
   margin: 0;
 }
 
@@ -234,6 +231,7 @@ table ul.links li {
   text-decoration: none;
 }
 
+/* TODO: Search pages */
 #sidebar-second {
   float: right;
   width: 220px;
@@ -264,7 +262,11 @@ table ul.links li {
 }
 
 /* Navigation --------------------------------------------------------------- */
-nav ul {
+nav#block-mainmenu {
+  margin: 2em 0 1em;
+}
+
+nav#block-mainmenu ul {
   list-style-type: none;
   margin: 0 0 .75em;
   padding: 0 0 .8em;
@@ -272,11 +274,11 @@ nav ul {
   width: 100%;
 }
 
-nav li {
+nav#block-mainmenu li {
   display: inline;
 }
 
-nav li a {
+nav#block-mainmenu li a {
   border-radius: 2em;
   color: #444;
   font-family: Helvetica, Arial, sans-serif;
@@ -288,26 +290,24 @@ nav li a {
   text-decoration: none;
 }
 
-nav li a:hover {
+nav#block-mainmenu li a:hover {
   background-color: #ddd;
   color: #444;
 }
 
-nav li a.active {
+nav#block-mainmenu li a.is-active {
   background-color: #444;
   color: #fff;
 }
 
 /* System Styles ------------------------------------------------------------ */
-#admin-menu-wrapper {
-  font-size: .8em;
-}
-
-.grippie {
-  display: none;
-}
 
 /* Local tasks */
+ul.primary {
+  padding: 0 0 0 1em;
+  margin: 5px;
+}
+
 .tabs ul.tabs {
 }
 
@@ -320,6 +320,9 @@ nav li a.active {
   display: inline-block;
   padding: .25em 1em;
   margin: 0 .25em -1px 0;
+  border-style: solid solid none;
+  border-width: 1px;
+  height: auto;
 }
 
 .feed-icon img,
@@ -443,7 +446,7 @@ ul.links li {
     text-align: center;
   }
 
-  #page-title {
+  .page-title {
     width: 95%;
     margin: 0 auto;
   }

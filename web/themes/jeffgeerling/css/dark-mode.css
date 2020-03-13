@@ -36,17 +36,17 @@
     border: 1px solid #444;
   }
 
-  nav li a,
-  nav li a:visited {
+  nav#block-mainmenu li a,
+  nav#block-mainmenu li a:visited {
     color: #ddd;
   }
 
-  nav li a:hover,
-  nav li a.active {
+  nav#block-mainmenu li a:hover,
+  nav#block-mainmenu li a.is-active {
     color: #444;
   }
 
-  nav li a.active {
+  nav#block-mainmenu li a.is-active {
     background-color: #ddd;
     color: #444;
   }
@@ -57,7 +57,7 @@
     color: #eee;
   }
 
-  ul.primary li.active a,
+  ul.primary li.is-active a,
   ul.primary li a:hover {
     background-color: #222;
     border: 1px solid #686868;
@@ -73,7 +73,7 @@
     color: #eee;
   }
 
-  div.status {
+  div.messages--status {
     background-color: #2f312e;
     border-color: #44562b;
     color: #73e500;
