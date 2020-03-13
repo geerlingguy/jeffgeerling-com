@@ -3,15 +3,21 @@ langcode: en
 status: true
 dependencies:
   module:
-    - markdown
+    - codefilter
 name: Markdown
 format: markdown
 weight: -10
 filters:
-  markdown:
-    id: markdown
-    provider: markdown
+  codefilter:
+    id: codefilter
+    provider: codefilter
     status: true
-    weight: 0
+    weight: -48
     settings:
-      markdown_library: php-markdown
+      nowrap_expand: '0'
+  filter_null:
+    id: filter_null
+    provider: filter
+    status: true
+    weight: -47
+    settings: {  }

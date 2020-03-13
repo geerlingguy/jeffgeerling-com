@@ -11,7 +11,7 @@ _core:
 id: jeffgeerling_branding
 theme: jeffgeerling
 region: header
-weight: 0
+weight: -4
 provider: null
 plugin: system_branding_block
 settings:

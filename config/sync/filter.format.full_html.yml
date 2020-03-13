@@ -1,17 +1,13 @@
 uuid: 21617b6b-d4dd-4a87-b32e-e79614623c87
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - codefilter
 name: 'Full HTML'
 format: full_html
 weight: -9
 filters:
-  filter_null:
-    id: filter_null
-    provider: filter
-    status: true
-    weight: -46
-    settings: {  }
   filter_autop:
     id: filter_autop
     provider: filter
@@ -31,3 +27,10 @@ filters:
     weight: -45
     settings:
       filter_url_length: 72
+  codefilter:
+    id: codefilter
+    provider: codefilter
+    status: true
+    weight: -46
+    settings:
+      nowrap_expand: '0'

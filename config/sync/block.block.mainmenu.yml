@@ -1,0 +1,25 @@
+uuid: 5e2327db-fe2a-4ded-8907-9aaf0e848838
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - jeffgeerling
+id: mainmenu
+theme: jeffgeerling
+region: header
+weight: -3
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }
