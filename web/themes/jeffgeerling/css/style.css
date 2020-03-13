@@ -428,15 +428,11 @@ ul.links li {
     display: table-row;
   }
 
-  #page {
+  .layout-container {
     border: none;
     padding: 0;
     margin: 0;
     width: 100%;
-  }
-
-  #header {
-    margin-bottom: 1em;
   }
 
   .site-name {
@@ -451,7 +447,7 @@ ul.links li {
     margin: 0 auto;
   }
 
-  #main nav ul {
+  nav#block-mainmenu ul {
     text-align: center;
   }
 
@@ -463,7 +459,7 @@ ul.links li {
     padding-right: 0;
   }
 
-  #block-system-main > .content {
+  #block-jeffgeerling-system-main > .block-content {
     float: none;
     margin: 0 auto;
     width: 95%;
