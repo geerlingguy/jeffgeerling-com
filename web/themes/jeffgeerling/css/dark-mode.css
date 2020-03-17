@@ -87,7 +87,7 @@
     color: #fff;
   }
 
-  p.submitted {
+  div.node__submitted {
     color: #aaa;
   }
 
@@ -104,14 +104,14 @@
     background-color: #331111;
   }
 
-  .field-name-field-tags .field-item a {
+  div.field--name-field-tags .field__item a {
     padding: 0 8px 0 16px;
     background: #444;
     color: #ddd;
   }
 
-  .field-name-field-tags .field-item a::before,
-  .field-name-field-tags .field-item a::after {
+  div.field--name-field-tags .field__item a::before,
+  div.field--name-field-tags .field__item a::after {
     background: #222;
     border: none;
   }

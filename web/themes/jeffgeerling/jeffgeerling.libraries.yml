@@ -10,3 +10,9 @@ front:
   css:
     theme:
       css/front.css: {}
+
+blog:
+  version: 1.x
+  css:
+    theme:
+      css/blog.css: {}
