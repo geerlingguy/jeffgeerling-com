@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - codefilter
+    - markdown
 name: Markdown
 format: markdown
 weight: -10
@@ -15,9 +16,10 @@ filters:
     weight: -48
     settings:
       nowrap_expand: '0'
-  filter_null:
-    id: filter_null
-    provider: filter
+  markdown:
+    id: markdown
+    provider: markdown
     status: true
-    weight: -47
-    settings: {  }
+    weight: 0
+    settings:
+      markdown_library: php-markdown
