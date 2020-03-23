@@ -6,6 +6,7 @@ module:
   breakpoint: 0
   codefilter: 0
   comment: 0
+  custom: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0

@@ -1,0 +1,9 @@
+name: Custom Module
+type: module
+description: Custom module for JeffGeerling.com.
+package: Custom
+
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+hidden: false
