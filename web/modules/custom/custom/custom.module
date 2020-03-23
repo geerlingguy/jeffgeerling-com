@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Custom functionality for JeffGeerling.com.
+ */
+
+/**
+ * Implements hook_migration_plugins_alter().
+ *
+ * @see https://github.com/geerlingguy/jeffgeerling-com/issues/7
+ */
+function custom_migration_plugins_alter(array &$migrations) {
+  if (isset($migrations['migration_config_deriver:upgrade_d7_filter_format'])) {
+    $migration = &$migrations['migration_config_deriver:upgrade_d7_filter_format'];
+
+    // Add mapping from filter_markdown to markdown for D7 migratins.
+    $migration['process']['filters'][0]['process']['id']['map']['filter_markdown'] = 'markdown';
+  }
+}
