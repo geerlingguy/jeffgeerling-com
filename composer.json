@@ -29,6 +29,7 @@
         "drush/drush": "^9.0"
     },
     "require-dev": {
+        "drupal/devel": "^2.1"
     },
     "conflict": {
         "drupal/drupal": "*"

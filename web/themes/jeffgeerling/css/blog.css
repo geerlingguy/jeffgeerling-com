@@ -5,10 +5,6 @@
  */
 
 /* Blog listings */
-.page-blog #page-title {
-  display: none;
-}
-
 .view-blog .node .comment-add {
   display: none;
 }

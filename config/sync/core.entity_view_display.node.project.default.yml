@@ -12,9 +12,11 @@ dependencies:
     - field.field.node.project.field_project_images
     - field.field.node.project.field_project_link
     - field.field.node.project.field_project_type
+    - image.style.project-thumbnail
     - node.type.project
   module:
     - comment
+    - image
     - link
     - text
     - user
@@ -39,6 +41,15 @@ content:
       pager_id: 0
     third_party_settings: {  }
     region: content
+  field_project_images:
+    label: hidden
+    weight: 0
+    type: image
+    settings:
+      image_style: project-thumbnail
+      image_link: file
+    third_party_settings: {  }
+    region: content
   field_project_link:
     label: above
     weight: 3
@@ -60,5 +71,4 @@ hidden:
   field_project_date: true
   field_project_highlight: true
   field_project_highlights: true
-  field_project_images: true
   field_project_type: true

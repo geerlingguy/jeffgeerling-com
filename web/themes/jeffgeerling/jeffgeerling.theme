@@ -26,6 +26,16 @@ function jeffgeerling_preprocess_node(&$variables) {
   }
 }
 
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function jeffgeerling_theme_suggestions_page_title_alter(array &$suggestions, array $variables) {
+  // TODO: Find a better way to override this template for the 'blog' view.
+  if ($variables['title']['#markup'] == 'Recent Blog Posts') {
+    $suggestions[] = 'page_title__views_blog';
+  }
+}
+
 // /**
 //  * Implements hook_page_alter().
 //  */

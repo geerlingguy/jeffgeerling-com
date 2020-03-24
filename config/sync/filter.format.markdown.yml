@@ -20,6 +20,5 @@ filters:
     id: markdown
     provider: markdown
     status: true
-    weight: 0
-    settings:
-      markdown_library: php-markdown
+    weight: -47
+    settings: {  }

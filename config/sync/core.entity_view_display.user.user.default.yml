@@ -5,12 +5,21 @@ dependencies:
   config:
     - field.field.user.user.user_picture
   module:
+    - image
     - user
 id: user.user.default
 targetEntityType: user
 bundle: user
 mode: default
-content: {  }
+content:
+  user_picture:
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: content
+    type: image
+    weight: 0
+    third_party_settings: {  }
+    region: content
 hidden:
   member_for: true
-  user_picture: true
