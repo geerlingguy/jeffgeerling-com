@@ -346,12 +346,11 @@ ul.primary {
   white-space: nowrap;
 }
 
-.item-list .pager li {
+.pager li {
   padding: .15em;
   margin: 0;
 }
 
-.item-list .pager .pager-current,
 .pager li a {
   color: #000;
   padding: .6em 1em .5em;
@@ -361,7 +360,7 @@ ul.primary {
   text-decoration: none;
 }
 
-.item-list .pager .pager-current {
+.pager .is-active li a {
   background-color: #eee;
   border: 1px solid #eee;
 }
