@@ -20,7 +20,7 @@ $databases['default']['default'] = [
   'driver' => 'mysql',
 ];
 
-$databases['drupal7']['default'] = [
+$databases['migrate']['default'] = [
   'database' => 'drupal',
   'username' => 'drupal',
   'password' => 'drupal',
