@@ -29,7 +29,7 @@ content:
   comment_node_blog_post:
     label: above
     type: comment_default
-    weight: 20
+    weight: 3
     settings:
       view_mode: default
       pager_id: 0
@@ -44,7 +44,7 @@ content:
     third_party_settings: {  }
     region: content
   links:
-    weight: 100
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
