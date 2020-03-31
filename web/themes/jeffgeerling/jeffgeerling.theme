@@ -9,12 +9,16 @@
  * Implements template_preprocess_html().
  */
 function jeffgeerling_preprocess_html(&$variables) {
-  $head_title = array(
-    'name' => t('Jeff Geerling'),
-    'slogan' => t('Author and Software Developer in St. Louis, MO'),
-  );
-  $variables['head_title_array'] = $head_title;
-  $variables['head_title'] = implode(' - ', $head_title);
+  // Override the page title on the front page.
+  if ($variables['is_front']) {
+    $site_config = \Drupal::config('system.site');
+    $head_title = [
+      'name' => $site_config->get('name'),
+      'slogan' => strip_tags($site_config->get('slogan')),
+    ];
+    $variables['head_title_array'] = $head_title;
+    $variables['head_title'] = implode(' - ', $head_title);
+  }
 }
 
 /**
