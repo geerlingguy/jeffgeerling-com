@@ -35,6 +35,33 @@ function jeffgeerling_theme_suggestions_page_title_alter(array &$suggestions, ar
   }
 }
 
+/**
+ * Implements template_preprocess_comment().
+ */
+function jeffgeerling_preprocess_comment(&$variables) {
+  $comment = $variables['elements']['#comment'];
+
+  // Build the date.
+  $variables['created'] = \Drupal::service('date.formatter')->formatInterval(REQUEST_TIME - $comment
+    ->getCreatedTime(), 1);
+
+  // Build the permalink.
+  $uri = $comment->permalink();
+  $attributes = $uri->getOption('attributes') ?: [];
+  $attributes += [
+    'class' => ['permalink'],
+    'rel' => 'bookmark',
+  ];
+  $uri->setOption('attributes', $attributes);
+
+  // Build the 'submitted by' text.
+  $variables['submitted'] = t('@author – <a href=":permalink">@time ago</a>', [
+    '@author' => $variables['author'],
+    ':permalink' => $uri,
+    '@time' => $variables['created'],
+  ]);
+}
+
 // TODO: Figure out what to do with the rest of this from D7.
 // /**
 //  * Implements hook_page_alter().
@@ -117,34 +144,6 @@ function jeffgeerling_theme_suggestions_page_title_alter(array &$suggestions, ar
 //   else {
 //     $variables['region']['node_bottom'] = array();
 //   }
-// }
-
-// /**
-//  * Implements template_preprocess_comment().
-//  */
-// function jeffgeerling_preprocess_comment(&$variables) {
-//   $comment = $variables['elements']['#comment'];
-
-//   // Build the date.
-//   $variables['created'] = format_interval(REQUEST_TIME - $comment->created, 1);
-
-//   // Build the permalink.
-//   $uri = entity_uri('comment', $comment);
-//   $uri['options'] += array('attributes' => array(
-//     'class' => 'permalink',
-//     'rel' => 'bookmark',
-//   ));
-//   $variables['time_ago_link'] = l(
-//     t('@time ago', array('@time' => $variables['created'])),
-//     $uri['path'],
-//     $uri['options']
-//   );
-
-//   // Build the 'submitted by' text.
-//   $variables['submitted'] = t('!author – !time_ago', array(
-//     '!author' => $variables['author'],
-//     '!time_ago' => $variables['time_ago_link'],
-//   ));
 // }
 
 // /**

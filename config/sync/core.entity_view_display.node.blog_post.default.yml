@@ -27,7 +27,7 @@ content:
     third_party_settings: {  }
     region: content
   comment_node_blog_post:
-    label: hidden
+    label: above
     type: comment_default
     weight: 20
     settings:
@@ -45,9 +45,9 @@ content:
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   field_files: true
   field_images: true

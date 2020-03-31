@@ -87,7 +87,8 @@
     color: #fff;
   }
 
-  div.node__submitted {
+  div.node__submitted,
+  div.comment__submitted {
     color: #aaa;
   }
 
@@ -95,7 +96,7 @@
   .front #block-views-blog-block,
   .front #block-block-1,
   .region-node-bottom,
-  #comments {
+  section.field--type-comment {
     background-color: #323232;
   }
 

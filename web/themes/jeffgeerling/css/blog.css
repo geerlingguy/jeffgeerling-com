@@ -87,13 +87,13 @@
 }
 
 /* Comments */
-#comments {
+.field--type-comment {
   background-color: #f6f6ef;
   padding: 1em 1.5em;
   margin: 0;
 }
 
-#comments h2.title {
+.field--type-comment h2.title {
   margin-top: .1em;
 }
 
@@ -122,11 +122,13 @@
   background-color: transparent;
 }
 
-.node__submitted {
+.node__submitted,
+.comment__submitted {
   margin-bottom: .5em;
 }
 
 .node__submitted,
+.comment__submitted,
 .comment .links {
   font-size: .85em;
   color: #999;
@@ -134,7 +136,9 @@
 }
 
 .node__submitted a,
-.node__submitted a:visited {
+.comment__submitted a,
+.node__submitted a:visited
+.comment__submitted a:visited {
   text-decoration: none;
   color: #777;
 }
@@ -142,6 +146,7 @@
 .comment .links a,
 .comment .links a:visited {
   color: #777;
+  text-transform: lowercase;
 }
 
 /* Comment Form */

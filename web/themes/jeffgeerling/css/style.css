@@ -393,7 +393,8 @@ ul.primary {
 }
 
 /* Submitted info */
-p.submitted {
+.node__submitted,
+.comment__submitted {
   color: #777;
   margin: 1em 0;
   font-size: .9em;
@@ -402,6 +403,10 @@ p.submitted {
 /* Footer */
 .node footer {
   margin: 0 0 1em;
+}
+
+.comment footer {
+  margin-bottom: .5em;
 }
 
 /* Links */
