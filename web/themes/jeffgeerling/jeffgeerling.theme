@@ -35,6 +35,7 @@ function jeffgeerling_theme_suggestions_page_title_alter(array &$suggestions, ar
   }
 }
 
+// TODO: Figure out what to do with the rest of this from D7.
 // /**
 //  * Implements hook_page_alter().
 //  */
