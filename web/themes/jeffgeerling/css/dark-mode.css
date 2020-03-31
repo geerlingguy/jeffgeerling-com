@@ -26,6 +26,17 @@
     color: #959cb7;
   }
 
+  form input,
+  form textarea {
+    color: #000;
+    background-color: #fff;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+  }
+
   pre,
   code,
   div.codeblock {
@@ -100,8 +111,8 @@
     background-color: #323232;
   }
 
-  .node-unpublished,
-  .comment-unpublished {
+  .node--unpublished,
+  .comment.unpublished {
     background-color: #331111;
   }
 

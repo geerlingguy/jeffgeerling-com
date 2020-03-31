@@ -6,12 +6,40 @@
  */
 
 /**
- * Implements hook_preprocess_page().
+ * Implements template_preprocess_html().
+ */
+function jeffgeerling_preprocess_html(&$variables) {
+  $head_title = array(
+    'name' => t('Jeff Geerling'),
+    'slogan' => t('Author and Software Developer in St. Louis, MO'),
+  );
+  $variables['head_title_array'] = $head_title;
+  $variables['head_title'] = implode(' - ', $head_title);
+}
+
+/**
+ * Implements template_preprocess_page().
  */
 function jeffgeerling_preprocess_page(&$variables) {
+  // Add front page assets.
   if ($variables['is_front']) {
     $variables['#attached']['library'][] = 'jeffgeerling/front';
   }
+
+  // Add blog assets on comment reply route.
+  if (\Drupal::routeMatch()->getRouteName() == 'comment.reply') {
+    $variables['#attached']['library'][] = 'jeffgeerling/blog';
+  }
+
+  //   // Add project CSS to project view.
+  //   $arg0 = arg(0);
+  //   if ($arg0 == 'projects') {
+  //     drupal_add_css(drupal_get_path('theme', 'jeffgeerling') . '/css/project.css');
+  //   }
+  //   // Add search css to search pages.
+  //   elseif ($arg0 == 'search') {
+  //     drupal_add_css(drupal_get_path('theme', 'jeffgeerling') . '/css/search.css');
+  //   }
 }
 
 /**
@@ -63,39 +91,11 @@ function jeffgeerling_preprocess_comment(&$variables) {
 }
 
 // TODO: Figure out what to do with the rest of this from D7.
-// /**
-//  * Implements hook_page_alter().
-//  */
-// function jeffgeerling_page_alter($page) {
-//   // Add meta tag for viewport, for easier responsive theme design.
-//   $viewport = array(
-//     '#type' => 'html_tag',
-//     '#tag' => 'meta',
-//     '#attributes' => array(
-//       'name' => 'viewport',
-//       'content' => 'width=device-width, initial-scale=1',
-//     ),
-//   );
-//   drupal_add_html_head($viewport, 'viewport');
-// }
-
-// /**
-//  * Implements template_preprocess_html().
-//  */
-// function jeffgeerling_preprocess_html(&$variables) {
-//   if (drupal_is_front_page()) {
-//     $variables['head_title'] = t('Jeff Geerling - Author and Software Developer in St. Louis, MO');
-//   }
-// }
 
 // /**
 //  * Implements template_preprocess_page().
 //  */
 // function jeffgeerling_preprocess_page(&$variables) {
-//   if (drupal_is_front_page()) {
-//     drupal_add_css(drupal_get_path('theme', 'jeffgeerling') . '/css/front.css');
-//   }
-
 //   if (isset($variables['node'])) {
 //     // Resumé page customizations.
 //     if ($variables['node']->nid == 1) {
@@ -107,26 +107,6 @@ function jeffgeerling_preprocess_comment(&$variables) {
 //     elseif ($variables['node']->type == 'project') {
 //       drupal_add_css(drupal_get_path('theme', 'jeffgeerling') . '/css/project.css');
 //     }
-//     elseif ($variables['node']->type == 'blog_post') {
-//       drupal_add_css(drupal_get_path('theme', 'jeffgeerling') . '/css/blog.css');
-//     }
-//   }
-
-//   // Add project CSS to project view.
-//   $arg0 = arg(0);
-//   if ($arg0 == 'projects') {
-//     drupal_add_css(drupal_get_path('theme', 'jeffgeerling') . '/css/project.css');
-//   }
-//   elseif ($arg0 == 'blog' || $arg0 == 'comment') {
-//     drupal_add_css(drupal_get_path('theme', 'jeffgeerling') . '/css/blog.css');
-//   }
-//   elseif ($arg0 == 'search') {
-//     drupal_add_css(drupal_get_path('theme', 'jeffgeerling') . '/css/search.css');
-//   }
-
-//   // Remove breadcrumbs on non-admin pages.
-//   if (arg(0) != 'admin') {
-//     drupal_set_breadcrumb(array());
 //   }
 // }
 
@@ -134,9 +114,6 @@ function jeffgeerling_preprocess_comment(&$variables) {
 //  * Implements template_preprocess_node().
 //  */
 // function jeffgeerling_preprocess_node(&$variables) {
-//   // Update 'submitted by' text.
-//   $variables['submitted'] = t('@date', array('@date' => $variables['date']));
-
 //   // Make the 'node_bottom' region available.
 //   if ($blocks = block_get_blocks_by_region('node_bottom')) {
 //     $variables['region']['node_bottom'] = $blocks;
