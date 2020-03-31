@@ -24,7 +24,6 @@ permissions:
   - 'administer content types'
   - 'administer fields'
   - 'administer filters'
-  - 'administer google analytics'
   - 'administer honeypot'
   - 'administer image styles'
   - 'administer menu'
