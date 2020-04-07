@@ -55,3 +55,13 @@ Any time configuration is changed or any modules or Drupal is upgraded, you shou
     docker-compose exec drupal bash -c 'drush config:export -y'
 
 And then push any changes to the Git repository before deploying the latest code to the site.
+
+### Linting PHP code against Drupal's Coding Standards
+
+You can test the custom code in this project using `phpcs`:
+
+    ./vendor/bin/phpcs \
+      --standard="Drupal,DrupalPractice" -n \
+      --extensions="php,module,inc,install,test,profile,theme" \
+      web/themes/jeffgeerling \
+      web/modules/custom

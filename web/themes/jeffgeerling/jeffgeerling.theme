@@ -37,11 +37,7 @@ function jeffgeerling_preprocess_page(&$variables) {
     $variables['#attached']['library'][] = 'jeffgeerling/blog';
   }
 
-  //   $arg0 = arg(0);
-  //   // Add search css to search pages.
-  //   if ($arg0 == 'search') {
-  //     drupal_add_css(drupal_get_path('theme', 'jeffgeerling') . '/css/search.css');
-  //   }
+  // TODO: Add search.css to search pages.
 }
 
 /**
@@ -55,13 +51,13 @@ function jeffgeerling_preprocess_node(&$variables) {
     case 'project':
       $variables['#attached']['library'][] = 'jeffgeerling/project';
 
-    break;
+      break;
   }
 }
 
 /**
-* Implements hook_views_pre_render().
-*/
+ * Implements hook_views_pre_render().
+ */
 function jeffgeerling_views_pre_render(ViewExecutable $view) {
   if (isset($view) && ($view->storage->id() == 'projects')) {
     $view->element['#attached']['library'][] = 'jeffgeerling/project';
@@ -103,6 +99,8 @@ function jeffgeerling_preprocess_comment(&$variables) {
     '@time' => $variables['created'],
   ]);
 }
+
+// @codingStandardsIgnoreStart
 
 // TODO: Figure out what to do with the rest of this from D7.
 
@@ -146,3 +144,5 @@ function jeffgeerling_preprocess_comment(&$variables) {
 // function jeffgeerling_preprocess_search_api_page_result(&$variables) {
 //   $variables['info'] = format_date($variables['item']->created, 'custom', 'F j, Y');
 // }
+
+// @codingStandardsIgnoreEnd

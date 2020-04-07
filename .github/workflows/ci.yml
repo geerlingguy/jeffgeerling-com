@@ -10,6 +10,32 @@ name: CI
 
 jobs:
 
+  phpcs:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php_version: ['7.3']
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Set up PHP ${{ matrix.php_version }}
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php_version }}
+
+      - name: Install dependencies
+        run: composer install --dev
+
+      - name: Run phpcs with Drupal coding standards.
+        run: >
+          ./vendor/bin/phpcs \
+            --standard="Drupal,DrupalPractice" -n \
+            --extensions="php,module,inc,install,test,profile,theme" \
+            web/themes/jeffgeerling \
+            web/modules/custom
+
   install:
     runs-on: ubuntu-latest
     strategy:
