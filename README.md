@@ -66,8 +66,8 @@ And then push any changes to the Git repository before deploying the latest code
 
 You can test the custom code in this project using `phpcs`:
 
-    ./vendor/bin/phpcs \
+    docker-compose exec drupal bash -c './vendor/bin/phpcs \
       --standard="Drupal,DrupalPractice" -n \
       --extensions="php,module,inc,install,test,profile,theme" \
       web/themes/jeffgeerling \
-      web/modules/custom
+      web/modules/custom'
