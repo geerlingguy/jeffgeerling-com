@@ -1,16 +1,17 @@
-uuid: 6041e7f6-7982-41d9-a9e2-a5d0597edcc8
+uuid: bddd0ba0-f70d-4767-ad24-8d9b2fd711bc
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - node.type.blog_post
+    - node.type.project
     - system.menu.main
   module:
+    - datetime
     - node
     - user
-id: blog
-label: Blog
+id: projects
+label: Projects
 module: views
 description: ''
 tag: ''
@@ -51,15 +52,15 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 6
+          items_per_page: 7
           offset: 0
           id: 0
           total_pages: null
           tags:
             previous: '‹ previous'
             next: 'next ›'
-            first: '« First'
-            last: 'Last »'
+            first: '« first'
+            last: 'last »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -142,7 +143,7 @@ display:
           table: node_field_data
           field: type
           value:
-            blog_post: blog_post
+            project: project
           entity_type: node
           entity_field: type
           plugin_id: bundle
@@ -150,28 +151,42 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          order: DESC
-          entity_type: node
-          entity_field: created
-          plugin_id: date
+        field_project_date_value:
+          id: field_project_date_value
+          table: node__field_project_date
+          field: field_project_date_value
           relationship: none
           group_type: group
           admin_label: ''
+          order: DESC
           exposed: false
           expose:
             label: ''
           granularity: second
-      title: 'Recent Blog Posts'
+          plugin_id: datetime
+      title: Projects
       header: {  }
       footer: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: '_No projects found._'
+            format: markdown
+          plugin_id: text
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      use_more: true
+      use_more_always: true
+      use_more_text: 'All projects »'
       link_url: ''
       link_display: page_1
     cache_metadata:
@@ -183,149 +198,99 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  block_1:
+  block:
     display_plugin: block
-    id: block_1
+    id: block
     display_title: Block
     position: 3
     display_options:
       display_extenders: {  }
-      style:
-        type: html_list
+      title: 'Recent Projects'
       defaults:
+        title: false
         style: false
         row: false
         pager: false
-        use_more: false
-        use_more_always: false
-        use_more_text: false
-        fields: false
+        filters: false
+        filter_groups: false
+      style:
+        type: html_list
       row:
         type: fields
       pager:
         type: some
         options:
-          items_per_page: 3
+          items_per_page: 5
           offset: 0
-      use_more: true
-      use_more_always: true
-      use_more_text: 'All blog posts »'
-      fields:
-        title:
-          id: title
+      filters:
+        status:
+          value: '1'
           table: node_field_data
-          field: title
+          field: status
+          plugin_id: boolean
           entity_type: node
-          entity_field: title
-          label: ''
-          alter:
-            alter_text: false
-            make_link: false
-            absolute: false
-            trim: false
-            word_boundary: false
-            ellipsis: false
-            strip_tags: false
-            html: false
-          hide_empty: false
-          empty_zero: false
-          settings:
-            link_to_entity: true
-          plugin_id: field
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            project: project
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_project_highlight_value:
+          id: field_project_highlight_value
+          table: node__field_project_highlight
+          field: field_project_highlight_value
           relationship: none
           group_type: group
           admin_label: ''
-          exclude: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: timestamp
-          settings:
-            date_format: custom
-            custom_date_format: 'M j'
-            timezone: ''
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          entity_type: node
-          entity_field: created
-          plugin_id: field
-      block_description: 'Blog Posts'
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: boolean
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      block_description: Projects
     cache_metadata:
       max-age: -1
       contexts:
@@ -347,7 +312,7 @@ display:
         type: some
       style:
         type: rss
-      path: blog.xml
+      path: projects.xml
       displays:
         default: default
         page_1: page_1
@@ -359,17 +324,17 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  page_1:
+  page:
     display_plugin: page
-    id: page_1
+    id: page
     display_title: Page
     position: 1
     display_options:
       display_extenders: {  }
-      path: blog
+      path: projects
       menu:
         type: normal
-        title: Blog
+        title: Projects
         menu_name: main
     cache_metadata:
       max-age: -1

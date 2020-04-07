@@ -1,0 +1,31 @@
+uuid: b7c7a364-4661-4647-8897-60bce400211b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1f6d1c7e-1756-423f-96cf-9b263eacead2'
+  module:
+    - block_content
+    - system
+  theme:
+    - jeffgeerling
+id: whatido
+theme: jeffgeerling
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:1f6d1c7e-1756-423f-96cf-9b263eacead2'
+settings:
+  id: 'block_content:1f6d1c7e-1756-423f-96cf-9b263eacead2'
+  label: 'What I Do'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

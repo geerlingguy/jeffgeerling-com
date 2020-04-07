@@ -1,0 +1,30 @@
+uuid: 4cef4d19-5ead-45fb-b70c-049b22e683c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.blog
+  module:
+    - system
+    - views
+  theme:
+    - jeffgeerling
+id: views_block__blog_block_1
+theme: jeffgeerling
+region: sidebar_second
+weight: -3
+provider: null
+plugin: 'views_block:blog-block_1'
+settings:
+  id: 'views_block:blog-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

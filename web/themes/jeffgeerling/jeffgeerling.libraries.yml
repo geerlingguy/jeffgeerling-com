@@ -3,7 +3,13 @@ global-styling:
   css:
     theme:
       css/style.css: {}
-      css/dark-mode.css: {}
+
+dark-mode:
+  version: 1.x
+  css:
+    theme:
+      css/dark-mode.css:
+        weight: 50
 
 front:
   version: 1.x

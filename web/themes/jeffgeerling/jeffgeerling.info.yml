@@ -18,3 +18,4 @@ regions:
 
 libraries:
   - jeffgeerling/global-styling
+  - jeffgeerling/dark-mode

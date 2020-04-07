@@ -1,0 +1,30 @@
+uuid: 21fd3fb2-593e-43af-beb3-92a92783b8e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.projects
+  module:
+    - system
+    - views
+  theme:
+    - jeffgeerling
+id: views_block__projects_block
+theme: jeffgeerling
+region: sidebar_second
+weight: -4
+provider: null
+plugin: 'views_block:projects-block'
+settings:
+  id: 'views_block:projects-block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

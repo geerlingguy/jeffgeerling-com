@@ -103,9 +103,9 @@
     color: #aaa;
   }
 
-  .front #block-views-projects-block,
-  .front #block-views-blog-block,
-  .front #block-block-1,
+  #block-views-block-projects-block,
+  #block-views-block-blog-block-1,
+  #block-whatido,
   .region-node-bottom,
   section.field--type-comment {
     background-color: #323232;
