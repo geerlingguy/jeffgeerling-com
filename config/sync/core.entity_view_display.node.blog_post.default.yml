@@ -29,7 +29,7 @@ content:
   comment_node_blog_post:
     label: above
     type: comment_default
-    weight: 3
+    weight: 20
     settings:
       view_mode: default
       pager_id: 0
