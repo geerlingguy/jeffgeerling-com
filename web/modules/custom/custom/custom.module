@@ -5,6 +5,10 @@
  * Custom functionality for JeffGeerling.com.
  */
 
+use Drupal\migrate\Plugin\MigrationInterface;
+use Drupal\migrate\Plugin\MigrateSourceInterface;
+use Drupal\migrate\Row;
+
 /**
  * Implements hook_migration_plugins_alter().
  *
@@ -16,5 +20,19 @@ function custom_migration_plugins_alter(array &$migrations) {
 
     // Add mapping from filter_markdown to markdown for D7 migratins.
     $migration['process']['filters'][0]['process']['id']['map']['filter_markdown'] = 'markdown';
+  }
+}
+
+/**
+ * Implements hook_migrate_prepare_row().
+ */
+function custom_migrate_prepare_row(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
+  $migration_id = $migration->id();
+
+  // Ignore blocks in the seven theme.
+  if ($migration_id == 'upgrade_d7_block') {
+    if ($row->getSourceProperty('theme') == 'seven') {
+      return FALSE;
+    }
   }
 }
