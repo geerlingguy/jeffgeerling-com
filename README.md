@@ -14,6 +14,12 @@ The first time you start using this project, you need to create your local setti
 
     cp web/sites/default/example.settings.local.php web/sites/default/settings.local.php
 
+If you have PHP and Composer installed locally, you can install project requirements with:
+
+    composer install --dev
+
+Otherwise, you can run this command inside the built Docker container using `docker-compose exec drupal composer install --dev` _after_ you run the next command to bring up the Docker environment.
+
 Make sure you have Docker installed, then run the following command (in the same directory as this README file):
 
     docker-compose up -d
