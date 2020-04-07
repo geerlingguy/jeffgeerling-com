@@ -136,7 +136,7 @@
     background-color: #181818;
   }
 
-  .node-project .field-name-field-project-highlights {
+  .node--type-project .field-name-field-project-highlights {
     background-color: #555;
     color: #efefef;
   }

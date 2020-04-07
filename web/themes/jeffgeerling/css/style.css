@@ -346,6 +346,10 @@ ul.primary {
   white-space: nowrap;
 }
 
+.pager ul {
+  padding: 0;
+}
+
 .pager li {
   padding: .15em;
   margin: 0;
@@ -475,11 +479,12 @@ ul.links li {
     width: 95%;
   }
 
-  .item-list .pager .pager-first,
-  .item-list .pager .pager-ellipsis,
-  .item-list .pager .pager-item,
-  .item-list .pager .pager-current,
-  .item-list .pager .pager-last {
+  .pager .pager__item {
     display: none;
+  }
+
+  .pager .pager__item--previous,
+  .pager .pager__item--next {
+    display: inline;
   }
 }

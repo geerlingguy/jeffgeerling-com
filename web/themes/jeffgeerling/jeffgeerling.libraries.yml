@@ -22,3 +22,9 @@ blog:
   css:
     theme:
       css/blog.css: {}
+
+project:
+  version: 1.x
+  css:
+    theme:
+      css/project.css: {}

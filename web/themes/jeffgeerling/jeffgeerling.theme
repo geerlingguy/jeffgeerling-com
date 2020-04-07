@@ -5,6 +5,8 @@
  * Theme customizations for Jeff Geerling's website.
  */
 
+use Drupal\views\ViewExecutable;
+
 /**
  * Implements template_preprocess_html().
  */
@@ -35,13 +37,9 @@ function jeffgeerling_preprocess_page(&$variables) {
     $variables['#attached']['library'][] = 'jeffgeerling/blog';
   }
 
-  //   // Add project CSS to project view.
   //   $arg0 = arg(0);
-  //   if ($arg0 == 'projects') {
-  //     drupal_add_css(drupal_get_path('theme', 'jeffgeerling') . '/css/project.css');
-  //   }
   //   // Add search css to search pages.
-  //   elseif ($arg0 == 'search') {
+  //   if ($arg0 == 'search') {
   //     drupal_add_css(drupal_get_path('theme', 'jeffgeerling') . '/css/search.css');
   //   }
 }
@@ -54,7 +52,19 @@ function jeffgeerling_preprocess_node(&$variables) {
     case 'blog_post':
       $variables['#attached']['library'][] = 'jeffgeerling/blog';
 
+    case 'project':
+      $variables['#attached']['library'][] = 'jeffgeerling/project';
+
     break;
+  }
+}
+
+/**
+* Implements hook_views_pre_render().
+*/
+function jeffgeerling_views_pre_render(ViewExecutable $view) {
+  if (isset($view) && ($view->storage->id() == 'projects')) {
+    $view->element['#attached']['library'][] = 'jeffgeerling/project';
   }
 }
 
@@ -106,10 +116,6 @@ function jeffgeerling_preprocess_comment(&$variables) {
 //       drupal_add_css(drupal_get_path('theme', 'jeffgeerling') . '/css/resume.css');
 //       drupal_add_css(drupal_get_path('theme', 'jeffgeerling') . '/css/resume-print.css', array('media' => 'print'));
 //       drupal_add_js(drupal_get_path('theme', 'jeffgeerling') . '/js/resume.js');
-//     }
-//     // Project page customizations.
-//     elseif ($variables['node']->type == 'project') {
-//       drupal_add_css(drupal_get_path('theme', 'jeffgeerling') . '/css/project.css');
 //     }
 //   }
 // }
