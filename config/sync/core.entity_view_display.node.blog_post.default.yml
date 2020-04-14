@@ -27,7 +27,7 @@ content:
     third_party_settings: {  }
     region: content
   comment_node_blog_post:
-    label: above
+    label: hidden
     type: comment_default
     weight: 20
     settings:

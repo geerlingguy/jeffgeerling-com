@@ -1,0 +1,35 @@
+uuid: cea01b05-3145-40f5-9a05-a51b3ec2367f
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_path_redirect
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Path Redirect'
+source:
+  plugin: d7_path_redirect
+process:
+  rid: rid
+  uid: uid
+  redirect_source/path: source
+  redirect_source/query:
+    plugin: d7_redirect_source_query
+    source: source_options
+  redirect_redirect/uri:
+    plugin: d7_path_redirect
+    source:
+      - redirect
+      - redirect_options
+  language:
+    plugin: default_value
+    source: language
+    default_value: und
+  status_code: status_code
+destination:
+  plugin: 'entity:redirect'
+migration_dependencies: null
