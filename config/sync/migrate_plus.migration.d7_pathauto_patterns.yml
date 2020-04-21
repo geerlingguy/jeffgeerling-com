@@ -1,0 +1,31 @@
+uuid: 8a06f4e1-bbe8-4fdb-9dd4-e2bc33a68b32
+langcode: en
+status: true
+dependencies: {  }
+id: d7_pathauto_patterns
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Pathauto patterns'
+source:
+  plugin: pathauto_pattern
+  constants:
+    status: true
+    selection_logic: and
+process:
+  status: constants/status
+  id: id
+  label: label
+  type: type
+  pattern: pattern
+  selection_criteria: selection_criteria
+  selection_logic: constants/selection_logic
+destination:
+  plugin: 'entity:pathauto_pattern'
+migration_dependencies:
+  optional:
+    - d7_node_type
