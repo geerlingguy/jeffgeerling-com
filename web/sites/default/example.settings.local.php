@@ -7,6 +7,11 @@
  * Drupal local configuration file.
  */
 
+$settings['trusted_host_patterns'] = [
+  '^www\.jeffgeerling\.com$',
+  '^localhost$',
+];
+
 $settings['hash_salt'] = 'GENERATE_YOUR_OWN_HASH_SALT';
 
 $databases['default']['default'] = [
