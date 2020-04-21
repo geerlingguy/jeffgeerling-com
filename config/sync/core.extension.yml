@@ -6,6 +6,8 @@ module:
   breakpoint: 0
   codefilter: 0
   comment: 0
+  config_filter: 0
+  config_split: 0
   ctools: 0
   custom: 0
   datetime: 0
