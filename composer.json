@@ -26,6 +26,7 @@
         "drupal/migrate_plus": "^4.2",
         "drupal/migrate_tools": "^4.5",
         "drupal/migrate_upgrade": "^3",
+        "drupal/pathauto": "^1.6",
         "drupal/redirect": "^1.5",
         "drush/drush": "^9.0"
     },
