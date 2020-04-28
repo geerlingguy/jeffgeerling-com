@@ -131,6 +131,9 @@ AddEncoding gzip svgz
   # Rewrite install.php during installation to see if mod_rewrite is working
   RewriteRule ^core/install.php core/install.php?rewrite=ok [QSA,L]
 
+  # Redirect requests from /sites/jeffgeerling.com to /sites/default
+  RewriteRule ^sites/jeffgeerling\.com/(.*)$ /sites/default/$1 [L,NC,R=301]
+
   # Pass all requests not referring directly to files in the filesystem to
   # index.php.
   RewriteCond %{REQUEST_FILENAME} !-f
