@@ -745,6 +745,11 @@ $settings['entity_update_batch_size'] = 50;
 $settings['entity_update_backup'] = TRUE;
 
 /**
+ * Config Split settings.
+ */
+$config['config_split.config_split.dev']['status'] = FALSE;
+
+/**
  * Load local development override configuration, if available.
  *
  * Use settings.local.php to override variables on secondary (staging,
