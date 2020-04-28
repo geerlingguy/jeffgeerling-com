@@ -107,7 +107,7 @@ function jeffgeerling_preprocess_comment(&$variables) {
   // Build the 'submitted by' text.
   $variables['submitted'] = t('@author – <a href=":permalink">@time ago</a>', [
     '@author' => $variables['author'],
-    ':permalink' => $uri,
+    ':permalink' => $uri->toString(),
     '@time' => $variables['created'],
   ]);
 }
