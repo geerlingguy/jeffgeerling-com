@@ -13,7 +13,7 @@ url_alias: filter_by_comments
 weight: 1
 min_count: 1
 show_only_one_result: false
-field_identifier: comment_node_blog_post
+field_identifier: comment_count
 facet_source_id: 'search_api:views_page__search__page'
 widget:
   type: checkbox
@@ -30,7 +30,7 @@ query_operator: or
 use_hierarchy: false
 expand_hierarchy: false
 enable_parent_when_child_gets_disabled: true
-hard_limit: 20
+hard_limit: 0
 exclude: false
 only_visible_when_facet_source_is_visible: true
 processor_configs:
@@ -39,19 +39,20 @@ processor_configs:
     weights:
       sort: 20
     settings:
-      sort: DESC
-  count_widget_order:
-    processor_id: count_widget_order
-    weights:
-      sort: 30
-    settings:
-      sort: DESC
+      sort: ASC
   display_value_widget_order:
     processor_id: display_value_widget_order
     weights:
       sort: 40
     settings:
-      sort: ASC
+      sort: DESC
+  exclude_specified_items:
+    processor_id: exclude_specified_items
+    weights:
+      build: 50
+    settings:
+      exclude: '0'
+      regex: false
   url_processor_handler:
     processor_id: url_processor_handler
     weights:

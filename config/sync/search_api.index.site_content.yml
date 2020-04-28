@@ -62,10 +62,10 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.body
-  comment_node_blog_post:
-    label: Comments
+  comment_count:
+    label: 'Comments » Number of comments'
     datasource_id: 'entity:node'
-    property_path: comment_node_blog_post
+    property_path: 'comment_node_blog_post:comment_count'
     type: integer
     dependencies:
       config:

@@ -30,7 +30,7 @@ query_operator: or
 use_hierarchy: false
 expand_hierarchy: false
 enable_parent_when_child_gets_disabled: true
-hard_limit: 50
+hard_limit: 0
 exclude: false
 only_visible_when_facet_source_is_visible: true
 processor_configs:
@@ -39,13 +39,7 @@ processor_configs:
     weights:
       sort: 20
     settings:
-      sort: DESC
-  count_widget_order:
-    processor_id: count_widget_order
-    weights:
-      sort: 30
-    settings:
-      sort: DESC
+      sort: ASC
   date_item:
     processor_id: date_item
     weights:
@@ -59,7 +53,7 @@ processor_configs:
     weights:
       sort: 40
     settings:
-      sort: ASC
+      sort: DESC
   url_processor_handler:
     processor_id: url_processor_handler
     weights:
