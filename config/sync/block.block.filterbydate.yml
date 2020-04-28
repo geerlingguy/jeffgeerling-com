@@ -1,0 +1,29 @@
+uuid: 3f78ef23-8149-4f71-9e3b-fe6fb1500931
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.filter_by_date
+  module:
+    - facets
+    - system
+  theme:
+    - jeffgeerling
+id: filterbydate
+theme: jeffgeerling
+region: sidebar_second
+weight: -4
+provider: null
+plugin: 'facet_block:filter_by_date'
+settings:
+  id: 'facet_block:filter_by_date'
+  label: 'Filter by date'
+  provider: facets
+  label_display: visible
+  block_id: filterbydate
+visibility:
+  request_path:
+    id: request_path
+    pages: "/search\r\n/search/*"
+    negate: false
+    context_mapping: {  }

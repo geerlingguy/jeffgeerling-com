@@ -6,6 +6,7 @@
  */
 
 use Drupal\views\ViewExecutable;
+use Drupal\Core\Form\FormStateInterface;
 
 /**
  * Implements template_preprocess_html().
@@ -59,8 +60,19 @@ function jeffgeerling_preprocess_node(&$variables) {
  * Implements hook_views_pre_render().
  */
 function jeffgeerling_views_pre_render(ViewExecutable $view) {
-  if (isset($view) && ($view->storage->id() == 'projects')) {
-    $view->element['#attached']['library'][] = 'jeffgeerling/project';
+  if (isset($view)) {
+    switch ($view->storage->id()) {
+      case 'projects':
+        $view->element['#attached']['library'][] = 'jeffgeerling/project';
+        break;
+
+      case 'search':
+        $view->element['#attached']['library'][] = 'jeffgeerling/search';
+        break;
+
+      default:
+        break;
+    }
   }
 }
 
@@ -100,6 +112,13 @@ function jeffgeerling_preprocess_comment(&$variables) {
   ]);
 }
 
+/**
+ * Implements theme_form_form_id_alter().
+ */
+function jeffgeerling_form_views_exposed_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $form['search_api_fulltext']['#placeholder'] = t('Enter your keywords');
+}
+
 // @codingStandardsIgnoreStart
 
 // TODO: Figure out what to do with the rest of this from D7.
@@ -129,20 +148,6 @@ function jeffgeerling_preprocess_comment(&$variables) {
 //   else {
 //     $variables['region']['node_bottom'] = array();
 //   }
-// }
-
-// /**
-//  * Implements template_preprocess_search_result().
-//  */
-// function jeffgeerling_preprocess_search_result(&$variables) {
-//   $variables['info'] = format_date($variables['result']['date'], 'custom', 'F j, Y');
-// }
-
-// /**
-//  * Implements template_preprocess_search_api_page_result().
-//  */
-// function jeffgeerling_preprocess_search_api_page_result(&$variables) {
-//   $variables['info'] = format_date($variables['item']->created, 'custom', 'F j, Y');
 // }
 
 // @codingStandardsIgnoreEnd

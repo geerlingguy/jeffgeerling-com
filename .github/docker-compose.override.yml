@@ -5,3 +5,5 @@ services:
   drupal:
     volumes:
       - './:/var/www/html:rw'
+    environment:
+      CI: 'true'

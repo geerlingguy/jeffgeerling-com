@@ -19,4 +19,6 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
-hidden: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

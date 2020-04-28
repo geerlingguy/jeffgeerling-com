@@ -12,7 +12,7 @@ dependencies:
 id: views_block__projects_block
 theme: jeffgeerling
 region: sidebar_second
-weight: -4
+weight: -6
 provider: null
 plugin: 'views_block:projects-block'
 settings:

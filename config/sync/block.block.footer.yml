@@ -1,0 +1,25 @@
+uuid: 9c30c90b-6e5e-4186-8331-29fbb556a97b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a057c495-0ebe-4d68-989b-7e80a9b41045'
+  module:
+    - block_content
+  theme:
+    - jeffgeerling
+id: footer
+theme: jeffgeerling
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:a057c495-0ebe-4d68-989b-7e80a9b41045'
+settings:
+  id: 'block_content:a057c495-0ebe-4d68-989b-7e80a9b41045'
+  label: Footer
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

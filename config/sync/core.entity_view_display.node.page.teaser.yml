@@ -32,3 +32,5 @@ content:
 hidden:
   comment_node_page: true
   field_files: true
+  langcode: true
+  search_api_excerpt: true
