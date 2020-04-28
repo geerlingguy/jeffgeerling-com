@@ -83,4 +83,8 @@ jobs:
 
       - name: Test loading the home page.
         run: >
+          curl http://localhost/
+
+      - name: Verify the home page has the site name in it.
+        run: >
           curl -s http://localhost/ | grep "Jeff Geerling"
