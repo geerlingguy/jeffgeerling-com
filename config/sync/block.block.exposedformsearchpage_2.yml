@@ -1,0 +1,29 @@
+uuid: b03f0a9b-fb69-494c-bd59-32585f7131ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search
+  module:
+    - system
+    - views
+  theme:
+    - jeffgeerling
+id: exposedformsearchpage_2
+theme: jeffgeerling
+region: footer
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:search-page'
+settings:
+  id: 'views_exposed_filter_block:search-page'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: "/search\r\n/search/*"
+    negate: true
+    context_mapping: {  }

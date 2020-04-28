@@ -7,10 +7,10 @@ dependencies:
     - node
     - search_api
   config:
+    - field.storage.node.body
     - field.storage.node.comment_node_blog_post
     - field.storage.node.field_tags
     - search_api.server.hosted_apache_solr
-    - core.entity_view_mode.node.full
 third_party_settings:
   search_api_solr:
     finalize: false
@@ -54,6 +54,14 @@ name: 'Site Content'
 description: ''
 read_only: false
 field_settings:
+  body_processed:
+    label: 'Body » Processed text'
+    datasource_id: 'entity:node'
+    property_path: 'body:processed'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
   comment_node_blog_post:
     label: Comments
     datasource_id: 'entity:node'
@@ -85,18 +93,6 @@ field_settings:
     indexed_locked: true
     type_locked: true
     hidden: true
-  rendered_item:
-    label: 'Rendered HTML output'
-    property_path: rendered_item
-    type: text
-    configuration:
-      roles:
-        anonymous: anonymous
-      view_mode:
-        'entity:node':
-          blog_post: full
-          page: full
-          project: full
   status:
     label: status
     datasource_id: 'entity:node'
@@ -111,7 +107,8 @@ field_settings:
     label: Title
     datasource_id: 'entity:node'
     property_path: title
-    type: string
+    type: text
+    boost: !!float 5
     dependencies:
       module:
         - node
@@ -153,7 +150,7 @@ processor_settings:
   html_filter:
     all_fields: true
     fields:
-      - rendered_item
+      - body_processed
       - title
     title: true
     alt: true

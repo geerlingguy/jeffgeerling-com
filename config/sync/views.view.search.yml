@@ -322,8 +322,7 @@ display:
             group_items: {  }
           parse_mode: terms
           min_length: null
-          fields:
-            - rendered_item
+          fields: {  }
           plugin_id: search_api_fulltext
       sorts: {  }
       title: Search
