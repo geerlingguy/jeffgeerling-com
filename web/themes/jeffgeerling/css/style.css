@@ -237,34 +237,42 @@ header {
   text-decoration: none;
 }
 
-/* TODO: Search pages */
-#sidebar-second {
-  float: right;
-  width: 220px;
-  margin-left: -220px;
-}
-
-.sidebar-second #content .section {
-  padding-right: 240px;
-}
-
-#footer {
+/* Footer. */
+.region-footer {
+  clear: both;
   color: #aaa;
   font-size: .85em;
   margin: 1.5em 0 0;
+  padding-top: 1.5em;
   text-align: center;
 }
 
-#footer a {
+.region-footer a {
   color: #888;
 }
 
-#footer p:first-child {
+.region-footer .form-item {
+  display: inline-block;
+  float: none;
+  margin: 0 auto;
+}
+
+.region-footer p:first-child {
   margin-top: 0;
 }
 
-#footer p:last-child {
+.region-footer p:last-child {
   margin-bottom: 0;
+}
+
+/* Search form. */
+#views-exposed-form-search-page,
+#views-exposed-form-search-page .form-actions {
+  display: inline-block;
+}
+
+#views-exposed-form-search-page label {
+  display: none;
 }
 
 /* Navigation --------------------------------------------------------------- */
@@ -379,15 +387,6 @@ ul.primary {
   text-align: center;
 }
 
-/* General search styles */
-.form-item-keys-1 {
-  display: inline-block;
-}
-
-.form-item-keys-1 input.form-text {
-  width: 12em;
-}
-
 /* General Node Styles ------------------------------------------------------ */
 /* Header */
 .node header h2 a {
@@ -463,14 +462,6 @@ ul.links li {
 
   nav#block-mainmenu ul {
     text-align: center;
-  }
-
-  #sidebar-second {
-    display: none;
-  }
-
-  .sidebar-second #content .section {
-    padding-right: 0;
   }
 
   #block-jeffgeerling-system-main > .block-content {

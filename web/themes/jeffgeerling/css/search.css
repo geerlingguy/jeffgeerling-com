@@ -5,12 +5,12 @@
  */
 
 /* Search form. */
-#views-exposed-form-search-page,
-#views-exposed-form-search-page .form-actions {
+.block-views-exposed-filter-blocksearch-page,
+.block-views-exposed-filter-blocksearch-page .form-actions {
   display: inline-block;
 }
 
-#views-exposed-form-search-page label {
+.block-views-exposed-filter-blocksearch-page label {
   display: none;
 }
 
@@ -44,11 +44,58 @@ ol.search-results {
 }
 
 /* Facets. */
-.block-facetapi {
+.layout-content {
+  padding-right: 240px;
+  float: left;
+}
+
+.layout-sidebar-second {
+  float: right;
+  width: 220px;
+  margin-left: -220px;
+}
+
+.facet-item label {
+  display: inline;
+  font-weight: normal;
+}
+
+.block-facets {
   font-size: .8em;
 }
 
-.block-facetapi .item-list li {
+.block-facets .facets-widget-checkbox ul {
+  padding-left: 0;
+}
+
+.block-facets li.facet-item {
   margin: 0;
   list-style: none;
+}
+
+.block-facets li.facet-item,
+.block-facets li.facet-item label {
+  cursor: pointer;
+}
+
+.block-facets li.facet-item label:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles -------------------------------------------------------- */
+@media screen and (max-width: 800px) {
+  main .layout-content {
+    padding-right: inherit;
+    float: none;
+  }
+
+  main .layout-sidebar-second {
+    float: none;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .views-exposed-form {
+    text-align: center;
+  }
 }

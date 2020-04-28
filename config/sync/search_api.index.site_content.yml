@@ -7,6 +7,7 @@ dependencies:
     - node
     - search_api
   config:
+    - field.storage.node.comment_node_blog_post
     - field.storage.node.field_tags
     - search_api.server.hosted_apache_solr
     - core.entity_view_mode.node.full
@@ -53,6 +54,22 @@ name: 'Site Content'
 description: ''
 read_only: false
 field_settings:
+  comment_node_blog_post:
+    label: Comments
+    datasource_id: 'entity:node'
+    property_path: comment_node_blog_post
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.comment_node_blog_post
+  created:
+    label: 'Authored on'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - node
   field_tags:
     label: Tags
     datasource_id: 'entity:node'
@@ -81,7 +98,7 @@ field_settings:
           page: full
           project: full
   status:
-    label: null
+    label: status
     datasource_id: 'entity:node'
     property_path: status
     type: boolean
@@ -99,7 +116,7 @@ field_settings:
       module:
         - node
   uid:
-    label: null
+    label: uid
     datasource_id: 'entity:node'
     property_path: uid
     type: integer
