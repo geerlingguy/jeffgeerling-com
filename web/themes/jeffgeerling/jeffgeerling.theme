@@ -13,7 +13,7 @@ use Drupal\Core\Form\FormStateInterface;
  */
 function jeffgeerling_preprocess_html(&$variables) {
   // Override the page title on the front page.
-  if ($variables['is_front']) {
+  if (isset($variables['is_front']) && $variables['is_front']) {
     $site_config = \Drupal::config('system.site');
     $head_title = [
       'name' => $site_config->get('name'),
