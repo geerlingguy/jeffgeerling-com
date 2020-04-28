@@ -1,0 +1,252 @@
+uuid: 322d6a2b-bb43-407c-83cf-4fa0baefb1f8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: NuShREsfSLjRv8fFWkRrDntR7Z7WRRqB2FyHdeRWyQM
+id: text_en_7_0_0
+label: 'English Text Field'
+minimum_solr_version: 7.0.0
+custom_code: ''
+field_type_language_code: en
+domains: {  }
+field_type:
+  name: text_en
+  class: solr.TextField
+  positionIncrementGap: 100
+  analyzers:
+    -
+      type: index
+      charFilters:
+        -
+          class: solr.MappingCharFilterFactory
+          mapping: accents_en.txt
+      tokenizer:
+        class: solr.WhitespaceTokenizerFactory
+      filters:
+        -
+          class: solr.StopFilterFactory
+          ignoreCase: true
+          words: stopwords_en.txt
+        -
+          class: solr.WordDelimiterGraphFilterFactory
+          catenateNumbers: 1
+          generateNumberParts: 1
+          protected: protwords_en.txt
+          splitOnCaseChange: 0
+          generateWordParts: 1
+          preserveOriginal: 1
+          catenateAll: 0
+          catenateWords: 1
+        -
+          class: solr.LengthFilterFactory
+          min: 2
+          max: 100
+        -
+          class: solr.LowerCaseFilterFactory
+        -
+          class: solr.SnowballPorterFilterFactory
+          language: English
+          protected: protwords_en.txt
+        -
+          class: solr.RemoveDuplicatesTokenFilterFactory
+    -
+      type: query
+      charFilters:
+        -
+          class: solr.MappingCharFilterFactory
+          mapping: accents_en.txt
+      tokenizer:
+        class: solr.WhitespaceTokenizerFactory
+      filters:
+        -
+          class: solr.SynonymGraphFilterFactory
+          synonyms: synonyms_en.txt
+          expand: true
+          ignoreCase: true
+        -
+          class: solr.StopFilterFactory
+          ignoreCase: true
+          words: stopwords_en.txt
+        -
+          class: solr.WordDelimiterGraphFilterFactory
+          catenateNumbers: 0
+          generateNumberParts: 1
+          protected: protwords_en.txt
+          splitOnCaseChange: 0
+          generateWordParts: 1
+          preserveOriginal: 1
+          catenateAll: 0
+          catenateWords: 0
+        -
+          class: solr.LengthFilterFactory
+          min: 2
+          max: 100
+        -
+          class: solr.LowerCaseFilterFactory
+        -
+          class: solr.SnowballPorterFilterFactory
+          language: English
+          protected: protwords_en.txt
+        -
+          class: solr.RemoveDuplicatesTokenFilterFactory
+unstemmed_field_type:
+  name: text_unstemmed_en
+  class: solr.TextField
+  positionIncrementGap: 100
+  analyzers:
+    -
+      type: index
+      charFilters:
+        -
+          class: solr.MappingCharFilterFactory
+          mapping: accents_en.txt
+      tokenizer:
+        class: solr.WhitespaceTokenizerFactory
+      filters:
+        -
+          class: solr.StopFilterFactory
+          ignoreCase: true
+          words: stopwords_en.txt
+        -
+          class: solr.WordDelimiterGraphFilterFactory
+          catenateNumbers: 1
+          generateNumberParts: 1
+          protected: protwords_en.txt
+          splitOnCaseChange: 0
+          generateWordParts: 1
+          preserveOriginal: 1
+          catenateAll: 0
+          catenateWords: 1
+        -
+          class: solr.LengthFilterFactory
+          min: 2
+          max: 100
+        -
+          class: solr.LowerCaseFilterFactory
+        -
+          class: solr.RemoveDuplicatesTokenFilterFactory
+    -
+      type: query
+      charFilters:
+        -
+          class: solr.MappingCharFilterFactory
+          mapping: accents_en.txt
+      tokenizer:
+        class: solr.WhitespaceTokenizerFactory
+      filters:
+        -
+          class: solr.SynonymGraphFilterFactory
+          synonyms: synonyms_en.txt
+          expand: true
+          ignoreCase: true
+        -
+          class: solr.StopFilterFactory
+          ignoreCase: true
+          words: stopwords_en.txt
+        -
+          class: solr.WordDelimiterGraphFilterFactory
+          catenateNumbers: 0
+          generateNumberParts: 1
+          protected: protwords_en.txt
+          splitOnCaseChange: 0
+          generateWordParts: 1
+          preserveOriginal: 1
+          catenateAll: 0
+          catenateWords: 0
+        -
+          class: solr.LengthFilterFactory
+          min: 2
+          max: 100
+        -
+          class: solr.LowerCaseFilterFactory
+        -
+          class: solr.RemoveDuplicatesTokenFilterFactory
+spellcheck_field_type: null
+collated_field_type:
+  name: collated_en
+  class: solr.ICUCollationField
+  locale: en
+  strength: primary
+  caseLevel: false
+solr_configs:
+  searchComponents:
+    -
+      name: spellcheck
+      class: solr.SpellCheckComponent
+      lst:
+        -
+          name: spellchecker
+          str:
+            -
+              name: name
+              VALUE: en
+            -
+              name: field
+              VALUE: spellcheck_en
+            -
+              name: classname
+              VALUE: solr.DirectSolrSpellChecker
+            -
+              name: distanceMeasure
+              VALUE: internal
+            -
+              name: accuracy
+              VALUE: '0.5'
+            -
+              name: maxEdits
+              VALUE: '2'
+            -
+              name: minPrefix
+              VALUE: '1'
+            -
+              name: maxInspections
+              VALUE: '5'
+            -
+              name: minQueryLength
+              VALUE: '4'
+            -
+              name: maxQueryFrequency
+              VALUE: '0.01'
+            -
+              name: thresholdTokenFrequency
+              VALUE: '.01'
+            -
+              name: onlyMorePopular
+              VALUE: 'true'
+    -
+      name: suggest
+      class: solr.SuggestComponent
+      lst:
+        -
+          name: suggester
+          str:
+            -
+              name: name
+              VALUE: en
+            -
+              name: lookupImpl
+              VALUE: AnalyzingInfixLookupFactory
+            -
+              name: dictionaryImpl
+              VALUE: DocumentDictionaryFactory
+            -
+              name: field
+              VALUE: twm_suggest
+            -
+              name: suggestAnalyzerFieldType
+              VALUE: text_en
+            -
+              name: contextField
+              VALUE: sm_context_tags
+            -
+              name: buildOnCommit
+              VALUE: 'true'
+            -
+              name: buildOnStartup
+              VALUE: 'false'
+text_files:
+  stopwords: "a\nan\nand\nare\nas\nat\nbe\nbut\nby\nfor\nif\nin\ninto\nis\nit\nno\nnot\nof\non\nor\ns\nsuch\nt\nthat\nthe\ntheir\nthen\nthere\nthese\nthey\nthis\nto\nwas\nwill\nwith\n"
+  synonyms: "drupal, durpal\n"
+  protwords: ''
+  accents: "# À => A\n\"\\u00C0\" => \"A\"\n# Á => A\n\"\\u00C1\" => \"A\"\n# Â => A\n\"\\u00C2\" => \"A\"\n# Ã => A\n\"\\u00C3\" => \"A\"\n# Ä => A\n\"\\u00C4\" => \"A\"\n# Å => A\n\"\\u00C5\" => \"A\"\n# Ą => A\n\"\\u0104\" => \"A\"\n# Æ => AE\n\"\\u00C6\" => \"AE\"\n# Ç => C\n\"\\u00C7\" => \"C\"\n# Ć => C\n\"\\U0106\" => \"C\"\n# È => E\n\"\\u00C8\" => \"E\"\n# É => E\n\"\\u00C9\" => \"E\"\n# Ê => E\n\"\\u00CA\" => \"E\"\n# Ë => E\n\"\\u00CB\" => \"E\"\n# Ę => E\n\"\\u0118\" => \"E\"\n# Ì => I\n\"\\u00CC\" => \"I\"\n# Í => I\n\"\\u00CD\" => \"I\"\n# Î => I\n\"\\u00CE\" => \"I\"\n# Ï => I\n\"\\u00CF\" => \"I\"\n# Ĳ => IJ\n\"\\u0132\" => \"IJ\"\n# Ð => D\n\"\\u00D0\" => \"D\"\n# Ł => L\n\"\\u0141\" => \"L\"\n# Ñ => N\n\"\\u00D1\" => \"N\"\n# Ń => N\n\"\\u0143\" => \"N\"\n# Ò => O\n\"\\u00D2\" => \"O\"\n# Ó => O\n\"\\u00D3\" => \"O\"\n# Ô => O\n\"\\u00D4\" => \"O\"\n# Õ => O\n\"\\u00D5\" => \"O\"\n# Ö => O\n\"\\u00D6\" => \"O\"\n# Ø => O\n\"\\u00D8\" => \"O\"\n# Œ => OE\n\"\\u0152\" => \"OE\"\n# Þ\n\"\\u00DE\" => \"TH\"\n# Ù => U\n\"\\u00D9\" => \"U\"\n# Ú => U\n\"\\u00DA\" => \"U\"\n# Û => U\n\"\\u00DB\" => \"U\"\n# Ü => U\n\"\\u00DC\" => \"U\"\n# Ý => Y\n\"\\u00DD\" => \"Y\"\n# Ÿ => Y\n\"\\u0178\" => \"Y\"\n# à => a\n\"\\u00E0\" => \"a\"\n# á => a\n\"\\u00E1\" => \"a\"\n# â => a\n\"\\u00E2\" => \"a\"\n# ã => a\n\"\\u00E3\" => \"a\"\n# ä => a\n\"\\u00E4\" => \"a\"\n# å => a\n\"\\u00E5\" => \"a\"\n# æ => ae\n\"\\u00E6\" => \"ae\"\n# ç => c\n\"\\u00E7\" => \"c\"\n# è => e\n\"\\u00E8\" => \"e\"\n# é => e\n\"\\u00E9\" => \"e\"\n# ê => e\n\"\\u00EA\" => \"e\"\n# ë => e\n\"\\u00EB\" => \"e\"\n# ì => i\n\"\\u00EC\" => \"i\"\n# í => i\n\"\\u00ED\" => \"i\"\n# î => i\n\"\\u00EE\" => \"i\"\n# ï => i\n\"\\u00EF\" => \"i\"\n# ĳ => ij\n\"\\u0133\" => \"ij\"\n# ð => d\n\"\\u00F0\" => \"d\"\n# ñ => n\n\"\\u00F1\" => \"n\"\n# ò => o\n\"\\u00F2\" => \"o\"\n# ó => o\n\"\\u00F3\" => \"o\"\n# ô => o\n\"\\u00F4\" => \"o\"\n# õ => o\n\"\\u00F5\" => \"o\"\n# ö => o\n\"\\u00F6\" => \"o\"\n# ø => o\n\"\\u00F8\" => \"o\"\n# œ => oe\n\"\\u0153\" => \"oe\"\n# ß => ss\n\"\\u00DF\" => \"ss\"\n# Ś => S\n\"\\u015a\" => \"S\"\n# þ => th\n\"\\u00FE\" => \"th\"\n# ù => u\n\"\\u00F9\" => \"u\"\n# ú => u\n\"\\u00FA\" => \"u\"\n# û => u\n\"\\u00FB\" => \"u\"\n# ü => u\n\"\\u00FC\" => \"u\"\n# ý => y\n\"\\u00FD\" => \"y\"\n# ÿ => y\n\"\\u00FF\" => \"y\"\n# Ź => Z\n\"\\u0179\" => \"Z\"\n# Ż => Z\n\"\\u017b\" => \"Z\"\n# ﬀ => ff\n\"\\uFB00\" => \"ff\"\n# ﬁ => fi\n\"\\uFB01\" => \"fi\"\n# ﬂ => fl\n\"\\uFB02\" => \"fl\"\n# ﬃ => ffi\n\"\\uFB03\" => \"ffi\"\n# ﬄ => ffl\n\"\\uFB04\" => \"ffl\"\n# ﬅ => st\n\"\\uFB05\" => \"st\"\n# ﬆ => st\n\"\\uFB06\" => \"st\"\n"

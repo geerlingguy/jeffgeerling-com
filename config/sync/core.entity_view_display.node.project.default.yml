@@ -72,3 +72,5 @@ hidden:
   field_project_highlight: true
   field_project_highlights: true
   field_project_type: true
+  langcode: true
+  search_api_excerpt: true

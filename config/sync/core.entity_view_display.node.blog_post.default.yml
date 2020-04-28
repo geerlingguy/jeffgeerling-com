@@ -51,3 +51,5 @@ content:
 hidden:
   field_files: true
   field_images: true
+  langcode: true
+  search_api_excerpt: true
