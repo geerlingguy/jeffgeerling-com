@@ -8,14 +8,14 @@ dependencies:
     - search_api_solr.solr_cache.cache_filter_default_7_0_0
     - search_api_solr.solr_cache.cache_persegfilter_default_7_0_0
     - search_api_solr.solr_cache.cache_queryresult_default_7_0_0
-    - search_api_solr.solr_field_type.text_edge_und_6_0_0
+    - search_api_solr.solr_field_type.text_edge_und_7_0_0
     - search_api_solr.solr_field_type.text_edgestring_und_6_0_0
-    - search_api_solr.solr_field_type.text_en_6_0_0
-    - search_api_solr.solr_field_type.text_ngram_und_6_0_0
+    - search_api_solr.solr_field_type.text_en_7_0_0
+    - search_api_solr.solr_field_type.text_ngram_und_7_0_0
     - search_api_solr.solr_field_type.text_ngramstring_und_6_0_0
     - search_api_solr.solr_field_type.text_phonetic_en_7_0_0
     - search_api_solr.solr_field_type.text_phonetic_und_7_0_0
-    - search_api_solr.solr_field_type.text_und_6_0_0
+    - search_api_solr.solr_field_type.text_und_7_0_0
     - search_api_solr.solr_request_dispatcher.request_dispatcher_httpcachingnever_default_7_0_0
     - search_api_solr.solr_request_handler.request_handler_autocomplete_default_7_0_0
     - search_api_solr.solr_request_handler.request_handler_extract_default_7_0_0

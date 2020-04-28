@@ -59,8 +59,19 @@ function jeffgeerling_preprocess_node(&$variables) {
  * Implements hook_views_pre_render().
  */
 function jeffgeerling_views_pre_render(ViewExecutable $view) {
-  if (isset($view) && ($view->storage->id() == 'projects')) {
-    $view->element['#attached']['library'][] = 'jeffgeerling/project';
+  if (isset($view)) {
+    switch ($view->storage->id()) {
+      case 'projects':
+        $view->element['#attached']['library'][] = 'jeffgeerling/project';
+        break;
+
+      case 'search':
+        $view->element['#attached']['library'][] = 'jeffgeerling/search';
+        break;
+
+      default:
+        break;
+    }
   }
 }
 

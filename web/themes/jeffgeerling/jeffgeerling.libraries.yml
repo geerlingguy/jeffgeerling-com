@@ -28,3 +28,9 @@ project:
   css:
     theme:
       css/project.css: {}
+
+search:
+  version: 1.x
+  css:
+    theme:
+      css/search.css: {}

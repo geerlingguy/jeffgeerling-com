@@ -5,11 +5,12 @@
  */
 
 /* Search form. */
-.form-item-keys-1 {
+#views-exposed-form-search-page,
+#views-exposed-form-search-page .form-actions {
   display: inline-block;
 }
 
-.form-item-keys-1 label {
+#views-exposed-form-search-page label {
   display: none;
 }
 
