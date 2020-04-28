@@ -29,6 +29,7 @@
         "drupal/migrate_upgrade": "^3",
         "drupal/pathauto": "^1.6",
         "drupal/redirect": "^1.5",
+        "drupal/search_api_solr": "^3.9",
         "drush/drush": "^9.0"
     },
     "require-dev": {
