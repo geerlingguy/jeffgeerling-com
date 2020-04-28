@@ -750,6 +750,13 @@ $settings['entity_update_backup'] = TRUE;
 $config['config_split.config_split.dev']['status'] = FALSE;
 
 /**
+ * Load CI environment override configuration, if available.
+ */
+if (getenv('CI') && file_exists($app_root . '/' . $site_path . '/settings.ci.php')) {
+  include $app_root . '/' . $site_path . '/settings.ci.php';
+}
+
+/**
  * Load local development override configuration, if available.
  *
  * Use settings.local.php to override variables on secondary (staging,
