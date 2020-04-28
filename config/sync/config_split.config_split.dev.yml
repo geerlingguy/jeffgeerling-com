@@ -6,9 +6,12 @@ id: dev
 label: Dev
 description: ''
 folder: ../config/dev
-module: {  }
+module:
+  devel: 0
 theme: {  }
-blacklist: {  }
+blacklist:
+  - devel.settings
+  - devel.toolbar.settings
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
