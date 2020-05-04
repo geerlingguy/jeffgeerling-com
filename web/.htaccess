@@ -134,6 +134,10 @@ AddEncoding gzip svgz
   # Redirect requests from /sites/jeffgeerling.com to /sites/default
   RewriteRule ^sites/jeffgeerling\.com/(.*)$ /sites/default/$1 [L,NC,R=301]
 
+  # Prevent hotlinking from domains that are abusing the privilege.
+  RewriteCond %{HTTP_REFERER} clk\.com-ssl\.biz [NC]
+  RewriteRule .* - [F]
+
   # Pass all requests not referring directly to files in the filesystem to
   # index.php.
   RewriteCond %{REQUEST_FILENAME} !-f
