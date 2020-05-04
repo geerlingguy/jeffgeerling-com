@@ -12,8 +12,10 @@ use Drupal\Core\Form\FormStateInterface;
  * Implements template_preprocess_html().
  */
 function jeffgeerling_preprocess_html(&$variables) {
+  $path_matcher = \Drupal::service('path.matcher');
+
   // Override the page title on the front page.
-  if (isset($variables['is_front']) && $variables['is_front']) {
+  if ($path_matcher->isFrontPage()) {
     $site_config = \Drupal::config('system.site');
     $head_title = [
       'name' => $site_config->get('name'),
