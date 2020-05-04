@@ -9,7 +9,7 @@ _core:
 id: jeffgeerling_local_tasks
 theme: jeffgeerling
 region: content
-weight: -3
+weight: -5
 provider: null
 plugin: local_tasks_block
 settings:

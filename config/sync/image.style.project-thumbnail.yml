@@ -5,8 +5,8 @@ dependencies: {  }
 name: project-thumbnail
 label: project-thumbnail
 effects:
-  d0f54092-1c98-45f0-8f91-056320206cd6:
-    uuid: d0f54092-1c98-45f0-8f91-056320206cd6
+  5aaf0bb2-cf65-4db1-87a8-8b8eeba9d99d:
+    uuid: 5aaf0bb2-cf65-4db1-87a8-8b8eeba9d99d
     id: image_scale
     weight: 1
     data:

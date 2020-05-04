@@ -10,5 +10,5 @@ type: 'canonical_entities:user'
 pattern: 'users/[user:name]'
 selection_criteria: {  }
 selection_logic: and
-weight: 0
+weight: -5
 relationships: {  }

@@ -17,5 +17,5 @@ selection_criteria:
     context_mapping:
       node: node
 selection_logic: and
-weight: 0
+weight: -9
 relationships: {  }

@@ -10,5 +10,5 @@ type: 'canonical_entities:node'
 pattern: 'content/[node:title]'
 selection_criteria: {  }
 selection_logic: and
-weight: 0
+weight: -7
 relationships: {  }
