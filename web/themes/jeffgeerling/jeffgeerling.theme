@@ -115,6 +115,21 @@ function jeffgeerling_preprocess_node(&$variables) {
       break;
   }
 
+  // Make 'node_bottom' region blocks available.
+  $region = 'node_bottom';
+  $blocks = entity_load_multiple_by_properties('block', [
+    'theme' => 'jeffgeerling',
+    'region' => $region,
+  ]);
+  uasort($blocks, 'Drupal\block\Entity\Block::sort');
+  $build = [];
+  foreach ($blocks as $key => $block) {
+    if ($block->access('view')) {
+      $build[$key] = entity_view($block, 'block');
+    }
+  }
+  $variables[$region] = $build;
+
   // Add resume assets on 'About' page.
   if ($node->id() == '1') {
     $variables['#attached']['library'][] = 'jeffgeerling/resume';
