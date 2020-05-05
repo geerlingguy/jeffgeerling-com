@@ -98,7 +98,7 @@
     color: #ddd;
   }
 
-  .region-footer input {
+  input {
     color: #222;
   }
 
@@ -119,26 +119,27 @@
   #block-views-block-blog-block-1,
   #block-whatido,
   .region-node-bottom,
-  section.field--type-comment {
+  section.field--type-comment,
+  .block-facets {
     background-color: #222;
   }
 
   .node__submitted,
   .comment__submitted,
   .comment .links {
-    color: #aaa;
+    color: #888;
   }
 
   .node__submitted a,
   .comment__submitted a,
   .node__submitted a:visited
   .comment__submitted a:visited {
-    color: #ccc;
+    color: #aaa;
   }
 
   .comment .links a,
   .comment .links a:visited {
-    color: #ccc;
+    color: #aaa;
   }
 
   .comment .links a:hover,

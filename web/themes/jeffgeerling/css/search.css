@@ -45,14 +45,13 @@ ol.search-results {
 
 /* Facets. */
 .layout-content {
-  padding-right: 240px;
   float: left;
+  width: 75%;
 }
 
 .layout-sidebar-second {
   float: right;
-  width: 220px;
-  margin-left: -220px;
+  width: 25%;
 }
 
 .facet-item label {
@@ -61,7 +60,14 @@ ol.search-results {
 }
 
 .block-facets {
+  background-color: #efefef;
   font-size: .8em;
+  padding: .75em 1em 1em;
+  margin-bottom: 2em;
+}
+
+.block-facets h2 {
+  margin-top: 0;
 }
 
 .block-facets .facets-widget-checkbox ul {
@@ -87,6 +93,7 @@ ol.search-results {
   main .layout-content {
     padding-right: inherit;
     float: none;
+    width: 100%;
   }
 
   main .layout-sidebar-second {
@@ -97,5 +104,6 @@ ol.search-results {
 
   .views-exposed-form {
     text-align: center;
+    display: block;
   }
 }
