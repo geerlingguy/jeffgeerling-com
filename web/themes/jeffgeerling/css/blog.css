@@ -48,7 +48,7 @@
   display: inline-block;
   height: 23px;
   line-height: 22px;
-  padding: 0 14px 0 16px;
+  padding: 0 8px 0 16px;
   position: relative;
   margin: 0 10px 10px 0;
   text-decoration: none;
@@ -66,24 +66,9 @@
   top: 9px;
 }
 
-.field--name-field-tags .field__item a::after {
-  background: #fff;
-  border-bottom: 11px solid transparent;
-  border-left: 6px solid #eee;
-  border-top: 12px solid transparent;
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
 .field--name-field-tags .field__item a:hover {
   background-color: #333;
   color: #fff;
-}
-
-.field--name-field-tags .field__item a:hover::after {
-   border-left-color: #333;
 }
 
 /* Comments */

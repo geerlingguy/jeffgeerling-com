@@ -98,7 +98,8 @@
     color: #ddd;
   }
 
-  input {
+  input,
+  textarea {
     color: #222;
   }
 
@@ -154,7 +155,6 @@
   }
 
   div.field--name-field-tags .field__item a {
-    padding: 0 8px 0 16px;
     background: #444;
     color: #ddd;
   }
@@ -162,7 +162,6 @@
   div.field--name-field-tags .field__item a::before,
   div.field--name-field-tags .field__item a::after {
     background: #000;
-    border: none;
   }
 
   #resume-highlight h2 {

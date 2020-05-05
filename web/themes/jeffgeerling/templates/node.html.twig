@@ -107,8 +107,14 @@
     {{ content|without('comment_node_blog_post') }}
   </div>
 
-  <div id="comments">
+  {%- set content_comments -%}
     {{ content.comment_node_blog_post }}
-  </div>
+  {% endset %}
+
+  {% if content_comments is not empty %}
+    <div id="comments">
+      {{ content_comments }}
+    </div>
+  {% endif %}
 
 </article>
