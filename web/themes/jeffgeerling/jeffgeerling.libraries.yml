@@ -34,3 +34,16 @@ search:
   css:
     theme:
       css/search.css: {}
+
+resume:
+  version: 1.x
+  css:
+    theme:
+      css/resume.css: {}
+      css/resume-print.css:
+        media: print
+  js:
+    js/resume.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery

@@ -39,15 +39,15 @@ function jeffgeerling_preprocess_page(&$variables) {
   if (\Drupal::routeMatch()->getRouteName() == 'comment.reply') {
     $variables['#attached']['library'][] = 'jeffgeerling/blog';
   }
-
-  // TODO: Add search.css to search pages.
 }
 
 /**
  * Implements hook_preprocess_node().
  */
 function jeffgeerling_preprocess_node(&$variables) {
-  switch ($variables['node']->getType()) {
+  $node = $variables['node'];
+
+  switch ($node->getType()) {
     case 'blog_post':
       $variables['#attached']['library'][] = 'jeffgeerling/blog';
 
@@ -55,6 +55,11 @@ function jeffgeerling_preprocess_node(&$variables) {
       $variables['#attached']['library'][] = 'jeffgeerling/project';
 
       break;
+  }
+
+  // Add resume assets on 'About' page.
+  if ($node->id() == '1') {
+    $variables['#attached']['library'][] = 'jeffgeerling/resume';
   }
 }
 
@@ -120,36 +125,3 @@ function jeffgeerling_preprocess_comment(&$variables) {
 function jeffgeerling_form_views_exposed_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   $form['search_api_fulltext']['#placeholder'] = t('Enter your keywords');
 }
-
-// @codingStandardsIgnoreStart
-
-// TODO: Figure out what to do with the rest of this from D7.
-
-// /**
-//  * Implements template_preprocess_page().
-//  */
-// function jeffgeerling_preprocess_page(&$variables) {
-//   if (isset($variables['node'])) {
-//     // Resumé page customizations.
-//     if ($variables['node']->nid == 1) {
-//       drupal_add_css(drupal_get_path('theme', 'jeffgeerling') . '/css/resume.css');
-//       drupal_add_css(drupal_get_path('theme', 'jeffgeerling') . '/css/resume-print.css', array('media' => 'print'));
-//       drupal_add_js(drupal_get_path('theme', 'jeffgeerling') . '/js/resume.js');
-//     }
-//   }
-// }
-
-// /**
-//  * Implements template_preprocess_node().
-//  */
-// function jeffgeerling_preprocess_node(&$variables) {
-//   // Make the 'node_bottom' region available.
-//   if ($blocks = block_get_blocks_by_region('node_bottom')) {
-//     $variables['region']['node_bottom'] = $blocks;
-//   }
-//   else {
-//     $variables['region']['node_bottom'] = array();
-//   }
-// }
-
-// @codingStandardsIgnoreEnd

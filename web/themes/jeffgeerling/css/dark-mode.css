@@ -47,17 +47,20 @@
     border: 1px solid #444;
   }
 
-  nav#block-mainmenu li a,
-  nav#block-mainmenu li a:visited {
+  nav.block-menu li a,
+  nav.block-menu li a:visited,
+  nav.page-navigation li a,
+  nav.page-navigation li a:visited {
     color: #ddd;
   }
 
-  nav#block-mainmenu li a:hover,
-  nav#block-mainmenu li a.is-active {
+  nav.block-menu li a:hover,
+  nav.block-menu li a.is-active,
+  nav.page-navigation li a:hover {
     color: #444;
   }
 
-  nav#block-mainmenu li a.is-active {
+  nav.block-menu li a.is-active {
     background-color: #ddd;
     color: #444;
   }
