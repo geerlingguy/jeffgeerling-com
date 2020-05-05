@@ -276,11 +276,11 @@ header {
 }
 
 /* Navigation --------------------------------------------------------------- */
-nav#block-mainmenu {
+nav.block-menu {
   margin: 2em 0 1em;
 }
 
-nav#block-mainmenu ul {
+nav.block-menu ul {
   list-style-type: none;
   margin: 0 0 .75em;
   padding: 0 0 .8em;
@@ -288,11 +288,13 @@ nav#block-mainmenu ul {
   width: 100%;
 }
 
-nav#block-mainmenu li {
+nav.block-menu li,
+nav.page-navigation li {
   display: inline;
 }
 
-nav#block-mainmenu li a {
+nav.block-menu li a,
+nav.page-navigation li a {
   border-radius: 2em;
   color: #444;
   font-family: Helvetica, Arial, sans-serif;
@@ -304,12 +306,13 @@ nav#block-mainmenu li a {
   text-decoration: none;
 }
 
-nav#block-mainmenu li a:hover {
+nav.block-menu li a:hover,
+nav.page-navigation li a:hover {
   background-color: #ddd;
   color: #444;
 }
 
-nav#block-mainmenu li a.is-active {
+nav.block-menu li a.is-active {
   background-color: #444;
   color: #fff;
 }
@@ -460,7 +463,7 @@ ul.links li {
     margin: 0 auto;
   }
 
-  nav#block-mainmenu ul {
+  nav.block-menu ul {
     text-align: center;
   }
 

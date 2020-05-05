@@ -1,5 +1,5 @@
 (function ($) {
-Drupal.behaviors.flockNoteTheme = {
+Drupal.behaviors.resume = {
   attach: function(context, settings) {
     // Hide all the job attributes.
     $('#experience .job .attributes').hide();

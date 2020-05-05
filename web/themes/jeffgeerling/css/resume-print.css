@@ -4,11 +4,10 @@
  * Print CSS for Jeff Geerling's website - Resumé page.
  */
 
-#page-wrapper #page {
-  border: none;
-}
-
-#page .page-navigation {
+nav.menu--main,
+h1.page-title,
+.node .page-navigation,
+#profiles {
   display: none;
 }
 
@@ -24,6 +23,6 @@
   display: block !important;
 }
 
-#page-wrapper #footer {
+footer .region-footer {
   display: none;
 }
