@@ -6,12 +6,12 @@
 
 @media (prefers-color-scheme: dark) {
   body {
-    color: #ddd;
-    background-color: #222;
+    color: #eee;
+    background-color: #000;
   }
 
   h2 {
-    color: #eee;
+    color: #fff;
   }
 
   a {
@@ -40,7 +40,7 @@
   pre,
   code,
   div.codeblock {
-    background-color: #323232;
+    background-color: #222;
   }
 
   div.codeblock {
@@ -73,9 +73,9 @@
 
   ul.primary li.is-active a,
   ul.primary li a:hover {
-    background-color: #222;
+    background-color: #000;
     border: 1px solid #686868;
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid #000;
   }
 
   ul.primary,
@@ -111,7 +111,7 @@
   #block-whatido,
   .region-node-bottom,
   section.field--type-comment {
-    background-color: #323232;
+    background-color: #222;
   }
 
   .node--unpublished,
@@ -127,7 +127,7 @@
 
   div.field--name-field-tags .field__item a::before,
   div.field--name-field-tags .field__item a::after {
-    background: #222;
+    background: #000;
     border: none;
   }
 
