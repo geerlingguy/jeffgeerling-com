@@ -80,8 +80,13 @@ textarea {
   line-height: 1.4em;
 }
 
-input {
+input:not([type=submit]) {
   font-size: 1em;
+  background-color: #fff;
+}
+
+textarea {
+  background-color: #fff;
 }
 
 hr {
@@ -240,7 +245,7 @@ header {
 /* Footer. */
 .region-footer {
   clear: both;
-  color: #aaa;
+  color: #444;
   font-size: .85em;
   margin: 1.5em 0 0;
   padding-top: 1.5em;
@@ -248,7 +253,7 @@ header {
 }
 
 .region-footer a {
-  color: #888;
+  color: #222;
 }
 
 .region-footer .form-item {
@@ -326,6 +331,7 @@ ul.primary {
 }
 
 .tabs ul.tabs {
+  border-bottom: 1px solid #000;
 }
 
 .tabs ul li {
@@ -340,6 +346,13 @@ ul.primary {
   border-style: solid solid none;
   border-width: 1px;
   height: auto;
+}
+
+.tabs a.is-active,
+.tabs ul li a:hover {
+  color: #fff;
+  border-color: #000;
+  background-color: #222;
 }
 
 .feed-icon img,

@@ -26,12 +26,6 @@
     color: #959cb7;
   }
 
-  form input,
-  form textarea {
-    color: #000;
-    background-color: #fff;
-  }
-
   label {
     display: block;
     font-weight: bold;
@@ -78,7 +72,10 @@
     border-bottom: 1px solid #000;
   }
 
-  ul.primary,
+  nav.tabs ul.tabs {
+    border-bottom: 1px solid #464646;
+  }
+
   .site-name {
     border-bottom: 1px solid #464646;
   }
@@ -91,6 +88,18 @@
     background-color: #2f312e;
     border-color: #44562b;
     color: #73e500;
+  }
+
+  .region-footer {
+    color: #aaa;
+  }
+
+  .region-footer a {
+    color: #ddd;
+  }
+
+  .region-footer input {
+    color: #222;
   }
 
   .node header h2 a {
@@ -112,6 +121,30 @@
   .region-node-bottom,
   section.field--type-comment {
     background-color: #222;
+  }
+
+  .node__submitted,
+  .comment__submitted,
+  .comment .links {
+    color: #aaa;
+  }
+
+  .node__submitted a,
+  .comment__submitted a,
+  .node__submitted a:visited
+  .comment__submitted a:visited {
+    color: #ccc;
+  }
+
+  .comment .links a,
+  .comment .links a:visited {
+    color: #ccc;
+  }
+
+  .comment .links a:hover,
+  .node__submitted a:hover,
+  .comment__submitted a:hover {
+    color: #c6d0f4;
   }
 
   .node--unpublished,
