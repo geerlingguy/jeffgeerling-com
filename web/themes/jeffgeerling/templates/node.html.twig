@@ -104,7 +104,15 @@
   {% endif %}
 
   <div{{ content_attributes.addClass('node__content') }}>
-    {{ content|without('comment_node_blog_post') }}
+    {{ content|without('field_tags', 'links', 'comment_node_blog_post') }}
+
+    <div class="region region-node-bottom">
+      {{ node_bottom }}
+    </div>
+
+    {{ content.field_tags }}
+
+    {{ content.links }}
   </div>
 
   {%- set content_comments -%}

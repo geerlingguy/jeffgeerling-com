@@ -9,7 +9,7 @@ _core:
 id: jeffgeerling_local_actions
 theme: jeffgeerling
 region: content
-weight: -2
+weight: -5
 provider: null
 plugin: local_actions_block
 settings:

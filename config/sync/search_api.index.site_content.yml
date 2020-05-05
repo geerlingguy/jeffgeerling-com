@@ -5,6 +5,7 @@ dependencies:
   module:
     - search_api_solr
     - node
+    - taxonomy
     - search_api
   config:
     - field.storage.node.body
@@ -78,14 +79,16 @@ field_settings:
     dependencies:
       module:
         - node
-  field_tags:
-    label: Tags
+  name:
+    label: 'Tags » Taxonomy term » Name'
     datasource_id: 'entity:node'
-    property_path: field_tags
-    type: integer
+    property_path: 'field_tags:entity:name'
+    type: string
     dependencies:
       config:
         - field.storage.node.field_tags
+      module:
+        - taxonomy
   node_grants:
     label: 'Node access information'
     property_path: search_api_node_grants
@@ -109,6 +112,14 @@ field_settings:
     property_path: title
     type: text
     boost: !!float 5
+    dependencies:
+      module:
+        - node
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
     dependencies:
       module:
         - node
@@ -151,7 +162,9 @@ processor_settings:
     all_fields: true
     fields:
       - body_processed
+      - name
       - title
+      - type
     title: true
     alt: true
     tags:
