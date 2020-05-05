@@ -3,8 +3,8 @@ name: 'Jeff Geerling'
 mail: geerlingguy@mac.com
 slogan: 'Author and Software Developer in St. Louis, MO'
 page:
-  403: /
-  404: /
+  403: ''
+  404: ''
   front: /node/2
 admin_compact_mode: false
 weight_select_max: 100
