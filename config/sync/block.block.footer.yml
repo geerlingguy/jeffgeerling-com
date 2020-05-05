@@ -1,9 +1,9 @@
-uuid: 7421ea74-7995-4b41-aa8f-1d2afb51ec08
+uuid: 38b4ba31-0e59-497f-bff5-09e7591a78ee
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:76fb484c-c9e4-4495-8c17-148cfa8b0b90'
+    - 'block_content:basic:41e1307e-99fa-45e1-a7a7-9d3a1d91a295'
   module:
     - block_content
   theme:
@@ -13,9 +13,9 @@ theme: jeffgeerling
 region: footer
 weight: 0
 provider: null
-plugin: 'block_content:76fb484c-c9e4-4495-8c17-148cfa8b0b90'
+plugin: 'block_content:41e1307e-99fa-45e1-a7a7-9d3a1d91a295'
 settings:
-  id: 'block_content:76fb484c-c9e4-4495-8c17-148cfa8b0b90'
+  id: 'block_content:41e1307e-99fa-45e1-a7a7-9d3a1d91a295'
   label: Footer
   provider: block_content
   label_display: '0'
