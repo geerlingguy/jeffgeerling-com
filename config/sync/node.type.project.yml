@@ -6,8 +6,9 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus: {  }
-    parent: ''
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
 name: Project
 type: project
 description: 'Projects can be categorized and put into special lists.'

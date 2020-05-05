@@ -6,7 +6,7 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    parent: 'main:'
+    parent: 'main-menu:0:'
     available_menus:
       - main
 name: 'Blog Post'

@@ -18,7 +18,7 @@ content:
       image_style: ''
       image_link: content
     type: image
-    weight: 8
+    weight: 9
     third_party_settings: {  }
     region: content
 hidden:

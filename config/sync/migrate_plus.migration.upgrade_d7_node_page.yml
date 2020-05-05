@@ -84,9 +84,9 @@ process:
         target_id: fid
         display: display
         description: description
-  'path/pathauto':
-      plugin: default_value
-      default_value: 0
+  path/pathauto:
+    plugin: default_value
+    default_value: 0
 destination:
   plugin: 'entity:node'
   default_bundle: page

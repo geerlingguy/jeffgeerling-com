@@ -114,9 +114,9 @@ process:
     -
       plugin: get
       source: field_project_highlights
-  'path/pathauto':
-      plugin: default_value
-      default_value: 0
+  path/pathauto:
+    plugin: default_value
+    default_value: 0
 destination:
   plugin: 'entity_revision:node'
   default_bundle: project
