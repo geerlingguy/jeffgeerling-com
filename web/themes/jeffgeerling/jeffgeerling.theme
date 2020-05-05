@@ -14,8 +14,8 @@ use Drupal\Core\Form\FormStateInterface;
 function jeffgeerling_preprocess_html(&$variables) {
   $path_matcher = \Drupal::service('path.matcher');
 
-  // Override the page title on the front page.
   if ($path_matcher->isFrontPage()) {
+    // Override the page title on the front page.
     $site_config = \Drupal::config('system.site');
     $head_title = [
       'name' => $site_config->get('name'),
@@ -24,6 +24,64 @@ function jeffgeerling_preprocess_html(&$variables) {
     $variables['head_title_array'] = $head_title;
     $variables['head_title'] = implode(' - ', $head_title);
   }
+
+  // Add favicon meta tags.
+  $variables['page']['#attached']['html_head'][] = [
+    [
+      '#tag' => 'link',
+      '#attributes' => [
+        'rel' => 'apple-touch-icon',
+        'sizes' => '180x180',
+        'href' => '/apple-touch-icon.png',
+      ],
+    ],
+    'apple-touch-icon',
+  ];
+  $variables['page']['#attached']['html_head'][] = [
+    [
+      '#tag' => 'link',
+      '#attributes' => [
+        'rel' => 'icon',
+        'type' => 'image/png',
+        'sizes' => '32x32',
+        'href' => '/favicon-32x32.png',
+      ],
+    ],
+    'favicon-3232',
+  ];
+  $variables['page']['#attached']['html_head'][] = [
+    [
+      '#tag' => 'link',
+      '#attributes' => [
+        'rel' => 'icon',
+        'type' => 'image/png',
+        'sizes' => '16x16',
+        'href' => '/favicon-16x16.png',
+      ],
+    ],
+    'favicon-1616',
+  ];
+  $variables['page']['#attached']['html_head'][] = [
+    [
+      '#tag' => 'link',
+      '#attributes' => [
+        'rel' => 'manifest',
+        'href' => '/site.webmanifest',
+      ],
+    ],
+    'site-manifest',
+  ];
+  $variables['page']['#attached']['html_head'][] = [
+    [
+      '#tag' => 'link',
+      '#attributes' => [
+        'rel' => 'mask-icon',
+        'href' => '/safari-pinned-tab.svg',
+        'color' => '#333333',
+      ],
+    ],
+    'safari-pinned-tab',
+  ];
 }
 
 /**

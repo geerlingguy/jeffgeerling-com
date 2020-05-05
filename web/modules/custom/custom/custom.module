@@ -5,9 +5,34 @@
  * Custom functionality for JeffGeerling.com.
  */
 
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Url;
 use Drupal\migrate\Plugin\MigrationInterface;
 use Drupal\migrate\Plugin\MigrateSourceInterface;
 use Drupal\migrate\Row;
+
+/**
+ * Implements hook_entity_view_alter().
+ */
+function custom_entity_view_alter(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display) {
+  $path_matcher = \Drupal::service('path.matcher');
+
+  // Force the canonical path / on the home page.
+  if ($path_matcher->isFrontPage()) {
+    if ($entity->getEntityTypeId() == 'node') {
+      // See: https://drupal.stackexchange.com/a/263094/26.
+      if (isset($build['#attached']['html_head_link'])) {
+        foreach ($build['#attached']['html_head_link'] as $key => $head) {
+          if ((isset($head[0]['rel']) ? $head[0]['rel'] : FALSE) == 'canonical') {
+            $build['#attached']['html_head_link'][$key][0]['href'] = Url::fromRoute('<front>', [], ['absolute' => 'true'])
+              ->toString();
+          }
+        }
+      }
+    }
+  }
+}
 
 /**
  * Implements hook_migration_plugins_alter().
