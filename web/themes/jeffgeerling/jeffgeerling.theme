@@ -122,7 +122,7 @@ function jeffgeerling_preprocess_node(&$variables) {
     'region' => $region,
   ]);
   uasort($blocks, 'Drupal\block\Entity\Block::sort');
-  $build = array();
+  $build = [];
   foreach ($blocks as $key => $block) {
     if ($block->access('view')) {
       $build[$key] = entity_view($block, 'block');
