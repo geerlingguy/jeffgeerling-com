@@ -104,7 +104,17 @@
   {% endif %}
 
   <div{{ content_attributes.addClass('node__content') }}>
-    {{ content }}
+    {{ content|without('comment_node_blog_post') }}
   </div>
+
+  {%- set content_comments -%}
+    {{ content.comment_node_blog_post }}
+  {% endset %}
+
+  {% if content_comments is not empty %}
+    <div id="comments">
+      {{ content_comments }}
+    </div>
+  {% endif %}
 
 </article>
