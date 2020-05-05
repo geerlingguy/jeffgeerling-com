@@ -10,7 +10,7 @@
 }
 
 /* Blog images */
-.node-blog-post .insert-image {
+.node--type-blog-post .insert-image {
   margin: 0 auto;
   display: block;
 }
@@ -131,7 +131,7 @@
 .comment__submitted,
 .comment .links {
   font-size: .85em;
-  color: #999;
+  color: #777;
   margin-top: .5em;
 }
 
@@ -140,12 +140,12 @@
 .node__submitted a:visited
 .comment__submitted a:visited {
   text-decoration: none;
-  color: #777;
+  color: #444;
 }
 
 .comment .links a,
 .comment .links a:visited {
-  color: #777;
+  color: #444;
   text-transform: lowercase;
 }
 
