@@ -38,6 +38,19 @@ $databases['migrate']['default'] = [
   'driver' => 'mysql',
 ];
 
+$config['search_api.server.hosted_apache_solr'] = [
+  'backend_config' => [
+    'connector_config' => [
+      'host' => 'docker.for.mac.localhost',
+      'path' => '/',
+      'core' => '',
+      'port' => '8984',
+      'username' => '1181',
+      'password' => 'TODO',
+    ],
+  ],
+];
+
 # Disable caching for local development.
 $config['system.performance']['css']['preprocess'] = FALSE;
 $config['system.performance']['js']['preprocess'] = FALSE;
