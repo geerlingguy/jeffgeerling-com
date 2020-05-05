@@ -35,4 +35,9 @@ function custom_migrate_prepare_row(Row $row, MigrateSourceInterface $source, Mi
       return FALSE;
     }
   }
+
+  // Force 'und' language for comments.
+  if ($migration_id == 'upgrade_d7_comment') {
+    $row->setSourceProperty('language', 'und');
+  }
 }
