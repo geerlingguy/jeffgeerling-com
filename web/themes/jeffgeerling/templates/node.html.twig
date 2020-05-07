@@ -106,9 +106,11 @@
   <div{{ content_attributes.addClass('node__content') }}>
     {{ content|without('field_tags', 'links', 'comment_node_blog_post') }}
 
-    <div class="region region-node-bottom">
-      {{ node_bottom }}
-    </div>
+    {% if page and node_bottom|render is not empty %}
+      <div class="region region-node-bottom">
+        {{ node_bottom }}
+      </div>
+    {% endif %}
 
     {{ content.field_tags }}
 

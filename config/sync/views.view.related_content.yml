@@ -10,7 +10,7 @@ dependencies:
 id: related_content
 label: 'Related content'
 module: views
-description: ''
+description: 'Related content for blog posts.'
 tag: ''
 base_table: search_api_index_site_content
 base_field: search_api_id
@@ -225,6 +225,7 @@ display:
     display_options:
       display_extenders: {  }
       block_description: 'Related Content'
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:

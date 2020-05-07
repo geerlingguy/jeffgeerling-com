@@ -1,9 +1,9 @@
-uuid: 6b04c554-dbb8-4acf-b8d5-634ba664291f
+uuid: 89062469-9366-4329-9e1f-11733d3362c9
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:c972ee38-a6c5-435b-9240-54a6438e2b28'
+    - 'block_content:basic:afa959f8-157c-445f-995f-f51c28ae369e'
   module:
     - block_content
     - system
@@ -12,11 +12,11 @@ dependencies:
 id: whatido
 theme: jeffgeerling
 region: content
-weight: -3
+weight: 0
 provider: null
-plugin: 'block_content:c972ee38-a6c5-435b-9240-54a6438e2b28'
+plugin: 'block_content:afa959f8-157c-445f-995f-f51c28ae369e'
 settings:
-  id: 'block_content:c972ee38-a6c5-435b-9240-54a6438e2b28'
+  id: 'block_content:afa959f8-157c-445f-995f-f51c28ae369e'
   label: 'What I Do'
   provider: block_content
   label_display: '0'

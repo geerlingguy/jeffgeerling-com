@@ -202,6 +202,13 @@ display:
         fields: false
       row:
         type: fields
+        options:
+          default_field_elements: true
+          inline:
+            title: title
+            created: created
+          separator: ' - '
+          hide_empty: false
       pager:
         type: some
         options:
