@@ -32,14 +32,21 @@
   }
 
   pre,
-  code,
-  div.codeblock {
+  code {
     background-color: #222;
   }
 
-  div.codeblock {
-    border: 1px solid #444;
+  /* Code Filter module adjustments. */
+  div.codeblock code {
+    color: #000;
+    background-color: #fff;
   }
+
+  div.codeblock {
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  /* End Code Filter module adjustments. */
 
   nav.block-menu li a,
   nav.block-menu li a:visited,
