@@ -5,8 +5,8 @@ dependencies: {  }
 name: photo-embed
 label: photo-embed
 effects:
-  8eca6a58-009b-4561-82ca-70d4851a6aa1:
-    uuid: 8eca6a58-009b-4561-82ca-70d4851a6aa1
+  8a1766f2-9aea-4d82-befb-0e84a6b00a36:
+    uuid: 8a1766f2-9aea-4d82-befb-0e84a6b00a36
     id: image_scale
     weight: 1
     data:

@@ -9,7 +9,7 @@ dependencies:
 id: jeffgeerling_system_main
 theme: jeffgeerling
 region: content
-weight: -2
+weight: -3
 provider: null
 plugin: system_main_block
 settings:
