@@ -65,6 +65,9 @@
         "patches": {
             "drupal/core": {
                 "Drop transformation-only filters during migration": "https://www.drupal.org/files/issues/2020-02-22/3061571-36.patch"
+            },
+            "drupal/search_api_solr": {
+                "New path for ArrayUtils forgot to be changed in the .module": "https://www.drupal.org/files/issues/2020-05-18/3137654-5.patch"
             }
         },
         "installer-paths": {
