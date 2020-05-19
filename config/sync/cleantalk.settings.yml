@@ -1,0 +1,23 @@
+cleantalk_authkey: ''
+cleantalk_check_comments: true
+cleantalk_check_comments_automod: false
+cleantalk_check_comments_min_approved: 3
+cleantalk_check_register: false
+cleantalk_check_webforms: false
+cleantalk_check_contact_forms: false
+cleantalk_check_forum_topics: false
+cleantalk_check_search_form: false
+cleantalk_url_exclusions: ''
+cleantalk_url_regexp: false
+cleantalk_fields_exclusions: ''
+cleantalk_roles_exclusions:
+  admin: admin
+  authenticated: authenticated
+cleantalk_search_noindex: false
+cleantalk_check_ccf: false
+cleantalk_set_cookies: false
+cleantalk_alternative_cookies_session: false
+cleantalk_sfw: true
+cleantalk_link: false
+_core:
+  default_config_hash: 8kdqtQPA1LGC3IEFwgRGPXN6pRscuzIhh2sY46PrUUc
