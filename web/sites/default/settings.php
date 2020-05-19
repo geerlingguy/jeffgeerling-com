@@ -745,6 +745,11 @@ $settings['entity_update_batch_size'] = 50;
 $settings['entity_update_backup'] = TRUE;
 
 /**
+ * Mail system settings.
+ */
+$config['system.mail']['interface']['default'] = 'custom_mail';
+
+/**
  * Config Split settings.
  */
 $config['config_split.config_split.dev']['status'] = FALSE;
