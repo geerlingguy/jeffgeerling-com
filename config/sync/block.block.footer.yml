@@ -11,7 +11,7 @@ dependencies:
 id: footer
 theme: jeffgeerling
 region: footer
-weight: 0
+weight: -7
 provider: null
 plugin: 'block_content:fd0023d1-3c23-4c7e-ae29-6b5e37e79690'
 settings:
