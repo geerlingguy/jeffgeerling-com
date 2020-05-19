@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c428b7b5ac5cf5383d3f9ee162368a74",
+    "content-hash": "5dc8cac51b083f204234d0a1578c2e04",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1670,6 +1670,65 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/admin_toolbar",
                 "issues": "https://www.drupal.org/project/issues/admin_toolbar"
+            }
+        },
+        {
+            "name": "drupal/cleantalk",
+            "version": "3.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/cleantalk.git",
+                "reference": "8.x-3.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/cleantalk-8.x-3.5.zip",
+                "reference": "8.x-3.5",
+                "shasum": "2adc61b10c6dd5f2bbdf56ab56ae63fdeb6c83aa"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.5",
+                    "datestamp": "1587374124",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "CleanTalk inc.",
+                    "homepage": "https://www.drupal.org/user/3624869"
+                },
+                {
+                    "name": "Safronik",
+                    "homepage": "https://www.drupal.org/user/3500201"
+                },
+                {
+                    "name": "davydovct",
+                    "homepage": "https://www.drupal.org/user/3510415"
+                },
+                {
+                    "name": "znaeff",
+                    "homepage": "https://www.drupal.org/user/2727147"
+                }
+            ],
+            "description": "Cloud antispam solution without captcha.",
+            "homepage": "https://cleantalk.org",
+            "support": {
+                "source": "https://git.drupalcode.org/project/cleantalk",
+                "issues": "https://cleantalk.org/my/suport",
+                "support_forum": "https://community.cleantalk.org/viewforum.php?f=31&sid=7b6d4323aa6e39b1e0db7ee06a1d71e4",
+                "faq": "https://cleantalk.org/help"
             }
         },
         {

@@ -7,7 +7,7 @@ unprotected_forms:
 protect_all_forms: false
 log: true
 element_name: url
-time_limit: 5
+time_limit: 0
 expire: 300
 form_settings:
   user_register_form: false

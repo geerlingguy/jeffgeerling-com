@@ -5,7 +5,7 @@ dependencies: {  }
 id: admin
 label: admin
 weight: 2
-is_admin: null
+is_admin: true
 permissions:
   - 'access administration menu'
   - 'access administration pages'
