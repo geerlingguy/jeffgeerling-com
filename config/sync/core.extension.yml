@@ -19,6 +19,7 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  honeypot: 0
   image: 0
   language: 0
   link: 0
