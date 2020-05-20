@@ -17,7 +17,7 @@ cleantalk_search_noindex: false
 cleantalk_check_ccf: false
 cleantalk_set_cookies: false
 cleantalk_alternative_cookies_session: false
-cleantalk_sfw: true
+cleantalk_sfw: false
 cleantalk_link: false
 _core:
   default_config_hash: 8kdqtQPA1LGC3IEFwgRGPXN6pRscuzIhh2sY46PrUUc
