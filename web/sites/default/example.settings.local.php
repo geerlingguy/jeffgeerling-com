@@ -9,6 +9,10 @@
 
 $config['config_split.config_split.dev']['status'] = TRUE;
 
+# Disable unless using a reverse proxy (e.g. Nginx caching on prod).
+# $settings['reverse_proxy'] = TRUE;
+# $settings['reverse_proxy_addresses'] = ['server.ip.address.here'];
+
 $settings['trusted_host_patterns'] = [
   '^www\.jeffgeerling\.com$',
   '^localhost$',
