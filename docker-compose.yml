@@ -15,6 +15,8 @@ services:
       DRUPAL_DOWNLOAD_IF_NOT_PRESENT: 'false'
     ports:
       - "80:80"
+    volumes:
+      - ~/Sites/jeffgeerling-com:/var/www/html:rw,delegated
     # restart: on-failure
 
   mysql:
