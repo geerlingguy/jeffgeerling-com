@@ -26,9 +26,7 @@ Make sure you have Docker installed, then run the following command (in the same
 
 Visit http://localhost/ to see the Drupal installation.
 
-> Note: This `docker-compose.yml` configuration uses an NFS mount for better performance on macOS. You need to ensure [NFS is configured properly on your Mac](https://github.com/geerlingguy/jeffgeerling-com/issues/22#issuecomment-597891217) or you'll get errors when you build the environment.
-> 
-> If you're on Linux or want to skip configuring NFS, you can use the `docker-compose.override.yml` file inside `.github/` instead of the one included in the root of the repo.
+> Note: If you're not running on Linux, this environment runs best with Docker for Mac's Mutagen caching enabled. Before starting the environment the first time, go into the Docker dashboard and enable caching for the directory where this repository is located. See [Mutagen-based caching](https://docs.docker.com/docker-for-mac/mutagen-caching/) docs for instructions.
 
 ### Installing Drupal
 
