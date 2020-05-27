@@ -8,9 +8,6 @@
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 use Drupal\Core\Url;
-use Drupal\migrate\Plugin\MigrationInterface;
-use Drupal\migrate\Plugin\MigrateSourceInterface;
-use Drupal\migrate\Row;
 
 /**
  * Implements hook_entity_view_alter().
@@ -31,50 +28,5 @@ function custom_entity_view_alter(array &$build, EntityInterface $entity, Entity
         }
       }
     }
-  }
-}
-
-/**
- * Implements hook_migration_plugins_alter().
- *
- * @see https://github.com/geerlingguy/jeffgeerling-com/issues/7
- */
-function custom_migration_plugins_alter(array &$migrations) {
-  if (isset($migrations['migration_config_deriver:upgrade_d7_filter_format'])) {
-    $migration = &$migrations['migration_config_deriver:upgrade_d7_filter_format'];
-
-    // Add mapping from filter_markdown to markdown for D7 migrations.
-    $migration['process']['filters'][0]['process']['id']['map']['filter_markdown'] = 'markdown';
-  }
-}
-
-/**
- * Implements hook_migrate_prepare_row().
- */
-function custom_migrate_prepare_row(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
-  $migration_id = $migration->id();
-
-  // Rewrite file paths in node bodies.
-  $node_migrations = [
-    'upgrade_d7_node_blog_post',
-    'upgrade_d7_node_page',
-    'upgrade_d7_node_project',
-  ];
-  if (in_array($migration_id, $node_migrations)) {
-    $body = $row->getSourceProperty('body');
-    $body[0]['value'] = str_replace('sites/jeffgeerling.com/files', 'sites/default/files', $body[0]['value']);
-    $row->setSourceProperty('body', $body);
-  }
-
-  // Ignore blocks in the seven theme.
-  if ($migration_id == 'upgrade_d7_block') {
-    if ($row->getSourceProperty('theme') == 'seven') {
-      return FALSE;
-    }
-  }
-
-  // Force 'und' language for comments.
-  if ($migration_id == 'upgrade_d7_comment') {
-    $row->setSourceProperty('language', 'und');
   }
 }
