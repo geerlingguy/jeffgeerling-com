@@ -79,6 +79,10 @@ ol.search-results {
   list-style: none;
 }
 
+.block-facets li.facet-item .facets-checkbox {
+  margin-right: 5px;
+}
+
 .block-facets li.facet-item,
 .block-facets li.facet-item label {
   cursor: pointer;
