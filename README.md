@@ -8,6 +8,12 @@ The building of this project and the migration of JeffGeerling.com from Drupal 7
 
 I decided to open-source my website's codebase to help other Drupal users see how I built and maintain this site. If you like what you see or have been helped in any way by this project, please consider supporting me via [Patreon](https://www.patreon.com/geerlingguy), [GitHub Sponsors](https://github.com/sponsors/geerlingguy), or another [affiliate link](https://www.jeffgeerling.com/affiliates).
 
+## Deploying to Production
+
+Currently the process for deploying runs from the Midwestern Mac infrastructure playbook:
+
+    ansible-playbook playbook.yml --tags=deploy
+
 ## Local Environment
 
 The first time you start using this project, you need to create your local settings file:
@@ -34,23 +40,9 @@ You can install Drupal using the install wizard, but we like to use Drush for mo
 
     docker-compose exec drupal bash -c 'drush site:install minimal --db-url="mysql://drupal:$DRUPAL_DATABASE_PASSWORD@$DRUPAL_DATABASE_HOST/drupal" --site-name="Jeff Geerling" --existing-config -y'
 
-### Migrating Content
+### Syncing the Database from Production
 
-First, make sure you have a local copy of the Drupal 7 database available; see the [drupal7db README](drupal7db/README.md) for setup instructions.
-
-When you're ready to migrate content from the `drupal7` site database, run:
-
-    docker-compose exec drupal bash -c 'drush migrate-import --group=migrate_drupal_7'
-
-To update the migration configuration (basically reset the entire migration process):
-
-  1. Delete all the `migrate*` files inside `config/sync`.
-  2. Reinstall the site (see 'Installing Drupal' above).
-  3. Run:
-
-     ```
-     docker-compose exec drupal bash -c 'drush migrate-upgrade --legacy-db-key=drupal7 --legacy-root=https://www.jeffgeerling.com --configure-only'
-     ```
+TODO: Build process for this.
 
 ### Updating Configuration
 
