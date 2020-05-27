@@ -60,10 +60,10 @@ content:
     region: content
   field_tags:
     weight: 2
-    type: entity_reference_autocomplete
+    type: entity_reference_autocomplete_tags
     settings:
       match_operator: CONTAINS
-      match_limit: 10
+      match_limit: 6
       size: 60
       placeholder: ''
     third_party_settings: {  }
@@ -122,7 +122,7 @@ content:
     third_party_settings: {  }
   url_redirects:
     weight: 50
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }
