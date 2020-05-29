@@ -1,0 +1,20 @@
+preset_accent_color: custom
+preset_focus_color: accent
+enable_darkmode: true
+classic_toolbar: true
+icon_default: true
+icon_path: ''
+_core:
+  default_config_hash: bFamv6RfelnqY1J3G4wWSf02pL3GghIcwyKzZIoGniQ
+features:
+  node_user_picture: true
+  comment_user_picture: true
+  comment_user_verification: false
+  favicon: true
+favicon:
+  use_default: false
+  path: favicon.ico
+  mimetype: image/vnd.microsoft.icon
+accent_color: '#3a88fe'
+focus_color: '#000000'
+icon_upload: ''

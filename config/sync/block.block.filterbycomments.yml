@@ -12,7 +12,7 @@ dependencies:
 id: filterbycomments
 theme: jeffgeerling
 region: sidebar_second
-weight: -3
+weight: -4
 provider: null
 plugin: 'facet_block:filter_by_comments'
 settings:

@@ -13,6 +13,58 @@
   margin: 0 .5em 0 0;
 }
 
+#block-social-media-links {
+  text-align: center;
+}
+
+.social-link {
+  padding: .25em;
+  background-color: #fff;
+  border-radius: 3px;
+  margin: 2px;
+}
+
+.youtube {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+.youtube:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.github {
+  background-color: rgba(24, 23, 23, 0.8);
+}
+
+.github:hover {
+  background-color: rgba(24, 23, 23, 1);
+}
+
+.patreon {
+  background-color: rgba(249, 104, 84, 0.8);
+}
+
+.patreon:hover {
+  background-color: rgba(249, 104, 84, 1);
+}
+
+.twitter {
+  background-color: rgba(29, 161, 242, 0.8);
+}
+
+.twitter:hover {
+  background-color: rgba(29, 161, 242, 1);
+}
+
+.instagram {
+  background-color: rgba(228, 64, 95, 0.8);
+}
+
+.instagram:hover {
+  background-color: rgba(228, 64, 95, 1);
+}
+
+#block-social-media-links,
 #block-views-block-projects-block,
 #block-views-block-blog-block-1,
 #block-whatido {
@@ -20,6 +72,7 @@
   padding: 1em;
 }
 
+#block-social-media-links,
 #block-views-block-projects-block {
   margin-bottom: 1.8em;
 }
@@ -30,6 +83,7 @@
   margin-top: 0;
 }
 
+#block-social-media-links,
 #block-views-block-projects-block,
 #block-views-block-blog-block-1 {
   width: 25%;
@@ -48,6 +102,7 @@
 
 /* Responsive Styles -------------------------------------------------------- */
 @media screen and (max-width: 800px) {
+  #block-social-media-links,
   #block-views-block-projects-block,
   #block-views-block-blog-block-1,
   #block-whatido {
@@ -56,6 +111,7 @@
     width: 95%;
   }
 
+  #block-social-media-links,
   #block-views-block-projects-block,
   #block-views-block-blog-block-1,
   #block-whatido {
