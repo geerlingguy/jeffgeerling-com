@@ -1,0 +1,30 @@
+uuid: 0bbd35ce-79e5-4858-b89c-dfc84d6502c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.social_media_links
+  module:
+    - system
+    - views
+  theme:
+    - jeffgeerling
+id: social_media_links
+theme: jeffgeerling
+region: sidebar_second
+weight: -8
+provider: null
+plugin: 'views_block:social_media_links-block'
+settings:
+  id: 'views_block:social_media_links-block'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
