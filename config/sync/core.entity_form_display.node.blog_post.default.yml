@@ -14,6 +14,7 @@ dependencies:
     - comment
     - file
     - image
+    - insert
     - path
     - text
 id: node.blog_post.default
@@ -25,9 +26,9 @@ content:
     weight: 1
     type: text_textarea_with_summary
     settings:
-      rows: 9
-      summary_rows: 3
+      rows: 14
       placeholder: ''
+      summary_rows: 3
       show_summary: false
     third_party_settings: {  }
     region: content
@@ -54,9 +55,29 @@ content:
     weight: 3
     type: image_image
     settings:
-      progress_indicator: throbber
       preview_image_style: thumbnail
-    third_party_settings: {  }
+      progress_indicator: throbber
+    third_party_settings:
+      insert:
+        styles:
+          image: image
+          insert__auto: 0
+          link: 0
+          icon_link: 0
+          audio: 0
+          video: 0
+          large: 0
+          medium: 0
+          photo-embed: 0
+          project-thumbnail: 0
+          thumbnail: 0
+        default: image
+        auto_image_style: image
+        link_image: ''
+        width: '650'
+        caption: 0
+        align: 0
+        rotate: 0
     region: content
   field_tags:
     weight: 2

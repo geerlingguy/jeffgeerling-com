@@ -1,0 +1,9 @@
+name: Jeff Geerling Insert
+type: module
+description: Insert module overrides for JeffGeerling.com.
+package: Custom
+
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+hidden: false

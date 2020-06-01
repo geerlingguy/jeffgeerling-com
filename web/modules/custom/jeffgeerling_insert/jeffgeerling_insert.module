@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Custom Insert overrides for JeffGeerling.com.
+ *
+ * This module's name comes after 'insert' in the alphabet, therefore
+ * the theme function here takes precedence.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function jeffgeerling_insert_theme($existing, $type, $theme, $path) {
+  return [
+    'insert_image' => [
+      'template' => 'insert-image',
+      'base hook' => 'insert_image',
+    ],
+  ];
+}
