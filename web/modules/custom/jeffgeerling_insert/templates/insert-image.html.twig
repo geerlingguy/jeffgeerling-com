@@ -1,0 +1,75 @@
+{#
+/**
+ * @file
+ * Template file for images inserted via the Insert module.
+ *
+ * Available variables:
+ * - attributes: Additional attributes.
+ * - class: A set of classes assigned to this image (if any).
+ * - entity_type: The type of the entity inserted.
+ * - field_type: The field type the rendered template belongs to, i.e. "file" or
+ *   "image".
+ * - height: The height of the image (if known).
+ * - id: A unique id that is used in templates and button for synchronisation.
+ * - insert_settings: Insert widget settings.
+ * - mime_type: The file's mime type.
+ * - style_name: The Image style being used.
+ * - url: The URL to the image being inserted visually; May be a styled image or
+ *   the full size image.
+ * - url_link: URL of the image derivative, the inserted image shall link to (if
+ *   specified).
+ * - url_original: The URL to the original (full size) image.
+ * - uuid: The file's UUID.
+ * - width: The width of the image (if known).
+ *
+ * Available attachment keys for the data-insert-attach attribute:
+ * - alt: The text entered in the image field widget's ALT text box.
+ * - title: The text entered in the image field widget's title text box.
+ * - description: The text entered in the field's description text box (if the
+ *   image is inserted using a generic file field).
+ * - filename: The file name.
+ * See module documentation at https://www.drupal.org/docs/8/modules/insert
+ * on how to specify the data-insert-attach attribute.
+ */
+#}
+{% spaceless %}
+
+{% set classes = ['insert-image'] %}
+
+{% if style_name != 'image' %}
+  {% set classes = classes|merge(['image-' ~ style_name]) %}
+{% endif %}
+
+{% if class %}
+  {% set classes = classes|merge([class]) %}
+{% endif %}
+
+{% if url_link %}
+  <a href="{{ url_link }}"{% if class %} class="{{ class }}"{% endif %} data-insert-type="{{ field_type }}">
+{% endif %}
+
+{%
+  set attach = {
+    id: id,
+    attributes: {
+      alt: [
+        'alt',
+        'description',
+      ],
+      title: [
+        'title',
+      ],
+    },
+  }
+%}
+{% if insert_settings.caption %}
+  {% set attach = attach|merge({attributes: {'data-caption': ['title']}}) %}
+{% endif %}
+
+<img src="{{ url }}"{{ attributes }} alt="TODO" {% if width and height %}width="{{ width }}" height="{{ height }}" {% endif %}{% if classes|length %} class="{{ classes|join(' ') }}"{% endif %} />
+
+{% if url_link %}
+  </a>
+{% endif %}
+
+{% endspaceless %}
