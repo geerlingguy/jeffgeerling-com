@@ -61,3 +61,11 @@ You can test the custom code in this project using `phpcs`:
       --extensions="php,module,inc,install,test,profile,theme" \
       web/themes/jeffgeerling \
       web/modules/custom'
+
+### Email Debugging with MailHog
+
+The Docker configuration for this project enables a [MailHog](https://github.com/mailhog/MailHog) container, which has a web UI available at `http://127.0.0.1:8025`.
+
+The `php.ini` file for the local environment is automatically configured to use `mhsendmail` to send PHP's email through the mailhog instance when you're using this project's `Dockerfile` to build the Drupal environment.
+
+When Drupal sends an email, it should be visible in Mailhog's UI.

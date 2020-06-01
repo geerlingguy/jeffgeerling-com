@@ -34,6 +34,14 @@ COPY --from=vendor /app/ /var/www/html/
 # Make sure file ownership is correct on the document root.
 # RUN chown -R www-data:www-data /var/www/html/web
 
+# TODO: Only do this in development, not production.
+# Download mhsendmail and use it for PHP's sendmail_path.
+RUN curl -OL https://github.com/mailhog/mhsendmail/releases/download/v0.2.0/mhsendmail_linux_amd64 \
+ && chmod +x mhsendmail_linux_amd64 \
+ && mv mhsendmail_linux_amd64 /usr/local/bin/mhsendmail
+RUN sed -i '\|sendmail_path|c\sendmail_path = "/usr/local/bin/mhsendmail --smtp-addr=mailhog:1025"' /etc/php/7.3/apache2/php.ini
+RUN sed -i '\|sendmail_path|c\sendmail_path = "/usr/local/bin/mhsendmail --smtp-addr=mailhog:1025"' /etc/php/7.3/cli/php.ini
+
 # Add Drush Launcher.
 RUN curl -OL https://github.com/drush-ops/drush-launcher/releases/download/0.6.0/drush.phar \
  && chmod +x drush.phar \

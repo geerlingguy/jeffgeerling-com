@@ -32,3 +32,11 @@ services:
       - "3306:3306"
     volumes:
       - /var/lib/mysql
+
+  # For local development.
+  mailhog:
+    image: cd2team/mailhog:latest
+    container_name: drupal-mailhog
+    ports:
+      - "1025:1025"
+      - "8025:8025"
