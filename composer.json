@@ -64,6 +64,11 @@
                 }
             }
         },
+        "patches": {
+            "drupal/cleantalk": {
+                "Drupal 8 version doesn't account for reverse_proxy settings": "https://www.drupal.org/files/issues/2020-06-06/3143365-10-helper-ip-get.patch"
+            }
+        },
         "installer-paths": {
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library"],
