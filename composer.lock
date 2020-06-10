@@ -2884,17 +2884,17 @@
         },
         {
             "name": "drupal/search_api_solr",
-            "version": "4.1.0",
+            "version": "4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/search_api_solr.git",
-                "reference": "4.1.0"
+                "reference": "4.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/search_api_solr-4.1.0.zip",
-                "reference": "4.1.0",
-                "shasum": "e12862aa2dc19ad5d2798439df1f8525afb6473c"
+                "url": "https://ftp.drupal.org/files/projects/search_api_solr-4.1.1.zip",
+                "reference": "4.1.1",
+                "shasum": "2d1662c6320ee9b126f262bd3fd8e556224d045a"
             },
             "require": {
                 "consolidation/annotated-command": "^2.12|^4.1",
@@ -2905,7 +2905,7 @@
                 "ext-simplexml": "*",
                 "laminas/laminas-stdlib": "^3.2",
                 "maennchen/zipstream-php": "^1.2|^2.0",
-                "php": "^7.1.3",
+                "php": "^7.2",
                 "solarium/solarium": "^6.0"
             },
             "conflict": {
@@ -2930,8 +2930,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.1.0",
-                    "datestamp": "1591371448",
+                    "version": "4.1.1",
+                    "datestamp": "1591714636",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
