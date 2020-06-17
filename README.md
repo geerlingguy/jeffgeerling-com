@@ -1,6 +1,6 @@
 # JeffGeerling.com Drupal Codebase
 
-![CI](https://github.com/geerlingguy/jeffgeerling-com/workflows/CI/badge.svg?branch=master&event=push)
+[![CI](https://github.com/geerlingguy/jeffgeerling-com/workflows/CI/badge.svg?branch=master&event=push)](https://github.com/geerlingguy/jeffgeerling-com/actions?query=workflow%3ACI)
 
 This is the Drupal codebase that powers [JeffGeerling.com](https://www.jeffgeerling.com).
 
