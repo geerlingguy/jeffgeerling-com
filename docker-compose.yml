@@ -5,7 +5,7 @@ services:
   drupal:
     image: jeffgeerling-com:latest
     build: .
-    container_name: jeffgeerling-com
+    container_name: jeffgeerling-drupal
     environment:
       DRUPAL_DATABASE_HOST: 'mysql'
       DRUPAL_DATABASE_PORT: '3306'
@@ -21,7 +21,7 @@ services:
 
   mysql:
     image: mysql:5.7
-    container_name: drupal-mysql
+    container_name: jeffgeerling-mysql
     environment:
       MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
       MYSQL_DATABASE: drupal
@@ -32,3 +32,11 @@ services:
       - "3306:3306"
     volumes:
       - /var/lib/mysql
+
+  # For local development.
+  mailhog:
+    image: cd2team/mailhog:latest
+    container_name: jeffgeerling-mailhog
+    ports:
+      - "1025:1025"
+      - "8025:8025"
