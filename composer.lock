@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "36c24f0f84ec48f73efadc4045d9b857",
+    "content-hash": "3d96387e8049fdf721c4154ded2c983d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2983,29 +2983,26 @@
         },
         {
             "name": "drupal/simple_mail",
-            "version": "1.1.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/simple_mail.git",
-                "reference": "8.x-1.1"
+                "reference": "2.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/simple_mail-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "1491e5dde0056f211b8fbe467d720a14540b65d8"
+                "url": "https://ftp.drupal.org/files/projects/simple_mail-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "7c040338651fd4983b1d668757f1edeba2688c3e"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1447888139",
+                    "version": "2.0.0",
+                    "datestamp": "1595014220",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"

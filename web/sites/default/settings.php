@@ -750,6 +750,11 @@ $settings['entity_update_backup'] = TRUE;
 $config['config_split.config_split.dev']['status'] = FALSE;
 
 /**
+ * Email settings.
+ */
+$config['system.mail']['interface']['default'] = 'simple_mail';
+
+/**
  * Load CI environment override configuration, if available.
  */
 if (getenv('CI') && file_exists($app_root . '/' . $site_path . '/settings.ci.php')) {
