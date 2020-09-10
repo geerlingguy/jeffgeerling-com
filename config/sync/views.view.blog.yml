@@ -165,7 +165,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Recent Blog Posts'
+      title: Blog
       header: {  }
       footer: {  }
       empty: {  }
@@ -200,6 +200,7 @@ display:
         use_more_always: false
         use_more_text: false
         fields: false
+        title: false
       row:
         type: fields
         options:
@@ -333,6 +334,7 @@ display:
           entity_field: created
           plugin_id: field
       block_description: 'Blog Posts'
+      title: 'Recent Blog Posts'
     cache_metadata:
       max-age: -1
       contexts:
@@ -357,7 +359,13 @@ display:
       path: blog.xml
       displays:
         default: default
+        block_1: block_1
         page_1: page_1
+      title: 'Jeff Geerling''s Blog'
+      defaults:
+        title: false
+        sitename_title: false
+      sitename_title: false
     cache_metadata:
       max-age: -1
       contexts:

@@ -257,41 +257,6 @@ display:
         - user.permissions
       max-age: -1
       tags: {  }
-  feed_1:
-    display_plugin: feed
-    id: feed_1
-    display_title: Feed
-    position: 2
-    display_options:
-      sitename_title: true
-      path: rss.xml
-      displays:
-        page_1: page_1
-        default: ''
-      pager:
-        type: some
-        options:
-          items_per_page: 10
-          offset: 0
-      style:
-        type: rss
-        options:
-          description: ''
-          grouping: {  }
-          uses_fields: false
-      row:
-        type: node_rss
-        options:
-          relationship: none
-          view_mode: rss
-      display_extenders: {  }
-    cache_metadata:
-      contexts:
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      max-age: -1
-      tags: {  }
   page_1:
     display_options:
       path: node
