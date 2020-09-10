@@ -35,7 +35,7 @@ backend_config:
   connector_config:
     scheme: http
     host: solr-1181.hostedapachesolr.com
-    port: 80
+    port: '80'
     path: /
     core: 5hE5u_jeffgeerling_com
     timeout: 5
@@ -66,3 +66,4 @@ backend_config:
   environment: default
   optimize: false
   site_hash: false
+  index_single_documents_fallback_count: 10
