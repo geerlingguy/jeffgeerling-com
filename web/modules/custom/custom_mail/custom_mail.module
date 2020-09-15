@@ -49,6 +49,7 @@ function custom_mail_comment_insert(EntityInterface $comment) {
 
   // Get the node for the comment and generate link URLs.
   $comment_url = Url::fromRoute('entity.comment.canonical', ['comment' => $comment->id()]);
+  $comment_url->setOption('fragment', 'comment-' . $comment->id());
   $node_url = Url::fromRoute('entity.node.canonical', ['node' => $comment->getCommentedEntityId()]);
   $delete_url = Url::fromRoute('entity.comment.delete_form', ['comment' => $comment->id()]);
 
