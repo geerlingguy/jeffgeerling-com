@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3d96387e8049fdf721c4154ded2c983d",
+    "content-hash": "e5687a28c86761b9e636a17a1520eccc",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1717,34 +1717,32 @@
         },
         {
             "name": "drupal/cleantalk",
-            "version": "3.9.0",
+            "version": "9.1.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/cleantalk.git",
-                "reference": "8.x-3.9"
+                "reference": "9.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/cleantalk-8.x-3.9.zip",
-                "reference": "8.x-3.9",
-                "shasum": "be99e5906768b981faacd627caf18d4b46cf410a"
+                "url": "https://ftp.drupal.org/files/projects/cleantalk-9.1.1.zip",
+                "reference": "9.1.1",
+                "shasum": "98ed2e9b57bb396ed5320e5f85935f85618ccd9e"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "^8.8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.9",
-                    "datestamp": "1590999191",
+                    "version": "9.1.1",
+                    "datestamp": "1603093901",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
                 },
-                "patches_applied": {
-                    "Drupal 8 version doesn't account for reverse_proxy settings": "https://www.drupal.org/files/issues/2020-06-06/3143365-10-helper-ip-get.patch"
-                }
+                "patches_applied": []
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [

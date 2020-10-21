@@ -18,7 +18,7 @@
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "~1.0",
         "drupal/admin_toolbar": "^2.0",
-        "drupal/cleantalk": "^3.5",
+        "drupal/cleantalk": "^9.1",
         "drupal/codefilter": "1.x-dev",
         "drupal/config_split": "^1.4",
         "drupal/core-composer-scaffold": "^8.8",
@@ -62,11 +62,6 @@
                 "[web-root]/sites/development.services.yml": {
                     "append": "patches/development-services-yml-append.txt"
                 }
-            }
-        },
-        "patches": {
-            "drupal/cleantalk": {
-                "Drupal 8 version doesn't account for reverse_proxy settings": "https://www.drupal.org/files/issues/2020-06-06/3143365-10-helper-ip-get.patch"
             }
         },
         "installer-paths": {
