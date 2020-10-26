@@ -37,7 +37,7 @@
         "drush/drush": "^9.0"
     },
     "require-dev": {
-        "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
         "drupal/coder": "^8.3",
         "drupal/devel": "^2.1"
     },
