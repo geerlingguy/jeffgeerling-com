@@ -25,6 +25,10 @@ jobs:
         with:
           php-version: ${{ matrix.php_version }}
 
+      # See: https://github.com/geerlingguy/jeffgeerling-com/issues/130
+      - name: Downgrade Composer to v1.
+        run: composer self-update --1
+
       - name: Install dependencies
         run: composer install --dev
 
