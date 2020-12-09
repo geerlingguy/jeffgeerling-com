@@ -25,19 +25,8 @@ $databases['default']['default'] = [
   'username' => 'drupal',
   'password' => 'drupal',
   'prefix' => '',
-  'host' => '127.0.0.1',
+  'host' => 'mysql',
   'port' => '',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-];
-
-$databases['migrate']['default'] = [
-  'database' => 'drupal',
-  'username' => 'drupal',
-  'password' => 'drupal',
-  'prefix' => '',
-  'host' => 'docker.for.mac.localhost',
-  'port' => '3307',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 ];
