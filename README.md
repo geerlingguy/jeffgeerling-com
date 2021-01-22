@@ -22,9 +22,9 @@ The first time you start using this project, you need to create your local setti
 
 If you have PHP and Composer installed locally, you can install project requirements with:
 
-    composer install --dev
+    composer install
 
-Otherwise, you can run this command inside the built Docker container using `docker-compose exec drupal composer install --dev` _after_ you run the next command to bring up the Docker environment.
+Otherwise, you can run this command inside the built Docker container using `docker-compose exec drupal composer install` _after_ you run the next command to bring up the Docker environment.
 
 Make sure you have Docker installed, then run the following command (in the same directory as this README file):
 
@@ -56,6 +56,15 @@ Any time configuration is changed or any modules or Drupal is upgraded, you shou
     docker-compose exec drupal bash -c 'drush config:export -y'
 
 And then push any changes to the Git repository before deploying the latest code to the site.
+
+### Upgrading Core (and Contrib)
+
+  1. Set up the site like normal, make sure it's installed.
+  2. Run `composer update` (to update everything).
+  3. Run `docker-compose exec drupal bash -c 'drush updb -y'`
+  4. Run `docker-compose exec drupal bash -c 'drush config:export -y'`
+  5. Commit any changes and push to remote.
+  6. Run the deploy playbook to update the live site.
 
 ### Linting PHP code against Drupal's Coding Standards
 
