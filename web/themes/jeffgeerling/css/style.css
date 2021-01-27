@@ -93,6 +93,7 @@ hr {
   display: block;
   background-color: #aaa;
   border: 0;
+  height: 1px;
 }
 
 img {
