@@ -243,6 +243,11 @@ header {
   text-decoration: none;
 }
 
+.yt-embed {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
 /* Footer. */
 .region-footer {
   clear: both;
