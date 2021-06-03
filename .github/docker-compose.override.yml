@@ -7,3 +7,4 @@ services:
       - './:/var/www/html:rw'
     environment:
       CI: 'true'
+      DRUPAL_BASE_IMAGE: 'geerlingguy/drupal:latest'
