@@ -3,8 +3,11 @@ version: '3'
 
 services:
   drupal:
+    build:
+      context: .
+      args:
+        - DRUPAL_BASE_IMAGE="geerlingguy/drupal:latest"
     volumes:
       - './:/var/www/html:rw'
     environment:
       CI: 'true'
-      DRUPAL_BASE_IMAGE: 'geerlingguy/drupal:latest'
