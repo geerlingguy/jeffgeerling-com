@@ -58,7 +58,10 @@ jobs:
         run: composer install
 
       - name: Build container
-        run: docker build -t jeffgeerling-com:latest .
+        run: >
+          docker build
+          --build-arg DRUPAL_BASE_IMAGE="geerlingguy/drupal:latest"
+          -t jeffgeerling-com:latest .
 
       - name: Start Docker environment
         run: |
