@@ -1,4 +1,4 @@
-ARG DRUPAL_BASE_IMAGE=geerlingguy/drupal:latest
+ARG DRUPAL_BASE_IMAGE=geerlingguy/drupal:latest-arm64
 
 # PHP Dependency install via Composer.
 FROM composer as vendor
@@ -43,7 +43,7 @@ RUN sed -i '\|sendmail_path|c\sendmail_path = "/usr/local/bin/mhsendmail --smtp-
 RUN sed -i '\|sendmail_path|c\sendmail_path = "/usr/local/bin/mhsendmail --smtp-addr=mailhog:1025"' /etc/php/7.4/cli/php.ini
 
 # Add Drush Launcher.
-RUN curl -OL https://github.com/drush-ops/drush-launcher/releases/download/0.6.0/drush.phar \
+RUN curl -OL https://github.com/drush-ops/drush-launcher/releases/download/0.9.1/drush.phar \
  && chmod +x drush.phar \
  && mv drush.phar /usr/local/bin/drush
 

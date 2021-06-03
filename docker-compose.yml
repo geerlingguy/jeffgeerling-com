@@ -16,17 +16,17 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ~/Sites/jeffgeerling-com:/var/www/html:rw,delegated
+      - ./:/var/www/html:rw,delegated
     # restart: on-failure
 
   mysql:
-    image: mysql:5.7
+    image: mariadb:10
     container_name: jeffgeerling-mysql
     environment:
-      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
-      MYSQL_DATABASE: drupal
-      MYSQL_USER: drupal
-      MYSQL_PASSWORD: drupal
+      MARIADB_RANDOM_ROOT_PASSWORD: 'yes'
+      MARIADB_DATABASE: drupal
+      MARIADB_USER: drupal
+      MARIADB_PASSWORD: drupal
     # restart: on-failure
     ports:
       - "3306:3306"
