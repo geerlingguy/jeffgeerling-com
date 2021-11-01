@@ -17,7 +17,7 @@
     "require": {
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "~1.0",
-        "drupal/admin_toolbar": "^2.0",
+        "drupal/admin_toolbar": "^3.0",
         "drupal/cleantalk": "^9.1",
         "drupal/codefilter": "1.x-dev",
         "drupal/config_split": "^1.4",

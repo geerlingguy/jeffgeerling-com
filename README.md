@@ -46,8 +46,8 @@ At some point, I'll write up how to do it all with Drush, automated.
 
 For now:
 
-  1. Open Sequel Pro, download database from prod server.
-  2. Open Sequel Pro, upload database to local environment.
+  1. Open Sequel Ace, download database from prod server.
+  2. Open Sequel Ace, upload database to local environment.
 
 ### Updating Configuration
 
