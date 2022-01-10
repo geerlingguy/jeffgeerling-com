@@ -34,7 +34,8 @@
         "drupal/search_api_solr": "^4.0",
         "drupal/simple_mail": "^2",
         "drupal/simple_sitemap": "^3.6",
-        "drush/drush": "^10"
+        "drush/drush": "^10",
+        "michelf/php-markdown": "^1.9"
     },
     "require-dev": {
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
@@ -65,10 +66,7 @@
                 ".htaccess"
             ],
             "file-mapping": {
-                "[web-root]/.htaccess": false,
-                "[web-root]/sites/development.services.yml": {
-                    "append": "patches/development-services-yml-append.txt"
-                }
+                "[web-root]/.htaccess": false
             }
         },
         "installer-paths": {

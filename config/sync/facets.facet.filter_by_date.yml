@@ -9,31 +9,34 @@ dependencies:
     - search_api
 id: filter_by_date
 name: 'Filter by date'
-url_alias: filter_by_date
 weight: -1
 min_count: 1
-show_only_one_result: false
-field_identifier: created
+url_alias: filter_by_date
 facet_source_id: 'search_api:views_page__search__page'
+field_identifier: created
+query_operator: or
+hard_limit: 0
+exclude: false
+use_hierarchy: false
+keep_hierarchy_parents_active: false
+expand_hierarchy: false
+enable_parent_when_child_gets_disabled: true
 widget:
   type: checkbox
   config:
     show_numbers: true
     soft_limit: 5
-    soft_limit_settings:
-      show_less_label: 'Show less'
-      show_more_label: 'Show more'
     show_reset_link: false
     reset_text: 'Show all'
     hide_reset_when_no_selection: false
-query_operator: or
-use_hierarchy: false
-keep_hierarchy_parents_active: false
-expand_hierarchy: false
-enable_parent_when_child_gets_disabled: true
-hard_limit: 0
-exclude: false
+    soft_limit_settings:
+      show_less_label: 'Show less'
+      show_more_label: 'Show more'
+empty_behavior:
+  behavior: none
 only_visible_when_facet_source_is_visible: true
+show_only_one_result: false
+show_title: false
 processor_configs:
   active_widget_order:
     processor_id: active_widget_order
@@ -61,6 +64,3 @@ processor_configs:
       pre_query: 50
       build: 15
     settings: {  }
-empty_behavior:
-  behavior: none
-show_title: false

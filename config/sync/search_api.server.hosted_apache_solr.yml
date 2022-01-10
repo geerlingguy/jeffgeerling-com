@@ -31,6 +31,12 @@ name: 'Hosted Apache Solr'
 description: ''
 backend: search_api_solr
 backend_config:
+  retrieve_data: true
+  highlight_data: true
+  site_hash: false
+  server_prefix: ''
+  domain: generic
+  environment: default
   connector: basic_auth
   connector_config:
     scheme: http
@@ -42,13 +48,14 @@ backend_config:
     index_timeout: 5
     optimize_timeout: 10
     finalize_timeout: 30
-    commit_within: 1000
-    username: '1181'
-    password: ''
     solr_version: ''
     http_method: AUTO
+    commit_within: 1000
     jmx: false
     solr_install_dir: ''
+    username: '1181'
+    password: ''
+  optimize: false
   disabled_field_types: {  }
   disabled_caches: {  }
   disabled_request_handlers:
@@ -58,12 +65,5 @@ backend_config:
   disabled_request_dispatchers:
     - request_dispatcher_httpcaching_default_7_0_0
   rows: 10
-  retrieve_data: true
-  highlight_data: true
-  skip_schema_check: false
-  server_prefix: ''
-  domain: generic
-  environment: default
-  optimize: false
-  site_hash: false
   index_single_documents_fallback_count: 10
+  skip_schema_check: false

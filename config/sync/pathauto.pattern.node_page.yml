@@ -11,11 +11,11 @@ pattern: '[node:title]'
 selection_criteria:
   -
     id: node_type
-    bundles:
-      page: page
     negate: false
     context_mapping:
       node: node
+    bundles:
+      page: page
 selection_logic: and
 weight: -9
 relationships: {  }

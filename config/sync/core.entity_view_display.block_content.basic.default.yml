@@ -13,11 +13,11 @@ bundle: basic
 mode: default
 content:
   body:
+    type: text_default
     label: hidden
-    weight: 16
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 16
     region: content
 hidden:
   langcode: true

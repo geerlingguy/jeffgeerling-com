@@ -18,12 +18,12 @@ plugin: 'facet_block:filter_by_date'
 settings:
   id: 'facet_block:filter_by_date'
   label: 'Filter by date'
-  provider: facets
   label_display: visible
+  provider: facets
   block_id: filterbydate
 visibility:
   request_path:
     id: request_path
-    pages: "/search\r\n/search/*"
     negate: false
     context_mapping: {  }
+    pages: "/search\r\n/search/*"

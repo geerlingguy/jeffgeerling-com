@@ -18,14 +18,14 @@ plugin: 'block_content:105fd227-ecae-4b4c-8a79-1c84a93a7546'
 settings:
   id: 'block_content:105fd227-ecae-4b4c-8a79-1c84a93a7546'
   label: 'What I Do'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

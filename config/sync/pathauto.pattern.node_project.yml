@@ -11,11 +11,11 @@ pattern: 'project/[node:title]'
 selection_criteria:
   -
     id: node_type
-    bundles:
-      project: project
     negate: false
     context_mapping:
       node: node
+    bundles:
+      project: project
 selection_logic: and
 weight: -8
 relationships: {  }

@@ -13,13 +13,13 @@ bundle: user
 mode: default
 content:
   user_picture:
+    type: image
     label: hidden
     settings:
-      image_style: ''
       image_link: content
-    type: image
-    weight: 11
+      image_style: ''
     third_party_settings: {  }
+    weight: 11
     region: content
 hidden:
   langcode: true

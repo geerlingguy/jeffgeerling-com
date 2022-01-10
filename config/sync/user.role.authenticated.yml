@@ -1,7 +1,13 @@
 uuid: 7a07d7b1-9c94-4e4f-a74c-5418c8fcb81b
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.filtered_html
+  module:
+    - comment
+    - filter
+    - system
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated
@@ -11,7 +17,6 @@ is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
-  - 'access search search_api_page'
   - 'post comments'
   - 'skip comment approval'
   - 'use text format filtered_html'

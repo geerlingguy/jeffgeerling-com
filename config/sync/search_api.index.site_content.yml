@@ -2,34 +2,31 @@ uuid: c78fdc19-50b1-4905-a946-a034bc3fbd67
 langcode: en
 status: true
 dependencies:
-  module:
-    - search_api_solr
-    - node
-    - taxonomy
-    - search_api
   config:
     - field.storage.node.body
     - field.storage.node.comment_node_blog_post
     - field.storage.node.field_tags
     - search_api.server.hosted_apache_solr
+  module:
+    - search_api_solr
+    - node
+    - taxonomy
+    - search_api
 third_party_settings:
   search_api_solr:
     finalize: false
     commit_before_finalize: false
     commit_after_finalize: false
-    multilingual:
-      limit_to_content_language: false
-      include_language_independent: true
     highlighter:
       maxAnalyzedChars: 51200
       fragmenter: gap
+      usePhraseHighlighter: true
+      highlightMultiTerm: true
+      preserveMulti: false
       regex:
         slop: 0.5
         pattern: blank
         maxAnalyzedChars: 10000
-      usePhraseHighlighter: true
-      highlightMultiTerm: true
-      preserveMulti: false
       highlight:
         mergeContiguous: false
         requireFieldMatch: false
@@ -50,6 +47,9 @@ third_party_settings:
       index_prefix: ''
       collection: ''
       timezone: ''
+    multilingual:
+      limit_to_content_language: false
+      include_language_independent: true
 id: site_content
 name: 'Site Content'
 description: ''
@@ -149,16 +149,19 @@ processor_settings:
       preprocess_query: -30
   entity_status: {  }
   highlight:
-    highlight: always
-    highlight_partial: false
+    weights:
+      postprocess_query: 0
+    prefix: '<strong>'
+    suffix: '</strong>'
     excerpt: true
     excerpt_length: 270
     exclude_fields: {  }
-    prefix: '<strong>'
-    suffix: '</strong>'
-    weights:
-      postprocess_query: 0
+    highlight: always
+    highlight_partial: false
   html_filter:
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
     all_fields: true
     fields:
       - body_processed
@@ -173,26 +176,24 @@ processor_settings:
       h2: 3
       h3: 2
       strong: 2
-    weights:
-      preprocess_index: -15
-      preprocess_query: -15
   language_with_fallback: {  }
   rendered_item: {  }
   solr_date_range:
     weights:
       preprocess_index: 0
   type_boost:
+    weights:
+      preprocess_index: 0
     boosts:
       'entity:node':
         datasource_boost: !!float 1
         bundle_boosts:
           blog_post: !!float 2
-    weights:
-      preprocess_index: 0
 tracker_settings:
   default:
     indexing_order: fifo
 options:
-  index_directly: true
   cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
 server: hosted_apache_solr

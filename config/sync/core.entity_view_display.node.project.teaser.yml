@@ -25,26 +25,25 @@ bundle: project
 mode: teaser
 content:
   body:
-    label: hidden
-    weight: 1
     type: text_summary_or_trimmed
+    label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
+    weight: 1
     region: content
   field_project_images:
-    label: hidden
-    weight: 0
     type: image
+    label: hidden
     settings:
-      image_style: thumbnail
       image_link: content
+      image_style: thumbnail
     third_party_settings: {  }
+    weight: 0
     region: content
   field_project_link:
-    label: inline
-    weight: 2
     type: link
+    label: inline
     settings:
       trim_length: 80
       url_only: false
@@ -52,11 +51,12 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 2
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   comment_node_project: true
