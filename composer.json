@@ -24,7 +24,7 @@
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
-        "drupal/facets": "^1.4",
+        "drupal/facets": "^2.0",
         "drupal/gin": "^3.0",
         "drupal/honeypot": "^2.0",
         "drupal/insert": "^2.0",
