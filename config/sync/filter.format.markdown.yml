@@ -30,5 +30,6 @@ filters:
         plugins:
           filter_align: false
           filter_caption: false
+          php-markdown: true
       override: false
     filterFormat: markdown
