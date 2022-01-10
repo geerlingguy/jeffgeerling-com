@@ -172,7 +172,7 @@ function jeffgeerling_preprocess_comment(&$variables) {
   $comment = $variables['elements']['#comment'];
 
   // Build the date.
-  $variables['created'] = \Drupal::service('date.formatter')->formatInterval(REQUEST_TIME - $comment
+  $variables['created'] = \Drupal::service('date.formatter')->formatInterval(\Drupal::time()->getRequestTime() - $comment
     ->getCreatedTime(), 1);
 
   // Build the permalink.
