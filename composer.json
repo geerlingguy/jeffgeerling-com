@@ -66,7 +66,8 @@
                 ".htaccess"
             ],
             "file-mapping": {
-                "[web-root]/.htaccess": false
+                "[web-root]/.htaccess": false,
+                "[web-root]/README.md": false
             }
         },
         "installer-paths": {
