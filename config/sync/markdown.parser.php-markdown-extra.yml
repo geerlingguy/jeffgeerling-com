@@ -1,0 +1,27 @@
+dependencies:
+  module:
+    - markdown
+id: php-markdown-extra
+enabled: true
+weight: 30
+render_strategy:
+  type: none
+  custom_allowed_html: '<style> <iframe>'
+  plugins:
+    php-markdown: true
+    php-markdown-extra: true
+settings:
+  enhanced_ordered_list: true
+  hard_wrap: false
+  no_entities: false
+  no_markup: false
+  predef_titles:
+    - ''
+  predef_urls:
+    - ''
+  tab_width: 4
+  code_attr_on_pre: false
+  hashtag_protection: false
+  omit_footnotes: false
+  predef_abbr:
+    - ''

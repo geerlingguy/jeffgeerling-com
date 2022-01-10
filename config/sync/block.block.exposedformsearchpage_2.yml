@@ -18,12 +18,12 @@ plugin: 'views_exposed_filter_block:search-page'
 settings:
   id: 'views_exposed_filter_block:search-page'
   label: ''
-  provider: views
   label_display: '0'
+  provider: views
   views_label: ''
 visibility:
   request_path:
     id: request_path
-    pages: "/search\r\n/search/*"
     negate: true
     context_mapping: {  }
+    pages: "/search\r\n/search/*"

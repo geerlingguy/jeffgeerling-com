@@ -18,25 +18,25 @@ bundle: page
 mode: default
 content:
   body:
-    label: hidden
-    weight: 0
     type: text_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
   comment_node_page:
-    label: hidden
     type: comment_default
-    weight: 20
+    label: hidden
     settings:
       view_mode: default
       pager_id: 0
     third_party_settings: {  }
+    weight: 20
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   field_files: true

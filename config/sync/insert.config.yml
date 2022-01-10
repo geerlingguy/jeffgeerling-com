@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: n5mlpvT_JvAQDFdotgikrUvdzuhlUIjltA4S04wVZAY
 text_formats: {  }
 absolute: false
 file_field_images_enabled: false
@@ -14,5 +16,3 @@ file_extensions:
     - mp3
   video:
     - mp4
-_core:
-  default_config_hash: n5mlpvT_JvAQDFdotgikrUvdzuhlUIjltA4S04wVZAY

@@ -20,5 +20,17 @@ filters:
     id: markdown
     provider: markdown
     status: true
-    weight: -47
-    settings: {  }
+    weight: -15
+    settings:
+      id: php-markdown-extra
+      enabled: true
+      render_strategy:
+        type: none
+        custom_allowed_html: '<style> <iframe src frameborder allowfullscreen> <blockquote'
+        plugins:
+          filter_align: false
+          filter_caption: false
+          php-markdown: true
+          php-markdown-extra: true
+      override: false
+    filterFormat: markdown

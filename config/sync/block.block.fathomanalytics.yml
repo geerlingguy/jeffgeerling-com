@@ -17,8 +17,8 @@ plugin: 'block_content:3c3ff7d8-a12f-483e-ab7f-bad9398d97ba'
 settings:
   id: 'block_content:3c3ff7d8-a12f-483e-ab7f-bad9398d97ba'
   label: 'Fathom Analytics'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

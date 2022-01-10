@@ -6,9 +6,9 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    parent: 'main-menu:0:'
     available_menus:
       - main
+    parent: 'main-menu:0:'
 name: 'Blog Post'
 type: blog_post
 description: 'Blog posts appear on the blog.'

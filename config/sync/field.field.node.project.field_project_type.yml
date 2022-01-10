@@ -17,10 +17,10 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
+  handler: 'default:taxonomy_term'
   handler_settings:
-    sort:
-      field: _none
     target_bundles:
       project_type: project_type
-  handler: 'default:taxonomy_term'
+    sort:
+      field: _none
 field_type: entity_reference

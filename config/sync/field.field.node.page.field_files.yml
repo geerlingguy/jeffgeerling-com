@@ -18,10 +18,10 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
+  handler: 'default:file'
+  handler_settings: {  }
   file_directory: files
   file_extensions: 'txt pdf doc docx ppt pptx psd ai gif png jpg jpeg mov mp4 m4a m4v'
   max_filesize: '24 MB'
   description_field: false
-  handler: 'default:file'
-  handler_settings: {  }
 field_type: file

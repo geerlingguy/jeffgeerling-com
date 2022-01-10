@@ -117,7 +117,7 @@ function jeffgeerling_preprocess_node(&$variables) {
 
   // Make 'node_bottom' region blocks available.
   $region = 'node_bottom';
-  $blocks = entity_load_multiple_by_properties('block', [
+  $blocks = Drupal::entityTypeManager()->getStorage('block')->loadByProperties([
     'theme' => 'jeffgeerling',
     'region' => $region,
   ]);
@@ -125,7 +125,8 @@ function jeffgeerling_preprocess_node(&$variables) {
   $build = [];
   foreach ($blocks as $key => $block) {
     if ($block->access('view')) {
-      $build[$key] = entity_view($block, 'block');
+      $builder = \Drupal::entityTypeManager()->getViewBuilder('block');
+      $build[$key] = $builder->view($block, 'block');
     }
   }
   $variables[$region] = $build;
@@ -172,7 +173,7 @@ function jeffgeerling_preprocess_comment(&$variables) {
   $comment = $variables['elements']['#comment'];
 
   // Build the date.
-  $variables['created'] = \Drupal::service('date.formatter')->formatInterval(REQUEST_TIME - $comment
+  $variables['created'] = \Drupal::service('date.formatter')->formatInterval(\Drupal::time()->getRequestTime() - $comment
     ->getCreatedTime(), 1);
 
   // Build the permalink.

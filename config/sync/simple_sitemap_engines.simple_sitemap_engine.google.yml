@@ -9,4 +9,3 @@ label: Google
 url: 'https://www.google.com/ping?sitemap=[sitemap]'
 sitemap_variants:
   default: default
-last_submitted: 1599680102

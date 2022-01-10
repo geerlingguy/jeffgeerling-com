@@ -1,6 +1,28 @@
+_core:
+  default_config_hash: n7m4vlCPoB3_1C7l13LKYsifmLur4QR71mOD7S_5hSE
 default_cron_limit: 50
 cron_worker_runtime: 15
 default_tracker: default
 tracking_page_size: 100
-_core:
-  default_config_hash: n7m4vlCPoB3_1C7l13LKYsifmLur4QR71mOD7S_5hSE
+boost_factors:
+  - !!float 0
+  - 0.1
+  - 0.2
+  - 0.3
+  - 0.5
+  - 0.6
+  - 0.7
+  - 0.8
+  - 0.9
+  - !!float 1
+  - 1.1
+  - 1.2
+  - 1.3
+  - 1.4
+  - 1.5
+  - !!float 2
+  - !!float 3
+  - !!float 5
+  - !!float 8
+  - !!float 13
+  - !!float 21

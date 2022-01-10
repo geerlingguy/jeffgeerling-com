@@ -18,15 +18,15 @@ plugin: 'views_block:related_content-block_1'
 settings:
   id: 'views_block:related_content-block_1'
   label: ''
-  provider: views
   label_display: visible
+  provider: views
   views_label: ''
   items_per_page: none
 visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
-    bundles:
-      blog_post: blog_post
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+    bundles:
+      blog_post: blog_post

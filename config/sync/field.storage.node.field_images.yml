@@ -11,12 +11,12 @@ field_name: field_images
 entity_type: node
 type: image
 settings:
-  uri_scheme: public
-  default_image:
-    uuid: ''
   target_type: file
   display_field: false
   display_default: false
+  uri_scheme: public
+  default_image:
+    uuid: ''
 module: image
 locked: false
 cardinality: -1
