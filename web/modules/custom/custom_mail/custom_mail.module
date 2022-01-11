@@ -6,7 +6,6 @@
  */
 
 use Drupal\Core\Entity\EntityInterface;
-use Drupal\Component\Utility\Unicode;
 use Drupal\Core\Url;
 
 /**
@@ -79,8 +78,8 @@ function custom_mail_comment_insert(EntityInterface $comment) {
  *   A prepared username.
  */
 function _custom_mail_prepare_username($name = '') {
-  if (Unicode::strlen($name) > 24) {
-    $name = Unicode::substr($name, 0, 20) . '...';
+  if (mb_strlen($name) > 24) {
+    $name = mb_substr($name, 0, 20) . '...';
   }
   return $name;
 }
