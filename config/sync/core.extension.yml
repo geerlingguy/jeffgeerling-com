@@ -29,6 +29,7 @@ module:
   language: 0
   link: 0
   markdown: 0
+  menu_link_content: 0
   menu_ui: 0
   node: 0
   options: 0
@@ -49,7 +50,6 @@ module:
   update: 0
   user: 0
   views_ui: 0
-  menu_link_content: 1
   pathauto: 1
   views: 10
   minimal: 1000

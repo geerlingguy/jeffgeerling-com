@@ -187,9 +187,9 @@ display:
           entity_field: cid
           plugin_id: field
           order: DESC
-          exposed: false
           expose:
             field_identifier: cid
+          exposed: false
       filters:
         status:
           id: status

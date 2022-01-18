@@ -75,7 +75,7 @@ content:
         default: image
         auto_image_style: image
         link_image: ''
-        width: '650'
+        width: '700'
         caption: 0
         align: 0
         rotate: 0
