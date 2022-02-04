@@ -66,7 +66,7 @@
   {% set attach = attach|merge({attributes: {'data-caption': ['title']}}) %}
 {% endif %}
 
-<img src="{{ url }}"{{ attributes }} alt="TODO" {% if width and height %}width="{{ width }}" height="{{ height }}" {% endif %}{% if classes|length %} class="{{ classes|join(' ') }}"{% endif %} />
+<img src="{{ url }}"{{ attributes }} {% if width and height %}width="{{ width }}" height="{{ height }}" {% endif %}{% if classes|length %} class="{{ classes|join(' ') }}"{% endif %} data-insert-type="{{ field_type }}" data-entity-type="{{ entity_type }}" data-entity-uuid="{{ uuid }}" data-insert-attach='{{ attach|json_encode() }}' />
 
 {% if url_link %}
   </a>
