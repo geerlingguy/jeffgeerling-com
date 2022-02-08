@@ -14,6 +14,20 @@ Currently the process for deploying runs from the Midwestern Mac infrastructure 
 
     ansible-playbook playbook.yml --tags=deploy
 
+### Docker in Production
+
+This repository includes a `Dockerfile.prod` intended for building a production-ready image (with all code and assets included).
+
+To build that image:
+
+    docker build -f Dockerfile.prod -t geerlingguy/jeffgeerling-com:arm64 .
+
+Then you can push the image to the official [`geerlingguy/jeffgeerling-com`](https://hub.docker.com/r/geerlingguy/jeffgeerling-com) repository on Docker Hub:
+
+    docker push geerlingguy/jeffgeerling-com:arm64
+
+> Note: The image is automatically built and pushed to Docker Hub via GitHub Actions every time a commit is pushed to the `master` branch.
+
 ## Local Environment
 
 The first time you start using this project, you need to create your local settings file:
