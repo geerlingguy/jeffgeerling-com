@@ -19,13 +19,10 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Test building image.
-        run: docker build -f Dockerfile.prod -t geerlingguy/jeffgeerling-com:arm64 .
+        run: docker build -f Dockerfile.prod --platform linux/arm64 -t geerlingguy/jeffgeerling-com:arm64 .
 
       - name: Run the built image.
-        run: docker run --name test-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro docker-ansible
-
-      - name: Verify Ansible is accessible in the built image.
-        run: docker exec --tty test-container env TERM=xterm ansible --version
+        run: docker run --name test-container --platform linux/arm64 -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro docker-ansible
 
   # If on master branch, build and release image.
   release:
