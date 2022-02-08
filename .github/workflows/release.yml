@@ -30,4 +30,4 @@ jobs:
           file: Dockerfile.prod
           platforms: linux/arm64
           push: true
-          tags: geerlingguy/jeffgeerling-com:latest
+          tags: geerlingguy/jeffgeerling-com:arm64
