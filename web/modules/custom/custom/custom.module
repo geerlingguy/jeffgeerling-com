@@ -21,7 +21,7 @@ function custom_entity_view_alter(array &$build, EntityInterface $entity, Entity
       // See: https://drupal.stackexchange.com/a/263094/26.
       if (isset($build['#attached']['html_head_link'])) {
         foreach ($build['#attached']['html_head_link'] as $key => $head) {
-          if ((isset($head[0]['rel']) ? $head[0]['rel'] : FALSE) == 'canonical') {
+          if (($head[0]['rel'] ?? FALSE) == 'canonical') {
             $build['#attached']['html_head_link'][$key][0]['href'] = Url::fromRoute('<front>', [], ['absolute' => 'true'])
               ->toString();
           }
