@@ -708,6 +708,7 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  */
 $settings['trusted_host_patterns'] = [
   '^www\.jeffgeerling\.com$',
+  '^edit\.jeffgeerling\.com$',
 ];
 
 /**
