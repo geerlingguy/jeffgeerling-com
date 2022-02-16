@@ -15,6 +15,7 @@ $config['config_split.config_split.dev']['status'] = TRUE;
 
 $settings['trusted_host_patterns'] = [
   '^www\.jeffgeerling\.com$',
+  '^edit\.jeffgeerling\.com$',
   '^localhost$',
 ];
 
