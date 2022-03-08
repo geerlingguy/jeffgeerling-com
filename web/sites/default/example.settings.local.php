@@ -10,8 +10,28 @@
 $config['config_split.config_split.dev']['status'] = TRUE;
 
 # Disable unless using a reverse proxy (e.g. Nginx caching on prod).
+#
+# // Reverse proxy - local server.
 # $settings['reverse_proxy'] = TRUE;
 # $settings['reverse_proxy_addresses'] = ['server.ip.address.here'];
+#
+# // Reverse proxy - Cloudflare.
+# if (isset($_SERVER['HTTP_CF_CONNECTING_IP'])) {
+#   // If the CloudFlare header is contained in the X-Forwarded-For header, then
+#   // all IP addresses to the right of that entry are reverse-proxies, which are
+#   // additional to the value in $_SERVER['REMOTE_ADDR].
+#   // E.g. <client> --- <CDN> --- <Varnish> --- <drupal>.
+#   $client = $_SERVER['HTTP_CF_CONNECTING_IP'];
+#   $ips = explode(', ', $_SERVER['HTTP_X_FORWARDED_FOR']);
+#   if ($keys = array_keys($ips, $client)) {
+#     $position = end($keys);
+#     $reverseProxies = array_slice($ips, $position + 1);
+#     $reverseProxies[] = $_SERVER['REMOTE_ADDR'];
+#
+#     $settings['reverse_proxy'] = TRUE;
+#     $settings['reverse_proxy_addresses'] = $reverseProxies;
+#   }
+# }
 
 $settings['trusted_host_patterns'] = [
   '^www\.jeffgeerling\.com$',
