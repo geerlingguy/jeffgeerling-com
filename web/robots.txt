@@ -33,7 +33,6 @@ Allow: /profiles/*.jpg
 Allow: /profiles/*.jpeg
 Allow: /profiles/*.png
 Allow: /profiles/*.svg
-# Subdomains
 Disallow: edit.jeffgeerling.com/*
 # Directories
 Disallow: /core/
