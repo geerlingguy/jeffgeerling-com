@@ -46,8 +46,6 @@ Make sure you have Docker installed, then run the following command (in the same
 
 Visit http://localhost/ to see the Drupal installation. Visit http://localhost:8025/ to see MailHog.
 
-> Note: If you're not running on Linux, this environment runs best with Docker for Mac's Mutagen caching enabled. Before starting the environment the first time, go into the Docker dashboard and enable caching for the directory where this repository is located. See [Mutagen-based caching](https://docs.docker.com/docker-for-mac/mutagen-caching/) docs for instructions.
-
 ### Installing Drupal
 
 You can install Drupal using the install wizard, but we like to use Drush for more automation:
