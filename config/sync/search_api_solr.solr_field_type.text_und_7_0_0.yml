@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: fUibOAQqTcKPMH-Rza_j3rjbhpoEEfC1qVVgc40o2Ls
+  default_config_hash: qJhff8pEEWhByuO9T2VbbQ-Oyqwxew2TfEf82H45hzk
 id: text_und_7_0_0
 label: 'Language Undefined Text Field'
 minimum_solr_version: 7.0.0
@@ -57,9 +57,9 @@ field_type:
       filters:
         -
           class: solr.SynonymGraphFilterFactory
-          ignoreCase: true
           synonyms: synonyms_und.txt
           expand: true
+          ignoreCase: true
         -
           class: solr.StopFilterFactory
           ignoreCase: true
@@ -186,8 +186,12 @@ solr_configs:
               name: buildOnStartup
               VALUE: 'false'
 text_files:
-  stopwords: ''
-  protwords: ''
+  stopwords: |
+
+  synonyms: |
+    drupal, durpal
+  protwords: |
+
   accents: |
     # À => A
     "\u00C0" => "A"
@@ -337,5 +341,3 @@ text_files:
     "\uFB05" => "st"
     # ﬆ => st
     "\uFB06" => "st"
-  synonyms: |
-    drupal, durpal

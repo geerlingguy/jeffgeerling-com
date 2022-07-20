@@ -11,6 +11,8 @@ id: filter_by_date
 name: 'Filter by date'
 weight: -1
 min_count: 1
+missing: false
+missing_label: others
 url_alias: filter_by_date
 facet_source_id: 'search_api:views_page__search__page'
 field_identifier: created
