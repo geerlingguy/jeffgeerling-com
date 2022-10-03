@@ -7,7 +7,7 @@
 /* General Styles ----------------------------------------------------------- */
 body {
   font-size: 100%;
-  font-family: Georgia, Times, serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 1em 0;
   padding: 0;
 }
@@ -75,7 +75,7 @@ blockquote {
 }
 
 textarea {
-  font-family: Georgia, Times, serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0.95em;
   line-height: 1.4em;
 }
