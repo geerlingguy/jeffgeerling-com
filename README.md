@@ -72,7 +72,7 @@ And then push any changes to the Git repository before deploying the latest code
 ### Upgrading Core (and Contrib)
 
   1. Set up the site like normal, make sure it's installed.
-  2. Run `composer update` (to update everything).
+  2. Run `docker-compose exec drupal bash -c 'composer update'` (to update everything).
   3. Run `docker-compose exec drupal bash -c 'drush updb -y'`
   4. Run `docker-compose exec drupal bash -c 'drush config:export -y'`
   5. Commit any changes and push to remote.
