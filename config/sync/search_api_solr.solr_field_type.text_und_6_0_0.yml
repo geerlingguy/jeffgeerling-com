@@ -106,7 +106,7 @@ spellcheck_field_type:
 collated_field_type:
   name: collated_und
   class: solr.ICUCollationField
-  locale: en
+  locale: null
   strength: primary
   caseLevel: false
 solr_configs:
