@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7f24ca042053f9b3a233b742e59711e8",
+    "content-hash": "471fe949f49fc5d6c0b34a0ff51dccc0",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3983,23 +3983,23 @@
         },
         {
             "name": "maennchen/zipstream-php",
-            "version": "v2.4.0",
+            "version": "2.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maennchen/ZipStream-PHP.git",
-                "reference": "3fa72e4c71a43f9e9118752a5c90e476a8dc9eb3"
+                "reference": "30ad6f93cf3efe4192bc7a4c9cad11ff8f4f237f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maennchen/ZipStream-PHP/zipball/3fa72e4c71a43f9e9118752a5c90e476a8dc9eb3",
-                "reference": "3fa72e4c71a43f9e9118752a5c90e476a8dc9eb3",
+                "url": "https://api.github.com/repos/maennchen/ZipStream-PHP/zipball/30ad6f93cf3efe4192bc7a4c9cad11ff8f4f237f",
+                "reference": "30ad6f93cf3efe4192bc7a4c9cad11ff8f4f237f",
                 "shasum": ""
             },
             "require": {
-                "ext-mbstring": "*",
                 "myclabs/php-enum": "^1.5",
-                "php": "^8.0",
-                "psr/http-message": "^1.0"
+                "php": "^7.4 || ^8.0",
+                "psr/http-message": "^1.0",
+                "symfony/polyfill-mbstring": "^1.0"
             },
             "require-dev": {
                 "ext-zip": "*",
@@ -4008,7 +4008,7 @@
                 "mikey179/vfsstream": "^1.6",
                 "php-coveralls/php-coveralls": "^2.4",
                 "phpunit/phpunit": "^8.5.8 || ^9.4.2",
-                "vimeo/psalm": "^5.0"
+                "vimeo/psalm": "^4.1"
             },
             "type": "library",
             "autoload": {
@@ -4045,7 +4045,7 @@
             ],
             "support": {
                 "issues": "https://github.com/maennchen/ZipStream-PHP/issues",
-                "source": "https://github.com/maennchen/ZipStream-PHP/tree/v2.4.0"
+                "source": "https://github.com/maennchen/ZipStream-PHP/tree/2.2.6"
             },
             "funding": [
                 {
@@ -4057,7 +4057,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2022-12-08T12:29:14+00:00"
+            "time": "2022-11-25T18:57:19+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -5805,16 +5805,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v5.4.17",
+            "version": "v5.4.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "40c08632019838dfb3350f18cf5563b8080055fc"
+                "reference": "6071aebf810ad13fe8200c224f36103abb37cf1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/40c08632019838dfb3350f18cf5563b8080055fc",
-                "reference": "40c08632019838dfb3350f18cf5563b8080055fc",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/6071aebf810ad13fe8200c224f36103abb37cf1f",
+                "reference": "6071aebf810ad13fe8200c224f36103abb37cf1f",
                 "shasum": ""
             },
             "require": {
@@ -5848,7 +5848,7 @@
             "description": "Finds files and directories via an intuitive fluent interface",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/finder/tree/v5.4.17"
+                "source": "https://github.com/symfony/finder/tree/v5.4.19"
             },
             "funding": [
                 {
@@ -5864,7 +5864,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-12-22T10:31:03+00:00"
+            "time": "2023-01-14T19:14:44+00:00"
         },
         {
             "name": "symfony/http-client-contracts",
@@ -7547,16 +7547,16 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v5.4.17",
+            "version": "v5.4.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "ad74890513d07060255df2575703daf971de92c7"
+                "reference": "2944bbc23f5f8da2b962fbcbf7c4a6109b2f4b7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/ad74890513d07060255df2575703daf971de92c7",
-                "reference": "ad74890513d07060255df2575703daf971de92c7",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/2944bbc23f5f8da2b962fbcbf7c4a6109b2f4b7b",
+                "reference": "2944bbc23f5f8da2b962fbcbf7c4a6109b2f4b7b",
                 "shasum": ""
             },
             "require": {
@@ -7616,7 +7616,7 @@
                 "dump"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-dumper/tree/v5.4.17"
+                "source": "https://github.com/symfony/var-dumper/tree/v5.4.19"
             },
             "funding": [
                 {
@@ -7632,7 +7632,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-12-22T10:31:03+00:00"
+            "time": "2023-01-16T10:52:33+00:00"
         },
         {
             "name": "symfony/yaml",
