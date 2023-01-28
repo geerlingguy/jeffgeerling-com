@@ -1,13 +1,11 @@
-<div class="info">
-  <strong>Posted by</strong>: {{ name }}
-</div>
-<hr>
-<div class="comment">
-  {{ comment.comment_body.value | raw }}
-</div>
-<hr>
-<div class="operations">
-  <strong>Posted on</strong>: <a href="{{ node_url }}">{{ node_url }}</a><br>
-  <strong>View comment</strong>: <a href="{{ comment_url }}">{{ comment_url }}</a><br>
-  <strong>Delete comment</strong>: <a href="{{ delete_url }}">{{ delete_url }}</a><br>
-</div>
+Posted by: {{ name }}
+
+---
+
+{{ comment.comment_body.value | raw }}
+
+---
+
+Posted on: {{ node_url }}
+View comment: {{ comment_url }}
+Delete comment: {{ delete_url }}
