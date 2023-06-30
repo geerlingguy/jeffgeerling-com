@@ -5,8 +5,8 @@
  * Custom functionality for JeffGeerling.com.
  */
 
-use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Url;
 
 /**
