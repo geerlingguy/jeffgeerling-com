@@ -55,9 +55,9 @@ module:
   views: 10
   minimal: 1000
 theme:
+  claro: 0
   stable: 0
   classy: 0
-  claro: 0
-  jeffgeerling: 0
   gin: 0
+  jeffgeerling: 0
 profile: minimal
