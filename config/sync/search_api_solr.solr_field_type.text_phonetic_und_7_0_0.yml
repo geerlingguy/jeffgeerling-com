@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: WpLFwsk7duNa2sQ1G_KO16bKL06d1JVveVjbkG9u5DI
+  default_config_hash: puB8VCKbCpDzJ-dEd9mlRUEShkBB7TQLAPiTBxCYtQs
 id: text_phonetic_und_7_0_0
 label: 'Fulltext Phonetic'
 minimum_solr_version: 7.0.0
@@ -14,11 +14,12 @@ field_type:
   name: text_phonetic_und
   class: solr.TextField
   positionIncrementGap: 100
+  storeOffsetsWithPositions: true
   analyzers:
     -
       type: index
       tokenizer:
-        class: solr.WhitespaceTokenizerFactory
+        class: solr.StandardTokenizerFactory
       filters:
         -
           class: solr.StopFilterFactory
@@ -34,6 +35,8 @@ field_type:
           preserveOriginal: 1
           catenateAll: 0
           catenateWords: 1
+        -
+          class: solr.FlattenGraphFilterFactory
         -
           class: solr.LengthFilterFactory
           min: 2
@@ -51,7 +54,7 @@ field_type:
     -
       type: query
       tokenizer:
-        class: solr.WhitespaceTokenizerFactory
+        class: solr.StandardTokenizerFactory
       filters:
         -
           class: solr.StopFilterFactory

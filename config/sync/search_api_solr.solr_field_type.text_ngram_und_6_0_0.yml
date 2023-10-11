@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: R-qv3m6WSi8tTmAcAyQK2adAXRPW4xLrmkIFbqIVmvc
+  default_config_hash: nQ6v8pgrKN3bzfcel5GP6EO6A1Yo5uRUQId9pOyds6U
 id: text_ngram_und_6_0_0
 label: 'NGram Text Field'
 minimum_solr_version: 6.0.0
@@ -14,6 +14,7 @@ field_type:
   name: text_ngram
   class: solr.TextField
   positionIncrementGap: 100
+  storeOffsetsWithPositions: true
   analyzers:
     -
       type: index
@@ -22,7 +23,7 @@ field_type:
           class: solr.MappingCharFilterFactory
           mapping: accents_und.txt
       tokenizer:
-        class: solr.WhitespaceTokenizerFactory
+        class: solr.StandardTokenizerFactory
       filters:
         -
           class: solr.StopFilterFactory
@@ -57,7 +58,7 @@ field_type:
           class: solr.MappingCharFilterFactory
           mapping: accents_und.txt
       tokenizer:
-        class: solr.WhitespaceTokenizerFactory
+        class: solr.StandardTokenizerFactory
       filters:
         -
           class: solr.LengthFilterFactory

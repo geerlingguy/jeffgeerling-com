@@ -79,11 +79,6 @@
             "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
             "web/modules/custom/{$name}": ["type:drupal-custom-module"],
             "web/themes/custom/{$name}": ["type:drupal-custom-theme"]
-        },
-        "patches": {
-            "drupal/markdown": {
-                "issue_3265416": "https://www.drupal.org/files/issues/2022-11-08/3265416-markdown-php-81-14.patch"
-            }
         }
     }
 }

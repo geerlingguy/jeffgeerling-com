@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: iifw_DxebhUOezFaJM3sD9m2rvzGXWkwxPC_g_58nag
+  default_config_hash: bWSErrOZirxgC9CR3TdPlJXHNmex1pARA9RNC--VqY8
 id: text_edgestring_und_6_0_0
 label: 'Edge NGram String Field'
 minimum_solr_version: 6.0.0
@@ -14,6 +14,7 @@ field_type:
   name: text_edgenstring
   class: solr.TextField
   positionIncrementGap: 100
+  storeOffsetsWithPositions: true
   analyzers:
     -
       type: index
