@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c06500200b628cfd21d0319c24c5fb1e",
+    "content-hash": "268fa71e35bbcac611e6160e6e21fd46",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1438,26 +1438,29 @@
         },
         {
             "name": "drupal/codefilter",
-            "version": "dev-1.x",
+            "version": "2.0.0-alpha3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/codefilter.git",
-                "reference": "c0f34f5ac5ccc80127dd84e8610b6f0423b98b2d"
+                "reference": "2.0.0-alpha3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/codefilter-2.0.0-alpha3.zip",
+                "reference": "2.0.0-alpha3",
+                "shasum": "1ace7831007d108cfb7671165e39bf71e0859a34"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^8 || ^9 || ^10"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1591117605",
+                    "version": "2.0.0-alpha3",
+                    "datestamp": "1691526216",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "message": "Alpha releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -9515,7 +9518,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/codefilter": 20,
+        "drupal/codefilter": 15,
         "drupal/markdown": 5
     },
     "prefer-stable": true,
