@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: e24uTmPTMM6cwWTSGvotZEasK-TD0RybEtMy3s0qG-U
+  default_config_hash: ombeM1PfI5qyv5hWxZKCyUA05c1JjFYvvRwi7oGIJeo
 id: text_und_7_0_0
 label: 'Language Undefined Text Field'
 minimum_solr_version: 7.0.0
@@ -190,12 +190,10 @@ solr_configs:
               name: buildOnStartup
               VALUE: 'false'
 text_files:
-  stopwords: |
-
+  stopwords: ''
   synonyms: |
     drupal, durpal
-  protwords: |
-
+  protwords: ''
   accents: |
     # À => A
     "\u00C0" => "A"

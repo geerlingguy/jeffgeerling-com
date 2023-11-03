@@ -17,6 +17,7 @@ field_type:
   name: text_en
   class: solr.TextField
   positionIncrementGap: 100
+  storeOffsetsWithPositions: true
   analyzers:
     -
       type: index
@@ -95,11 +96,11 @@ field_type:
           language: English
         -
           class: solr.RemoveDuplicatesTokenFilterFactory
-  storeOffsetsWithPositions: true
 unstemmed_field_type:
   name: text_unstemmed_en
   class: solr.TextField
   positionIncrementGap: 100
+  storeOffsetsWithPositions: true
   analyzers:
     -
       type: index
@@ -170,7 +171,6 @@ unstemmed_field_type:
           class: solr.LowerCaseFilterFactory
         -
           class: solr.RemoveDuplicatesTokenFilterFactory
-  storeOffsetsWithPositions: true
 spellcheck_field_type: null
 collated_field_type:
   name: collated_en
@@ -291,8 +291,7 @@ text_files:
     was
     will
     with
-  protwords: |
-
+  protwords: ''
   accents: |
     # À => A
     "\u00C0" => "A"
