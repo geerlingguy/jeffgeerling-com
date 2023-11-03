@@ -37,6 +37,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  phpass: 0
   redirect: 0
   search_api: 0
   search_api_solr: 0

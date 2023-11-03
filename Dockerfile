@@ -19,11 +19,6 @@ RUN curl -OL https://github.com/mailhog/mhsendmail/releases/download/v0.2.0/mhse
 RUN sed -i '\|sendmail_path|c\sendmail_path = "/usr/local/bin/mhsendmail --smtp-addr=mailhog:1025"' /etc/php/8.1/apache2/php.ini
 RUN sed -i '\|sendmail_path|c\sendmail_path = "/usr/local/bin/mhsendmail --smtp-addr=mailhog:1025"' /etc/php/8.1/cli/php.ini
 
-# Add Drush Launcher.
-RUN curl -OL https://github.com/drush-ops/drush-launcher/releases/download/0.10.0/drush.phar \
- && chmod +x drush.phar \
- && mv drush.phar /usr/local/bin/drush
-
 # Adjust the Apache docroot.
 ENV APACHE_DOCUMENT_ROOT=/var/www/html/web
 

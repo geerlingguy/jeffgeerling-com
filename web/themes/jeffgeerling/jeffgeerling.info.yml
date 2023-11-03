@@ -3,6 +3,8 @@ type: theme
 description: The theme for the website of Jeff Geerling.
 core_version_requirement: ^8.8 || ^9 || ^10
 base theme: classy
+dependencies:
+  - classy:classy
 
 regions:
   page_top: Page top
