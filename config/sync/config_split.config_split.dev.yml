@@ -8,6 +8,7 @@ description: ''
 weight: 0
 folder: ../config/dev
 module:
+  upgrade_status: 0
   devel: 0
 theme: {  }
 blacklist:
