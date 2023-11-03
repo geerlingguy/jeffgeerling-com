@@ -2,3 +2,4 @@ _core:
   default_config_hash: ohAe8voyBTv2oFxGWeZ16kj5QsTnPYFrXwMOVMTKQb4
 enabled: true
 submission_interval: 24
+index_now_enabled: true

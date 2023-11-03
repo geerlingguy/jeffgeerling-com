@@ -33,7 +33,7 @@
         "drupal/redirect": "^1.5",
         "drupal/search_api_solr": "^4.0",
         "drupal/simple_mail": "^2",
-        "drupal/simple_sitemap": "^3.6",
+        "drupal/simple_sitemap": "^4.1",
         "drush/drush": "^10",
         "michelf/php-markdown": "^1.9"
     },
