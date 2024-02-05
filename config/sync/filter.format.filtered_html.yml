@@ -8,6 +8,13 @@ name: 'Filtered HTML'
 format: filtered_html
 weight: -8
 filters:
+  codefilter:
+    id: codefilter
+    provider: codefilter
+    status: true
+    weight: -46
+    settings:
+      nowrap_expand: '0'
   filter_autop:
     id: filter_autop
     provider: filter
@@ -36,10 +43,3 @@ filters:
     weight: -45
     settings:
       filter_url_length: 72
-  codefilter:
-    id: codefilter
-    provider: codefilter
-    status: true
-    weight: -46
-    settings:
-      nowrap_expand: '0'
