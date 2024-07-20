@@ -36,11 +36,11 @@ The first time you start using this project, you need to create your local setti
 
 Make sure you have Docker installed, then run the following command (in the same directory as this README file):
 
-    docker-compose up -d
+    docker compose up -d
 
 Install PHP dependencies running Composer inside the container:
 
-    docker-compose exec drupal composer install
+    docker compose exec drupal composer install
 
 Visit http://localhost/ to see the Drupal installation. Visit http://localhost:8025/ to see MailHog.
 
@@ -48,7 +48,7 @@ Visit http://localhost/ to see the Drupal installation. Visit http://localhost:8
 
 You can install Drupal using the install wizard, but we like to use Drush for more automation:
 
-    docker-compose exec drupal bash -c 'vendor/bin/drush site:install minimal --db-url="mysql://drupal:$DRUPAL_DATABASE_PASSWORD@$DRUPAL_DATABASE_HOST/drupal" --site-name="Jeff Geerling" --existing-config -y'
+    docker compose exec drupal bash -c 'vendor/bin/drush site:install minimal --db-url="mysql://drupal:$DRUPAL_DATABASE_PASSWORD@$DRUPAL_DATABASE_HOST/drupal" --site-name="Jeff Geerling" --existing-config -y'
 
 ### Syncing the Database from Production
 
@@ -63,16 +63,16 @@ For now:
 
 Any time configuration is changed or any modules or Drupal is upgraded, you should export the site's configuration using the command:
 
-    docker-compose exec drupal bash -c 'vendor/bin/drush config:export -y'
+    docker compose exec drupal bash -c 'vendor/bin/drush config:export -y'
 
 And then push any changes to the Git repository before deploying the latest code to the site.
 
 ### Upgrading Core (and Contrib)
 
   1. Set up the site like normal, make sure it's installed.
-  2. Run `docker-compose exec drupal bash -c 'composer update'` (to update everything).
-  3. Run `docker-compose exec drupal bash -c 'vendor/bin/drush updb -y'`
-  4. Run `docker-compose exec drupal bash -c 'vendor/bin/drush config:export -y'`
+  2. Run `docker compose exec drupal bash -c 'composer update'` (to update everything).
+  3. Run `docker compose exec drupal bash -c 'vendor/bin/drush updb -y'`
+  4. Run `docker compose exec drupal bash -c 'vendor/bin/drush config:export -y'`
   5. Commit any changes and push to remote.
   6. Run the deploy playbook to update the live site.
 
@@ -80,7 +80,7 @@ And then push any changes to the Git repository before deploying the latest code
 
 You can test the custom code in this project using `phpcs`:
 
-    docker-compose exec drupal bash -c './vendor/bin/phpcs \
+    docker compose exec drupal bash -c './vendor/bin/phpcs \
       --standard="Drupal,DrupalPractice" -n \
       --extensions="php,module,inc,install,test,profile,theme" \
       web/themes/jeffgeerling \
