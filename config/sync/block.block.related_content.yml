@@ -5,7 +5,7 @@ dependencies:
   config:
     - views.view.related_content
   module:
-    - ctools
+    - node
     - views
   theme:
     - jeffgeerling

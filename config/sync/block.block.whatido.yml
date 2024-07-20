@@ -12,7 +12,7 @@ dependencies:
 id: whatido
 theme: jeffgeerling
 region: content
-weight: -2
+weight: -3
 provider: null
 plugin: 'block_content:105fd227-ecae-4b4c-8a79-1c84a93a7546'
 settings:
