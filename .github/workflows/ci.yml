@@ -67,7 +67,7 @@ jobs:
         run: |
           rm -f docker-compose.override.yml
           mv .github/docker-compose.override.yml docker-compose.override.yml
-          docker-compose up -d
+          docker compose up -d
 
       - name: Wait for MySQL to start.
         run: |
