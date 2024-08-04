@@ -78,7 +78,7 @@ jobs:
       # Note: -T option required to avoid creating pseudo-TTY.
       - name: Install Drupal
         run: >-
-          docker-compose exec -T drupal bash -c 'vendor/bin/drush site:install minimal
+          docker compose exec -T drupal bash -c 'vendor/bin/drush site:install minimal
           --db-url="mysql://drupal:drupal@mysql/drupal"
           --site-name="Jeff Geerling" --existing-config -y'
         env:
