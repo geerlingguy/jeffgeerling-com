@@ -14,6 +14,8 @@ Currently the process for deploying runs from the Midwestern Mac infrastructure 
 
     ansible-playbook playbook.yml --tags=deploy
 
+> **Note**: Make sure you're on the `master` branch when deploying!
+
 ### Docker in Production
 
 This repository includes a `Dockerfile.prod` intended for building a production-ready image (with all code and assets included).

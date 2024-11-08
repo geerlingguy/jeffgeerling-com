@@ -28,7 +28,7 @@
         "drupal/core-recommended": "^10.0",
         "drupal/facets": "^2.0",
         "drupal/gin": "^3.0",
-        "drupal/honeypot": "2.1.4",
+        "drupal/honeypot": "^2.2",
         "drupal/insert": "^3.0@beta",
         "drupal/markdown": "^3.0@RC",
         "drupal/pathauto": "^1.6",
