@@ -6,3 +6,4 @@ name: Tags
 vid: tags
 description: 'Tags to categorize content on the site.'
 weight: 0
+new_revision: false
