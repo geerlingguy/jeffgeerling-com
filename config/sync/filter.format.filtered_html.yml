@@ -14,7 +14,7 @@ filters:
     status: true
     weight: -46
     settings:
-      nowrap_expand: '0'
+      nowrap_expand: false
   filter_autop:
     id: filter_autop
     provider: filter

@@ -15,7 +15,7 @@ filters:
     status: true
     weight: -48
     settings:
-      nowrap_expand: '0'
+      nowrap_expand: false
   markdown:
     id: markdown
     provider: markdown

@@ -8,10 +8,9 @@ dependencies:
     - field.storage.node.field_tags
     - search_api.server.hosted_apache_solr
   module:
-    - search_api_solr
     - node
+    - search_api_solr
     - taxonomy
-    - search_api
 third_party_settings:
   search_api_solr:
     finalize: false
