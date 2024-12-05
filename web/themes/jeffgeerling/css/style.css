@@ -219,7 +219,8 @@ table ul.links li {
   margin: 0 auto 1em;
   padding: 1.5em;
   overflow-y: auto;
-  width: 920px;
+  max-width: 920px;
+  width: 100%;
 }
 
 header {
