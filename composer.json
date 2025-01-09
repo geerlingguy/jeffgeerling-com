@@ -69,6 +69,9 @@
             ],
             "file-mapping": {
                 "[web-root]/.htaccess": false,
+                "[web-root]/robots.txt": {
+                    "append": "assets/robots-additions.txt"
+                },
                 "[web-root]/README.md": false
             }
         },
