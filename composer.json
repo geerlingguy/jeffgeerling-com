@@ -72,8 +72,6 @@
                 "[web-root]/robots.txt": {
                     "append": "assets/robots-additions.txt"
                 },
-                "[web-root]/sites/default/default.services.yml": false,
-                "[web-root]/sites/default/default.settings.php": false,
                 "[web-root]/README.md": false
             }
         },
