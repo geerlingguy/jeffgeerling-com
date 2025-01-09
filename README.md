@@ -12,9 +12,7 @@ I decided to open-source my website's codebase to help other Drupal users see ho
 
 Currently the process for deploying runs from the Midwestern Mac infrastructure playbook:
 
-    ansible-playbook playbook.yml --tags=deploy
-
-> **Note**: Make sure you're on the `master` branch when deploying!
+    ansible-playbook main.yml --tags=deploy
 
 ### Docker in Production
 
