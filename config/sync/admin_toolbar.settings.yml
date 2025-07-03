@@ -1,1 +1,5 @@
 menu_depth: 4
+hoverintent_behavior:
+  enabled: true
+  timeout: 500
+enable_toggle_shortcut: false
