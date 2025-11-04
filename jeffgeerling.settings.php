@@ -16,6 +16,9 @@ $settings['hash_salt'] = getenv('DRUPAL_HASH_SALT');
 // Disallow access to update.php by anonymous users.
 $settings['update_free_access'] = FALSE;
 
+// Enable the state cache.
+$settings['state_cache'] = TRUE;
+
 // Other helpful settings.
 $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
 $settings['entity_update_batch_size'] = 50;
