@@ -21,7 +21,7 @@ settings:
   handler: 'default:file'
   handler_settings: {  }
   file_directory: ''
-  file_extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp eps mp4 m4v mov zip swf'
+  file_extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp eps mp3 mp4 m4v mov zip swf'
   max_filesize: ''
   description_field: true
 field_type: file
