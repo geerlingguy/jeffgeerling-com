@@ -1,5 +1,5 @@
 ---
-date: '2026-01-03T01:00:00-06:00'
+date: '2026-01-03T13:00:00-06:00'
 title: 'JeffGeerling.com has been Migrated to Hugo'
 tags: ['migration', 'hugo', 'drupal', 'blog', 'go', 'migrate', 'history']
 slug: 'migrated-to-hugo'
