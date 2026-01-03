@@ -1,9 +1,0 @@
-uuid: 21931a1f-6f2b-45cf-932b-7c2dfbbb4ddc
-langcode: en
-status: true
-dependencies: {  }
-id: yandex
-label: Yandex
-url: null
-index_now_url: 'https://yandex.com/indexnow?url=[url]&key=[key]'
-sitemap_variants: null

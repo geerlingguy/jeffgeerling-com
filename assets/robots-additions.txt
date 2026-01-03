@@ -1,2 +1,0 @@
-Disallow: /search
-Disallow: /index.php/search

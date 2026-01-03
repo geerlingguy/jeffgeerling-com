@@ -1,9 +1,0 @@
-uuid: a6a1f491-4b10-4a2d-b0ef-b871ab1e1fd7
-langcode: en
-status: true
-dependencies: {  }
-name: Tags
-vid: tags
-description: 'Tags to categorize content on the site.'
-weight: 0
-new_revision: false

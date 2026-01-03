@@ -1,9 +1,0 @@
-uuid: 37b72b79-344e-4ba0-b42a-aa93e90bd80d
-langcode: en
-status: true
-dependencies: {  }
-name: 'Project Type'
-vid: project_type
-description: null
-weight: 0
-new_revision: false

@@ -1,8 +1,0 @@
-name: Custom Email Module
-type: module
-description: Custom email module for JeffGeerling.com.
-package: Custom
-
-core_version_requirement: ^9 || ^10
-
-hidden: false
