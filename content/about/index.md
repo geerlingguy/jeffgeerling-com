@@ -1,6 +1,5 @@
 +++
 title = "About"
-description = "I am a creative person who builds great software"
 aliases = ["about-us","about-jeff-geerling","contact"]
 author = "Jeff Geerling"
 +++
@@ -15,7 +14,7 @@ author = "Jeff Geerling"
 
 I build and scale large enterprise deployments on private and public cloud infrastructure. I'm deeply involved in open source communities, especially Linux, Ansible, Raspberry Pi, and Drupal.
 
-I have a mildly popular [YouTube channel](https://www.youtube.com/c/JeffGeerling) and I write a lot (check out [my books](/books) or [my blog](/blog)).
+I have a mildly popular [YouTube channel](https://www.youtube.com/c/JeffGeerling) and I write a lot (check out [my books](/books) or [my blog](/)).
 
 Please consider [sponsoring my work](/sponsor).
 
