@@ -15,6 +15,8 @@ tags:
   - security
   - shell
   - ssh
+aliases:
+  - /blog/brief-history-ssh-and-remote-access
 ---
 
 <blockquote><p>This post is an excerpt from Chapter 11: <em>Server Security and Ansible</em>, in <a href="http://www.ansiblefordevops.com/">Ansible for DevOps</a>.</blockquote>

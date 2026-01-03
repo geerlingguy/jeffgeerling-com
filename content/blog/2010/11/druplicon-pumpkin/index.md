@@ -14,6 +14,8 @@ tags:
   - druplicon
   - halloween
   - pumpkin
+aliases:
+  - /blogs/jeff-geerling/druplicon-pumpkin
 ---
 
 <p>My feeble attempt:</p>

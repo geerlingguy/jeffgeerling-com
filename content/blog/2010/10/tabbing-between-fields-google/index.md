@@ -14,6 +14,8 @@ tags:
   - google
   - safari
   - tab
+aliases:
+  - /blogs/jeff-geerling/tabbing-between-fields-google
 ---
 
 For some users, being able to tab through all clickable elements on a page is a blessing. For most, though, it's a curse (at least, in my experience). The default behavior of a browser should be to allow users to tab through form elements only (textfields, textareas, search forms, submit buttons, etc.).

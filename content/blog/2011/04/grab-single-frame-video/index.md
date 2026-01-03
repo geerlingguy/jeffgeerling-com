@@ -15,6 +15,8 @@ tags:
   - screen
   - screen capture
   - video
+aliases:
+  - /blogs/jeff-geerling/grab-single-frame-video
 ---
 
 <blockquote>

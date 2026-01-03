@@ -17,6 +17,8 @@ tags:
   - security
   - sitesucker
   - static
+aliases:
+  - /blogs/jeff-geerling/drupal-on-mothballs-convert-static-html
 ---
 
 Drupal.org has an excellent resource page to help you <a href="https://www.drupal.org/node/27882">create a static archive of a Drupal site</a>. The page references tools and techniques to take your dynamically-generated Drupal site and turn it into a static HTML site with all the right resources so you can put the site on mothballs.

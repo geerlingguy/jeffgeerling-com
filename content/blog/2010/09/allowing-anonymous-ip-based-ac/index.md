@@ -14,6 +14,8 @@ tags:
   - drupal
   - drupal planet
   - tcp/ip
+aliases:
+  - /blogs/jeff-geerling/allowing-anonymous-ip-based-ac
 ---
 
 <p>On the <a href="http://stlouisreview.com">St. Louis Review</a> website (<a href="http://www.jeffgeerling.com/blogs/geerlingguy/case-study-saint-louis-review-st-louis-based-newspaper">case study here</a>), which offers much of its content based on a subscription model (you must be a subscriber to access the &#39;premium&#39; content), we wanted to allow those inside our network access to nodes that were marked &#39;subscribers-only&#39;, without having to log in to the website and maintain a user account. Here&#39;s how we did it:</p>

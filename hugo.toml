@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'Jeff Geerling'
 theme = 'archie'
 copyright = 'Jeff Geerling'
+enableRobotsTXT = true
 
 [markup]
   [markup.highlight]

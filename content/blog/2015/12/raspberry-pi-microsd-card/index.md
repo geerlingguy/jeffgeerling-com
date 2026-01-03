@@ -13,6 +13,8 @@ tags:
   - microsd
   - performance
   - raspberry pi
+aliases:
+  - /blogs/jeff-geerling/raspberry-pi-microsd-card
 ---
 
 <blockquote><strong>2018 Update</strong>: Please see the <a href="//www.jeffgeerling.com/blog/2018/raspberry-pi-microsd-card-performance-comparison-2018">latest benchmarks in 2018 using a Raspberry Pi model 3 B+</a>.</blockquote>

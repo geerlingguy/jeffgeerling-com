@@ -15,6 +15,8 @@ tags:
   - proxy
   - raspberry pi
   - raspbian
+aliases:
+  - /blogs/jeff-geerling/use-raspberry-pi-running
 ---
 
 I've been working on figuring out some interesting ways to use my revision A Raspberry Pi, and one of the things I'm doing with it requires it to work correctly behind a corporate proxy server. If you're in a similar situation, and need your Pi to work with a proxy server, it's simple to get set up:
