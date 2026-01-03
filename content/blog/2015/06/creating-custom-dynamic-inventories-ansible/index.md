@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2596
 title: "Creating custom dynamic inventories for Ansible"
 slug: "creating-custom-dynamic-inventories-ansible"
@@ -13,6 +13,8 @@ tags:
   - ansible for devops
   - dynamic inventory
   - inventory
+aliases:
+  - /blog/creating-custom-dynamic-inventories-ansible
 ---
 
 <blockquote>

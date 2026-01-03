@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1240
 title: "Review: Philips Dimmable 12.5 Watt LED Light Bulb"
 slug: "philips-dimmable-125-watt-led"
@@ -13,6 +13,8 @@ tags:
   - lighting
   - philips
   - reviews
+aliases:
+  - /review/miscellaneous/philips-dimmable-125-watt-led
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

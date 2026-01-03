@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2311
 title: "Scaling the Drupal Community - Notes and Reflections"
 slug: "scaling-drupal-community-notes"
@@ -14,6 +14,8 @@ tags:
   - drupal
   - drupal planet
   - open source
+aliases:
+  - /blogs/jeff-geerling/scaling-drupal-community-notes
 ---
 
 The sparsely-attended '<a href="http://chicago2011.drupal.org/sessions/scaling-drupal-community">Scaling the Drupal Community</a>' session, led by webchick and heyrocker, was one of the few sessions I've attended at DrupalCon Chicago that held my interest throughout. And, since a few people on IRC asked me to post my session notes, I thought I'd do so and put them up on the Planet.

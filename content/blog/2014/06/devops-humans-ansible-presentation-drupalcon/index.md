@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2592
 title: "DevOps for Humans - Ansible presentation at DrupalCon Austin"
 slug: "devops-humans-ansible-presentation-drupalcon"
@@ -17,6 +17,8 @@ tags:
   - drupal planet
   - drupalcon
   - presentations
+aliases:
+  - /blog/devops-humans-ansible-presentation-drupalcon
 ---
 
 I presented an introductory session on Ansible and how it can power Drupal infrastructure management and deployments at DrupalCon Austin 2014. Video and slides from the session, titled <a href="https://austin2014.drupal.org/session/devops-humans-ansible-drupal-deployment-victory.html">DevOps for Humans: Ansible for Drupal Deployment Victory!</a>, are embedded below:

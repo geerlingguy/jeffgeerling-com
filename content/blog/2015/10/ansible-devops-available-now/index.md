@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2506
 title: "Ansible for DevOps - available now!"
 slug: "ansible-devops-available-now"
@@ -16,6 +16,8 @@ tags:
   - drupal
   - drupal planet
   - self publishing
+aliases:
+  - /blogs/jeff-geerling/ansible-devops-available-now
 ---
 
 Ansible is a simple, but powerful, server and configuration management tool. <a href="http://www.ansiblefordevops.com/">Ansible for Devops</a> is a book I wrote to teach you to use Ansible effectively, whether you manage one server—or thousands.

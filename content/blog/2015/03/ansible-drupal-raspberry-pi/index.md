@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2484
 title: "Ansible + Drupal + Raspberry Pi Dramble - Presentation at MidCamp 2015"
 slug: "ansible-drupal-raspberry-pi"
@@ -16,6 +16,8 @@ tags:
   - drupal 8
   - drupal planet
   - raspberry pi
+aliases:
+  - /blogs/jeff-geerling/ansible-drupal-raspberry-pi
 ---
 
 Earlier today, I gave a presentation on Ansible and Drupal 8 at MidCamp in Chicago. In the presentation, I introduced Ansible, then deployed and updated a Drupal 8 site on a cluster of 6 Raspberry Pi computers, nicknamed the <a href="https://github.com/geerlingguy/raspberry-pi-dramble">Dramble</a>.

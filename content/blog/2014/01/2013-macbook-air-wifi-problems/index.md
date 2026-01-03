@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2476
 title: "2013 MacBook Air WiFi Problems (high latency, dropped connections) [Updated]"
 slug: "2013-macbook-air-wifi-problems"
@@ -17,6 +17,8 @@ tags:
   - mac
   - macbook air
   - wifi
+aliases:
+  - /blogs/jeff-geerling/2013-macbook-air-wifi-problems
 ---
 
 <blockquote><strong>Update (3/4/14)</strong>: Mac OS X 10.9.2 seems to fix at least the latency issue—and possibly dropped connections as well, at least for most users I've spoken with... We'll see!</blockquote>

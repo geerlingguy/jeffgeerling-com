@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2342
 title: "Problems copying a huge Aperture library from one drive to another"
 slug: "problems-copying-huge-aperture"
@@ -19,6 +19,8 @@ tags:
   - terminal
   - tricks
   - unix
+aliases:
+  - /blogs/jeff-geerling/problems-copying-huge-aperture
 ---
 
 I've often had trouble copying files with Mac OS X's Finder. From back in the Mac OS X Beta days (when it was based on NeXT's UI), hard drive to hard drive copies, network copies, and backups have often had strange quirks, and one of the strangest I've yet found happened yesterday when I tried copying a ~170GB Aperture library from one external USB drive to another.

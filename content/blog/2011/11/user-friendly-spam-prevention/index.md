@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2345
 title: "User-friendly spam prevention for your Drupal site"
 slug: "user-friendly-spam-prevention"
@@ -15,6 +15,8 @@ tags:
   - forms api
   - spam
   - ux
+aliases:
+  - /blogs/jeff-geerling/user-friendly-spam-prevention
 ---
 
 ...such is the title of <a href="http://denver2012.drupal.org/program/sessions/user-friendly-spam-prevention">my session proposal</a> for <a href="http://denver2012.drupal.org/">DrupalCon Denver 2012</a>. I'm aiming the presentation at beginners, but it should be helpful for anyone with a Drupal site that has fought the battle with spammers—and lost.

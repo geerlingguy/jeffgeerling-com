@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1259
 title: "Review: Canon PowerShot S95 Review"
 slug: "canon-powershot-s95-review"
@@ -16,6 +16,7 @@ tags:
   - s95
 aliases:
   - /review/photography/canon-powershot-s95-review
+   - /review/photography/canon-powershot-s95-review
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2387
 title: "Preventing Security Holes"
 slug: "preventing-security-holes"
@@ -12,6 +12,8 @@ tags:
   - drupal
   - drupal planet
   - security
+aliases:
+  - /blogs/jeff-geerling/preventing-security-holes
 ---
 
 I was recently browsing a very popular review website, when I noticed the following warnings popping up:

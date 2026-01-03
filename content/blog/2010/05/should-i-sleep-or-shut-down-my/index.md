@@ -1,4 +1,4 @@
----
+﻿---
 nid: 44
 title: "Should I Sleep or Shut Down my Mac?"
 slug: "should-i-sleep-or-shut-down-my"
@@ -12,6 +12,8 @@ tags:
   - articles
   - energy efficiency
   - environment
+aliases:
+  - /articles/computing/2010/should-i-sleep-or-shut-down-my
 ---
 
 <p>This topic is oft debated in many Mac forums, and does not really have a concrete answer; a lot depends on what you do with your Mac, and what Mac you use. Before deciding whether to shut down or sleep your Mac, you should know (a) what happens in each process, and (b) the pros and cons to both practices.</p>

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2349
 title: "Microsoft Xbox 360 2011 December Update Apes iOS slide-to-search"
 slug: "microsoft-xbox-360-2011"
@@ -18,6 +18,8 @@ tags:
   - ux
   - xbox
   - xbox 360
+aliases:
+  - /blogs/jeff-geerling/microsoft-xbox-360-2011
 ---
 
 In yet another example of Microsoft copying Apple's user interface concepts, the latest update to the Xbox 360's dashboard/Xbox LIVE integration now uses the same 'slide-to-left-to-search' user interface paradigm that started with Apple's iOS 3.0. Watch for yourself in the video below:

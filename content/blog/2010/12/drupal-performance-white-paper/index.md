@@ -1,4 +1,4 @@
----
+﻿---
 nid: 91
 title: "Drupal Performance Guide - Drupal and the LAMP/LEMP stack"
 slug: "drupal-performance-white-paper"
@@ -17,6 +17,8 @@ tags:
   - mysql
   - performance
   - php
+aliases:
+  - /articles/web-design/2010/drupal-performance-white-paper
 ---
 
 <p class="rtecenter">{{< figure src="./lamp-stack-with-drupal.jpg" alt="LAMP Stack with Drupal - Druplicon, Linux, Apache, MySQL, PHP" width="421" height="150" class="blog-image" >}}</p>

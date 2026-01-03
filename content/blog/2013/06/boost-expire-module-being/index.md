@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2414
 title: "Boost Expire module being deprecated; how to switch to Cache Expiration"
 slug: "boost-expire-module-being"
@@ -18,6 +18,8 @@ tags:
   - drupal 7
   - drupal planet
   - performance
+aliases:
+  - /blogs/jeff-geerling/boost-expire-module-being
 ---
 
 {{< figure src="./Boost.png" alt="Boost" width="220" height="329" >}}I'm a huge fan of <a href="https://drupal.org/project/boost">Boost</a> for Drupal; the module generates static HTML pages for nodes and other pages on your Drupal site so Apache can serve anonymous visitors the static pages without touching PHP or Drupal, thus allowing a normal web server (especially on cheaper shared hosting) to serve thousands instead of tens of visitors per second (or worse!).

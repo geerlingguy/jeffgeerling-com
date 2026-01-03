@@ -1,4 +1,4 @@
----
+﻿---
 nid: 55
 title: "How to Stream from Tricaster Broadcast/Pro to Ustream.tv or Watershed"
 slug: "how-stream-tricaster-broadcast"
@@ -15,6 +15,8 @@ tags:
   - ustream
   - video
   - watershed
+aliases:
+  - /articles/computing/2010/how-stream-tricaster-broadcast
 ---
 
 <p>How to Stream from Tricaster Broadcast/Pro to Ustream.tv</p>

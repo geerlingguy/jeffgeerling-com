@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2481
 title: "Getting Gigabit Networking on a Raspberry Pi 2, 3 and B+"
 slug: "getting-gigabit-networking"
@@ -17,6 +17,7 @@ tags:
   - wifi
 aliases:
   - /blogs/jeff-geerling/getting-gigabit-networking
+   - /blogs/jeff-geerling/getting-gigabit-networking
 ---
 
 <blockquote><strong>tl;dr</strong> You can get Gigabit networking working on any current Raspberry Pi (A+, B+, Pi 2 model B, Pi 3 model B), and you can increase the throughput to at least 300+ Mbps (up from the standard 100 Mbps connection via built-in Ethernet).</blockquote>

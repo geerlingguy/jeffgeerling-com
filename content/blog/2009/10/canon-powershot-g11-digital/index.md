@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1265
 title: "Review: Canon PowerShot G11 - Digital Camera"
 slug: "canon-powershot-g11-digital"
@@ -16,6 +16,8 @@ tags:
   - point and shoot
   - powershot
   - reviews
+aliases:
+  - /review/photography/canon-powershot-g11-digital
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2482
 title: "Viewing email in Linux using postfix's mailq and postcat"
 slug: "viewing-email-linux-using"
@@ -16,6 +16,8 @@ tags:
   - mailq
   - postfix
   - sendmail
+aliases:
+  - /blogs/jeff-geerling/viewing-email-linux-using
 ---
 
 When I'm developing using the <a href="https://github.com/geerlingguy/drupal-dev-vm">Drupal Development VM</a>, or checking into email processing on any of my servers, I usually use postfix to handle mail sending. Postfix is simple, preinstalled on most Linux distributions (and easy to set up if not), and is easy enough to use.

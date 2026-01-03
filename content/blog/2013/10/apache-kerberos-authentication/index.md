@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2434
 title: "Apache Kerberos Authentication and basic authentication fallback"
 slug: "apache-kerberos-authentication"
@@ -14,6 +14,8 @@ tags:
   - config
   - kerberos
   - ux
+aliases:
+  - /blogs/jeff-geerling/apache-kerberos-authentication
 ---
 
 Many businesses and organizations use Active Directory or other LDAP-based authentication systems, and many web applications (like Drupal) can easily integrate with them for authentication and user account provisioning.

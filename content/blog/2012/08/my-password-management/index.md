@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2373
 title: "My Password Management Strategy"
 slug: "my-password-management"
@@ -13,6 +13,8 @@ tags:
   - accounts
   - password
   - security
+aliases:
+  - /blogs/jeff-geerling/my-password-management
 ---
 
 In light of the many high-profile hacking cases that have recently exposed millions and millions of user passwords (LinkedIn, Sony, etc.), I thought I would write down my password management practices, and some practical thoughts for others looking to secure their access to various online services.

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2316
 title: "Who needs a Calculator? Spotlight is better."
 slug: "who-needs-calculator-spotlight"
@@ -13,6 +13,8 @@ tags:
   - mac
   - spotlight
   - ux
+aliases:
+  - /blogs/jeff-geerling/who-needs-calculator-spotlight
 ---
 
 When I'm performing quick calculations or estimates, measuring things, or balancing my checkbook, I just hit Command + Spacebar, then type in what I need to know.

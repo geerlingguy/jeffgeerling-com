@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2357
 title: "Creating an Image Effect to put a play button on Video thumbnails"
 slug: "creating-image-effect-place"
@@ -19,6 +19,8 @@ tags:
   - input formats
   - php
   - video
+aliases:
+  - /blogs/jeff-geerling/creating-image-effect-place
 ---
 
 I had a rather interesting feature to implement on <a href="http://www.flocknote.com/">flocknote</a> lately (after doing a pretty vast redesign of the UX/UI on the site over the past month... it was refreshing to dig into PHP again!):

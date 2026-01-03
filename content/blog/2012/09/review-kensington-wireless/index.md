@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1244
 title: "Review: Kensington Wireless Presenter with Laser Pointer"
 slug: "review-kensington-wireless"
@@ -13,6 +13,8 @@ tags:
   - reviews
   - usb
   - wireless
+aliases:
+  - /review/computing/review-kensington-wireless
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

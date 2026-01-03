@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2287
 title: "Druplicon in a Pumpkin"
 slug: "druplicon-pumpkin"
@@ -16,6 +16,7 @@ tags:
   - pumpkin
 aliases:
   - /blogs/jeff-geerling/druplicon-pumpkin
+   - /blogs/jeff-geerling/druplicon-pumpkin
 ---
 
 <p>My feeble attempt:</p>

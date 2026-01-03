@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2504
 title: "Vagrant web development - is VMware better than VirtualBox?"
 slug: "vagrant-vmware-7-vs-virtualbox-5-benchmarks"
@@ -17,6 +17,8 @@ tags:
   - vagrant
   - virtualbox
   - vmware
+aliases:
+  - /blogs/jeff-geerling/vagrant-vmware-7-vs-virtualbox-5-benchmarks
 ---
 
 [<strong>Update 2015-08-25</strong>: I reran some of the tests using two different settings in VirtualBox. First, I explicitly set KVM as the paravirtualization mode (it was saved as 'Legacy' by default, due to a bug in VirtualBox 5.0.0), which showed impressive performance improvements, making VirtualBox perform 1.5-2x faster, and bringing some benchmarks to a dead heat with VMware Fusion. I also set the virtual network card to use 'virtio' instead of emulating an Intel PRO/1000 MT card, but this made little difference in raw network throughput or any other benchmarks.]

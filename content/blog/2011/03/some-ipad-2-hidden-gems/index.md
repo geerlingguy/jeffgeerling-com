@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2310
 title: "Some iPad 2 Hidden Gems"
 slug: "some-ipad-2-hidden-gems"
@@ -13,6 +13,8 @@ tags:
   - audio
   - ios
   - ipad
+aliases:
+  - /blogs/jeff-geerling/some-ipad-2-hidden-gems
 ---
 
 A few notes on the iPad 2, based on reading the tech specs thoroughly, and observing some videos frame-by-frame:

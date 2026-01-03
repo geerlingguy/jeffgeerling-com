@@ -1,4 +1,4 @@
----
+﻿---
 nid: 47
 title: "Post Photos/Images to Your Drupal Site from the iPad"
 slug: "post-photos-from-ipad-to-drupal"
@@ -16,6 +16,8 @@ tags:
   - drupal planet
   - ipad
   - photography
+aliases:
+  - /articles/web-design/post-photos-from-ipad-to-drupal
 ---
 
 <p>Now that I have effectively replaced my laptop with an iPad, I need an easy/quick way to post a photo or two from my iPad to my blog. I use <a href="http://itunes.apple.com/us/app/photogene-for-ipad/id363448251?mt=8">Photogene</a> as a simple Photoshop replacement on the iPad (it actually works pretty well, for being limited to 256 MB of RAM and a 1024x768 display).</p>

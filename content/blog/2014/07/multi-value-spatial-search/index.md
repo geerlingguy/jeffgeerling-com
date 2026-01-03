@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2460
 title: "Multi-value spatial search with Solr 4.x and Drupal 7"
 slug: "multi-value-spatial-search"
@@ -16,6 +16,8 @@ tags:
   - schema
   - solr
   - spatial
+aliases:
+  - /blogs/jeff-geerling/multi-value-spatial-search
 ---
 
 <p>For some time, Solr 3.x and Drupal 7 have been able to do geospatial search (using the location module, geofield, or other modules that stored latitude and longitude coordinates in Drupal that could be indexed by Apache Solr). Life was good—as long as you only had one location per node!</p>

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2603
 title: "$25K in book sales, and I'm almost ready to publish"
 slug: "25k-book-sales-and-im-almost-ready-publish"
@@ -11,6 +11,7 @@ drupal:
     - /blog/25k-sales-and-im-almost-ready-publish-book
 aliases:
   - /blog/25k-sales-and-im-almost-ready-publish-book
+   - /blog/25k-book-sales-and-im-almost-ready-publish
 tags:
   - ansible
   - ansible for devops

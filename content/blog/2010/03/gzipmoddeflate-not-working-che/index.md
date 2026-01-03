@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2270
 title: "Gzip/mod_deflate not Working? Check your Proxy Server"
 slug: "gzipmoddeflate-not-working-che"
@@ -14,6 +14,8 @@ tags:
   - mod_deflate
   - performance
   - proxy
+aliases:
+  - /blogs/geerlingguy/gzipmoddeflate-not-working-che
 ---
 
 <p>

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1250
 title: "Review: Fostex AR-4i iPhone 4/4S Stereo Audio Interface"
 slug: "fostex-ar-4i-iphone-4-stereo-a"
@@ -11,6 +11,7 @@ drupal:
     - /ar-4i
 aliases:
   - /ar-4i
+   - /review/audio-and-video/fostex-ar-4i-iphone-4-stereo-a
   - /review/audio-and-video/fostex-ar-4i-iphone-4-stereo-a
 tags:
   - AR-4i

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2397
 title: "DrupalCon Portland is Coming Up... and Spam-Fighting News!"
 slug: "drupalcon-portland-coming-and"
@@ -13,6 +13,8 @@ tags:
   - drupal 8
   - drupal planet
   - drupalcon
+aliases:
+  - /blogs/jeff-geerling/drupalcon-portland-coming-and
 ---
 
 {{< figure src="./IMG_1790.jpg" alt="Druplicon at DrupalCon - balloon" width="284" height="300" >}}<a href="http://portland2013.drupal.org/">DrupalCon Portland</a> is only a couple months away (early bird registration ends soon, so get your tickets if you haven't already!), and I'll be headed out that way. If this will be your first time attending a DrupalCon, be sure to read my <a href="http://www.jeffgeerling.com/blogs/jeff-geerling/first-timers-guide-drupalcon">First Timer's Guide to DrupalCon</a> from last year.

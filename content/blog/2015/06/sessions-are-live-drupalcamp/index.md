@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2497
 title: "Sessions are Live for DrupalCamp STL.15!"
 slug: "sessions-are-live-drupalcamp"
@@ -13,6 +13,8 @@ tags:
   - drupal planet
   - drupalcamp
   - saint louis
+aliases:
+  - /blogs/jeff-geerling/sessions-are-live-drupalcamp
 ---
 
 The organizers of <a href="https://2015.drupalstl.org/">DrupalCamp St. Louis 2015</a> are excited to announce that the schedule is set for DrupalCamp STL.15; we will have sessions from a variety of presenters on a variety of topics—for both beginners and seasoned veterans alike!

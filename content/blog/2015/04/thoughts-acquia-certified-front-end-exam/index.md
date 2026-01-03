@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2489
 title: "Thoughts on the Acquia Certified Developer - Front End Specialist Exam"
 slug: "thoughts-acquia-certified-front-end-exam"
@@ -15,6 +15,8 @@ tags:
   - drupal planet
   - exam
   - frontend
+aliases:
+  - /blogs/jeff-geerling/thoughts-acquia-certified-front-end-exam
 ---
 
 Previously, I posted my <a href="http://www.jeffgeerling.com/blogs/jeff-geerling/thoughts-acquia-certified-back-end-exam">thoughts on the Acquia Certified Developer - Back End Specialist exam</a> as well as my <a href="http://www.jeffgeerling.com/blogs/jeff-geerling/thoughts-acquia-drupal">thoughts on the Certified Developer exam</a>. To round out the trifecta of developer-oriented exams, I took the Front End Specialist exam this morning, and am posting some observations for those interested in taking the exam.

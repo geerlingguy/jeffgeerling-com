@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2430
 title: "App for iOS/Android - Jesuit Conference App"
 slug: "app-iosandroid-jesuit"
@@ -16,6 +16,8 @@ tags:
   - jesuit
   - open source
   - projects
+aliases:
+  - /blogs/jeff-geerling/app-iosandroid-jesuit
 ---
 
 The <a href="http://www.jesuit.org/">Jesuit Conference</a> partnered with Midwestern Mac, LLC to create a new app for the 450-year old Society of Jesus; the app includes three sections—Locations, News and Prayers—that offer users the ability to find Jesuit retreat centers, parishes, and schools, follow along with Jesuit news from National Jesuit News, and join in with users around the world in different Jesuit prayers and spiritual works.

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2347
 title: "Simple MAMP/MAMP Pro VirtualHosts in Parallels / Windows XP"
 slug: "simple-mampmamp-pro"
@@ -16,6 +16,8 @@ tags:
   - parallels
   - virtualhosts
   - windows
+aliases:
+  - /blogs/jeff-geerling/simple-mampmamp-pro
 ---
 
 (This tip should also work similarly with Vista, Windows 7, etc.).

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 90
 title: "Everything over Cat5 Cable"
 slug: "everything-over-cat5"
@@ -15,6 +15,7 @@ drupal:
     - /articles/computing/2015/everything-over-cat5/data
 aliases:
   - /audio-and-video-computing/2015/everything-over-cat5
+   - /articles/computing/2015/everything-over-cat5
   - /articles/computing/2015/everything-over-cat5/control
   - /articles/computing/2015/everything-over-cat5/audio
   - /articles/computing/2015/everything-over-cat5/video

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2398
 title: "Shuttering isthereamoduleforthat.com"
 slug: "shuttering"
@@ -14,6 +14,8 @@ tags:
   - drupal
   - drupal planet
   - modules
+aliases:
+  - /blogs/jeff-geerling/shuttering
 ---
 
 I registered <a href="http://isthereamoduleforthat.com/">isthereamoduleforthat.com</a> on 2010-08-19 for fun—but after three years, and little traffic (besides bots and the occasional Drupal user popping over from an old link), I'm shutting down the site, and will let my domain registration expire.

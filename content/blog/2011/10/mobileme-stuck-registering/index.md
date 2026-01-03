@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2334
 title: "MobileMe Stuck on 'Registering Computer...'? Try this"
 slug: "mobileme-stuck-registering"
@@ -13,6 +13,8 @@ tags:
   - mac
   - macbook air
   - mobileme
+aliases:
+  - /blogs/jeff-geerling/mobileme-stuck-registering
 ---
 
 I was having tons of trouble getting my brand new 11" MacBook Air to get MobileMe Sync set up, and it kept getting stuck with 'Registering computer...' either when I checked the 'Synchronize with MobileMe' checkbox or when I clicked 'Advanced...' and then 'Register Computer'.

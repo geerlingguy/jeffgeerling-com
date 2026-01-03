@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2376
 title: "Glitchy Video and Freezes on MacBook Pros"
 slug: "glitchy-video-and-freezes"
@@ -13,6 +13,8 @@ tags:
   - mac
   - macbook pro
   - nvidia
+aliases:
+  - /blogs/jeff-geerling/glitchy-video-and-freezes
 ---
 
 I've had a few friends report strange issues with their MacBook Pro laptops. Often they would report that the video signal on either an internal or external display becomes 'glitchy' or 'jumpy'. I initially thought it could be a connection issue, as I've seen many a VGA cable that becomes loose cause weird sync issues. However, they also reported that the cursor continued to work normally, moving around when they were moving the mouse/trackpad.

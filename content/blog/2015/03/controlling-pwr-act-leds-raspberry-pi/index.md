@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2512
 title: "Controlling PWR and ACT LEDs on the Raspberry Pi"
 slug: "controlling-pwr-act-leds-raspberry-pi"
@@ -11,6 +11,7 @@ drupal:
     - /blogs/jeff-geerling/controlling-both-pwr-and-act
 aliases:
   - /blogs/jeff-geerling/controlling-both-pwr-and-act
+   - /blogs/jeff-geerling/controlling-pwr-act-leds-raspberry-pi
   - /blogs/jeff-geerling/controlling-pwr-act-leds-raspberry-pi
 tags:
   - consumption

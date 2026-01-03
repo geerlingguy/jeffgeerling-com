@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2299
 title: "WYSIWYG Force Linebreaks - a Module for Input Format/WYSIWYG Zen"
 slug: "wysiwyg-force-linebreaks"
@@ -16,6 +16,8 @@ tags:
   - input formats
   - modules
   - wysiwyg
+aliases:
+  - /blogs/jeff-geerling/wysiwyg-force-linebreaks
 ---
 
 A few months ago, I was starting to get fed up with having to manually re-patch the <a href="http://drupal.org/project/wysiwyg">WYSIWYG</a> module on about five of my sites every time it was due for an update, to incorporate functionality that I had hoped would make it into WYSIWYG as a regular button/plugin (<a href="http://drupal.org/node/513998">see issue</a>).

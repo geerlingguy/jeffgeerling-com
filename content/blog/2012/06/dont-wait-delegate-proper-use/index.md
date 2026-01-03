@@ -1,4 +1,4 @@
----
+﻿---
 nid: 66
 title: "Don't Wait, Delegate! Proper use of threading and queueing"
 slug: "dont-wait-delegate-proper-use"
@@ -11,6 +11,7 @@ drupal:
     - /2012/dont-wait-delegate-proper-use
 aliases:
   - /2012/dont-wait-delegate-proper-use
+   - /articles/computing/2012/dont-wait-delegate-proper-use
 tags:
   - computing
   - latency

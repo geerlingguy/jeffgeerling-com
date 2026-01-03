@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2319
 title: "Fixing Problems with Passwordless SSH Authentication"
 slug: "fixing-problems-passwordless"
@@ -12,6 +12,8 @@ tags:
   - security
   - server
   - ssh
+aliases:
+  - /blogs/jeff-geerling/fixing-problems-passwordless
 ---
 
 I use CentOS, but these guidelines should apply no matter what flavor of linux you use. We all know it's a good security practice to lock down your server and require SSH logins to <a href="http://www.linuxproblem.org/art_9.html">use an RSA key/pair</a>, rather than a password, right? Plus, it makes it easier for you to login to your server from your primary computers/devices...

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 92
 title: "My Computing History - All the Computers I've Owned"
 slug: "my-computing-history"
@@ -11,6 +11,7 @@ drupal:
     - /articles/computing/2011/my-computing-history-all-compu
 aliases:
   - /articles/computing/2011/my-computing-history-all-compu
+   - /articles/computing/2011/my-computing-history
 tags:
   - computer
   - history

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2348
 title: "Calling form validate functions in include files from other modules"
 slug: "calling-form-validate"
@@ -14,6 +14,8 @@ tags:
   - drupal planet
   - forms api
   - validation
+aliases:
+  - /blogs/jeff-geerling/calling-form-validate
 ---
 
 <strong>Update:</strong> See comments below, and completely ignore this post. Nothing to see here...

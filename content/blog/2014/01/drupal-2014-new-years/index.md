@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2443
 title: "Drupal 2014 - New Year's Resolutions"
 slug: "drupal-2014-new-years"
@@ -14,6 +14,8 @@ tags:
   - drupal 8
   - drupal planet
   - php
+aliases:
+  - /blogs/jeff-geerling/drupal-2014-new-years
 ---
 
 2014 is going to be a big year for Drupal. I spent a lot of 2013 sprucing up services like <a href="http://hostedapachesolr.com/">Hosted Apache Solr</a> and <a href="http://servercheck.in/">Server Check.in</a> (both running on Drupal 7 currently), and porting some of my Drupal projects to Drupal 8.

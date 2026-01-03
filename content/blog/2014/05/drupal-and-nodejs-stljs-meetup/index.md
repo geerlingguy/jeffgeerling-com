@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2454
 title: "Drupal and Node.js at STLJS Meetup - Thursday, May 15!"
 slug: "drupal-and-nodejs-stljs-meetup"
@@ -14,6 +14,8 @@ tags:
   - node.js
   - presentations
   - server check.in
+aliases:
+  - /blogs/jeff-geerling/drupal-and-nodejs-stljs-meetup
 ---
 
 <a href="http://www.meetup.com/STL-JS-meetup/">{{< figure src="./stljs-logo.jpg" alt="STL.JS Meetup Logo" width="180" height="180" >}}</a>I'll be presenting <a href="http://www.meetup.com/STL-JS-meetup/events/151436472/">Node.js and Drupal — Working Together</a> at the STL.JS meetup this Thursday, May 15, at <a href="http://theablefew.com/">The Able Few</a> in St. Louis.

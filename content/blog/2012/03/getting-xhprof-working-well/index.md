@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2363
 title: "Getting XHProf working well on Mac OS X Lion"
 slug: "getting-xhprof-working-well"
@@ -17,6 +17,8 @@ tags:
   - drupal planet
   - performance
   - xhprof
+aliases:
+  - /blogs/jeff-geerling/getting-xhprof-working-well
 ---
 
 I was inspired today to get XHProf working on my Mac, using MAMP PRO 2.0.5/PHP 5.3.6, after reading <a href="https://twitter.com/#!/davereid/status/181192156227190784">@Dave Reid's tweet</a>. Since I'm not leaving for DrupalCon until tomorrow, what else could I do today? There's an <a href="http://www.lullabot.com/articles/installing-xhprof-mamp-and-php-52-on-mac-os-106-snow-leopard">excellent article on Lullabot</a> that will help you get 85% of the way towards having XHProf up and running on your Mac, working with your Drupal sites, but there are a few missing pieces and little tips that will help you get XHProf fully-armed and operational.

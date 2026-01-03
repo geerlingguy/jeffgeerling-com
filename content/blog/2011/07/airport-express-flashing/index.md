@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2326
 title: "AirPort Express - Flashing Yellow Light, Not Getting DHCP Address from Cable Modem"
 slug: "airport-express-flashing"
@@ -20,6 +20,8 @@ tags:
   - sb5105
   - Stub
   - wifi
+aliases:
+  - /blogs/jeff-geerling/airport-express-flashing
 ---
 
 I spent the greater part of this afternoon trying to get my AirPort Express to connect to the Internet and share an IP address using a Motorola SB5101 Cable modem (with Charter Internet)... and since the solution was so simple and annoyingly stupid, I thought I'd post it here, for my reference and for anyone else spending an afternoon thinking his AirPort Express is dead.

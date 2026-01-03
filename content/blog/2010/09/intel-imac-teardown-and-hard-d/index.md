@@ -1,4 +1,4 @@
----
+﻿---
 nid: 82
 title: "Intel iMac Teardown and Hard Drive Replacement - DIY/How-to Guide"
 slug: "intel-imac-teardown-and-hard-d"
@@ -12,6 +12,7 @@ drupal:
     - /computing/2010/intel-imac-teardown-and-hard-d
 aliases:
   - /computing/2010/intel-imac-teardown-and-hard-dIn
+   - /articles/computing/2010/intel-imac-teardown-and-hard-d
   - /computing/2010/intel-imac-teardown-and-hard-d
 tags:
   - apple

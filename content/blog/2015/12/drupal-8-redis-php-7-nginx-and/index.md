@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2515
 title: "Drupal 8 with Redis, PHP 7, Nginx, and MariaDB on Drupal VM using CentOS"
 slug: "drupal-8-redis-php-7-nginx-and"
@@ -17,6 +17,8 @@ tags:
   - mariadb
   - nginx
   - redis
+aliases:
+  - /blogs/jeff-geerling/drupal-8-redis-php-7-nginx-and
 ---
 
 One of the motivations behind <a href="http://www.drupalvm.com/">Drupal VM</a> is flexibility in local development environments. When you develop many different kinds of Drupal sites you need to be able to adapt your environment to the needs of the site—some sites use Memcached and Varnish, others use Solr, and yet others cache data in Redis!

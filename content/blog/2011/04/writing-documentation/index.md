@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2318
 title: "On Writing Documentation"
 slug: "writing-documentation"
@@ -15,6 +15,8 @@ tags:
   - documentation
   - programming
   - writing
+aliases:
+  - /blogs/jeff-geerling/writing-documentation
 ---
 
 I've been slowly reading through "Coders at Work," an excellent book in which Peter Siebel interviews many different programmers on their work and craft, and I hit a great little snippet of advice from Peter Norvig:

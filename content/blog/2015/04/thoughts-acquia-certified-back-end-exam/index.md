@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2488
 title: "Thoughts on the Acquia Certified Developer - Back End Specialist Exam"
 slug: "thoughts-acquia-certified-back-end-exam"
@@ -11,6 +11,7 @@ drupal:
     - /blogs/jeff-geerling/thoughts-acquia-certified
 aliases:
   - /blogs/jeff-geerling/thoughts-acquia-certified
+   - /blogs/jeff-geerling/thoughts-acquia-certified-back-end-exam
 tags:
   - acquia
   - backend

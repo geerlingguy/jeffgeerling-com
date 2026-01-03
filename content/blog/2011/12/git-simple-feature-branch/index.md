@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2354
 title: "Simple Git feature branch workflow"
 slug: "git-simple-feature-branch"
@@ -17,6 +17,8 @@ tags:
   - git
   - merge
   - workflow
+aliases:
+  - /blogs/jeff-geerling/git-simple-feature-branch
 ---
 
 After reading <a href="http://nvie.com/posts/a-successful-git-branching-model/">A successful Git branching model</a> [nvie.com], which I consider one of the best graphical/textual depictions of the ideal Git model for development teams (and most large projects), I simply wanted to adapt a similar (but way less complex) model for some of my smaller sites and multisite Drupal installs.

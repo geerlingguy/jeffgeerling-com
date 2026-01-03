@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2435
 title: "Kerberos authentication on a Mac OS X workstation with Chrome"
 slug: "kerberos-authentication-mac-os"
@@ -16,6 +16,8 @@ tags:
   - mac
   - mac os x
   - safari
+aliases:
+  - /blogs/jeff-geerling/kerberos-authentication-mac-os
 ---
 
 <a href="http://web.mit.edu/kerberos/www/">Kerberos authentication</a> allows your computer to log into certain services automatically without you having to enter (and re-enter) your password (it's a SSO—single sign-on—service). Kerberos v5 is baked into Windows and Internet Explorer and works great with many LDAP-enabled services (for example, Drupal's <a href="https://drupal.org/project/ldap">LDAP module</a> allows includes a submodule for SSO support).

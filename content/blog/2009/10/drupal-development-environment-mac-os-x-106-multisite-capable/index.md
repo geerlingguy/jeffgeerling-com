@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2258
 title: "Drupal Development Environment on Mac OS X 10.6 - Multisite Capable"
 slug: "drupal-development-environment-mac-os-x-106-multisite-capable"
@@ -14,6 +14,8 @@ tags:
   - drupal
   - hosts
   - mac
+aliases:
+  - /blogs/geerlingguy/drupal-development-environment-mac-os-x-106-multisite-capable
 ---
 
 <p>I've begun working a lot more with Drupal multisites, as doing so saves a lot of time in certain situations (usually, when you have a large group of sites that use the same kinds of Drupal modules, but need to have separate databases and front-end information.</p>

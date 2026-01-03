@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1268
 title: "Review: Logos' Verbum Bible Software"
 slug: "logos-bible-software"
@@ -15,6 +15,8 @@ tags:
   - logos
   - mac
   - reviews
+aliases:
+  - /review/logos-bible-software
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

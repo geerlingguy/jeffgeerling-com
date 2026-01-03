@@ -1,4 +1,4 @@
----
+﻿---
 nid: 58
 title: "Tips for Using a MacBook (Air, Pro) in Clamshell Mode"
 slug: "tips-using-a-macbook-air-pro-c"
@@ -14,6 +14,8 @@ tags:
   - macbook
   - macbook air
   - macbook pro
+aliases:
+  - /articles/computing/2011/tips-using-a-macbook-air-pro-c
 ---
 
 On this page, I will compile all the knowledge, tips and tricks I have for using a MacBook, MacBook Pro, or MacBook Air as a desktop replacement, in clamshell mode.

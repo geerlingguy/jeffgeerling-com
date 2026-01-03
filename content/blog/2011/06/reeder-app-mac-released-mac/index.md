@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2322
 title: "Reeder App for Mac released on Mac App Store"
 slug: "reeder-app-mac-released-mac"
@@ -15,6 +15,8 @@ tags:
   - news
   - reeder
   - rss
+aliases:
+  - /blogs/jeff-geerling/reeder-app-mac-released-mac
 ---
 
 See what I had to say about Reeder, the best RSS reader for the Mac, <a href="http://www.jeffgeerling.com/blog/2011/reeder-rss-reader-mac-released">on my personal blog »</a>

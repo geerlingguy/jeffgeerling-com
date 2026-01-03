@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1253
 title: "Review: iRig mic for iOS and Android"
 slug: "irig-mic"
@@ -11,6 +11,7 @@ drupal:
     - /irig
 aliases:
   - /irig
+   - /review/audio-and-video/irig-mic
 tags:
   - broadcast
   - ipad

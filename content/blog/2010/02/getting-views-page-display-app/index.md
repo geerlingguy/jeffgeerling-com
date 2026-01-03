@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2266
 title: "Getting a Views Page Display to Appear Inside an Organic Group"
 slug: "getting-views-page-display-app"
@@ -14,6 +14,8 @@ tags:
   - og
   - organic groups
   - views
+aliases:
+  - /blogs/geerlingguy/getting-views-page-display-app
 ---
 
 <p>

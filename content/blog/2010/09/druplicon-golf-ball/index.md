@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2284
 title: "Druplicon Golf Ball (DrupliGolf)"
 slug: "druplicon-golf-ball"
@@ -14,6 +14,8 @@ tags:
   - drupal planet
   - druplicon
   - golf
+aliases:
+  - /blogs/geerlingguy/druplicon-golf-ball
 ---
 
 <p>After having seen <a href="http://www.flickr.com/photos/chrys/2329243533/">DrupliBacon</a> and <a href="http://buytaert.net/happy-fifth-birthday-drupal">DrupliCake</a> (there are other great adaptations of the <a href="http://drupal.org/node/9068">Druplicon</a> as well!), I decided I wanted to get some creative juices flowing this weekend. I present, DrupliGolf!</p>

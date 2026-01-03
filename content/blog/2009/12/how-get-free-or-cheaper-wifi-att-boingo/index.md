@@ -1,4 +1,4 @@
----
+﻿---
 nid: 72
 title: "How to Get Free or Cheaper WiFi Access at AT&T and Boingo Hotspots"
 slug: "how-get-free-or-cheaper-wifi-att-boingo"
@@ -17,6 +17,8 @@ tags:
   - internet access
   - roaming
   - wifi
+aliases:
+  - /articles/how-get-free-or-cheaper-wifi-att-boingo
 ---
 
 <p>

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2451
 title: "Meet Phergie, an efficient PHP IRC bot"
 slug: "meet-phergie-efficient-php"
@@ -16,6 +16,8 @@ tags:
   - irc
   - phergie
   - php
+aliases:
+  - /blogs/jeff-geerling/meet-phergie-efficient-php
 ---
 
 The Drupal community <a href="https://drupal.org/irc">uses IRC extensively</a> for collaboration and community building. A permanent and ever-helpful fixture of the official #drupal-* IRC channels, and in the Drupal community itself, is the humble Druplicon bot. Druplicon is a Drupal-based IRC bot that was created in 2005, and is still going strong as part of the <a href="https://drupal.org/project/bot">Bot</a> module for Drupal.

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2317
 title: "Grab a Single Frame from a Video in QuickTime X"
 slug: "grab-single-frame-video"
@@ -17,6 +17,7 @@ tags:
   - video
 aliases:
   - /blogs/jeff-geerling/grab-single-frame-video
+   - /blogs/jeff-geerling/grab-single-frame-video
 ---
 
 <blockquote>

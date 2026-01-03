@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2510
 title: "Setting up the Edimax EW-7811Un or Tenda W311Mi 802.11b/g/n WiFi Adapter on a Raspberry Pi"
 slug: "edimax-ew-7811un-tenda-w311mi-wifi-raspberry-pi"
@@ -11,6 +11,7 @@ drupal:
     - /blogs/jeff-geerling/edimax-ew-7811un-wifi-raspberry-pi
 aliases:
   - /blogs/jeff-geerling/edimax-ew-7811un-wifi-raspberry-pi
+   - /blogs/jeff-geerling/edimax-ew-7811un-tenda-w311mi-wifi-raspberry-pi
 tags:
   - config
   - edimax

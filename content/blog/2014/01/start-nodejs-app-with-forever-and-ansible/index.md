@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2612
 title: "Start a Node.js app with Forever and Ansible"
 slug: "start-nodejs-app-with-forever-and-ansible"
@@ -11,6 +11,7 @@ drupal:
     - /blog/start-and-run-nodejs-app-forever-and-ansible
 aliases:
   - /blog/start-and-run-nodejs-app-forever-and-ansible
+   - /blog/start-nodejs-app-with-forever-and-ansible
 tags:
   - ansible
   - ansible for devops

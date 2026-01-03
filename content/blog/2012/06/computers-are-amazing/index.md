@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2368
 title: "Computers are amazing"
 slug: "computers-are-amazing"
@@ -14,6 +14,8 @@ tags:
   - macbook pro
   - repair
   - servicability
+aliases:
+  - /blogs/jeff-geerling/computers-are-amazing
 ---
 
 In a break from the typical kind of writing I do here, I'd like to mention a few thoughts I've had after reading <a href="http://www.wired.com/gadgetlab/2012/06/opinion-apple-retina-displa/">some</a> <a href="http://garre.tt/its-called-progress">opinion</a> <a href="http://oleb.net/blog/2012/06/progress/">pieces</a> on the reparability (or lack thereof) of the new MacBook Pro with Retina display.

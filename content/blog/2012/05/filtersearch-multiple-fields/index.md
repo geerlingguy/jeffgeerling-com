@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2374
 title: "Filter/Search on multiple fields with Views 3.x"
 slug: "filtersearch-multiple-fields"
@@ -16,6 +16,8 @@ tags:
   - search
   - snippets
   - views
+aliases:
+  - /blogs/jeff-geerling/filtersearch-multiple-fields
 ---
 
 [<strong>Update</strong>: As of <a href="http://drupal.org/node/1742778">Views 7.x-3.4</a>, you can now use the new "Global: Combine fields filter" to combine fields for an exposed search. Just add the fields you want to search to the view's Fields section, then add a 'Global: Combine fields filter' and select all the fields you want to search. Simple as that!]

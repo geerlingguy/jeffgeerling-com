@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2406
 title: "2013 VPS Benchmarks - Linode, Digital Ocean, Hot Drupal"
 slug: "2013-vps-benchmarks-linode"
@@ -16,6 +16,8 @@ tags:
   - performance
   - sysbench
   - vps
+aliases:
+  - /blogs/jeff-geerling/2013-vps-benchmarks-linode
 ---
 
 Every year or two, I like to get a good overview of different hosting providers' VPS performance, and from time to time, I move certain websites and services to a new host based on my results.

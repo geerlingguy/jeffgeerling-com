@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2461
 title: "Can't Disable Annoying Chrome Notifications menu bar item on Mac OS X"
 slug: "cant-disable-annoying-chrome"
@@ -14,6 +14,8 @@ tags:
   - mac
   - menu bar
   - notifications
+aliases:
+  - /blogs/jeff-geerling/cant-disable-annoying-chrome
 ---
 
 <strong>Update (7/20/14)</strong>: You can finally disable the notifications icon by selecting "Hide Notifications Icon" from the Chrome menu:

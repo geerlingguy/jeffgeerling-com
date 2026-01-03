@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2257
 title: "Managing News - Revolutionary\u2014not Evolutionary\u2014Step for Drupal"
 slug: "managing-news-revolutionary\u2014not-evolutionary\u2014step-drupal"
@@ -13,6 +13,8 @@ tags:
   - drupal
   - feeds
   - managing news
+aliases:
+  - /blogs/geerlingguy/managing-news-revolutionary—not-evolutionary—step-drupal
 ---
 
 <p>I noticed a post from the excellent folks over at <a href="http://developmentseed.org/">Development Seed</a> in the drupal.org Planet feed on a new Drupal installation profile they've been working on called <a href="http://managingnews.com/">Managing News</a>. Having tried (and loved) their Drupal-based installation of <a href="http://openatrium.com/">Open Atrium</a> (a great package for quick Intranets), I had pretty high expectations.</p>

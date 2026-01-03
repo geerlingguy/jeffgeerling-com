@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2303
 title: "Integrate a Webform (3.x) with PayPal"
 slug: "integrate-webform-3x-paypal"
@@ -15,6 +15,8 @@ tags:
   - paypal
   - php
   - webform
+aliases:
+  - /blogs/jeff-geerling/integrate-webform-3x-paypal
 ---
 
 <p>For quite some time, I've wanted to integrate a particular webform with PayPal, since many nonprofits I help use that payment service. With older versions of PayPal, one could add some PHP code into a webform on the site to do this, but it was (a) hackish, and (b) a much less maintainable and secure way of accomplishing the goal I was trying to achieve. So I never did it.</p>

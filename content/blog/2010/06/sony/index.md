@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1261
 title: "Review: Sony MDR-XB40EX Extra Bass Earbuds"
 slug: "sony"
@@ -16,6 +16,8 @@ tags:
   - reviews
   - sony
   - sound
+aliases:
+  - /review/miscellaneous/sony
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

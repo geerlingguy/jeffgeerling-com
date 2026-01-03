@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2361
 title: "Using Batch API to build huge CSV files for custom exports"
 slug: "using-batch-api-build-huge-csv"
@@ -17,6 +17,8 @@ tags:
   - drupal 7
   - drupal planet
   - export
+aliases:
+  - /blogs/jeff-geerling/using-batch-api-build-huge-csv
 ---
 
 <a href="http://www.flocknote.com/">Flocknote</a> is a large web application that lets churches easily manage communications with their members via email, text message, and phone calls. Many of the core features of email marketing services like MailChimp and Constant Contact are implemented in flocknote similarly, such as list management and mass emailing (and many features like shared list/member information management, text messaging, etc. are unique to flocknote).

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2420
 title: "Install Node.js on CentOS 6 using yum"
 slug: "install-nodejs-centos-using"
@@ -12,6 +12,8 @@ tags:
   - centos
   - node.js
   - yum
+aliases:
+  - /blogs/jeff-geerling/install-nodejs-centos-using
 ---
 
 If you're running CentOS 6.x (I use 6.4 currently), and you have <a href="http://www.rackspace.com/knowledge_center/article/installing-rhel-epel-repo-on-centos-5x-or-6x">installed the EPEL yum repository</a>, you can install Node.js simply with:

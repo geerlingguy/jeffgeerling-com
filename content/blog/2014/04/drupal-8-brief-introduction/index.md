@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2505
 title: "Drupal 8 - A Brief Introduction (DrupalCamp STL.14 Presentation)"
 slug: "drupal-8-brief-introduction"
@@ -15,6 +15,8 @@ tags:
   - drupalcamp
   - presentations
   - saint louis
+aliases:
+  - /blogs/jeff-geerling/drupal-8-brief-introduction
 ---
 
 <p>I presented <a href="http://www.slideshare.net/geerlingguy/drupal-8-a-brief-introduction">Drupal 8 - A Brief Introduction</a> at <a href="http://2014.drupalstl.org/">DrupalCamp STL.14</a> on April 26, 2014.</p>

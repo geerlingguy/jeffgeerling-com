@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2507
 title: "Tips for a better Vagrant-based development workflow"
 slug: "better-vagrant-development-workflow"
@@ -11,6 +11,7 @@ drupal:
     - /blogs/jeff-geerling/modify-etcsudoers-better
 aliases:
   - /blogs/jeff-geerling/modify-etcsudoers-better
+   - /blogs/jeff-geerling/better-vagrant-development-workflow
 tags:
   - drupal
   - drupal planet

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2418
 title: "Running Vagrant + VirtualBox from an External Drive"
 slug: "running-vagrant-virtualbox"
@@ -14,6 +14,8 @@ tags:
   - ssh
   - vagrant
   - virtualbox
+aliases:
+  - /blogs/jeff-geerling/running-vagrant-virtualbox
 ---
 
 I have a MacBook Air with a 128 GB SSD, so I'm always in a bit of a crunch for space on my hard drive. Developing with local VMs provisioned by Vagrant and VirtualBox makes my Drupal (and other) development experience great, but it also quickly fills up the (tiny amount of) remaining space on my SSD!

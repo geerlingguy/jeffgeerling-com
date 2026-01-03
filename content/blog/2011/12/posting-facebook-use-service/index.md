@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2353
 title: "Posting to Facebook: Use a service or DIY via the Open Graph API?"
 slug: "posting-facebook-use-service"
@@ -13,6 +13,8 @@ tags:
   - open graph
   - sharing
   - social
+aliases:
+  - /blogs/jeff-geerling/posting-facebook-use-service
 ---
 
 For a very long time, for my simple <a href="https://www.facebook.com/catholicnewslive">Catholic News Live fan page</a> on Facebook, I was using <a href="https://www.facebook.com/RSS.Graffiti">RSS Graffiti</a> to post new stories to Facebook (usually in batches of 3-5). RSS Graffiti is super-easy to set up, and it simply ties into your existing site's RSS feed to post new stories from your site to Facebook.

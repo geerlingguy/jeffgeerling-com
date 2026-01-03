@@ -1,4 +1,4 @@
----
+﻿---
 nid: 48
 title: "Users Are Stupid - a Guiding UX Principle"
 slug: "users-are-stupid-guiding-ux"
@@ -14,6 +14,8 @@ tags:
   - road signs
   - user interface
   - ux
+aliases:
+  - /articles/web-design/2010/users-are-stupid-guiding-ux
 ---
 
 <p>About a week ago, a road near my condo was closed off due to construction. Prominent signs were placed at three separate junctions warning drivers to take a detour. Judging by these signs, a rational individual would get the hint and turn right, avoiding any unnecessary danger to his life or his vehicle.</p>

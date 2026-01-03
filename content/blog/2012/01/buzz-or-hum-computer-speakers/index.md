@@ -1,4 +1,4 @@
----
+﻿---
 nid: 69
 title: "Buzz or Hum in Computer Speakers"
 slug: "buzz-or-hum-computer-speakers"
@@ -11,6 +11,7 @@ drupal:
     - /audio-and-video/2012/buzz-or-hum-computer-speakers
 aliases:
   - /audio-and-video/2012/buzz-or-hum-computer-speakers
+   - /articles/audio-and-video/2012/buzz-or-hum-computer-speakers
 tags:
   - audio
   - computer

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2344
 title: "Adding Images to Search Results (Drupal Search)"
 slug: "adding-images-search-results"
@@ -17,6 +17,8 @@ tags:
   - search
   - solr
   - templates
+aliases:
+  - /blogs/jeff-geerling/adding-images-search-results
 ---
 
 For a while (earlier in my Drupal career), I was avoiding adding imagefield-attached images to nodes that appeared in my search results, because I remember the first time I tried doing so, I was still quite confused by the way drupal handled search results theming.

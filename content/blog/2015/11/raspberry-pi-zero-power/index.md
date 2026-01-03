@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2513
 title: "Raspberry Pi Zero - Power Consumption Comparison"
 slug: "raspberry-pi-zero-power"
@@ -17,6 +17,7 @@ tags:
   - zero
 aliases:
   - /blogs/jeff-geerling/raspberry-pi-zero-power
+   - /blogs/jeff-geerling/raspberry-pi-zero-power
 ---
 
 <blockquote><strong>tl;dr</strong>: The Raspberry Pi Zero uses about the same amount of power as the A+, and at least 50% less power than any other Pi (B+, 2 B, 3 B).</blockquote>

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2359
 title: "\"You have inserted a Blank DVD\" \u2013 Opening discs from Windows on a Mac"
 slug: "you-have-inserted-blank-dvd-\u2013"
@@ -16,6 +16,8 @@ tags:
   - dvd
   - mac
   - windows
+aliases:
+  - /blogs/jeff-geerling/you-have-inserted-blank-dvd-–
 ---
 
 A few times in my life, I've received DVD-Rs or CD-Rs that a Windows user burned and gave to me, and popped them in my Mac, only to receive a message, "You inserted a blank DVD [or CD]. Choose an action from the pop-up menu or click Ignore."

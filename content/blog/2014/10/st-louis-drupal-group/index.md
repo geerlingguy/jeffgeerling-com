@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2466
 title: "St. Louis Drupal Group - Hackathon on Headless Drupal 8 & AngularJS"
 slug: "st-louis-drupal-group"
@@ -15,6 +15,8 @@ tags:
   - drupal planet
   - meetup
   - saint louis
+aliases:
+  - /blogs/jeff-geerling/st-louis-drupal-group
 ---
 
 Now that Drupal 8.0.0-beta1 is out, and the headless Drupal craze is in full-swing, the Drupal St. Louis meetup this month will focus on <a href="http://www.meetup.com/drupalstl/events/210909552/">using Drupal 8 with AngularJS</a> to build a demo pizza ordering app. (The meetup is on Thurs. Oct. 23, starting at 6:30 p.m.; see even more info in this <a href="http://zerotodrupal.com/content/headless-drupal-angularjs-hackathon-st-louis">Zero to Drupal</a> post).

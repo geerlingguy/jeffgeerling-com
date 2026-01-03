@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2338
 title: "Programmatically adding and removing roles to users in Drupal"
 slug: "programmatically-adding-roles"
@@ -15,6 +15,8 @@ tags:
   - drupal 7
   - drupal planet
   - users
+aliases:
+  - /blogs/jeff-geerling/programmatically-adding-roles
 ---
 
 [UPDATE: <a href="http://www.computerminds.co.uk/articles/quick-tips-adding-role-user-drupal-7">Here is a much simpler method for editing a user's roles</a>.]

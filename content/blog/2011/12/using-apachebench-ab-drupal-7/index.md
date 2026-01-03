@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2355
 title: "Using apachebench (ab) with Drupal 7 to load test site with authenticated users"
 slug: "using-apachebench-ab-drupal-7"
@@ -18,6 +18,8 @@ tags:
   - php
   - scalability
   - snippets
+aliases:
+  - /blogs/jeff-geerling/using-apachebench-ab-drupal-7
 ---
 
 <a href="http://httpd.apache.org/docs/2.0/programs/ab.html">apachebench</a> is an excellent performance and load-testing tool for any website, and Drupal-based sites are no exception. A lot of Drupal sites, though, need to be measured not only under heavy anonymous traffic load (users who aren't logged in), but also under heavy authenticated-user load.

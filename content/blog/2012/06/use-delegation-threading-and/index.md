@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2369
 title: "Use delegation, threading, and queues to speed up operations"
 slug: "use-delegation-threading-and"
@@ -14,6 +14,8 @@ tags:
   - performance
   - queue
   - threading
+aliases:
+  - /blogs/jeff-geerling/use-delegation-threading-and
 ---
 
 I posted this to my personal site, but I wanted to mention it on this blog, as it's a performance optimization that I use quite often when programming for the web or for native applications: <a href="http://www.jeffgeerling.com/articles/computing/2012/dont-wait-delegate-proper-use">Don't Wait, Delegate! Proper use of threading and queueing</a>.

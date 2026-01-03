@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2468
 title: "Resizing a VirtualBox Disk Image (.vmdk) on a Mac"
 slug: "resizing-virtualbox-disk-image"
@@ -15,6 +15,8 @@ tags:
   - vdi
   - virtualbox
   - vmdk
+aliases:
+  - /blogs/jeff-geerling/resizing-virtualbox-disk-image
 ---
 
 Every now and then, a project I'm managing through Vagrant (using either a box I built myself using Packer, or one of the many freely available <a href="http://www.vagrantbox.es/">Vagrant Boxes</a>) needs more than the 8-12 GB that's configured for the disk image by default. Often, you can find ways around increasing the disk image size (like proxying file storage, mounting a shared folder, etc.), but sometimes it's just easier to expand the disk image.

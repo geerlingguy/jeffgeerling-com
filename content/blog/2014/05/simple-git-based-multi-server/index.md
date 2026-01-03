@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2455
 title: "Simple Git-based multi-server deployments"
 slug: "simple-git-based-multi-server"
@@ -13,6 +13,8 @@ tags:
   - git
   - hooks
   - infrastructure
+aliases:
+  - /blogs/jeff-geerling/simple-git-based-multi-server
 ---
 
 Ansible is used to manage most of Midwestern Mac's infrastructure and deployments, and while it's extremely easy to use, there are a couple situations where a project just needs a little code to be updated across two or more servers, from a central Git repository, or from one master application server.

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2321
 title: "Adding a class to <body> in a module in Drupal 7"
 slug: "adding-class-body-module"
@@ -16,6 +16,8 @@ tags:
   - modules
   - templates
   - variables
+aliases:
+  - /blogs/jeff-geerling/adding-class-body-module
 ---
 
 In Drupal 6, I would often resort to using my theme's template.php file to implement <a href="http://api.drupal.org/api/drupal/includes--theme.inc/function/template_preprocess/6">template_preprocess()</a>, and add in the class to Drupal's $body_classes array. In Drupal 7, some new hooks were introduced that allow me to do this more easily, and inside my .module files.

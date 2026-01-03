@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2433
 title: "Fixing SSH unknown error when provisioning a Vagrant VM with Ansible"
 slug: "fixing-ssh-unknown-error-when"
@@ -10,6 +10,7 @@ drupal:
   redirects: []
 aliases:
   - /blogs/jeff-geerling/fixing-ssh-unknown-error-when
+   - /blogs/jeff-geerling/fixing-ssh-unknown-error-when
 tags:
   - ansible
   - provisioning

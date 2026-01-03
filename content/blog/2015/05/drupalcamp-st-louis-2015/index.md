@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2494
 title: "DrupalCamp St. Louis 2015 - Keynote Speaker and Session Submission Deadline"
 slug: "drupalcamp-st-louis-2015"
@@ -15,6 +15,8 @@ tags:
   - drupal planet
   - drupalcamp
   - saint louis
+aliases:
+  - /blogs/jeff-geerling/drupalcamp-st-louis-2015
 ---
 
 <p style="text-align: center;"><a href="https://2015.drupalstl.org/">{{< figure src="./drupalcamp-stl-2015-hero.jpg" alt="DrupalCamp 2015 St. Louis - SLU LAW" width="575" height="232" >}}</a></p>

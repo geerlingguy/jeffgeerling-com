@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1243
 title: "Review: Audio Technica PRO88W-R35 Wireless Lavalier System"
 slug: "review-audio-technica-pro88w"
@@ -11,6 +11,7 @@ drupal:
     - /pro88w
 aliases:
   - /pro88w
+   - /review/audio-and-video/review-audio-technica-pro88w
 tags:
   - audio
   - microphone

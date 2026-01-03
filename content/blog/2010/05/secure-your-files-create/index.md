@@ -1,4 +1,4 @@
----
+﻿---
 nid: 43
 title: "Secure Your Files: Create an Encrypted Disk on Which to Store Private Files"
 slug: "secure-your-files-create"
@@ -13,6 +13,8 @@ tags:
   - encryption
   - file management
   - security
+aliases:
+  - /articles/computing/2010/secure-your-files-create
 ---
 
 <p>{{< figure src="./secure-disk-image.png" alt="Secure Disk Image" class="blog-image" >}}The popularity of &#39;cloud file management&#39; software such as Dropbox and SugarSync has made me re-evaluate my security practices for files on my computers; in the past, I have not put any of my private files (for instance, files with sensitive passwords, or scans of important legal documents) on my shared folders (Dropbox, iDisk, etc.), but I finally came up with an ideal solution to storing and syncing these files. It&#39;s like using FileVault, but without the extra overhead of securing <em>every file</em> in your home directory.</p>

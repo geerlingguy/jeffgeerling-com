@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2419
 title: "Doing Some Benchmarks - Mac Processor Speed"
 slug: "doing-some-benchmarks-mac"
@@ -16,6 +16,8 @@ tags:
   - macbook air
   - macbook pro
   - performance
+aliases:
+  - /blogs/jeff-geerling/doing-some-benchmarks-mac
 ---
 
 I currently own or use a variety of Macs, and am approaching the end of a 'cycle' of Mac usage, where I need to decided what Mac I'd like to purchase next. Currently, I'm using a 27" iMac at work, an 11" MacBook Air (from work) for travel, and a 24" iMac at home. They're all great computers in their own right, and using Dropbox, MobileMe, and a couple other helper services, I can operate simultaneously on all three Macs, without any hiccups.

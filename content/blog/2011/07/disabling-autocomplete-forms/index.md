@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2324
 title: "Disabling Autocomplete on forms in Drupal 6 or 7 - Forms API"
 slug: "disabling-autocomplete-forms"
@@ -16,6 +16,8 @@ tags:
   - forms api
   - hook_form_alter
   - ux
+aliases:
+  - /blogs/jeff-geerling/disabling-autocomplete-forms
 ---
 
 With the awesome new #states implementation in Drupal 7, and for form usability in general, it's often good to be able to selectively, or completely, disable form autocompletion for your users. One example I just encountered was a form that has two fields that are alternatively shown or hidden depending on the value of a checkbox earlier in the form. However, Google Chrome, in its infinite wisdom, was autofilling the hidden field, which shouldn't have a value if hidden, so I had to set the input's 'autocomplete' value to 'off.'

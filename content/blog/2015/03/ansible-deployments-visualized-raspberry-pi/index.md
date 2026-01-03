@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2594
 title: "Ansible deployments Visualized with a Raspberry Pi cluster"
 slug: "ansible-deployments-visualized-raspberry-pi"
@@ -15,6 +15,8 @@ tags:
   - led
   - raspberry pi
   - video
+aliases:
+  - /blog/ansible-deployments-visualized-raspberry-pi
 ---
 
 <p style="text-align: center;">{{< figure src="./raspberry-pi-dramble-cluster_1.jpg" alt="Raspberry Pi Dramble - cluster of Raspberry Pi computers" width="309" height="400" >}}</p>

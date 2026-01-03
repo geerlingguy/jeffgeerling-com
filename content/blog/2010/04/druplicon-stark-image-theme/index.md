@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2273
 title: "Druplicon - Stark (image for theme)"
 slug: "druplicon-stark-image-theme"
@@ -12,6 +12,8 @@ tags:
   - drupal
   - drupal planet
   - stark
+aliases:
+  - /blogs/geerlingguy/druplicon-stark-image-theme
 ---
 
 <p>Below is the full-size image mockup I made for webchick to highlight the awesomeness of Drupal&#39;s (relatively) new stark theme, as seen in Drupal 7. You can download Stark for Drupal 6 as well, but it will be a nice way to quickly expose the underpinnings of Drupal&#39;s core HTML output.</p>

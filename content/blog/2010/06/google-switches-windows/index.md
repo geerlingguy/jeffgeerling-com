@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2272
 title: "Google Switches from Windows to Mac/Linux for Security"
 slug: "google-switches-windows"
@@ -15,6 +15,8 @@ tags:
   - pc
   - security
   - windows
+aliases:
+  - /blogs/geerlingguy/google-switches-windows
 ---
 
 <p>From <a href="http://www.macrumors.com/2010/05/31/google-switches-away-from-windows-mostly-to-mac-due-to-security-concerns/">MacRumors</a>:</p>

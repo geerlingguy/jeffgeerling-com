@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2423
 title: "Restrict access to the Apache Solr admin interface"
 slug: "restrict-access-apache-solr"
@@ -15,6 +15,8 @@ tags:
   - security
   - solr
   - tomcat
+aliases:
+  - /blogs/jeff-geerling/restrict-access-apache-solr
 ---
 
 I've helped many people set up or fix a botched install of Apache Solr on their VPSes and web servers. Most of the time, I've noticed that people leave the administrative frontend to Solr wide open for anybody on the internet to access, by just accessing <code>http://example.com:8983/solr</code>. This is <em>very dangerous</em>, as not only can anyone browse and query your search indexes, they can even add, delete, or change your search cores, and see sensitive system information that can be used to gain further access!

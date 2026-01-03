@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2263
 title: "Displaying a User's Signature on a Node Page in Drupal"
 slug: "displaying-users-signature-nod"
@@ -13,6 +13,8 @@ tags:
   - node
   - profile
   - signature
+aliases:
+  - /blogs/geerlingguy/displaying-users-signature-nod
 ---
 
 <p>

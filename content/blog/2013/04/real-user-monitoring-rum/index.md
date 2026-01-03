@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2400
 title: "Real User Monitoring (RUM) with Pingdom and Drupal"
 slug: "real-user-monitoring-rum"
@@ -16,6 +16,8 @@ tags:
   - pingdom
   - real user monitoring
   - rum
+aliases:
+  - /blogs/jeff-geerling/real-user-monitoring-rum
 ---
 
 <strong>Edit:</strong> There's a module for that™ now: <a href="http://drupal.org/project/pingdom_rum">Pingdom RUM</a>. The information below is for historical context only. Use the module instead, since it makes this a heck of a lot simpler.

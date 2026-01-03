@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2410
 title: "Wrapper function for simple drupal_mail() sending in Drupal 7"
 slug: "wrapper-function-simple"
@@ -16,6 +16,8 @@ tags:
   - drupal_mail_send
   - email
   - ux
+aliases:
+  - /blogs/jeff-geerling/wrapper-function-simple
 ---
 
 Email is such a pain (I should know, as I'm currently working on a site that's sending 10-20,000 emails per day to 40,000+ users. Spam prevention, SPF records, bounce handling, abuse reports, deliverability, send rates, etc. are all huge hassles that must be dealt with when handling more than a few hundred emails a day.

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2584
 title: "On Low-Cost Web Hosting/VPSes"
 slug: "low-cost-web-hostingvpses"
@@ -15,6 +15,8 @@ tags:
   - vps
   - web development
   - websites
+aliases:
+  - /blog/low-cost-web-hostingvpses
 ---
 
 As most web developers have over their careers, I've often spent time researching different low-priced web hosting companies in search of a better plan than the one(s) I'm currently using.

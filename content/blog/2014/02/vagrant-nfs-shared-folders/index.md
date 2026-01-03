@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2474
 title: "Vagrant - NFS shared folders for Mac/Linux hosts, Samba shares for Windows"
 slug: "vagrant-nfs-shared-folders"
@@ -16,6 +16,8 @@ tags:
   - vagrant
   - virtualbox
   - virtualization
+aliases:
+  - /blogs/jeff-geerling/vagrant-nfs-shared-folders
 ---
 
 [Edit: I'm not using rsync shared folders (a new feature in 1.5+) instead of SMB/NFS - please see this post for more info: <a href="https://servercheck.in/blog/rsync-vagrant-15-file-performance-windows-dev">rsync in Vagrant 1.5 improves file performance and Windows usage</a>].

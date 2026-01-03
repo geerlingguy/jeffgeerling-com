@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2480
 title: "Introducing the Dramble - Raspberry Pi 2 cluster running Drupal 8"
 slug: "introducing-dramble-raspberry"
@@ -18,6 +18,8 @@ tags:
   - infrastructure
   - performance
   - raspberry pi
+aliases:
+  - /blogs/jeff-geerling/introducing-dramble-raspberry
 ---
 
 <p style="text-align: center;">{{< figure src="./raspberry-pi-dramble-cluster-wired.jpg" alt="Dramble - 6 Raspberry Pi 2 model Bs running Drupal 8 on a cluster" width="475" height="375" >}}

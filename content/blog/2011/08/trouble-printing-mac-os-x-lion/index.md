@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2327
 title: "Trouble Printing in Mac OS X Lion? Reinstall the driver"
 slug: "trouble-printing-mac-os-x-lion"
@@ -15,6 +15,8 @@ tags:
   - mac
   - printers
   - usb
+aliases:
+  - /blogs/jeff-geerling/trouble-printing-mac-os-x-lion
 ---
 
 It always seems to happen after a major OS upgrade—no matter what the operating system... You go to print, and all the sudden you get a warning saying your printer drivers are not up-to-date or are not installed correctly.

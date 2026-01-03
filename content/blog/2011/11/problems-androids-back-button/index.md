@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2339
 title: "Problems with Android's Back Button"
 slug: "problems-androids-back-button"
@@ -18,6 +18,8 @@ tags:
   - mobile
   - smartphones
   - ux
+aliases:
+  - /blogs/jeff-geerling/problems-androids-back-button
 ---
 
 Android's back button is a problem. A big problem.

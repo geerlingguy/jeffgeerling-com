@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2362
 title: "Running a Windows XP VM in Parallels (Mac) from a USB Flash Drive"
 slug: "running-windows-xp-vm"
@@ -15,6 +15,8 @@ tags:
   - performance
   - usb
   - windows
+aliases:
+  - /blogs/jeff-geerling/running-windows-xp-vm
 ---
 
 I thought I'd post my experience here, for the benefit of others, because I couldn't find a whole lot of information about this specific use of an external USB flash drive.

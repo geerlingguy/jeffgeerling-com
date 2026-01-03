@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2385
 title: "Force SSL (https://) for only one virtual host with .htaccess"
 slug: "force-ssl-https-only-one"
@@ -13,6 +13,8 @@ tags:
   - htaccess
   - ssl
   - virtualhosts
+aliases:
+  - /blogs/jeff-geerling/force-ssl-https-only-one
 ---
 
 Many servers I help administer host many websites; and every now and then, someone wants me to set up a secure (SSL) certificate for one of the websites on the server. Once the certificate is working in Apache, and users can access the site at https://example.com/, they also request that all traffic that was originally destined for either http://www.example.com/ or http://example.com/ be routed to the secure site.

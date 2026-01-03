@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2329
 title: "PNG Compression Tool for Mac OS X Lion"
 slug: "png-compression-tool-mac-os-x"
@@ -11,6 +11,8 @@ drupal:
 tags:
   - compress
   - png
+aliases:
+  - /blogs/jeff-geerling/png-compression-tool-mac-os-x
 ---
 
 Since the main use I have for PNG image files is as website graphical elements (button backgrounds, background images, style elements, etc., and they are usually loaded on every page of a website I design, it's important for me to be able to compress every byte out of the file that is possible. Most utilities that generate PNGs (besides the latest Photoshop CS5 edition, it seems) like to add about 5-15% of overhead to the file that actually doesn't make the image higher quality.

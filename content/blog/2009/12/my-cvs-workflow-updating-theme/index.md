@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2262
 title: "My CVS Workflow for Updating a Theme on drupal.org"
 slug: "my-cvs-workflow-updating-theme"
@@ -13,6 +13,8 @@ tags:
   - drupal
   - terminal
   - theming
+aliases:
+  - /blogs/geerlingguy/my-cvs-workflow-updating-theme
 ---
 
 <p>{{< figure src="./cvs-ugh.png" alt="Drupal CVS &lt;ugh&gt; Druplicon Frown" width="293" height="190" class="noborder" >}}From time to time, I've had to update my airyblue project in CVS (<a href="http://drupal.org/project/airyblue">Airy Blue</a> is a light, airy, Zen subtheme listed on Drupal.org's Themes section). It's always a bother, and I always end up spending about 20 minutes figuring out how to check out the module to my local computer (I use three of them, so even if I have it set up on one, I need to get it going on another sometimes), then another 20 figuring out how to commit my changes, tag a release, etc.</p>

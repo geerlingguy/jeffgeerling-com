@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2290
 title: "Game-Changing DJ Scratch App for iPad"
 slug: "game-changing-dj-scratch-app-i"
@@ -17,6 +17,7 @@ tags:
   - music
 aliases:
   - /blogs/jeff-geerling/game-changing-dj-scratch-app-i
+   - /blogs/jeff-geerling/game-changing-dj-scratch-app-i
 ---
 
 <p>Every once in a while, I see a demo for an app that I truly believe will be a game-changing app for a certain field. This video is definitely like that, for the iPad and for DJs. Could you imagine ditching your laptop in favor of an iPad&mdash;not just out of convenience, but because the iPad actually does a primary computing function better than your laptop?</p>

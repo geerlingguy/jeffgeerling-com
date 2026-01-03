@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2390
 title: "Announcing Server Check.in - A simple, inexpensive website monitoring service"
 slug: "announcing-server-checkin"
@@ -14,6 +14,8 @@ tags:
   - server
   - server check.in
   - websites
+aliases:
+  - /blogs/jeff-geerling/announcing-server-checkin
 ---
 
 <p style="text-align: center;"><a href="https://servercheck.in/">{{< figure src="./server-checkin-logo-300.jpg" alt="Server Check.in Logo" width="300" height="300" >}}</a></p>

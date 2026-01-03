@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1249
 title: "Review: Black & Decker 15.6V DustBuster"
 slug: "black-decker-156v-dustbuster"
@@ -14,6 +14,8 @@ tags:
   - household
   - reviews
   - vacuum
+aliases:
+  - /review/black-decker-156v-dustbuster
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

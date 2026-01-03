@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2301
 title: "Mac OS X Mail - Exchange Account Stuck unless Mail Quit and Restarted?"
 slug: "mac-os-x-mail-exchange-account"
@@ -13,6 +13,8 @@ tags:
   - inbox
   - mac
   - mail
+aliases:
+  - /blogs/jeff-geerling/mac-os-x-mail-exchange-account
 ---
 
 I was having this particular problem off and on when using Mac OS X Mail on my work Mac, which was set up to use our corporate exchange server, and an 'Exchange 2007' Mail account: Every so often, Mail would quit getting new messages in the inbox, and when I checked the 'Activity' window, I would get the following error:

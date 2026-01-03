@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2503
 title: "Launching my first Drupal 8 website \u2014 in my basement!"
 slug: "launching-my-first-drupal-8"
@@ -15,6 +15,8 @@ tags:
   - drupal planet
   - infrastructure
   - raspberry pi
+aliases:
+  - /blogs/jeff-geerling/launching-my-first-drupal-8
 ---
 
 I've been working with Drupal 8 for a long time, keeping <a href="https://www.drupal.org/project/honeypot">Honeypot</a> and some other modules up to date, and doing some dry-runs of migrating a few smaller sites from Drupal 7 to Drupal 8, just to hone my D8 familiarity.

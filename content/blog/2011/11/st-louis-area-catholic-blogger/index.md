@@ -1,4 +1,4 @@
----
+﻿---
 nid: 93
 title: "St. Louis-area Catholic Bloggers / Websites"
 slug: "st-louis-area-catholic-blogger"
@@ -14,6 +14,8 @@ tags:
   - new evangelization
   - new media
   - saint louis
+aliases:
+  - /articles/religion/2011/st-louis-area-catholic-blogger
 ---
 
 Mostly for my own reference... but I'm sure some other people may find this useful as well! Below are listed all the St. Louis-area Catholic blogs and websites that I know of (major organizational sites excluded, because those are pretty obvious):

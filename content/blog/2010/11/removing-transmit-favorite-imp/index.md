@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2289
 title: "Removing the \"Transmit Favorite Importer\""
 slug: "removing-transmit-favorite-imp"
@@ -17,6 +17,7 @@ tags:
   - trash
 aliases:
   - /blogs/jeff-geerling/removing-transmit-favorite-imp
+   - /blogs/jeff-geerling/removing-transmit-favorite-imp
 ---
 
 <p>I recently upgraded Transmit using the in-application Update functionality, but after that, whenever I tried emptying the trash, I received a warning that I couldn&#39;t delete the &quot;Transmit Favorite Importer,&quot; because it was still in use.</p>

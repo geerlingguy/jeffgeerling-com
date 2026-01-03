@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2389
 title: "Save space by removing Photo Stream photos from your Mac"
 slug: "save-space-removing-photo"
@@ -13,6 +13,8 @@ tags:
   - mac
   - photo stream
   - space
+aliases:
+  - /blogs/jeff-geerling/save-space-removing-photo
 ---
 
 <blockquote><strong>2016 Update</strong>: If you use iCloud Photo Library, there's really no need for Photo Stream anymore except for niche use cases. I'd recommend disabling Photo Stream entirely if you use iCloud Photo Library.</blockquote>

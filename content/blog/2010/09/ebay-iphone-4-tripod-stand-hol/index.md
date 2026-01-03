@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1258
 title: "Review: eBay iPhone 4 Tripod Stand Holder"
 slug: "ebay-iphone-4-tripod-stand-hol"
@@ -17,6 +17,8 @@ tags:
   - reviews
   - tripod
   - video
+aliases:
+  - /review/photography/ebay-iphone-4-tripod-stand-hol
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

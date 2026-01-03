@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2614
 title: "6 Lessons learned self-publishing my first book"
 slug: "6-lessons-learned-self-publishing-my-first-book"
@@ -16,6 +16,8 @@ tags:
   - leanpub
   - self publishing
   - writing
+aliases:
+  - /blog/6-lessons-learned-self-publishing-my-first-book
 ---
 
 <a href="http://www.ansiblefordevops.com/">Ansible for DevOps</a>, my first book, is finally available for sale on Amazon and iTunes (in addition to LeanPub, where it's been available as an in-progress work since last February!).

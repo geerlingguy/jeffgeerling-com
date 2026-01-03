@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2464
 title: "Switching an SVN repository to Git with KDE's Svn2Git"
 slug: "switching-svn-repository-svn2git"
@@ -11,6 +11,7 @@ drupal:
     - /blogs/jeff-geerling/switching-svn-repository-git2svn
 aliases:
   - /blogs/jeff-geerling/switching-svn-repository-git2svn
+   - /blogs/jeff-geerling/switching-svn-repository-svn2git
 tags:
   - ansible
   - git

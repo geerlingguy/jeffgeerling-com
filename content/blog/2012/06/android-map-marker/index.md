@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2370
 title: "Android Map Marker Drawables/Icons - Original Vector Illustration"
 slug: "android-map-marker"
@@ -18,6 +18,8 @@ tags:
   - mapping
   - mapview
   - open source
+aliases:
+  - /blogs/jeff-geerling/android-map-marker
 ---
 
 I've been looking around for a good set of Android map marker icons (drawables), and I've only seen a few that included a vector image (Illustrator or EPS graphics) so I could customize the icon however I wanted. So, I just created my own icon, saved five common colors to a set of xhdpi, hdpi, mdpi, and ldpi sizes, and posted them to a new repository on GitHub: <a href="https://github.com/geerlingguy/Android-Map-Marker-Drawables">Android Map Marker Drawables (icons)</a>.

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2392
 title: "Moving Comments into a Block - Drupal 7"
 slug: "moving-comments-block-drupal-7"
@@ -16,6 +16,8 @@ tags:
   - drupal planet
   - php
   - snippets
+aliases:
+  - /blogs/jeff-geerling/moving-comments-block-drupal-7
 ---
 
 [<strong>Note</strong>: It looks like there's a new module, as of January 2013, <a href="http://drupal.org/project/node_comment_block">Node Comment Block</a>, which uses the technique outlined below to move comments into a block.]

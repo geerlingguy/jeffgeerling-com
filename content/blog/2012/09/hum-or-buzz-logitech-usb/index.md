@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2448
 title: "Hum or Buzz with a Logitech USB Headset"
 slug: "hum-or-buzz-logitech-usb"
@@ -15,6 +15,8 @@ tags:
   - logitech
   - microphone
   - usb
+aliases:
+  - /blogs/jeff-geerling/hum-or-buzz-logitech-usb
 ---
 
 <a href="http://www.amazon.com/gp/product/B003NREDG4/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B003NREDG4&amp;linkCode=as2&amp;tag=mmjjg-20">{{< figure src="./logitech-usb-headset.jpg" alt="Logitech USB Headset" width="300" height="300" >}}</a><strong>Problem</strong>: I've heard from a lot of people about hum or background 'buzz' in recordings and Skype conversations when using a USB headset (like the one I have, the <a href="http://www.amazon.com/gp/product/B003NREDG4/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B003NREDG4&amp;linkCode=as2&amp;tag=mmjjg-20">Logitech USB Headset H350</a>). Almost every time I hear someone having this trouble, they're having the problem while using the headset with a laptop.

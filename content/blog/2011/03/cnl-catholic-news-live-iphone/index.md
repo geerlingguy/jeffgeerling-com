@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2346
 title: "CNL - Catholic News Live iOS/Android Mobile App"
 slug: "cnl-catholic-news-live-iphone"
@@ -15,6 +15,8 @@ tags:
   - ios
   - iphone
   - mobile
+aliases:
+  - /blogs/jeff-geerling/cnl-catholic-news-live-iphone
 ---
 
 {{< figure src="./cnl-app-icon.png" alt="Catholic News Live - CNL App Icon" width="140" height="140" >}}The second app developed by Midwestern Mac is <a href="http://catholicnewslive.com/about/mobile-app">Catholic News Live</a>, or CNL for short. This app, which is the iPhone/iPod Touch/iPad/Android interface for the content aggregated by the <a href="http://catholicnewslive.com/">Catholic News Live</a> website, showcases a simple list and map layout on mobile phones and tablets, as well as Drupal's great flexibility.

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 86
 title: "Signal to Noise"
 slug: "signal-noise"
@@ -17,6 +17,8 @@ tags:
   - religion
   - society
   - sound
+aliases:
+  - /articles/religion/signal-noise
 ---
 
 <p>

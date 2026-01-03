@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1235
 title: "Review: Audio-Technica ATH-M30 Stereo Headphones"
 slug: "audio-technica-ath-m30-stereo"
@@ -13,6 +13,8 @@ tags:
   - audio
   - headphones
   - reviews
+aliases:
+  - /review/audio-and-video/audio-technica-ath-m30-stereo
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

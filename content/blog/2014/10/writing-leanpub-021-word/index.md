@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2606
 title: "Writing on LeanPub - $0.21 per word"
 slug: "writing-leanpub-021-word"
@@ -15,6 +15,8 @@ tags:
   - leanpub
   - self publishing
   - writing
+aliases:
+  - /blog/writing-leanpub-021-word
 ---
 
 <p>I've been blogging for 10 years, and I've written over 800,000 words in posts. As time progresses, I try to clearly convey more information with fewer words. It's been hard to quantify the value derived from those words, however, since the only measurements I could make (e.g. a small amount of ad revenue) have been subjective at best.</p>

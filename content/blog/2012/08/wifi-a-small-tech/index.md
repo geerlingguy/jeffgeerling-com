@@ -1,4 +1,4 @@
----
+﻿---
 nid: 73
 title: "WiFi for a Small Tech Conference/Meetup"
 slug: "wifi-a-small-tech"
@@ -11,6 +11,7 @@ drupal:
     - /computing/2012/wifi-a-small-tech
 aliases:
   - /computing/2012/wifi-a-small-tech
+   - /articles/computing/2012/wifi-a-small-tech
 tags:
   - events
   - networking

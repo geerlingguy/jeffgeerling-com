@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2314
 title: "Catholic STL - iPhone App for Archdiocese of St. Louis"
 slug: "catholic-stl-iphone-app"
@@ -12,6 +12,8 @@ tags:
   - apps
   - iphone
   - mobile
+aliases:
+  - /blogs/jeff-geerling/catholic-stl-iphone-app
 ---
 
 {{< figure src="./Icon-114.png" alt="Archdiocese of St. Louis - Mobile App Icon" width="114" height="114" >}}Midwestern Mac, LLC worked with the Archdiocese of St. Louis to build a location-aware, news aggregating, and content submission app for the iPhone and iPod Touch. The app, <a href="http://archstl.org/mobile-app">Catholic STL</a>, has three main features, and leverages many different iOS APIs.

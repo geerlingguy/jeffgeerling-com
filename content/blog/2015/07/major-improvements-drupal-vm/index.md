@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2499
 title: "Major improvements to Drupal VM - PHP 7, MariaDB, Multi-OS"
 slug: "major-improvements-drupal-vm"
@@ -16,6 +16,8 @@ tags:
   - drupal vm
   - github
   - vagrant
+aliases:
+  - /blogs/jeff-geerling/major-improvements-drupal-vm
 ---
 
 <p style="text-align: center;"><a href="http://www.drupalvm.com/">{{< figure src="./drupal-vm-header.png" alt="Drupal VM - Vagrant and Ansible Virtual Machine for Drupal Development" width="584" height="206" >}}</a></p>

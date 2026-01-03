@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2595
 title: "Automating Your Automation with Ansible Tower"
 slug: "automating-your-automation-ansible-tower"
@@ -16,6 +16,8 @@ tags:
   - ci
   - continuous integration
   - tower
+aliases:
+  - /blog/automating-your-automation-ansible-tower
 ---
 
 <blockquote>

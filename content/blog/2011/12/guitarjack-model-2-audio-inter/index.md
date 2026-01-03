@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1248
 title: "Review: GuitarJack Model 2 - Audio Interface for iPhone 4/4S, iPad"
 slug: "guitarjack-model-2-audio-inter"
@@ -11,6 +11,7 @@ drupal:
     - /guitarjack
 aliases:
   - /guitarjack
+   - /review/audio-and-video/guitarjack-model-2-audio-inter
 tags:
   - audio
   - guitarjack

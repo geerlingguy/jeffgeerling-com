@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2447
 title: "Multisite Apache Solr Search with Domain Access"
 slug: "multisite-apache-solr-search"
@@ -16,6 +16,8 @@ tags:
   - multisite
   - snippets
   - solr
+aliases:
+  - /blogs/jeff-geerling/multisite-apache-solr-search
 ---
 
 <p>Using one Apache Solr search core with more than one Drupal website isn't too difficult; you simply use a module like <a href="https://drupal.org/project/apachesolr_multisitesearch">Apache Solr Multisite Search</a>, or a technique like the one mentioned in Nick Veenhof's post, <a href="http://nickveenhof.be/blog/lets-talk-apache-solr-multisite">Let's talk Apache Solr Multisite</a>. This kind of technique can save you time (and even money!) so you can use one <a href="http://hostedapachesolr.com/">Hosted Apache Solr</a> subscription with multiple sites. The only caveat: any site using the solr core could see any other site's content (which shouldn't be a problem if you control all the sites and don't expose private data through solr).</p>

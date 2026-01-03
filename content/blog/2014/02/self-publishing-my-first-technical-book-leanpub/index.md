@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2611
 title: "Self-publishing my first technical book on LeanPub"
 slug: "self-publishing-my-first-technical-book-leanpub"
@@ -15,6 +15,8 @@ tags:
   - leanpub
   - self publishing
   - writing
+aliases:
+  - /blog/self-publishing-my-first-technical-book-leanpub
 ---
 
 <blockquote>

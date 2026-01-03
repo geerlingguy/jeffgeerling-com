@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2424
 title: "Ensuring Drupal email doesn't get sent from a local development environment"
 slug: "ensuring-drupal-email-doesnt"
@@ -14,6 +14,8 @@ tags:
   - drupal
   - drupal planet
   - email
+aliases:
+  - /blogs/jeff-geerling/ensuring-drupal-email-doesnt
 ---
 
 It seems most developers I know have a story of running some sort of batch operation on a local Drupal site that triggers hundreds (or thousands!) of emails that are sent to the site's users, causing much frustration and ill will towards the site the developer is working on. One time, I accidentally re-sent over 9,000 private message emails during a test user migration because of an email being sent via a hook that was invoked during each message save. Filling a user's inbox is not a great way to make that user happy!

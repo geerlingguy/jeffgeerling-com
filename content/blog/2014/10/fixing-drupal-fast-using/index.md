@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2467
 title: "Fixing Drupal Fast - Using Ansible to deploy a security update on many sites"
 slug: "fixing-drupal-fast-using"
@@ -14,6 +14,8 @@ tags:
   - drupal 7
   - drupal planet
   - security
+aliases:
+  - /blogs/jeff-geerling/fixing-drupal-fast-using
 ---
 
 <p>Earlier today, the Drupal Security Team announced <a href="https://www.drupal.org/SA-CORE-2014-005">SA-CORE-2014-005 - Drupal core - SQL injection</a>, a 'Highly Critical' bug in Drupal 7 core that could result in SQL injection, leading to a whole host of other problems.</p>

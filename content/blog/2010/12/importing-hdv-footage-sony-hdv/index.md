@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2293
 title: "Importing HDV footage from Sony HDV Cameras into iMovie '11 (or '08/'09)"
 slug: "importing-hdv-footage-sony-hdv"
@@ -15,6 +15,8 @@ tags:
   - import
   - sony
   - video
+aliases:
+  - /blogs/jeff-geerling/importing-hdv-footage-sony-hdv
 ---
 
 <p>I have had a ton of trouble today getting a rented&nbsp;Sony HVR-Z1U HDV Camera to work with iMovie '11 - I was having trouble both importing pre-recorded footage (in VCR mode) and importing live footage (in Camera mode). QuickTime Player would allow me to import video from the camera at DV quality, but I couldn't get HD.</p>

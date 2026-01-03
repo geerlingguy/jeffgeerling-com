@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2267
 title: "Better Drupal Comment Forms"
 slug: "better-drupal-comment-forms"
@@ -15,6 +15,8 @@ tags:
   - drupal planet
   - style
   - user experience
+aliases:
+  - /blogs/geerlingguy/better-drupal-comment-forms
 ---
 
 <p class="rtecenter">

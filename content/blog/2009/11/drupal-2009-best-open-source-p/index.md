@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2260
 title: "Drupal: 2009 Best Open Source PHP CMS!"
 slug: "drupal-2009-best-open-source-p"
@@ -14,6 +14,8 @@ tags:
   - packt
   - php
   - websites
+aliases:
+  - /blogs/geerlingguy/drupal-2009-best-open-source-p
 ---
 
 <p>Packt publishing just announced earlier this morning that <a href="http://drupal.org">Drupal</a> has won the 2009 Open Source PHP CMS award!</p>

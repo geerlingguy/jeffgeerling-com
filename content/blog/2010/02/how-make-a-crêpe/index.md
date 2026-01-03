@@ -1,4 +1,4 @@
----
+﻿---
 nid: 41
 title: "How to Make a Cr\u00eape, then How to Enjoy a Cr\u00eape"
 slug: "how-make-a-cr\u00eape"
@@ -16,6 +16,8 @@ tags:
   - food
   - nutella
   - recipes
+aliases:
+  - /articles/miscellaneous/how-make-a-crêpe
 ---
 
 <p>A cr&ecirc;pe is a very thin form of a pancake. Cr&ecirc;pes can be made either &#39;savory&#39; or sweet (basically, sweet cr&ecirc;pes are savory cr&ecirc;pes with sugar and (optionally) a little liquor). Instead of syrup, Cr&ecirc;pes are usually served with different kinds of spreads and/or fruits, veggies, or meats inside.</p>

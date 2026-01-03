@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1260
 title: "Review: iPhone 4"
 slug: "iphone-4-comprehensive-review"
@@ -17,6 +17,7 @@ tags:
   - video
 aliases:
   - /review/computing/iphone-4-comprehensive-review
+   - /review/computing/iphone-4-comprehensive-review
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

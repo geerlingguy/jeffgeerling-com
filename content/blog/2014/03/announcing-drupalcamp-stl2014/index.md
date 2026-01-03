@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2450
 title: "Announcing DrupalCamp STL.2014 - April 26 in St. Louis, MO"
 slug: "announcing-drupalcamp-stl2014"
@@ -14,6 +14,8 @@ tags:
   - drupalcamp
   - events
   - saint louis
+aliases:
+  - /blogs/jeff-geerling/announcing-drupalcamp-stl2014
 ---
 
 <p style="text-align: center;"><a href="https://2014.drupalstl.org/">{{< figure src="./drupalcamp-stl-2014.png" alt="DrupalCamp STL 2014 Logo" width="425" height="144" >}}</a></p>

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1262
 title: "Review: Phottix MB-D80 (D80/D90 Battery Grip)"
 slug: "phottix-mb-d80-d80d90-battery"
@@ -16,6 +16,8 @@ tags:
   - grip
   - phottix
   - reviews
+aliases:
+  - /review/photography/phottix-mb-d80-d80d90-battery
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

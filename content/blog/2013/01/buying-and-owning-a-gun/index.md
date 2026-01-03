@@ -1,4 +1,4 @@
----
+﻿---
 nid: 76
 title: "Buying and Owning a Gun"
 slug: "buying-and-owning-a-gun"
@@ -11,6 +11,7 @@ drupal:
     - /miscellaneous/2013/buying-and-owning-a-gun
 aliases:
   - /miscellaneous/2013/buying-and-owning-a-gun
+   - /articles/miscellaneous/2013/buying-and-owning-a-gun
 tags:
   - ccw
   - guns

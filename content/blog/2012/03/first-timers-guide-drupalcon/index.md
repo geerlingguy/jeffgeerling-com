@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2396
 title: "A First Timer's Guide to DrupalCon"
 slug: "first-timers-guide-drupalcon"
@@ -14,6 +14,8 @@ tags:
   - drupal 7
   - drupal planet
   - drupalcon
+aliases:
+  - /blogs/jeff-geerling/first-timers-guide-drupalcon
 ---
 
 Preparing for your first <a href="http://denver2012.drupal.org/">DrupalCon</a>? Even if this isn't your first, here are a few tips and tidbits I've learned from my first DrupalCon <em>last</em> year, and would like to pass on to you. (I'm posting this now so you have time to order the things you need to make your conference experience better and get it shipped!).

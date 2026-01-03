@@ -1,4 +1,4 @@
----
+﻿---
 nid: 89
 title: "Sponsorship, Donation, and Affiliate Links"
 slug: "sponsor"
@@ -14,6 +14,7 @@ drupal:
     - /donate
 aliases:
   - /affiliate
+   - /sponsor
   - /2011/affiliate-links
   - /affiliates
   - /donate

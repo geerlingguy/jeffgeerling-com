@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2487
 title: "How to edit and navigate chunks of a giant text file on Mac/Linux"
 slug: "how-edit-and-navigate-chunks"
@@ -15,6 +15,8 @@ tags:
   - logging
   - sed
   - terminal
+aliases:
+  - /blogs/jeff-geerling/how-edit-and-navigate-chunks
 ---
 
 For most log and text files, simply opening them up in <code>$editor_of_your_choice</code> works fine. If the file is less than a few hundred megabytes, <em>most</em> modern editors (and even some IDEs) shouldn't choke on them too badly.

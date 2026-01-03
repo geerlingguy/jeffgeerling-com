@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2271
 title: "Some Drupal Articles from OSC for the Planet"
 slug: "some-drupal-articles-osc"
@@ -11,6 +11,8 @@ drupal:
 tags:
   - drupal
   - drupal planet
+aliases:
+  - /blogs/geerlingguy/some-drupal-articles-osc
 ---
 
 <p>Here are a few articles that might be helpful to those following the Planet:</p>

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2523
 title: "Checklist for Setting up a CentOS 6 LAMP Server"
 slug: "checklist-setting-centos-lamp"
@@ -14,6 +14,8 @@ tags:
   - linode
   - server
   - tutorial
+aliases:
+  - /blogs/jeff-geerling/checklist-setting-centos-lamp
 ---
 
 I have to set up a new LAMP server for different clients here and there, but not with enough frequency to warrant using a particular scripted solution or 'stack' from a particular hosting company. Plus, I like to have a portable solution that is flexible to the needs (and constraints) of a client's website.

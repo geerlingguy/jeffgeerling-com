@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1255
 title: "Review: iPhone 4 Tripod Mount - SnapMount"
 slug: "iphone-4-tripod-mount-snapmoun"
@@ -15,6 +15,8 @@ tags:
   - snapmount
   - tripod
   - video
+aliases:
+  - /review/iphone-4-tripod-mount-snapmoun
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

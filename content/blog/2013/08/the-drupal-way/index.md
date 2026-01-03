@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2437
 title: "The Drupal Way\u2122"
 slug: "the-drupal-way"
@@ -17,6 +17,8 @@ tags:
   - rants
   - standards
   - the drupal way
+aliases:
+  - /blogs/jeff-geerling/the-drupal-way
 ---
 
 <p style="text-align: center;">{{< figure src="./the-drupal-way.png" alt="The Drupal Way" width="500" height="84" >}}</p>

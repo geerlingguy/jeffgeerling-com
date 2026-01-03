@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2417
 title: "Reclaim Your Hard Drive - Saving Tons of Space with MySQL InnoDB tables"
 slug: "reclaim-your-hard-drive-saving"
@@ -15,6 +15,8 @@ tags:
   - drupal planet
   - innodb
   - mysql
+aliases:
+  - /blogs/jeff-geerling/reclaim-your-hard-drive-saving
 ---
 
 Drupal 7 <a href="http://drupal.org/node/301362">uses InnoDB tables</a>. InnoDB provides many benefits, but can cause some unexpected headaches. One headache for me is that, by default, MySQL tells InnoDB to create one file on your system, called <code>ibdata1</code>, to hold ALL the data from EVERY InnoDB table you have on your MySQL server. This file <strong>never shrinks in size</strong>; it only expands to contain new data. If you delete something from MySQL or drop a table, the space that table was using is reallocated for other new data. This isn't a bad thing, especially for those who have a lot of drive space, and not many databases that are altered or dropped quite frequently.

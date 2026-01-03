@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2490
 title: "Honeypot for Drupal 8, 3 years in the making"
 slug: "honeypot-drupal-8-3-years"
@@ -17,6 +17,8 @@ tags:
   - honeypot
   - modules
   - testing
+aliases:
+  - /blogs/jeff-geerling/honeypot-drupal-8-3-years
 ---
 
 <p>Almost three years ago, on Feb 19, 2013, I <a href="http://cgit.drupalcode.org/honeypot/commit/?id=9f22c830dc5d75f01a63fe38b9fb56de49b4bb28">opened the 8.x-dev branch</a> of the <a href="https://www.drupal.org/project/honeypot">Honeypot</a> module (which helps prevent form spam on thousands of Drupal sites). These were heady times in the lifetime of the then-Drupal 8.x branch; <code>8.0-alpha1</code> wasn't released until three months later, on May 19. I <a href="https://www.drupal.org/node/1917700">made the #D8CX pledge</a>—when Drupal 8 was released, I'd make sure there was a full, stable Honeypot release ready to go.</p>

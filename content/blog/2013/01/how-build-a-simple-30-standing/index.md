@@ -1,4 +1,4 @@
----
+﻿---
 nid: 77
 title: "How to Build a Simple $50 Standing Desk"
 slug: "how-build-a-simple-30-standing"
@@ -11,6 +11,7 @@ drupal:
     - /miscellaneous/2012/how-build-a-simple-30-standing
 aliases:
   - /miscellaneous/2012/how-build-a-simple-30-standing
+   - /articles/miscellaneous/2012/how-build-a-simple-30-standing
 tags:
   - cheap
   - desk

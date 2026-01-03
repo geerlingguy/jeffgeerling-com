@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2458
 title: "Route local emails to another email address using Postfix on Linux"
 slug: "route-local-emails-another"
@@ -15,6 +15,8 @@ tags:
   - postfix
   - root
   - sendmail
+aliases:
+  - /blogs/jeff-geerling/route-local-emails-another
 ---
 
 When I set up new servers, I like to make sure any system messages like cron failures, server issues, or emails that are routed to <code>johndoe@example.com</code> (where 'example.com' is the hostname of the server—meaning emails to that domain will get routed through the server itself and not hit an external MX server unless postfix/sendmail is configured correctly) are sent to my own email address.

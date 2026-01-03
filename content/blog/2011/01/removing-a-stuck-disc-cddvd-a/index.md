@@ -1,4 +1,4 @@
----
+﻿---
 nid: 56
 title: "Removing a Stuck Disc (CD/DVD) from a Mac - EVERY Way Possible"
 slug: "removing-a-stuck-disc-cddvd-a"
@@ -11,6 +11,7 @@ drupal:
     - /computing/2011/removing-a-stuck-disc-cddvd-a
 aliases:
   - /computing/2011/removing-a-stuck-disc-cddvd-a
+   - /articles/computing/2011/removing-a-stuck-disc-cddvd-a
 tags:
   - cd
   - drive

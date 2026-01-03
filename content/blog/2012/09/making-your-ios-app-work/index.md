@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2380
 title: "Adapting Your iOS App to work with iPhone 5/iOS 6"
 slug: "making-your-ios-app-work"
@@ -16,6 +16,8 @@ tags:
   - ipod touch
   - objective-c
   - xcode
+aliases:
+  - /blogs/jeff-geerling/making-your-ios-app-work
 ---
 
 {{< figure src="./iphone-5-specs-size.jpg" alt="iPhone 5 Specs and Dimensions" width="289" height="262" >}}For the non-Retina to Retina changes, most developers simply needed to add a bunch of <code>@2x</code> graphics, and maybe change a few little things here and there. Most parts of an app Just Worked™ on the higher resolution display, as long as the app used native controls and views, and didn't have a ton of custom interface elements.

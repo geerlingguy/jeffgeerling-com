@@ -1,4 +1,4 @@
----
+﻿---
 nid: 57
 title: "Share a Proxied Network Connection via WiFi to your iPad/iPhone/iPod"
 slug: "share-a-proxied-network"
@@ -16,6 +16,8 @@ tags:
   - networking
   - ntlm
   - proxy
+aliases:
+  - /articles/computing/2010/share-a-proxied-network
 ---
 
 <p>For the past six weeks that I&#39;ve had my iPad, I&#39;ve fought with my office network, because it uses a Microsoft/NTLM authenticated proxy server which wreaks havoc on the iPhone OS&#39;s ability to use the Internet effectively (especially for third party apps).</p>

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2381
 title: "Questions about Wordpress"
 slug: "questions-about-wordpress"
@@ -14,6 +14,8 @@ tags:
   - dx
   - plugin
   - wordpress
+aliases:
+  - /blogs/jeff-geerling/questions-about-wordpress
 ---
 
 Having been away from the WordPress scene since version 2.x days (I think the last time I launched a WordPress website was around 2009), I recently had reason to develop some WordPress plugins, and I wanted to ask some questions about the WordPress coding standards and API that I hope will help enlighten me (and, maybe, other PHP developers coming from other frameworks/platforms to WordPress).

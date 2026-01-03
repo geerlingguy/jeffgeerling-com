@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2330
 title: "jQuery Code to Select Textarea or Text Input Field when Selected"
 slug: "jquery-code-select-textarea-or"
@@ -16,6 +16,8 @@ tags:
   - javascript
   - jquery
   - usability
+aliases:
+  - /blogs/jeff-geerling/jquery-code-select-textarea-or
 ---
 
 On one Drupal site I'm developing, there is an 'embed code generator' in one of the site's forms. This embed code capability is similar to Twitter's embeddable timeline widget, in that a user can select some parameters (colors, mostly), then some code (usually an iframe with the contents provided by an external site) is printed in a textarea, which the user can select, and paste into his own site's HTML.

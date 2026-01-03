@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2601
 title: "Simple GlusterFS Setup with Ansible"
 slug: "simple-glusterfs-setup-ansible"
@@ -11,6 +11,7 @@ drupal:
     - /blog/simple-glusterfs-setup-ansible-redux
 aliases:
   - /blog/simple-glusterfs-setup-ansible-redux
+   - /blog/simple-glusterfs-setup-ansible
 tags:
   - ansible
   - ansible for devops

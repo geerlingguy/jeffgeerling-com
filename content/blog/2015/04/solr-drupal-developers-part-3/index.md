@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2521
 title: "Solr for Drupal Developers, Part 3: Testing Solr locally"
 slug: "solr-drupal-developers-part-3"
@@ -18,6 +18,8 @@ tags:
   - series
   - solr
   - tutorial
+aliases:
+  - /blogs/jeff-geerling/solr-drupal-developers-part-3
 ---
 
 <em>Posts in this series:</em>

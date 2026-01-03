@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1267
 title: "Review: Anker Ultra Slim Mini Bluetooth 3.0 Wireless Keyboard"
 slug: "anker-ultra-slim-mini"
@@ -13,6 +13,8 @@ tags:
   - keyboard
   - reviews
   - typing
+aliases:
+  - /review/computing/anker-ultra-slim-mini
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

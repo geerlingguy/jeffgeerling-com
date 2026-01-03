@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2307
 title: "Git through an NTLM Proxy (Corporate Firewall) for drupal.org"
 slug: "git-through-ntlm-proxy"
@@ -15,6 +15,8 @@ tags:
   - github
   - ntlm
   - proxy
+aliases:
+  - /blogs/jeff-geerling/git-through-ntlm-proxy
 ---
 
 <p>Borrowing from answers in <a href="http://stackoverflow.com/questions/1783659">this</a> Stack Overflow question, here's how you can get through a corporate (Microsoft) NTLM Proxy to clone git repositories from drupal.org:</p>

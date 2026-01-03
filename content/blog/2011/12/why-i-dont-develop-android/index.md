@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2352
 title: "Why I don't develop for Android first"
 slug: "why-i-dont-develop-android"
@@ -14,6 +14,8 @@ tags:
   - app store
   - apps
   - ios
+aliases:
+  - /blogs/jeff-geerling/why-i-dont-develop-android
 ---
 
 I developed my <a href="http://itunes.apple.com/us/app/catholic-stl-archdiocese-st/id422420472?mt=8">first iOS app</a> about a year and a half ago, and it has seen over 2,500 downloads (it's a free app, and pretty useful, albeit only for a certain portion of people living in St. Louis, MO).

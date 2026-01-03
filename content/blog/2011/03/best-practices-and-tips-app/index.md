@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2312
 title: "Best Practices and Tips for In-App iPhone or iPod Touch UIWebView Browsers"
 slug: "best-practices-and-tips-app"
@@ -17,6 +17,8 @@ tags:
   - objective-c
   - uiwebview
   - ux
+aliases:
+  - /blogs/jeff-geerling/best-practices-and-tips-app
 ---
 
 <em>Or... "Best Practices of In-App Web Browsers"</em>

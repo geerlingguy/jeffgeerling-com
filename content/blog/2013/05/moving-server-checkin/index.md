@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2407
 title: "Moving Server Check.in functionality to Node.js increased per-server capacity by 100x"
 slug: "moving-server-checkin"
@@ -17,6 +17,8 @@ tags:
   - queue
   - scalability
   - server check.in
+aliases:
+  - /blogs/jeff-geerling/moving-server-checkin
 ---
 
 Just posted a new blog post to the Server Check.in blog: <a href="https://servercheck.in/blog/moving-functionality-nodejs-increased-server">Moving functionality to Node.js increased per-server capacity by 100x</a>. Here's a snippet from the post:

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2384
 title: "Getting Ping statistics with PHP"
 slug: "getting-ping-statistics-php"
@@ -14,6 +14,8 @@ tags:
   - php
   - ping
   - snippets
+aliases:
+  - /blogs/jeff-geerling/getting-ping-statistics-php
 ---
 
 [<strong>Note:</strong> Since writing this post, I've created the <a href="https://github.com/geerlingguy/Ping">Ping class for PHP</a>, which incorporates three different ping/latency/uptime methods for PHP, and is a lot more robust than the script I have posted below.]

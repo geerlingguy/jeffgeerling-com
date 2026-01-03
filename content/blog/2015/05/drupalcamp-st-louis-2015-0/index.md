@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2496
 title: "DrupalCamp St. Louis 2015 - register now, come help at our first-ever sprint day!"
 slug: "drupalcamp-st-louis-2015-0"
@@ -14,6 +14,8 @@ tags:
   - drupalcamp
   - events
   - saint louis
+aliases:
+  - /blogs/jeff-geerling/drupalcamp-st-louis-2015-0
 ---
 
 <a href="https://2015.drupalstl.org/">DrupalCamp STL.15</a> (June 20-21, in St. Louis, MO) will be the first DrupalCamp in St. Louis with a day dedicated to sprints to help the Drupal community. We're expecting a great turnout, and there are already a number of <a href="https://2015.drupalstl.org/conference/program/sessions">proposed sessions</a> (many of which will be selected and announced on June 5!), and it's not yet too late to <a href="https://2015.drupalstl.org/propose-session">propose a session</a> of your own!

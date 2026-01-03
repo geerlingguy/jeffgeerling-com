@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2367
 title: "My Simple, but Nerve-Calming, drush Update Workflow"
 slug: "my-simple-nerve-calming-drush"
@@ -14,6 +14,8 @@ tags:
   - drupal planet
   - drush
   - workflow
+aliases:
+  - /blogs/jeff-geerling/my-simple-nerve-calming-drush
 ---
 
 <p>Just posted for my own reference - here's my workflow for updating a D6 (probably also D7) website using drush. Comprehensive information about all drush commands can be found on the http://drush.ws/ website. If you're not yet drinking the drush kool-aid, you need to—if you use a Linux server, of course.</p>

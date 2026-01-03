@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2591
 title: "PHP: It doesn't have to be a bad experience"
 slug: "php-it-doesnt-have-be-bad-experience"
@@ -12,6 +12,8 @@ tags:
   - essay
   - php
   - php-fig
+aliases:
+  - /blog/php-it-doesnt-have-be-bad-experience
 ---
 
 It gets a little bit under my skin when I see a link to <a href="http://me.veekun.com/blog/2012/04/09/php-a-fractal-of-bad-design/">PHP: A fractal of bad design</a> posted in the comments on <em>every</em> article mentioning PHP on tech sites, blogs, and forums.

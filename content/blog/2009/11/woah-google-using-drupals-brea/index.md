@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2261
 title: "Whoa! Google Using Drupal's Breadcrumbs?"
 slug: "woah-google-using-drupals-brea"
@@ -14,6 +14,8 @@ tags:
   - path
   - search
   - seo
+aliases:
+  - /blogs/geerlingguy/woah-google-using-drupals-brea
 ---
 
 <p>It would seem <a href="http://googleblog.blogspot.com/2009/11/new-site-hierarchies-display-in-search.html">Google has rolled out a new indexing/display feature</a> that finds breadcrumbs and displays them instead of URLs for certain search results. Drupal's already game, it seems, judging by numerous searches I've taken a glance at today:</p>

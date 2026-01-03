@@ -1,4 +1,4 @@
----
+﻿---
 nid: 67
 title: "Building a Theme for Drupal 7"
 slug: "building-a-theme-drupal-7"
@@ -17,6 +17,8 @@ tags:
   - html
   - php
   - theming
+aliases:
+  - /articles/web-design/building-a-theme-drupal-7
 ---
 
 After having built out many themes for Drupal 6 (and a couple for Drupal 5), I'm going to start from scratch on a couple designs and build a theme in Drupal 7, which will be released sometime in 2010. I'll take you along my journey in this article.

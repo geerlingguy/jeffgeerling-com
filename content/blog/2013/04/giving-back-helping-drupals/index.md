@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2401
 title: "Giving Back - Helping with Drupal's Issue Queues"
 slug: "giving-back-helping-drupals"
@@ -14,6 +14,8 @@ tags:
   - drupal planet
   - open source
   - presentations
+aliases:
+  - /blogs/jeff-geerling/giving-back-helping-drupals
 ---
 
 Below is a video and some notes from my presentation "Giving Back - Helping with Drupal's Issue Queues", which I gave to the St. Louis Drupal group at the <a href="http://groups.drupal.org/node/293683">April 17 meetup</a>. Please post any feedback or additional resources/suggestions in the comments below or on YouTube.

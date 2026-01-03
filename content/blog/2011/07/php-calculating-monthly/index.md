@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2371
 title: "PHP: Calculating Monthly/Yearly Billing Dates - Same day next month"
 slug: "php-calculating-monthly"
@@ -15,6 +15,8 @@ tags:
   - mktime
   - php
   - recurring
+aliases:
+  - /blogs/jeff-geerling/php-calculating-monthly
 ---
 
 On a recent project, I needed to generate the timestamp for the 'same day, next month' for billing purposes. This can be tough in some circumstances, like when a user signs up on the 31st of August. What happens in September, when there are 30 days? If I were to simply try something like <code>strtotime('+1 month')</code>, I would get back the first day of October rather than September 30th. Same problem happens when someone hits February (oh my! only 28 days there... sometimes 29).

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2297
 title: "Using hook_init() to include CSS and JS files"
 slug: "using-hookinit-include-css-and"
@@ -13,6 +13,8 @@ tags:
   - drupal
   - javascript
   - modules
+aliases:
+  - /blogs/jeff-geerling/using-hookinit-include-css-and
 ---
 
 <p>For some time, I've been using the most hackish ways of including custom CSS and Javascript in my site via themes and custom modules. The problem has been (at least, in Drupal 6) that the hook_preprocess_page() function, inside which I'd really like to include my drupal_add_css() and drupal_add_js() functions, due to the fact that it's easy to see what page I'm on, or what kind of page I'm on, is not able to add CSS or JS to the page, due to the order in which the hooks are fired.</p>

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2426
 title: "Hosted Apache Solr for Drupal"
 slug: "hosted-apache-solr-drupal"
@@ -14,6 +14,8 @@ tags:
   - drupal 7
   - drupal planet
   - solr
+aliases:
+  - /blogs/jeff-geerling/hosted-apache-solr-drupal
 ---
 
 Midwestern Mac has been offering Apache Solr hosting for Drupal websites for the past three years, but this service has never been given too much attention or made easy to sign up for and use—until now!

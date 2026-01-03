@@ -1,4 +1,4 @@
----
+﻿---
 nid: 50
 title: "Review: St. Louis area Internet providers (Charter Cable, AT&T DSL, Clear Wireless)"
 slug: "st-louis-area-internet-provide"
@@ -18,6 +18,8 @@ tags:
   - reviews
   - wired
   - wireless
+aliases:
+  - /articles/computing/2010/st-louis-area-internet-provide
 ---
 
 <p class="rtecenter">{{< figure src="./charter-att-clear-logos.jpg" alt="Charter, AT&amp;T and Clear - Logos" width="588" height="65" class="blog-image" >}}</p>

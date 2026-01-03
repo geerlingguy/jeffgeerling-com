@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2442
 title: "Quick logrotate example for Apache logs and some gotchas"
 slug: "quick-logrotate-example-apache"
@@ -13,6 +13,8 @@ tags:
   - disk
   - linux
   - logrotate
+aliases:
+  - /blogs/jeff-geerling/quick-logrotate-example-apache
 ---
 
 On one server, where I have a custom directory where all the Apache (httpd) error and access logs are written, one set per virtualhost, I noticed the folder had grown to multiple gigabytes in size (found using <code>du -h --max-depth=1</code>)—in this situation, there's a handy utility on pretty much every Linux/UNIX system called logrotate that is made to help ensure log files don't grow too large. It periodically copies and optionally compresses the log files and deletes old logs, daily, monthly, or on other schedules.

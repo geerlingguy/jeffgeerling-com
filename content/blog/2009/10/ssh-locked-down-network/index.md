@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2256
 title: "SSH in a Locked-Down Network"
 slug: "ssh-locked-down-network"
@@ -13,6 +13,8 @@ tags:
   - remote connection
   - ssh
   - terminal
+aliases:
+  - /blogs/geerlingguy/ssh-locked-down-network
 ---
 
 <p>Recently, during one job for a client, I needed to work for a length of time in a location that had quite severe network restrictions&mdash;in addition to a proxy server, the location blocked every port besides 80, 25, 443, and 8080. In order to use secure shell (SSH) to login to my work web server, I needed to use one of those ports (I used nmap to find open ports on my end).</p>

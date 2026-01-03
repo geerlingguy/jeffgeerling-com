@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2477
 title: "Highly-Available PHP infrastructure with Ansible"
 slug: "highly-available-php"
@@ -19,6 +19,8 @@ tags:
   - mysql
   - php
   - varnish
+aliases:
+  - /blogs/jeff-geerling/highly-available-php
 ---
 
 I just posted a large excerpt from <a href="http://ansiblefordevops.com/">Ansible for DevOps</a> over on the Server Check.in blog: <a href="https://servercheck.in/blog/highly-available-infrastructure-provisioning-ansible">Highly-Available Infrastructure Provisioning and Configuration with Ansible</a>. In it, I describe a simple set of playbooks that configures a highly-available infrastructure primarily for PHP-based websites and web applications, using Varnish, Apache, Memcached, and MySQL, each configured in a way optimal for high-traffic and highly-available sites.

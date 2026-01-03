@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2517
 title: "Benchmarking PHP 7 vs HHVM - Drupal and Wordpress"
 slug: "benchmarking-drupal-8-php-7-vs-hhvm"
@@ -16,6 +16,8 @@ tags:
   - drupal vm
   - hhvm
   - php
+aliases:
+  - /blogs/jeff-geerling/benchmarking-drupal-8-php-7-vs-hhvm
 ---
 
 [<strong>Multiple updates</strong>: I've added results for concurrencies of 1 and 10, results on bare metal vs. VMware instances, tested Drupal 8 vs Drupal 7 vs Wordpress 4.4, and I've also retested every single benchmark at least twice! Please make sure you're read through the <em>entire</em> post prior to contesting these benchmark results!]

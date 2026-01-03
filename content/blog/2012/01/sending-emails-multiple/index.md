@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2356
 title: "Sending emails to multiple receipients with Amazon SES"
 slug: "sending-emails-multiple"
@@ -16,6 +16,8 @@ tags:
   - php
   - ses
   - snippets
+aliases:
+  - /blogs/jeff-geerling/sending-emails-multiple
 ---
 
 After reading through a ton of documentation posts and forum topics for <a href="http://aws.amazon.com/ses/">Amazon SES</a> about this issue, I finally found <a href="https://forums.aws.amazon.com/thread.jspa?threadID=61300#jive-message-272933">this post about the string list format</a> that helped me be able to send an email with Amazon SES's sendmail API to multiple recipients.

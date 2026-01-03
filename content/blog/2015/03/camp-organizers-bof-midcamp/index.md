@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2483
 title: "Camp Organizers BoF at MidCamp 2015"
 slug: "camp-organizers-bof-midcamp"
@@ -14,6 +14,8 @@ tags:
   - drupal planet
   - drupalcamp
   - midcamp
+aliases:
+  - /blogs/jeff-geerling/camp-organizers-bof-midcamp
 ---
 
 <p style="text-align: center;">{{< figure src="./camp-organizers-midcamp-sign.jpg" alt="MidCamp Camp Organizers sign" width="450" height="309" >}}</p>

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2604
 title: "Lessons Learned building the Raspberry Pi Dramble"
 slug: "lessons-learned-building-raspberry-pi-dramble"
@@ -18,6 +18,8 @@ tags:
   - essay
   - php
   - raspberry pi
+aliases:
+  - /blog/lessons-learned-building-raspberry-pi-dramble
 ---
 
 <p style="text-align: center;">{{< figure src="./raspberry-pi-dramble-contrast_1.jpg" alt="Raspberry Pi Dramble Bramble Cluster" width="450" height="337" >}}</p>

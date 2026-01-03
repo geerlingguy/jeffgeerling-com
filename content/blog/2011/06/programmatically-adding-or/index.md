@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2323
 title: "Programmatically Adding or Removing a User or Node Reference from a Node (D7 / References)"
 slug: "programmatically-adding-or"
@@ -15,6 +15,8 @@ tags:
   - drupal planet
   - php
   - references
+aliases:
+  - /blogs/jeff-geerling/programmatically-adding-or
 ---
 
 The References module in Drupal 7 allows for easy creation and removal of user and node references through Drupal's interface. However, programmatically adding and removing these references is a little more difficult.

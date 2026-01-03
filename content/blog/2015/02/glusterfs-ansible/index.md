@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2600
 title: "Setting up GlusterFS with Ansible"
 slug: "glusterfs-ansible"
@@ -11,6 +11,7 @@ drupal:
     - /blog/setting-glusterfs-ansible
 aliases:
   - /blog/setting-glusterfs-ansible
+   - /blog/glusterfs-ansible
 tags:
   - ansible
   - ansible for devops

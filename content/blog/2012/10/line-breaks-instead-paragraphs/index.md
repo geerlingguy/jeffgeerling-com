@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2382
 title: "Line breaks instead of Paragraphs in TinyMCE (by default)"
 slug: "line-breaks-instead-paragraphs"
@@ -13,6 +13,8 @@ tags:
   - drupal planet
   - tinymce
   - wysiwyg
+aliases:
+  - /blogs/jeff-geerling/line-breaks-instead-paragraphs
 ---
 
 Most people who have grown up on the web, and have used Wysiwyg utilities online, or newer text editors/word processing applications are used to having a simple 'return' create a new paragraph, with (on average) one extra line of empty space between the new paragraph and the one before it.

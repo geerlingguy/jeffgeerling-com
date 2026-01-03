@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2445
 title: "Dump an entire database with structure only for some tables with mysqldump"
 slug: "dump-entire-database-structure"
@@ -15,6 +15,8 @@ tags:
   - mysql
   - mysqldump
   - structure
+aliases:
+  - /blogs/jeff-geerling/dump-entire-database-structure
 ---
 
 I typically use a MySQL GUI like <a href="http://www.sequelpro.com/">Sequel Pro</a> when I do database dumps and imports working from my Mac. GUI apps often give checkboxes that allow you to choose whether to include the structure/content/drop table command for each table in an export.

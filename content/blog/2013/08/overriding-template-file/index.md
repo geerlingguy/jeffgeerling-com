@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2422
 title: "Overriding a template file (.tpl.php) from a module"
 slug: "overriding-template-file"
@@ -15,6 +15,8 @@ tags:
   - modules
   - templates
   - theme
+aliases:
+  - /blogs/jeff-geerling/overriding-template-file
 ---
 
 There are many times when a custom module provides functionality that requires a tweaked or radically altered template file, either for a node, a field, a view, or something else.

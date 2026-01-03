@@ -1,4 +1,4 @@
----
+﻿---
 nid: 62
 title: "The Continuity of the Eternal Word in New Media"
 slug: "continuity-eternal-word-new-me"
@@ -11,6 +11,7 @@ drupal:
     - /cnmc-word
 aliases:
   - /cnmc-word
+   - /religion/2011/continuity-eternal-word-new-me
 tags:
   - cnmc
   - god

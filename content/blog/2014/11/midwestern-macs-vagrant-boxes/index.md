@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2472
 title: "Midwestern Mac's Vagrant Boxes - CentOS and Ubuntu"
 slug: "midwestern-macs-vagrant-boxes"
@@ -16,6 +16,8 @@ tags:
   - packer
   - vagrant
   - virtualbox
+aliases:
+  - /blogs/jeff-geerling/midwestern-macs-vagrant-boxes
 ---
 
 In support of my mission to make local development easier and faster, I've released boxes for four of the most popular Linux distributions I use and see used for Drupal sites: CentOS 6/7 and Ubuntu 12.04/14.04.

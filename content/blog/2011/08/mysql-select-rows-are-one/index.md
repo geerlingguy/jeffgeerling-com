@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2333
 title: "MySQL Select rows that are in one table but not in another"
 slug: "mysql-select-rows-are-one"
@@ -14,6 +14,8 @@ tags:
   - mysql
   - query
   - sql
+aliases:
+  - /blogs/jeff-geerling/mysql-select-rows-are-one
 ---
 
 I've had to do this a couple times, and every time, I look around on Google for some good solutions, but don't find much. Basically, I have two tables of data, and I want to see if there are any rows in the first table that aren't in the second (or, conversely, I only want values that are in the first table AND the second).

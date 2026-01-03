@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2379
 title: "Facebook OAuthException when posting to Wall for a Page"
 slug: "facebook-oauthexception-when"
@@ -12,6 +12,8 @@ tags:
   - api
   - facebook
   - open graph
+aliases:
+  - /blogs/jeff-geerling/facebook-oauthexception-when
 ---
 
 I integrate Facebook posting with a few different websites and services, so I've gotten to know Facebook's Open Graph and API pretty well over the past few years. A lot of sites I work with automatically post new stories straight to a Facebook Page's wall, and have a format with a message and an attached link. All of these parameters are well documented in Facebook's API under <a href="https://developers.facebook.com/docs/reference/api/post/">Post</a>.

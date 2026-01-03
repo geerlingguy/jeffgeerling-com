@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2268
 title: "Allowing Organic Groups Administrators the Ability to Unpublish/Publish and Schedule Content"
 slug: "allowing-organic-groups-admini"
@@ -14,6 +14,8 @@ tags:
   - drupal planet
   - organic groups
   - scheduling
+aliases:
+  - /blogs/geerlingguy/allowing-organic-groups-admini
 ---
 
 <p>

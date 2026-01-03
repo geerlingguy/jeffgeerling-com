@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1242
 title: "Review: iPhone 5"
 slug: "iphone-5-att-32gb-black"
@@ -14,6 +14,8 @@ tags:
   - mobile
   - reviews
   - tech
+aliases:
+  - /review/computing/iphone-5-att-32gb-black
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

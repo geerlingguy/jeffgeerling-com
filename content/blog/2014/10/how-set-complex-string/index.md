@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2469
 title: "How to set complex string variables with Drush vset"
 slug: "how-set-complex-string"
@@ -14,6 +14,8 @@ tags:
   - drupal planet
   - drush
   - variables
+aliases:
+  - /blogs/jeff-geerling/how-set-complex-string
 ---
 
 I recently ran into an issue where <code>drush vset</code> was not setting a string variable (in this case, a time period that would be used in <code>strtotime()</code>) correctly:

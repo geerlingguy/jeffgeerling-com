@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2365
 title: "Finding an Image's width/height dimensions using JavaScript"
 slug: "finding-images-widthheight"
@@ -15,6 +15,8 @@ tags:
   - jquery
   - properties
   - snippets
+aliases:
+  - /blogs/jeff-geerling/finding-images-widthheight
 ---
 
 For a complex Drupal node form I've been working on for flocknote, I have a relatively complicated image switching functionality that lets people change an imagefield on the node (either when creating a new one or editing an existing node), and once the imagefield is changed, some custom jQuery code will grab that image and display it in the form, for a very WYSWIYG-like experience (the node looks almost exactly the same when editing/adding as it does once the user saves the node).

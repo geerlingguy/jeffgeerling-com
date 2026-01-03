@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2471
 title: "Sync a Shared Google Calendar with macOS, OS X, iOS (iPhone, iPad), or CalDav"
 slug: "sync-shared-google-calendar-os"
@@ -16,6 +16,8 @@ tags:
   - mac
   - shared calendars
   - sync
+aliases:
+  - /blogs/jeff-geerling/sync-shared-google-calendar-os
 ---
 
 > **2018 Update**: Sadly, this is still the correct way to get syncing working.<br>

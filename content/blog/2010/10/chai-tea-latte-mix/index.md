@@ -1,4 +1,4 @@
----
+﻿---
 nid: 64
 title: "How to Make Chai Tea Mix (for delicious Chai Tea Latte)"
 slug: "chai-tea-latte-mix"
@@ -16,6 +16,8 @@ tags:
   - latte
   - mix
   - tea
+aliases:
+  - /articles/miscellaneous/chai-tea-latte-mix
 ---
 
 <p><a href="/blog/2010/chai-ed-knot-making-500-servin">A recent project on which I spent many hours</a> required the production of many gallons of Chai Tea Latt&eacute; Mix; After enjoying a few cups of this extremely tasteful drink, I thought I&#39;d post the recipe I used here, as well as a few notes for the mixing directions which will help point you in the right direction.</p>

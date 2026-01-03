@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2391
 title: "Drupal News from the Midwest!"
 slug: "drupal-news-midwest"
@@ -14,6 +14,8 @@ tags:
   - saint louis
   - server check.in
   - solr
+aliases:
+  - /blogs/jeff-geerling/drupal-news-midwest
 ---
 
 Some random bits of news from Midwestern Mac, LLC:

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 46
 title: "How to Tether Your iPad to Your iPhone (via WiFi)"
 slug: "tethering-your-ipad-to-your-iphone"
@@ -11,6 +11,7 @@ drupal:
     - /tethering-your-ipad-your-iphon
 aliases:
   - /tethering-your-ipad-your-iphon
+   - /articles/computing/tethering-your-ipad-to-your-iphone
 tags:
   - ipad
   - iphone

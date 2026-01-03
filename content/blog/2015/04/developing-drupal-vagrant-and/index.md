@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2493
 title: "Developing for Drupal with Vagrant and VMs"
 slug: "developing-drupal-vagrant-and"
@@ -17,6 +17,8 @@ tags:
   - virtualbox
   - virtualization
   - vmware
+aliases:
+  - /blogs/jeff-geerling/developing-drupal-vagrant-and
 ---
 
 <p>Many blog posts have outlined the <a href="http://www.mediacurrent.com/blog/better-local-development-vagrant">benefits of using VMs</a> (Virtual Machines) for local Drupal development instead of either using native PHP and Apache, or a bundled environment like MAMP, XAMPP, or Acquia Dev Desktop. The advantages of using virtualization (usually managed by Vagrant) are numerous, but in certain cases, you can make a good argument for sticking with the traditional solutions.</p>

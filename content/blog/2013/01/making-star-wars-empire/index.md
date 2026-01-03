@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1241
 title: "Review: The Making of Star Wars: The Empire Strikes Back"
 slug: "making-star-wars-empire"
@@ -13,6 +13,8 @@ tags:
   - books
   - reviews
   - star wars
+aliases:
+  - /review/miscellaneous/making-star-wars-empire
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

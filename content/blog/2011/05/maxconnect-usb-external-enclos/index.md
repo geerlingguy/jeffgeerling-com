@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1254
 title: "Review: MaxConnect USB External Enclosure for Unibody MBP Optical Drive"
 slug: "maxconnect-usb-external-enclos"
@@ -16,6 +16,8 @@ tags:
   - optical drive
   - reviews
   - usb
+aliases:
+  - /review/computing/maxconnect-usb-external-enclos
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

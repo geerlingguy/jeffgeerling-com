@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2421
 title: "D8CX at MWDS - Porting Wysiwyg Linebreaks to Drupal 8"
 slug: "d8cx-mwds-porting-wysiwyg-linebreaks"
@@ -15,6 +15,8 @@ tags:
   - drupal 8
   - drupal planet
   - mwds
+aliases:
+  - /blogs/jeff-geerling/d8cx-mwds-porting-wysiwyg-linebreaks
 ---
 
 I have been at the <a href="https://groups.drupal.org/node/300808">Midwest Drupal Summit</a> for the past few days, focusing on <a href="https://drupal.org/search/site/%2523D8CX?f[0]=ss_meta_type%3Amodule">#D8CX</a> and reducing Drupal 8's technical debt (at least, a tiny bit of it!).

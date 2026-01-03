@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2463
 title: "Switching an SVN repository to Git using git svn"
 slug: "switching-svn-repository-git-svn"
@@ -13,6 +13,8 @@ tags:
   - git
   - svn
   - svn2git
+aliases:
+  - /blogs/jeff-geerling/switching-svn-repository-git-svn
 ---
 
 Converting from an SVN repository to a Git repository is fairly simple—you just want to move all the commits across, preserve your tags and branches, and make sure all the commit authorship translates properly. The simplest method (though not always fastest) is to use the <code>git svn</code> command to do the full conversion. (Note also that you could interact with an SVN repository with Git as the middle man using <code>git svn</code>... but this blog post is just about doing a full conversion).

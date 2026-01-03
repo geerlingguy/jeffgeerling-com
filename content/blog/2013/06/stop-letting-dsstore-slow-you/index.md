@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2409
 title: "Stop letting .DS_Store slow you down"
 slug: "stop-letting-dsstore-slow-you"
@@ -19,6 +19,8 @@ tags:
   - tips
   - vcs
   - version control
+aliases:
+  - /blogs/jeff-geerling/stop-letting-dsstore-slow-you
 ---
 
 I have over 100 git repositories on my Mac, and for almost every one, I sometimes browse the directory structure in the Finder. Once I do that, I inevitably end up with a few pesky <a href="http://en.wikipedia.org/wiki/.DS_Store"><code>.DS_Store</code></a> files that want to be added to my repo:

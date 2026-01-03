@@ -1,4 +1,4 @@
----
+﻿---
 nid: 85
 title: "Why are there no female Roman Catholic priests?"
 slug: "why-are-there-no-female-priests"
@@ -11,6 +11,7 @@ drupal:
     - /religion/2013/why-are-there-no-female-roman
 aliases:
   - /religion/2013/why-are-there-no-female-roman
+   - /articles/religion/why-are-there-no-female-priests
 tags:
   - articles
   - catholic

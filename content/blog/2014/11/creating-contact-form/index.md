@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2473
 title: "Creating a contact form programmatically in Drupal 8"
 slug: "creating-contact-form"
@@ -14,6 +14,8 @@ tags:
   - drupal 8
   - drupal planet
   - entity api
+aliases:
+  - /blogs/jeff-geerling/creating-contact-form
 ---
 
 Drupal 8's expanded and broadly-used Entity API extends even to Contact Forms, and recently I needed to create a contact form programmatically as part of <a href="https://www.drupal.org/project/honeypot">Honeypot's</a> test suite. Normally, you can export a contact form as part of your site configuration, then when it's imported in a different site/environment, it will be set up simply and easily.

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2449
 title: "Remove Tower's .git folder association in Mac OS X's Finder"
 slug: "remove-towers-git-folder"
@@ -14,6 +14,8 @@ tags:
   - mac
   - mac os x
   - tower
+aliases:
+  - /blogs/jeff-geerling/remove-towers-git-folder
 ---
 
 I use <a href="http://www.git-tower.com/">Tower</a> from time to time to do some git operations that require a little more attention or a better visual overview than what I can get via the CLI and built-in tools. However, I noticed that Tower likes to take over any folder with .git, and make Mac OS X's finder turn it into a 'Tower' package, so double-clicking the folder (which now behaves like a mini app or file) opens Tower.

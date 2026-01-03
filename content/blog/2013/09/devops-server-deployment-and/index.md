@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2428
 title: "DevOps, Server Deployment and Configuration Management"
 slug: "devops-server-deployment-and"
@@ -17,6 +17,8 @@ tags:
   - puppet
   - saltstack
   - servers
+aliases:
+  - /blogs/jeff-geerling/devops-server-deployment-and
 ---
 
 For the past few years, as the number of servers I manage has increased from a few to many, and the services I operate have required more flexibility in terms of adding and removing similarly-configured servers for different purposes, I've been testing different deployment and configuration management tools.

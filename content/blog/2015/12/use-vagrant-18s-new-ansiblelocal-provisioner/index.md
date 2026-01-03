@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2615
 title: "Use Vagrant 1.8's new ansible_local provisioner for Ansible provisioning"
 slug: "use-vagrant-18s-new-ansiblelocal-provisioner"
@@ -11,6 +11,7 @@ drupal:
     - /blog/using-vagrant-18s-new-ansiblelocal-provisioner
 aliases:
   - /blog/using-vagrant-18s-new-ansiblelocal-provisioner
+   - /blog/use-vagrant-18s-new-ansiblelocal-provisioner
 tags:
   - ansible
   - drupal vm

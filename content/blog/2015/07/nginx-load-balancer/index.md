@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2502
 title: "Nginx Load Balancer Visualization on a Raspberry Pi Cluster"
 slug: "nginx-load-balancer"
@@ -16,6 +16,8 @@ tags:
   - drupal planet
   - raspberry pi
   - video
+aliases:
+  - /blogs/jeff-geerling/nginx-load-balancer
 ---
 
 After some more tinkering with the <a href="https://github.com/geerlingguy/raspberry-pi-dramble">Raspberry Pi Dramble</a> (a cluster of 6 Raspberry Pis used to demonstrate Drupal 8 deployments using Ansible), I finally was able to <a href="https://github.com/geerlingguy/raspberry-pi-dramble/issues/45">get the RGB LEDs to react to Nginx accesses</a>—meaning every time a request is received by Nginx, the LED toggles to red momentarily.

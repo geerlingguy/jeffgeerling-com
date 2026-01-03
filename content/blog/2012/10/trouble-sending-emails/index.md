@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2386
 title: "Trouble sending emails from localhost or MAMP? Check your SPF"
 slug: "trouble-sending-emails"
@@ -13,6 +13,8 @@ tags:
   - domain
   - email
   - spf
+aliases:
+  - /blogs/jeff-geerling/trouble-sending-emails
 ---
 
 Email is hard. In fact, it's so hard that I probably have five or so blog posts half-written on this blog that I've abandoned simply because I don't think I could distill them down into something worthy of posting (I like being able to explain things understandably or not at all!).

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1270
 title: "Review: Intocircuit Power Castle 15000 mAh Dual USB portable charger"
 slug: "intocircuit-power-castle-15000"
@@ -15,6 +15,8 @@ tags:
   - power
   - reviews
   - usb
+aliases:
+  - /review/computing/intocircuit-power-castle-15000
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

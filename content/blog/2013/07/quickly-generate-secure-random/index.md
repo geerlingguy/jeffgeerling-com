@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2415
 title: "Quickly generate secure, random passwords (Mac)"
 slug: "quickly-generate-secure-random"
@@ -16,6 +16,8 @@ tags:
   - profile
   - security
   - terminal
+aliases:
+  - /blogs/jeff-geerling/quickly-generate-secure-random
 ---
 
 If you use Mac OS X, add the following line to your <a href="http://redfinsolutions.com/blog/creating-bashprofile-your-mac">.bash_profile</a>:

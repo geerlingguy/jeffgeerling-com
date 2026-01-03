@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2402
 title: "Make sure your Linux servers' date and time are correct and synchronized"
 slug: "make-sure-your-linux-servers"
@@ -14,6 +14,8 @@ tags:
   - linux
   - ntp
   - timezone
+aliases:
+  - /blogs/jeff-geerling/make-sure-your-linux-servers
 ---
 
 Nowadays, most people assume that all modern computers and operating systems have network time synchronization set up properly and switched on by default. However, this is not the case with many Linux servers—especially if you didn't install Linux and configure it yourself (as would be the case with most cloud-based OS images like those used to generate new servers on Linode).

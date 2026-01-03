@@ -1,4 +1,4 @@
----
+﻿---
 nid: 52
 title: "Sending High-Definition Video over Long Distances"
 slug: "sending-high-definition-video"
@@ -13,6 +13,8 @@ tags:
   - component
   - hd
   - video
+aliases:
+  - /articles/audio-and-video/2011/sending-high-definition-video
 ---
 
 <p>I&#39;m working on increasing the quality of video sent through the Cathedral Basilica of St. Louis&#39; in-house video distribution system (right now they use passive composite video connections over Cat5 cabling, and video is very blurry with lots of ghosting), and I thought I&#39;d briefly share my findings in this area.</p>

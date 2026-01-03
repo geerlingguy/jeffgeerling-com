@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2264
 title: "Drupal 7.0 Alpha Release 1 is Available"
 slug: "drupal-70-alpha-release-1-avai"
@@ -12,6 +12,8 @@ tags:
   - drupal
   - drupal planet
   - websites
+aliases:
+  - /blogs/geerlingguy/drupal-70-alpha-release-1-avai
 ---
 
 <p>

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2292
 title: "I'm (almost) Drupal 7... and so should you!"
 slug: "im-almost-drupal-7-and-so-shou"
@@ -12,6 +12,8 @@ tags:
   - drupal
   - drupal planet
   - upgrade
+aliases:
+  - /blogs/jeff-geerling/im-almost-drupal-7-and-so-shou
 ---
 
 <p>I&#39;ve now created three different Drupal 7 sites, and I can heartily state that I&#39;m pleased with where the community has come in the past couple of years&mdash;especially from a UX perspective (the admin overlay has actually turned out to work VERY well across all the browsers I use). I will be posting more impressions of Drupal 7 from a themer&#39;s perspective in the coming weeks (check out an <a href="http://www.jeffgeerling.com/blogs/jeff-geerling/moving-drupal-6-drupal-7-theme">older post on D7 theming here</a>).</p>

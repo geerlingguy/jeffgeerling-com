@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2331
 title: "Using Migrate to Import Content from a Legacy Database"
 slug: "using-migrate-import-content"
@@ -15,6 +15,8 @@ tags:
   - flocknote
   - migrate
   - migrate extras
+aliases:
+  - /blogs/jeff-geerling/using-migrate-import-content
 ---
 
 Since a few people who missed <a href="http://groups.drupal.org/node/169659">last night's St. Louis Drupal meetup</a> wanted to hear more about <a href="http://drupal.org/project/migrate">Migrate module</a> and my notes from a recent content migration for flockNote, I thought I'd post my observations and some tips here.

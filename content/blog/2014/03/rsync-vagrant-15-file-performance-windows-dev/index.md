@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2590
 title: "rsync in Vagrant 1.5 improves file performance and Windows usage"
 slug: "rsync-vagrant-15-file-performance-windows-dev"
@@ -12,6 +12,7 @@ drupal:
     - /blog/vagrant-15-vastly-improves-filesystem-performance
 aliases:
   - /blog/vagrant-15-makes-team-based-development-1000x
+   - /blog/rsync-vagrant-15-file-performance-windows-dev
   - /blog/vagrant-15-vastly-improves-filesystem-performance
 tags:
   - development

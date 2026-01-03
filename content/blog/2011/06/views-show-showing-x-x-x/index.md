@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2364
 title: "Views: Show \"Showing X-X of X results\" (page and result counter) in Drupal 7"
 slug: "views-show-showing-x-x-x"
@@ -14,6 +14,8 @@ tags:
   - drupal planet
   - pager
   - views
+aliases:
+  - /blogs/jeff-geerling/views-show-showing-x-x-x
 ---
 
 [<strong>Update</strong>: Views 3.x has a really nifty plugin feature called 'Results summary' that you can simply add to the header or footer of your view, and use your own text with placeholders, to do everything I outline in the post below, without a line of code. Add a results summary instead of using hook_views_pre_render() or a Views PHP field.]

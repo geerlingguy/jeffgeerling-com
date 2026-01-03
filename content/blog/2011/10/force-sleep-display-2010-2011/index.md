@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2375
 title: "Force-Sleep the Display on a 2010-2011 MacBook Air"
 slug: "force-sleep-display-2010-2011"
@@ -15,6 +15,8 @@ tags:
   - mac
   - macbook air
   - sleep
+aliases:
+  - /blogs/jeff-geerling/force-sleep-display-2010-2011
 ---
 
 [<strong>Update</strong>: It looks like Mountain Lion finally restored this functionality—you can press Shift + Control + Power key, and the screen will immediately go to sleep.]

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2514
 title: "\"Error: The libsass binding was not found\" when running gulp"
 slug: "error-libsass-binding-was-not"
@@ -18,6 +18,8 @@ tags:
   - npm
   - nvm
   - theme
+aliases:
+  - /blogs/jeff-geerling/error-libsass-binding-was-not
 ---
 
 I was recently futzing around with a Drupal site that has a fairly complex theme setup, and which relies on npm/gulp to setup and build the theme assets. One time after not touching the project for a couple weeks, when I came back and ran the <code>gulp</code> command again, I got the following error:

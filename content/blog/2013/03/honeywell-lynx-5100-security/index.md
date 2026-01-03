@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1272
 title: "Review: Honeywell Lynx 5100 Security System"
 slug: "honeywell-lynx-5100-security"
@@ -14,6 +14,8 @@ tags:
   - products
   - reviews
   - security
+aliases:
+  - /review/miscellaneous/honeywell-lynx-5100-security
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

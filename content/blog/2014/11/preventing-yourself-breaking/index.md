@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2470
 title: "Preventing yourself from accidentally breaking production with Drush"
 slug: "preventing-yourself-breaking"
@@ -16,6 +16,8 @@ tags:
   - drupal planet
   - drush
   - shell
+aliases:
+  - /blogs/jeff-geerling/preventing-yourself-breaking
 ---
 
 For all the sites I maintain, I have at least a local and production environment. Some projects warrant a dev, qa, etc. as well, but for the purposes of this post, let's just assume you often run drush commands on local or development environments during development, and eventually run a similar command on production during a deployment.

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2498
 title: "DrupalCamp St. Louis 2015 finished, session videos available online!"
 slug: "drupalcamp-st-louis-2015-1"
@@ -15,6 +15,8 @@ tags:
   - performance
   - saint louis
   - video
+aliases:
+  - /blogs/jeff-geerling/drupalcamp-st-louis-2015-1
 ---
 
 <a href="https://2015.drupalstl.org/">DrupalCamp St. Louis 2015</a> was held this past weekend, June 20-21, 2015, at SLU LAW in downtown St. Louis. We had nine sessions and a great keynote on Saturday, and a full sprint day on Sunday.

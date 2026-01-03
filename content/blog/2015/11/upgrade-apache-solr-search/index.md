@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2509
 title: "Upgrade an Apache Solr Search index from 1.4 to 3.6 (and later versions)"
 slug: "upgrade-apache-solr-search"
@@ -16,6 +16,8 @@ tags:
   - java
   - solr
   - upgrade
+aliases:
+  - /blogs/jeff-geerling/upgrade-apache-solr-search
 ---
 
 Recently I had to upgrade someone's Apache Solr installation from 1.4 to 5.x (the current latest version), and for the most part, a Solr upgrade is straightforward, especially if you're doing it for a Drupal site that uses the Search API or Solr Search modules, as the solr configuration files are already upgraded for you (you just need to switch them out when you do the upgrade, making any necessary customizations).

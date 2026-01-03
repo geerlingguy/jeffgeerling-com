@@ -1,4 +1,4 @@
----
+﻿---
 nid: 71
 title: "Bad / Annoying IP Addresses"
 slug: "bad-annoying-ip-addresses"
@@ -12,6 +12,8 @@ tags:
   - dns
   - internet
   - ip
+aliases:
+  - /web-design/2010/bad-annoying-ip-addresses
 ---
 
 From time to time, there is a very disobedient/annoying computer or set of computers that annoy the heck out of me online—usually by attempting to bring down one of my websites, or by trying to access hundreds of vulnerable locations (which makes my server return a bunch of 404s) on my server.

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2416
 title: "Migrating Drupal 7 users from site to site while preserving password hashes"
 slug: "migrating-drupal-7-users-site"
@@ -13,6 +13,8 @@ tags:
   - drupal planet
   - migrate
   - password
+aliases:
+  - /blogs/jeff-geerling/migrating-drupal-7-users-site
 ---
 
 From time to time, I use the incredibly powerful <a href="https://drupal.org/project/migrate">Migrate</a> module to migrate a subset of users from one Drupal 7 site to another.

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1247
 title: "Review: Nikon 18-35mm AF-D Lens"
 slug: "nikon-18-35mm-af-d-lens"
@@ -14,6 +14,8 @@ tags:
   - nikon
   - photography
   - reviews
+aliases:
+  - /review/nikon-18-35mm-af-d-lens
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

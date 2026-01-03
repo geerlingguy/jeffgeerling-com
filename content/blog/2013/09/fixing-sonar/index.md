@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2427
 title: "Fixing sonar-runner error - Can not add twice the same measure"
 slug: "fixing-sonar"
@@ -14,6 +14,8 @@ tags:
   - deployment
   - errors
   - sonarqube
+aliases:
+  - /blogs/jeff-geerling/fixing-sonar
 ---
 
 Sometimes, when running sonar-runner to compile the results of a Jenkins build into measurable data for a <a href="http://www.sonarqube.org/">SonarQube</a> dashboard for a project, I get the following errors, and execution stops before the data is sent to the central sonar server:

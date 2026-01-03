@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2589
 title: "Getting a file from a Samba server in an Ansible playbook"
 slug: "getting-file-samba-server-ansible-playbook"
@@ -13,6 +13,8 @@ tags:
   - file copy
   - filesystem
   - samba
+aliases:
+  - /blog/getting-file-samba-server-ansible-playbook
 ---
 
 For a project I'm working on, I needed to make one of my Ansible playbooks grab an archived file off a Windows share using <code>smbclient</code>.

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2457
 title: "DrupalCon Austin 2014 - Notes on my First Timer's Guide"
 slug: "drupalcon-austin-2014-notes-my"
@@ -12,6 +12,8 @@ tags:
   - drupal
   - drupal planet
   - drupalcon
+aliases:
+  - /blogs/jeff-geerling/drupalcon-austin-2014-notes-my
 ---
 
 I wrote <a href="http://www.jeffgeerling.com/blogs/jeff-geerling/first-timers-guide-drupalcon">A First Timer's Guide to DrupalCon</a> two years ago, and 99% of the advice in that post is still relevant. I've been preparing my presentation <a href="https://austin2014.drupal.org/session/devops-humans-ansible-drupal-deployment-victory">DevOps for Humans: Ansible for Drupal Deployment Victory!</a> for a few months now, and since DrupalCon is less than a week away, I thought I'd take a few minutes to supplement the earlier post:

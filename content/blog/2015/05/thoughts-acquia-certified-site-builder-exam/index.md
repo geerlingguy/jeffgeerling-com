@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2492
 title: "Thoughts on the Acquia Certified Drupal Site Builder Exam"
 slug: "thoughts-acquia-certified-site-builder-exam"
@@ -15,6 +15,8 @@ tags:
   - drupal planet
   - exam
   - site builder
+aliases:
+  - /blogs/jeff-geerling/thoughts-acquia-certified-site-builder-exam
 ---
 
 After taking the trifecta of Acquia Developer Certification (<a href="http://www.jeffgeerling.com/blogs/jeff-geerling/thoughts-acquia-drupal">General</a>, <a href="http://www.jeffgeerling.com/blogs/jeff-geerling/thoughts-acquia-certified-back-end-exam">Back-end</a>, <a href="http://www.jeffgeerling.com/blogs/jeff-geerling/thoughts-acquia-certified-front-end-exam">Front-end</a>) exams and earned a new black 'Grand Master' sticker, I decided to complete the gauntlet and take the <a href="https://www.acquia.com/customer-success/learning-services/acquia-certified-drupal-site-builder-exam-blueprint">Acquia Certified Drupal Site Builder Exam</a> at DrupalCon LA.

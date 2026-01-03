@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2526
 title: "Solr for Drupal Developers, Part 2: Solr and Drupal, A History"
 slug: "solr-drupal-developers-part-2"
@@ -17,6 +17,8 @@ tags:
   - series
   - solr
   - tutorial
+aliases:
+  - /blogs/jeff-geerling/solr-drupal-developers-part-2
 ---
 
 <em>Posts in this series:</em>

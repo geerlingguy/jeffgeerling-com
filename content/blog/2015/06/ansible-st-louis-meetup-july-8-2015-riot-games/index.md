@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2597
 title: "Ansible St. Louis Meetup on July 8, 2015, at Riot Games"
 slug: "ansible-st-louis-meetup-july-8-2015-riot-games"
@@ -13,6 +13,8 @@ tags:
   - meetup
   - riot games
   - saint louis
+aliases:
+  - /blog/ansible-st-louis-meetup-july-8-2015-riot-games
 ---
 
 Ansible is coming to St. Louis—the hometown of Midwestern Mac, LLC, which runs Server Check.in!

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2452
 title: "DrupalCon and DrupalCamp news + free DrupalCon ticket!"
 slug: "drupalcon-drupalcamp-free-ticket"
@@ -15,6 +15,8 @@ tags:
   - drupalcamp
   - drupalcon
   - saint louis
+aliases:
+  - /blogs/jeff-geerling/drupalcon-drupalcamp-free-ticket
 ---
 
 <p style="text-align: center;"><a href="https://austin2014.drupal.org/">{{< figure src="./drupalcon-austin.png" alt="DrupalCon Austin" width="197" height="161" >}}</a></p>

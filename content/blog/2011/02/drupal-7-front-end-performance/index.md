@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2306
 title: "Drupal 7 Front-End Performance - Shared Hosting Recommendations"
 slug: "drupal-7-front-end-performance"
@@ -14,6 +14,8 @@ tags:
   - hosting
   - performance
   - shared hosting
+aliases:
+  - /blogs/jeff-geerling/drupal-7-front-end-performance
 ---
 
 <p>{{< figure src="./speedometer-boost-drupal.png" alt="Speedometer - Boosted" width="125" height="125" >}}I've spent a lot of time working on making sure my smaller Drupal sites (mostly run on shared hosts or very small VPSes) run lean and mean. This helps the pages load faster, users are happier, and my hosting providers don't have to shut down any of my sites, even when they're under pretty heavy load.</p>

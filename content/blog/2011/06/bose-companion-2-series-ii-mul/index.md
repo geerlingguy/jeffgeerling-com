@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1251
 title: "Review: Bose Companion 2 Series II Multimedia Computer Speaker System"
 slug: "bose-companion-2-series-ii-mul"
@@ -15,6 +15,8 @@ tags:
   - reviews
   - sound
   - speakers
+aliases:
+  - /review/audio-and-video/bose-companion-2-series-ii-mul
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

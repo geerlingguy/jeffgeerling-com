@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2586
 title: "Staying Current - Tech News and Development Trends"
 slug: "staying-current-tech-news-and-development-trends"
@@ -11,6 +11,7 @@ drupal:
     - /blog/staying-current-latest-tech-news-and-development
 aliases:
   - /blog/staying-current-latest-tech-news-and-development
+   - /blog/staying-current-tech-news-and-development-trends
 tags:
   - information
   - news

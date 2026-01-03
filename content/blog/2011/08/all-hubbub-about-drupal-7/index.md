@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2328
 title: "All the Hubbub About Drupal 7"
 slug: "all-hubbub-about-drupal-7"
@@ -16,6 +16,8 @@ tags:
   - drupal planet
   - drupalwtf
   - open source
+aliases:
+  - /blogs/jeff-geerling/all-hubbub-about-drupal-7
 ---
 
 Drupal 7. <em>Is it ready?</em>

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2444
 title: "Connect to IRC via Adium when connected through an LTE hotspot"
 slug: "connect-irc-adium-when"
@@ -15,6 +15,8 @@ tags:
   - mac
   - proxy
   - ssh
+aliases:
+  - /blogs/jeff-geerling/connect-irc-adium-when
 ---
 
 When I'm on the go, I like to use my iPhone 5s as a hotspot, as I get 10-20 Mbps up and down (much better than any public WiFi I've used), and it's a more secure connection than a public, unsecured hotspot.

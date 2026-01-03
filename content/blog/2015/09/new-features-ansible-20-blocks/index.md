@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2602
 title: "New features in Ansible 2.0: Blocks"
 slug: "new-features-ansible-20-blocks"
@@ -11,6 +11,8 @@ drupal:
 tags:
   - ansible
   - blocks
+aliases:
+  - /blog/new-features-ansible-20-blocks
 ---
 
 <blockquote>

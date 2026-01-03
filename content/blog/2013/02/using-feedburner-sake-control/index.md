@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2394
 title: "Using FeedBurner? For the sake of control, enable MyBrand service"
 slug: "using-feedburner-sake-control"
@@ -17,6 +17,7 @@ tags:
   - url
 aliases:
   - /blogs/jeff-geerling/using-feedburner-sake-control
+   - /blogs/jeff-geerling/using-feedburner-sake-control
 ---
 
 We use and recommend <a href="http://feedburner.google.com/">FeedBurner</a> for RSS feed stats, podcasting, and the other helpful services it provides. However, one downside of redirecting your website's users to your FeedBurner feed is the fact that you have no control over FeedBurner's URL for your feed.

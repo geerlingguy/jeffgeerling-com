@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1238
 title: "Review: iRig Mic Cast"
 slug: "irig-mic-cast-microphone"
@@ -11,6 +11,7 @@ drupal:
     - /irig-mic-cast
 aliases:
   - /irig-mic-cast
+   - /review/audio-and-video/irig-mic-cast-microphone
 tags:
   - audio
   - ik multimedia

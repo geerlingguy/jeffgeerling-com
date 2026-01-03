@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2336
 title: "Prefill the Subject of a Privatemsg Message"
 slug: "prefill-subject-privatemsg"
@@ -17,6 +17,8 @@ tags:
   - php
   - privatemsg
   - snippets
+aliases:
+  - /blogs/jeff-geerling/prefill-subject-privatemsg
 ---
 
 I've had a nice go at making private messaging capabilities for <a href="http://www.flocknote.com/">flockNote</a> work a lot nicer than the out-of-the-box <a href="http://drupal.org/project/privatemsg">Privatemsg</a> module experience, by simplifying everything to the point that it's closer to the Facebook Direct Message system than the normal Privatemsg UX. (Privatemsg is the premiere way of handling private messaging in Drupal. It's already awesome out of the box... just needed a bit more help for our particular site ;-).

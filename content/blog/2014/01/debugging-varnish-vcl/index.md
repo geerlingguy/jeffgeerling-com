@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2456
 title: "Debugging Varnish VCL configuration files"
 slug: "debugging-varnish-vcl"
@@ -16,6 +16,8 @@ tags:
   - varnishlog
   - varnishtop
   - vcl
+aliases:
+  - /blogs/jeff-geerling/debugging-varnish-vcl
 ---
 
 <p>If you're a Drupal or PHP developer used to debugging or troubleshooting some code by adding a <code>print $variable;</code> or <code>dpm($object);</code> to your PHP, and then refreshing the page to see the debug message (or using XDebug, or using watchdog logging...), debugging Varnish's VCL language can be intimidating.</p>

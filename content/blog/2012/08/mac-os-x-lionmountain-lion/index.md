@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2372
 title: "Mac OS X Lion/Mountain Lion - Could not join network/timeout"
 slug: "mac-os-x-lionmountain-lion"
@@ -17,6 +17,8 @@ tags:
   - mountain lion
   - setup assistant
   - wifi
+aliases:
+  - /blogs/jeff-geerling/mac-os-x-lionmountain-lion
 ---
 
 I was migrating all the data from a friend's old MacBook (which was running Mac OS X Tiger) to her new MacBook Air (running Mac OS X Mountain Lion), and besides a WiFi hiccup, everything went smoothly (I had to clone the old MacBook's drive to a USB disk, then use Setup Assistant to migrate the data from that disk to the new MacBook Air).

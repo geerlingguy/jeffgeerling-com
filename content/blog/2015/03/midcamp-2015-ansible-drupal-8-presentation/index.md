@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2598
 title: "MidCamp 2015 - Ansible + Drupal 8 Presentation"
 slug: "midcamp-2015-ansible-drupal-8-presentation"
@@ -18,6 +18,8 @@ tags:
   - presentations
   - raspberry pi
   - video
+aliases:
+  - /blog/midcamp-2015-ansible-drupal-8-presentation
 ---
 
 On March 21, I gave a presentation on Ansible and Drupal 8 at MidCamp in Chicago. Video and slides from the presentation are embedded below:

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2495
 title: "Ansible for Drupal infrastructure and deployments - DrupalCon LA 2015 BoF"
 slug: "ansible-drupal-infrastructure"
@@ -17,6 +17,8 @@ tags:
   - drupal planet
   - drupalcon
   - raspberry pi
+aliases:
+  - /blogs/jeff-geerling/ansible-drupal-infrastructure
 ---
 
 We had a great discussion about how different companies and individuals are using Ansible for Drupal infrastructure management and deployments at DrupalCon LA, and I wanted to post some slides from my (short) intro to Ansible presentation here, as well as a few notes from the presentation.

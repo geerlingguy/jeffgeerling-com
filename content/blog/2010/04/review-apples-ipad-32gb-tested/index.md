@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1264
 title: "Review: Apple iPad (Original)"
 slug: "review-apples-ipad-32gb-tested"
@@ -11,6 +11,7 @@ drupal:
     - /review-apples-ipad-32gb-tested
 aliases:
   - /review-apples-ipad-32gb-tested
+   - /reviews/2010/review-apples-ipad-32gb-tested
 tags:
   - apple
   - ipad

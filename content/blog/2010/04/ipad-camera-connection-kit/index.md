@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1263
 title: "Review: iPad Camera Connection Kit"
 slug: "ipad-camera-connection-kit"
@@ -13,6 +13,8 @@ tags:
   - ipad
   - photography
   - reviews
+aliases:
+  - /reviews/2010/ipad-camera-connection-kit
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

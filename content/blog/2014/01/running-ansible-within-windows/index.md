@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2613
 title: "Running Ansible within Windows"
 slug: "running-ansible-within-windows"
@@ -15,6 +15,8 @@ tags:
   - cygwin
   - powershell
   - windows
+aliases:
+  - /blog/running-ansible-within-windows
 ---
 
 <blockquote><strong>2016 Update</strong>: If you are using Windows 10 or later, check out my newer instructions for <a href="/blog/2016/using-ansible-through-windows-10s-subsystem-linux">Using Ansible through Windows 10's Subsystem for Linux</a>.</blockquote>

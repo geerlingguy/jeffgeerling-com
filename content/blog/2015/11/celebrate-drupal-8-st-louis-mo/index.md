@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2508
 title: "Celebrate Drupal 8 in St. Louis, MO on Nov 19 - Food, Drinks, and a Raspberry Pi!"
 slug: "celebrate-drupal-8-st-louis-mo"
@@ -17,6 +17,8 @@ tags:
   - raspberry pi
   - saint louis
   - spry
+aliases:
+  - /blogs/jeff-geerling/celebrate-drupal-8-st-louis-mo
 ---
 
 <p style="text-align:center;">{{< figure src="./drupal-8-logo-inline.png" alt="Drupal 8 Logo" width="400" height="100" >}}</p>

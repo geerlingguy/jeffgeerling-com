@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2395
 title: "Setting a max_execution_time limit for PHP CLI"
 slug: "setting-maxexecutiontime-limit"
@@ -15,6 +15,8 @@ tags:
   - drush
   - performance
   - php
+aliases:
+  - /blogs/jeff-geerling/setting-maxexecutiontime-limit
 ---
 
 PHP's command line interface doesn't respect the <code>max_execution_time</code> limit within your php.ini settings. This can be both a blessing and a curse (but more often the latter). There are some drush scripts that I run concurrently for batch operations that I want to make sure don't run away from me, because they perform database operations and network calls, and can sometimes slow down and block other operations.

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1245
 title: "Review: Tascam iXZ Mic and Guitar Interface for iOS"
 slug: "review-tascam-ixz-mic-and"
@@ -16,6 +16,8 @@ tags:
   - recording
   - reviews
   - tascam
+aliases:
+  - /review/audio-and-video/review-tascam-ixz-mic-and
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

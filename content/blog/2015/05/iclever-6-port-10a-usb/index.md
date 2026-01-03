@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1269
 title: "Review: iClever 6-port 10A USB charging station"
 slug: "iclever-6-port-10a-usb"
@@ -13,6 +13,8 @@ tags:
   - iclever
   - reviews
   - usb
+aliases:
+  - /review/computing/iclever-6-port-10a-usb
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2479
 title: "Mounting a Raspberry Pi's ext4 SD card on Ubuntu 14.04 inside VirtualBox on Mac OS X"
 slug: "mounting-raspberry-pis-ext4-sd"
@@ -18,6 +18,8 @@ tags:
   - sd
   - usb
   - virtualbox
+aliases:
+  - /blogs/jeff-geerling/mounting-raspberry-pis-ext4-sd
 ---
 
 Since I'm running a Mac, and don't have a spare linux-running machine that can mount ext4-formatted partitions (like those used by default for official Raspberry Pi distributions like Raspbian on SD cards), I don't have a simple way to mount the boot partition on my Mac to tweak files on the Pi; this is a necessity if, for example, you break some critical configuration and the Pi no longer boots cleanly.

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2431
 title: "Migrating style and script tags from node bodies into Code per Node"
 slug: "migrating-style-and-script"
@@ -16,6 +16,8 @@ tags:
   - javascript
   - migrate
   - stylesheets
+aliases:
+  - /blogs/jeff-geerling/migrating-style-and-script
 ---
 
 For a recent project, I needed to migrate anything inside `<script>` and `<style>` tags that were embedded with other content inside the body field of Drupal 6 nodes into separate Code per Node-provided fields for Javascript and CSS. (<a href="https://drupal.org/project/cpn">Code per Node</a> is a handy module that lets content authors easily manage CSS/JS per node/block, and saves the styles and scripts to the filesystem for inclusion when the node is rendered—<a href="http://www.lullabot.com/blog/article/module-monday-code-node">read more about CPN goodness here</a>).

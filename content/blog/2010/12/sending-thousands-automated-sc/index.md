@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2304
 title: "Sending Recurring Emails to Thousands, using Simplenews as a Backend"
 slug: "sending-thousands-automated-sc"
@@ -14,6 +14,8 @@ tags:
   - email
   - performance
   - simplenews
+aliases:
+  - /blogs/jeff-geerling/sending-thousands-automated-sc
 ---
 
 <p>I recently had a rather unique project requirement on one of my sites: I needed to send out a weekly email to hundreds (soon to be thousands) of site users, with the same template each week, but with the latest data from the website.</p>

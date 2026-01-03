@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2358
 title: "MySQL General Errors on MAMP/WAMP/XAMPP"
 slug: "mysql-general-errors"
@@ -13,6 +13,8 @@ tags:
   - drupal 7
   - drupal planet
   - mysql
+aliases:
+  - /blogs/jeff-geerling/mysql-general-errors
 ---
 
 I've been getting errors like <code>General error: Can't create/write to file</code>, <code>Error 2006: MySQL server has gone away</code>, and other similar PDOExceptions and errors from time to time while developing on my Mac using MAMP Pro (this seems to happen more often with Drupal 7 sites than Drupal 6, for reasons I know not). I've noticed a few other developers are getting these errors too, and almost always on local environments as opposed to live servers.

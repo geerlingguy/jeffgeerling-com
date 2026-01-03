@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2520
 title: "Making your current Drupal theme responsive, simply"
 slug: "making-your-current-drupal"
@@ -17,6 +17,8 @@ tags:
   - style
   - stylesheet
   - ux
+aliases:
+  - /blogs/jeff-geerling/making-your-current-drupal
 ---
 
 For a few of my smaller sites (like my portfolio website, www.jeffgeerling.com), I've had a little todo item on my list for the past year or so to make the them 'more responsive'—mostly meaning "make it legible on an iPhone or comparable Android phone". Most tablets I've used render traditional 960px layouts appreciably well, including the iPad, Kindle Fire, Samsung Galaxy Tab, etc., so I want to just focus on making the websites usable on smartphones.

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2605
 title: "Highly-Available Infrastructure Provisioning and Configuration with Ansible"
 slug: "highly-available-infrastructure-provisioning-ansible"
@@ -11,6 +11,7 @@ drupal:
     - /blog/highly-available-infrastructure-provisioning-and
 aliases:
   - /blog/highly-available-infrastructure-provisioning-and
+   - /blog/highly-available-infrastructure-provisioning-ansible
 tags:
   - ansible
   - ansible for devops

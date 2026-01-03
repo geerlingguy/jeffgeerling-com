@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1252
 title: "Review: TRENDnet 5-Port Gigabit GREENnet Switch"
 slug: "trendnet-5-port-gigabit-greenn"
@@ -14,6 +14,8 @@ tags:
   - reviews
   - switch
   - trendnet
+aliases:
+  - /review/computing/trendnet-5-port-gigabit-greenn
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

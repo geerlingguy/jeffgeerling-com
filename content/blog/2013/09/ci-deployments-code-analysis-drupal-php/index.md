@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2478
 title: "CI: Deployments and Static Code Analysis with Drupal/PHP"
 slug: "ci-deployments-code-analysis-drupal-php"
@@ -20,6 +20,8 @@ tags:
   - phing
   - php
   - sonarqube
+aliases:
+  - /blogs/jeff-geerling/ci-deployments-code-analysis-drupal-php
 ---
 
 <p style="text-align: center;">{{< figure src="./sonarqube-code-quality-title.png" alt="CI: Deplyments and Code Quality" width="500" height="214" >}}</p>

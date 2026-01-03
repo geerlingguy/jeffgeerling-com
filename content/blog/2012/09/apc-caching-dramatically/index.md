@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2388
 title: "APC Caching to Dramatically Reduce MySQL traffic"
 slug: "apc-caching-dramatically"
@@ -15,6 +15,8 @@ tags:
   - drupal planet
   - memcached
   - performance
+aliases:
+  - /blogs/jeff-geerling/apc-caching-dramatically
 ---
 
 One Drupal site I manage has seen MySQL data throughput numbers rising constantly for the past year or so, and the site's page generation times have become progressively slower. After profiling the code with XHProf and monitoring query times on a staging server using Devel's query log, I found that there were a few queries that were running on pretty much every page load, grabbing data from cache tables with 5-10 MB in certain rows.

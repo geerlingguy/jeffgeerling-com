@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2501
 title: "Solving the Emoji/character encoding problem in Drupal 7"
 slug: "solving-emoji-problem-drupal-7"
@@ -15,6 +15,8 @@ tags:
   - mysql
   - utf8
   - utf8mb4
+aliases:
+  - /blogs/jeff-geerling/solving-emoji-problem-drupal-7
 ---
 
 <blockquote><strong>Update</strong>: As of Drupal 7.50, Emoji/UTF-8 mb4 is now supported for MySQL (and other databases) in core! See the documentation page here for more information on how to configure it: <a href="https://www.drupal.org/node/2754539">Multi-byte UTF-8 support in Drupal 7</a>. <em>This blog post exists for historical purposes only—please see the Drupal.org documentation for the most up-to-date instructions, and see my newer blog post here: <a href="/blog/2016/getting-emoji-and-multibyte-characters-on-your-drupal-7-site-750-??">Getting Emoji and multibyte characters on your Drupal 7 site with 7.50 ??</a>!</em></blockquote>

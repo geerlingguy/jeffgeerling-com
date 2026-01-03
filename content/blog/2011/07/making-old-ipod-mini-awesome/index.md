@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2325
 title: "Making an old iPod Mini Awesome Again"
 slug: "making-old-ipod-mini-awesome"
@@ -15,6 +15,8 @@ tags:
   - ipod
   - ipod mini
   - replacement
+aliases:
+  - /blogs/jeff-geerling/making-old-ipod-mini-awesome
 ---
 
 What's better than having every song you've ever purchased available wherever you are, without worrying about an expensive MP3 player getting stolen?

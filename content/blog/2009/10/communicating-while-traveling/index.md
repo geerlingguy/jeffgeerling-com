@@ -1,4 +1,4 @@
----
+﻿---
 nid: 27
 title: "Communicating on the Go - A Guide to Traveling and Staying in Touch"
 slug: "communicating-while-traveling"
@@ -17,6 +17,8 @@ tags:
   - phone
   - skype
   - voip
+aliases:
+  - /articles/communicating-while-traveling
 ---
 
 <p>

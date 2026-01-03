@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2351
 title: "Changing RSS Feed item links (and other data) in Drupal 7"
 slug: "changing-rss-feed-item-links"
@@ -19,6 +19,7 @@ tags:
   - snippets
 aliases:
   - /blogs/jeff-geerling/changing-rss-feed-item-links
+   - /blogs/jeff-geerling/changing-rss-feed-item-links
 ---
 
 You can do a lot of great things with field display in Drupal 7's 'manage display' tab for a content type. You can control the order and label position of each field attached to a node type in that tab for Full node displays, Teasers, and RSS displays (or other displays you set up).

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2332
 title: "WYSIWYG Editing (contentEditable support) in iOS 5"
 slug: "wysiwyg-editing"
@@ -19,6 +19,8 @@ tags:
   - iphone
   - tinymce
   - wysiwyg
+aliases:
+  - /blogs/jeff-geerling/wysiwyg-editing
 ---
 
 I haven't seen much about this feature yet, so I figured I'd put it through its paces and share what I found. WYSIWYG editing on iOS devices is finally here! For a long time, contentEditable support has been lacking on iPads, iPhones, and iPod Touches, and it's been slightly annoying, as the only way to add richly-formatted text on these devices was doing a two-step through finding the carat characters and writing the HTML yourself.

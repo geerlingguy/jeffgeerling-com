@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2432
 title: "How to redirect a user after login to a specific page"
 slug: "how-redirect-user-after-login"
@@ -13,6 +13,8 @@ tags:
   - drupal_goto
   - login
   - redirect
+aliases:
+  - /blogs/jeff-geerling/how-redirect-user-after-login
 ---
 
 There are some simple Drupal modules that help with login redirection (especially <a href="https://drupal.org/project/login_destination">Login Destination</a>), but I often need more advanced conditions applied to redirects, so I like being able to do the redirect inside a custom module. You can also do something similar with Rules, but if the site you're working on doesn't have Rules enabled, all you need to do is:

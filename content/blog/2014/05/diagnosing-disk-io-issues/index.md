@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2453
 title: "Diagnosing Disk I/O issues: swapping, high IO wait, congestion"
 slug: "diagnosing-disk-io-issues"
@@ -16,6 +16,8 @@ tags:
   - performance
   - swap
   - top
+aliases:
+  - /blogs/jeff-geerling/diagnosing-disk-io-issues
 ---
 
 One one small LEMP VPS I manage, I noticed munin graphs that showed anywhere between 5-50 MB/second of disk IO. Since the VM has an SSD instead of traditional spinning hard drive, performance wasn't too bad, but all that disk I/O definitely slowed things down.

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1256
 title: "Review: Nikon D7000"
 slug: "nikon-d7000"
@@ -13,6 +13,8 @@ tags:
   - d7000
   - nikon
   - reviews
+aliases:
+  - /review/photography/nikon-d7000
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

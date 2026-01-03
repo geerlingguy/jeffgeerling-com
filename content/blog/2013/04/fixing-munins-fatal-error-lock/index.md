@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2399
 title: "Fixing Munin's [FATAL ERROR] Lock already exists: /var/run/munin/munin-update.lock. Dying."
 slug: "fixing-munins-fatal-error-lock"
@@ -11,6 +11,8 @@ drupal:
 tags:
   - monitoring
   - munin
+aliases:
+  - /blogs/jeff-geerling/fixing-munins-fatal-error-lock
 ---
 
 Recently, I upgraded one of my CentOS and Ubuntu servers to a new version of Munin 2.0.x, and started getting an error stating that munin-update.lock already exists:

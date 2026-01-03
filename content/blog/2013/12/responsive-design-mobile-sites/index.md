@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2440
 title: "Responsive design > mobile sites"
 slug: "responsive-design-mobile-sites"
@@ -14,6 +14,8 @@ tags:
   - responsive
   - usability
   - ux
+aliases:
+  - /blogs/jeff-geerling/responsive-design-mobile-sites
 ---
 
 There are individuals and companies who still believe it would be in their best interest to maintain a 'desktop' version of their website, and a completely or mostly-separate 'mobile' version of their site, and this belief (especially in the corporate arena) was strengthened by a recent (2012) report by the Nielsen Norman Group, <a href="http://www.nngroup.com/articles/mobile-site-vs-full-site/">Mobile Site vs. Full Site</a>, which recommended a separate mobile site with stripped-down features and different design. The idea of having a mobile-optimized design is good—but not with the cost of making it a stripped-down version of your 'full' site, as Nielsen seems to recommend.

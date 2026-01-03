@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2486
 title: "Thoughts on the Acquia Drupal Developer Certification Exam"
 slug: "thoughts-acquia-drupal"
@@ -14,6 +14,8 @@ tags:
   - drupal
   - drupal planet
   - exam
+aliases:
+  - /blogs/jeff-geerling/thoughts-acquia-drupal
 ---
 
 <blockquote><strong>tl;dr</strong>: I passed, the exam is better than I was expecting, but I still have mixed feelings about Acquia's Drupal Developer Certification program.</blockquote>

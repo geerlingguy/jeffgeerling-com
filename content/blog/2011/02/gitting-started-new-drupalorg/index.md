@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2309
 title: "Gitting Started with New Drupal.org VCS"
 slug: "gitting-started-new-drupalorg"
@@ -12,6 +12,8 @@ tags:
   - drupal
   - drupal planet
   - git
+aliases:
+  - /blogs/jeff-geerling/gitting-started-new-drupalorg
 ---
 
 This is half for my own reference, because I have a few other computers I still need to set up, and I don't want to keep referring back to drupal.org docs to get everything ready for Git.

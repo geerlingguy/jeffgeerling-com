@@ -1,4 +1,4 @@
----
+﻿---
 nid: 87
 title: "Build a Wood Standing Desk for your Cubicle"
 slug: "build-cubicle-standing-desk"
@@ -11,6 +11,7 @@ drupal:
     - /miscellaneous/2014/build-cubicle-standing-desk
 aliases:
   - /miscellaneous/2014/build-cubicle-standing-desk
+   - /articles/miscellaneous/2014/build-cubicle-standing-desk
 tags:
   - articles
   - cubicle

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1271
 title: "Review: Truffol Autograph Fusion iPhone 6 case"
 slug: "truffol-autograph-fusion"
@@ -13,6 +13,8 @@ tags:
   - iphone
   - reviews
   - truffol
+aliases:
+  - /review/computing/truffol-autograph-fusion
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

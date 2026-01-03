@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2610
 title: "Using Ansible Galaxy"
 slug: "using-ansible-galaxy"
@@ -15,6 +15,8 @@ tags:
   - automation
   - infrastructure
   - roles
+aliases:
+  - /blog/using-ansible-galaxy
 ---
 
 <blockquote><strong>2020 Update</strong>: This article is still as relevant as ever, though Galaxy now has <em>tens of thousands of roles</em> and also has 'Collections' now, which can include plugins, modules, and roles! If you want to learn the latest about all this stuff, check out my fully updated <a href="https://www.ansiblefordevops.com">Ansible for DevOps</a>, now in it's 2nd edition! It has two chapters covering roles and collections on Ansible Galaxy.</blockquote>

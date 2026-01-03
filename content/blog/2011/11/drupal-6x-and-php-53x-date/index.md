@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2343
 title: "Drupal 6.x and PHP 5.3.x - Date Timezone warnings"
 slug: "drupal-6x-and-php-53x-date"
@@ -18,6 +18,8 @@ tags:
   - munin
   - mysql
   - timezone
+aliases:
+  - /blogs/jeff-geerling/drupal-6x-and-php-53x-date
 ---
 
 This morning, I was presented with quite the conundrum: one of my servers suddently started having about 4x the normal MySQL traffic it would have in a morning, and I had no indication as to why this was happening; traffic to the sites on the server was steady (no spikes), and I couldn't find any problems with any of the sites.

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2393
 title: "Need to evaluate a Drupal module, theme, or distro quickly? [Updated]"
 slug: "need-evaluate-drupal-module"
@@ -15,6 +15,8 @@ tags:
   - drupal 7
   - drupal 8
   - drupal planet
+aliases:
+  - /blogs/jeff-geerling/need-evaluate-drupal-module
 ---
 
 ...there's a site for that.

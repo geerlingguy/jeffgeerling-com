@@ -1,4 +1,4 @@
----
+﻿---
 nid: 53
 title: "Ripping Movies from Blu-Ray, HD-DVD and DVD, Getting them onto Apple TV, iPad, iPhone, etc."
 slug: "ripping-movies-blu-ray-and-dvd"
@@ -19,6 +19,8 @@ tags:
   - movies
   - rip
   - video
+aliases:
+  - /articles/audio-and-video/2010/ripping-movies-blu-ray-and-dvd
 ---
 
 ![DVD to iPhone Apple TV and iPad - Ripping](./dvd-blu-ray-to-ios-devices.jpg)

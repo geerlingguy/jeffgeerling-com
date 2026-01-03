@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2265
 title: "Drupal: Make a Context-Aware User Login Link (PHP Snippet)"
 slug: "drupal-make-context-aware-user"
@@ -9,6 +9,8 @@ drupal:
   body_format: full_html
   redirects: []
 tags: []
+aliases:
+  - /blogs/geerlingguy/drupal-make-context-aware-user
 ---
 
 <p>

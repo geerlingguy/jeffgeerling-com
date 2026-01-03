@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2446
 title: "Ansible Playbooks for Drupal 8 Testing and Mac Dev"
 slug: "ansible-playbooks-mac"
@@ -16,6 +16,8 @@ tags:
   - mac
   - mac os x
   - provisioning
+aliases:
+  - /blogs/jeff-geerling/ansible-playbooks-mac
 ---
 
 Lately, I've been working a lot with <a href="http://www.ansible.com/">Ansible</a>, a simple but powerful infrastructure management platform. I now use Ansible playbooks and ad-hoc commands to manage all of Midwestern Mac's infrastructure (this site, <a href="http://hostedapachesolr.com/">Hosted Apache Solr</a>, <a href="https://servercheck.in/">Server Check.in</a>, and many ancillary servers), and as a result, I've started using Ansible for pretty much any kind of work I need to do in development—including configuring my own Mac, and developing with Drupal 8.

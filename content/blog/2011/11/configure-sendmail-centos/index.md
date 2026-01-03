@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2340
 title: "Configure sendmail on CentOS to allow sending of email from localhost"
 slug: "configure-sendmail-centos"
@@ -13,6 +13,8 @@ tags:
   - hosting
   - sendmail
   - vps
+aliases:
+  - /blogs/jeff-geerling/configure-sendmail-centos
 ---
 
 For some of my Drupal sites and PHP scripts (and shell scripts) that I run on a VPS I manage, I need to simply be able to send outgoing emails from arbitrary email addresses. I could go into all the details of DNS SPF records and MX records here, but that's something you'll need to research on your own. This post simply shows how to install and configure sendmail on a CentOS box to just allow outgoing mail from php's mail() function, the mail command line utility, etc., and only from localhost (127.0.0.1):

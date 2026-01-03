@@ -1,4 +1,4 @@
----
+﻿---
 nid: 68
 title: "iPhone and iPod Touch - Professional Digital Audio Recorders"
 slug: "iphone-ipod-digital-audio-recording-external-microphones"
@@ -18,6 +18,8 @@ tags:
   - ipod touch
   - recording
   - shure
+aliases:
+  - /articles/computing/2010/iphone-ipod-digital-audio-recording-external-microphones
 ---
 
 <p><strong>More info and recommendations: <a href="http://www.jeffgeerling.com/articles/photography/iphone-4-ipad-external-mic-audio-input">iPhone/iPad external microphones</a></strong></p>

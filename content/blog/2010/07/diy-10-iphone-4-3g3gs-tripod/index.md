@@ -1,4 +1,4 @@
----
+﻿---
 nid: 60
 title: "DIY $10 iPhone 4 & 3G/3Gs Tripod Adapter/Case"
 slug: "diy-10-iphone-4-3g3gs-tripod"
@@ -15,6 +15,8 @@ tags:
   - recording
   - tripod
   - video
+aliases:
+  - /photography/2010/diy-10-iphone-4-3g3gs-tripod
 ---
 
 <em>Please read this article for background/more info: <a href="http://www.jeffgeerling.com/articles/photography/iphone-4-ipad-external-mic-audio-input">iPhone/iPad external microphones</a></em>

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2298
 title: "Using the Plextor PX-B120U Blu-Ray BDROM Drive with a Mac"
 slug: "using-plextor-px-b120u-blu-ray"
@@ -14,6 +14,8 @@ tags:
   - mac
   - plextor
   - usb
+aliases:
+  - /blogs/jeff-geerling/using-plextor-px-b120u-blu-ray
 ---
 
 <p>A few notes from my initial use of the <a href="http://www.amazon.com/gp/product/B00446GYUQ?ie=UTF8&amp;tag=mmjjg-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00446GYUQ">Plextor PX-B120U external USB BD-ROM</a>{{< figure src="http://www.assoc-amazon.com/e/ir?t=mmjjg-20&amp;l=as2&amp;o=1&amp;a=B00446GYUQ" width="1" height="1" >}} drive (you can <a href="http://www.amazon.com/gp/product/B00446GYUQ?ie=UTF8&amp;tag=mmjjg-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00446GYUQ">pick it up for under $100!</a>{{< figure src="http://www.assoc-amazon.com/e/ir?t=mmjjg-20&amp;l=as2&amp;o=1&amp;a=B00446GYUQ" width="1" height="1" >}}):</p>

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2411
 title: "Supercharge your Key Repeat rates in Mac OS X Lion"
 slug: "supercharge-your-key-repeat"
@@ -13,6 +13,8 @@ tags:
   - lion
   - mac
   - typing
+aliases:
+  - /blogs/jeff-geerling/supercharge-your-key-repeat
 ---
 
 As an ardent keyboard-only user of Mac OS X (mice are so early 90s!), I like having a very fast key repeat rate, allowing me to hold the delete key to remove characters, command-z to undo a bunch of things in my text editor, etc.

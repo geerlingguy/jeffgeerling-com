@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2518
 title: "Always getting X-Drupal-Cache: MISS? Check for messages"
 slug: "always-getting-x-drupal-cache"
@@ -15,6 +15,8 @@ tags:
   - drupal 8
   - drupal planet
   - varnish
+aliases:
+  - /blogs/jeff-geerling/always-getting-x-drupal-cache
 ---
 
 I spent about an hour yesterday debugging a Varnish page caching issue. I combed the site configuration and code for anything that might be setting <code>cache</code> to <code>0</code> (effectively disabling caching), I checked and re-checked the <code>/admin/config/development/performance</code> settings, verifying the 'Expiration of cached pages' (<code>page_cache_maximum_age</code>) had a non-zero value and that the 'Cache pages for anonymous users' checkbox was checked.

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2462
 title: "Moving on to Acquia"
 slug: "moving-acquia"
@@ -13,6 +13,8 @@ tags:
   - drupal
   - drupal planet
   - jobs
+aliases:
+  - /blogs/jeff-geerling/moving-acquia
 ---
 
 I wanted to post this here, since this is more of my sounding board for the Drupal community, but the details are on my personal blog: starting October 6, <a href="http://www.jeffgeerling.com/blog/2014/new-job-2014-edition">I will be working for Acquia</a> as a Technical Architect in their Professional Services group!

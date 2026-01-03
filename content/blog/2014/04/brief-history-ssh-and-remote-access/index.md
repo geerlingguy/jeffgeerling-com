@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2616
 title: "A brief history of SSH and remote access"
 slug: "brief-history-ssh-and-remote-access"
@@ -17,6 +17,7 @@ tags:
   - ssh
 aliases:
   - /blog/brief-history-ssh-and-remote-access
+   - /blog/brief-history-ssh-and-remote-access
 ---
 
 <blockquote><p>This post is an excerpt from Chapter 11: <em>Server Security and Ansible</em>, in <a href="http://www.ansiblefordevops.com/">Ansible for DevOps</a>.</blockquote>

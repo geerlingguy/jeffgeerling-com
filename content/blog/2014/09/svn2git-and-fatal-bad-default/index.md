@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2465
 title: "SVN2Git and \"fatal: bad default revision 'HEAD'\""
 slug: "svn2git-and-fatal-bad-default"
@@ -13,6 +13,8 @@ tags:
   - svn
   - svn2git
   - vcs
+aliases:
+  - /blogs/jeff-geerling/svn2git-and-fatal-bad-default
 ---
 
 I was recently converting a repository from SVN to Git <a href="/blogs/jeff-geerling/switching-svn-repository-svn2git">using KDE's SVN2Git</a>, and after the conversion was done, the repository didn't seem to work that well. Inside the bare repo, if I tried <code>git log</code>, I received:

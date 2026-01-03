@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2315
 title: "Declustering Markers in Google Maps with Drupal?"
 slug: "declustering-markers-google"
@@ -16,6 +16,8 @@ tags:
   - location
   - mapping
   - maps
+aliases:
+  - /blogs/jeff-geerling/declustering-markers-google
 ---
 
 {{< figure src="./location-marker.png" alt="Location Marker" width="112" height="168" >}}I recently received a question from a friend who's setting up a new site in Drupal 7, and is using the <a href="http://drupal.org/project/gmap">GMap Module</a>, <a href="http://drupal.org/project/location">Location</a>, and <a href="http://drupal.org/project/views">Views</a>, to set up a map of upcoming events for his website.

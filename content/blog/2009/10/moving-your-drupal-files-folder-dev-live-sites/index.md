@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2269
 title: "Moving Your Drupal 'files' Folder - Dev to Live Sites"
 slug: "moving-your-drupal-files-folder-dev-live-sites"
@@ -15,6 +15,8 @@ tags:
   - staging
   - testing
   - website
+aliases:
+  - /blogs/geerlingguy/moving-your-drupal-files-folder-dev-live-sites
 ---
 
 <p>

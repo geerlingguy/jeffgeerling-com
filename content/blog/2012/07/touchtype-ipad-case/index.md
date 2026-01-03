@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1246
 title: "Review: TouchType iPad Case"
 slug: "touchtype-ipad-case"
@@ -14,6 +14,8 @@ tags:
   - kickstarter
   - reviews
   - touchtype
+aliases:
+  - /review/touchtype-ipad-case
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2337
 title: "Pick and Choose F-key usage (Brightness, Sound, Dashboard, etc.) on a Mac"
 slug: "pick-and-choose-f-key-usage"
@@ -14,6 +14,8 @@ tags:
   - keyboard shortcuts
   - mac
   - preferences
+aliases:
+  - /blogs/jeff-geerling/pick-and-choose-f-key-usage
 ---
 
 For the longest time, I've flip-flopped on whether to check the 'Use all F1, F2, etc. keys as standard function keys' option in the Keyboard System Preference pane.

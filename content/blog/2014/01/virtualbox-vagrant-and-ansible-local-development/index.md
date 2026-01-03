@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2588
 title: "VirtualBox, Vagrant, and Ansible: local development environment prowess"
 slug: "virtualbox-vagrant-and-ansible-local-development"
@@ -14,6 +14,8 @@ tags:
   - presentations
   - vagrant
   - virtualbox
+aliases:
+  - /blog/virtualbox-vagrant-and-ansible-local-development
 ---
 
 I recently gave a presentation titled <a href="http://www.slideshare.net/geerlingguy/local-development-on-virtual-machines-vagrant-virtualbox-and-ansible">Local Development Environments - Vagrant, VirtualBox, and Ansible</a>. The presentation explains the importance and efficacy of using (and how to use) local Virtual Machines under VirtualBox, managed with Vagrant, and provisioned with Ansible, especially in comparison to using more traditional tools like WAMP, MAMP, or other prepackaged server solutions.

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 61
 title: "Gadgets & Gizmos - Sanctifying Mobile Technology"
 slug: "gadgets-gizmos-sanctifying-mob"
@@ -12,6 +12,7 @@ drupal:
     - /cnmc-gadgets
 aliases:
   - /religion/2011/gadgets-gizmos-sanctifying-mob
+   - /articles/religion/2011/gadgets-gizmos-sanctifying-mob
   - /cnmc-gadgets
 tags:
   - android

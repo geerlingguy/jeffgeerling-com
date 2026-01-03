@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2405
 title: "Simple iptables rules for a typical LAMP server"
 slug: "simple-iptables-rules-typical"
@@ -16,6 +16,8 @@ tags:
   - security
   - server
   - vps
+aliases:
+  - /blogs/jeff-geerling/simple-iptables-rules-typical
 ---
 
 [<strong>Edit</strong>: I'm leaving this post up for historical reasons, but I've since modified the way I build my iptables firewalls—I typically add the rules I need from the command line one by one, then use CentOS's <code>service iptables save</code> command (available in CentOS > 6.2) to save the rules so they'll persist after a restart.]

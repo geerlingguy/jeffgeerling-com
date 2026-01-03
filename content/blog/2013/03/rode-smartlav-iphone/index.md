@@ -1,4 +1,4 @@
----
+﻿---
 nid: 1239
 title: "Review: RODE smartLav iPhone Microphone"
 slug: "rode-smartlav-iphone"
@@ -12,6 +12,7 @@ drupal:
     - /review/audio-and-video/r-de-smartlav-iphone
 aliases:
   - /smartlav
+   - /review/audio-and-video/rode-smartlav-iphone
   - /review/audio-and-video/r-de-smartlav-iphone
 tags:
   - iphone

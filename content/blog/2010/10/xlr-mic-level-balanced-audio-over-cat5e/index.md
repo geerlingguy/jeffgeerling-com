@@ -1,4 +1,4 @@
----
+﻿---
 nid: 51
 title: "XLR over Cat5 - Balanced XLR Mic-Level & Line-Level Audio over Cat5 & Cat5e Cabling"
 slug: "xlr-mic-level-balanced-audio-over-cat5e"
@@ -16,6 +16,8 @@ tags:
   - recording
   - wiring
   - xlr
+aliases:
+  - /articles/audio-video/xlr-mic-level-balanced-audio-over-cat5e
 ---
 
 <p class="rtecenter"><br />

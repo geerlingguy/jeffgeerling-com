@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2491
 title: "Hosted Apache Solr now includes Tika attachment support!"
 slug: "hosted-apache-solr-now"
@@ -14,6 +14,8 @@ tags:
   - pdf
   - solr
   - tika
+aliases:
+  - /blogs/jeff-geerling/hosted-apache-solr-now
 ---
 
 Besides self-managed IP addresses, the most requested feature for <a href="https://hostedapachesolr.com/">Hosted Apache Solr</a> has been built-in support for file attachment indexing. Up until now, the only way you could add data from PDFs, JPGs, and other files attached to your Drupal nodes has been installing Apache Tika on your own webserver.

@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2599
 title: "Ansible 101 - on a Cluster of Raspberry Pi 2s"
 slug: "ansible-101-cluster-raspberry-pi-2s"
@@ -14,6 +14,8 @@ tags:
   - raspberry pi
   - tutorial
   - video
+aliases:
+  - /blog/ansible-101-cluster-raspberry-pi-2s
 ---
 
 <p style="text-align: center;">{{< figure src="./ansible-101-thumb.jpg" alt="Ansible 101 - Raspberry Pi Dramble cluster" width="500" height="281" class="inserted-image" >}}</p>

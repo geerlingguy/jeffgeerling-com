@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2313
 title: "Converting between Exposure Value and LUX"
 slug: "converting-between-exposure"
@@ -16,6 +16,8 @@ tags:
   - lux
   - measurement
   - photography
+aliases:
+  - /blogs/jeff-geerling/converting-between-exposure
 ---
 
 For a recent project, I had to make some rough LUX measurements (LUX is a more international standard for light measurement than candlepower, which is traditionally used in the U.S.) of an environment to help determine what kind of video cameras to use. Problem was, all I had was a spot meter—an incident light meter for film/digital photography, that would give me a reading of, say "1/15 second exposure at f/5.6 and ISO 100."

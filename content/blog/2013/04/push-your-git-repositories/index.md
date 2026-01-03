@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2403
 title: "Push your Git repositories to a central server, in a bare repository"
 slug: "push-your-git-repositories"
@@ -16,6 +16,7 @@ tags:
   - version control
 aliases:
   - /blogs/jeff-geerling/push-your-git-repositories
+   - /blogs/jeff-geerling/push-your-git-repositories
 ---
 
 <a href="https://github.com/">GitHub</a> is a great central repository silo for open source projects, and for private Git repositories for companies and organizations with enough cash to afford the features GitHub offers.

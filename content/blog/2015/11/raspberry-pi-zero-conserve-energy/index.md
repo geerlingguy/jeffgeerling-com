@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2511
 title: "Raspberry Pi Zero - Conserve power and reduce draw to 80mA"
 slug: "raspberry-pi-zero-conserve-energy"
@@ -15,6 +15,7 @@ tags:
   - raspberry pi
 aliases:
   - /blogs/jeff-geerling/raspberry-pi-zero-conserve-energy
+   - /blogs/jeff-geerling/raspberry-pi-zero-conserve-energy
 ---
 
 <blockquote><strong>Update 2015-12-01</strong>: I bought a <a href="http://www.amazon.com/gp/product/B013FANC9W">PowerJive USB power meter</a> and re-tested everything, and came up with ~80 mA instead of the ~30 mA reported by the Charger Doctor that I was using prior. This seems to be more in line with the results others were measuring with <em>much</em> more expensive/accurate meters in the Raspberry Pi forums: <a href="https://www.raspberrypi.org/forums/viewtopic.php?f=63&t=127210&p=851245#p851245">Raspberry Pi Zero power consumption</a>. I've updated the numbers in the post below to reflect this change. Seems the Pi Zero is only incrementally better than the A+—still excellent news, but not nearly as amazing as I originally thought :(</blockquote>

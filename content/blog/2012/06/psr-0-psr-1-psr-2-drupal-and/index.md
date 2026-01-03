@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2366
 title: "PSR-0 PSR-1 PSR-2, Drupal, and You!"
 slug: "psr-0-psr-1-psr-2-drupal-and"
@@ -17,6 +17,8 @@ tags:
   - php-fig
   - psr
   - standards
+aliases:
+  - /blogs/jeff-geerling/psr-0-psr-1-psr-2-drupal-and
 ---
 
 For the past couple years, discussions about 'PSR-0', PHP standards, and some sort of framework standardizations have been popping up here and there. It wasn't until a bunch of 'PSR-0 Interoperability' patches started popping up in the Drupal core issue queues that I decided to take a closer look at PSR. (The latest? <a href="https://github.com/php-fig/fig-standards/tree/master/accepted">PSR-1 (Basic Coding Standard) and PSR-2 (Coding Style Guide)</a> have been accepted).

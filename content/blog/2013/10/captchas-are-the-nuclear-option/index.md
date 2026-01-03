@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2436
 title: "reCAPTCHAs are easier to read\u2014but they're still a bad idea"
 slug: "captchas-are-the-nuclear-option"
@@ -15,6 +15,8 @@ tags:
   - rants
   - spam
   - ux
+aliases:
+  - /blogs/jeff-geerling/captchas-are-the-nuclear-option
 ---
 
 From the article <a href="http://arstechnica.com/information-technology/2013/10/recaptchas-are-finally-readable-by-normal-humans/">reCAPTCHAs are finally readable by normal humans</a>:

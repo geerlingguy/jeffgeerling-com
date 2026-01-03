@@ -1,4 +1,4 @@
----
+﻿---
 nid: 63
 title: "Preventing Form Spam"
 slug: "preventing-form-spam"
@@ -17,6 +17,8 @@ tags:
   - spam
   - websites
   - wordpress
+aliases:
+  - /articles/web-design/2011/preventing-form-spam
 ---
 
 <p style="text-align: center;">{{< figure src="./spam-mail-folder.png" alt="Spam email folder - Gmail interface" width="333" height="128" class="blog-image" >}}</p>

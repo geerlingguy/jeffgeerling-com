@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2341
 title: "Rooting Android - General Observations and OG Droid + LG Ally"
 slug: "rooting-android-general"
@@ -19,6 +19,8 @@ tags:
   - ios
   - rom
   - root
+aliases:
+  - /blogs/jeff-geerling/rooting-android-general
 ---
 
 <h2>Background and Comparison to iOS Jailbreaking</h2>

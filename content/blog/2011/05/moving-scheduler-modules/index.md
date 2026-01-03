@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2320
 title: "Moving Scheduler Module's 'Scheduling Options' Out of the Vertical Tabs in D7"
 slug: "moving-scheduler-modules"
@@ -16,6 +16,8 @@ tags:
   - hook_form_alter
   - scheduler
   - vertical tabs
+aliases:
+  - /blogs/jeff-geerling/moving-scheduler-modules
 ---
 
 <em>...or, "Always Check Your Module Weights when form_alter'ing"</em>

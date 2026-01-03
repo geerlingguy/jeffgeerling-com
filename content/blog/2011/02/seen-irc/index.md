@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2308
 title: "As Seen on IRC..."
 slug: "seen-irc"
@@ -11,6 +11,8 @@ drupal:
 tags:
   - drupal
   - irc
+aliases:
+  - /blogs/jeff-geerling/seen-irc
 ---
 
 webchick: ICE CREAM!!!!!!

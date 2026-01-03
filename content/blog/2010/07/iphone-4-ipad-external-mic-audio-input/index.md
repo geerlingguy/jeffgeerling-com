@@ -1,4 +1,4 @@
----
+﻿---
 nid: 88
 title: "External Microphones for iPhone 5s, 5, 4S, iPad and iPod Touch Audio input"
 slug: "iphone-4-ipad-external-mic-audio-input"
@@ -12,6 +12,7 @@ drupal:
     - /iphone-mics
 aliases:
   - /blog/2010/iphone-4-external-mic-audio
+   - /articles/photography/iphone-4-ipad-external-mic-audio-input
   - /iphone-mics
 tags:
   - articles

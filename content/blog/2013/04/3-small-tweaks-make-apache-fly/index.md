@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2585
 title: "3 Small Tweaks to make Apache fly"
 slug: "3-small-tweaks-make-apache-fly"
@@ -15,6 +15,8 @@ tags:
   - maxclients
   - performance
   - web development
+aliases:
+  - /blog/3-small-tweaks-make-apache-fly
 ---
 
 Apache is the venerable old-timer in the http server world. There are many younger siblings like <a href="http://nginx.com/">Nginx</a>, <a href="http://www.lighttpd.net/">Lighttpd</a>, and even <a href="http://nodejs.org/api/http.html">Node.js</a>, which are often touted as being faster, lighter, and more scalable alternatives than Apache.

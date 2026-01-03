@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2459
 title: "DevOps for Humans - Ansible presentation at DrupalCon Austin"
 slug: "devops-humans-ansible"
@@ -19,6 +19,8 @@ tags:
   - drupal planet
   - drupalcon
   - presentations
+aliases:
+  - /blogs/jeff-geerling/devops-humans-ansible
 ---
 
 I'm still recovering from an intense week of Drupal here in Austin, TX. I kicked things off by walking around the downtown area, then taking the intensive Acquia Drupal Developer Certification exam. Once the conference started, I attended a few sessions, met a few awesome Drupalists, and learned a lot. On the last day of the 'Con (the last session, in fact), I presented <a href="https://austin2014.drupal.org/session/devops-humans-ansible-drupal-deployment-victory.html">DevOps for Humans: Ansible for Drupal Deployment Victory!</a>.

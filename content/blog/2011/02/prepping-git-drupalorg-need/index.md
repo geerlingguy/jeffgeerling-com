@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2305
 title: "Prepping for Git on drupal.org - Need a Git client? Try Tower"
 slug: "prepping-git-drupalorg-need"
@@ -14,6 +14,8 @@ tags:
   - mac
   - tower
   - version control
+aliases:
+  - /blogs/jeff-geerling/prepping-git-drupalorg-need
 ---
 
 A few weeks ago, I heard rumors of a new Git client for the Mac that was supposed to be even easier/prettier than my past favorite, GitX (specifically, <a href="https://github.com/brotherbard/gitx">brotherbard's fork of GitX</a>). GitX is simple, and very usable, but just feels rough sometimes. But... it's free, so it is very nice in that way.

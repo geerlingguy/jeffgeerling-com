@@ -1,4 +1,4 @@
----
+﻿---
 nid: 2378
 title: "Introducing the Honeypot form spam protection module for Drupal"
 slug: "introducing-honeypot-form-spam"
@@ -16,6 +16,8 @@ tags:
   - drupal planet
   - honeypot
   - modules
+aliases:
+  - /blogs/jeff-geerling/introducing-honeypot-form-spam
 ---
 
 Now that I've released a Drupal 6 backport of what I originally wrote as a Drupal 7 module, I figured I would write a little bit in the way of introducing one of the simpler, and more user-friendly ways of controlling spam in Drupal (as opposed to other also-helpful methods, like <a href="http://drupal.org/project/mollom">Mollom</a>, <a href="http://drupal.org/project/captcha">CAPTCHA</a>, etc.).
