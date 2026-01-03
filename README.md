@@ -1,6 +1,6 @@
 # JeffGeerling.com - Website
 
-TODO: Add badges here.
+[![CI](https://github.com/geerlingguy/jeffgeerling-com/actions/workflows/ci.yml/badge.svg)](https://github.com/geerlingguy/jeffgeerling-com/actions/workflows/ci.yml)
 
 This repository contains the [Hugo](https://gohugo.io) source to build [JeffGeerling.com](https://www.jeffgeerling.com).
 
@@ -23,16 +23,16 @@ Visit [http://localhost:1313/](http://localhost:1313/) in your browser, to previ
 
 If you're just editing individual content pages (e.g. writing a new blog post or editing an existing piece of content), you can drop the `--disableFastRender` option for a speedier experience.
 
-## Theme Development
-
-TODO.
-
 ## Production Deployment
 
-TODO:
+This process currently takes at least 1 minute (usually 3-6 minutes), so I'd like to speed it up. See [#172 - Figure out fast deployment workflow for new posts](https://github.com/geerlingguy/jeffgeerling-com/issues/172).
 
 ```
-hugo  # builds site
+# Build the site.
+hugo --gc --minify
+
+# Deploy via rclone.
+rclone sync -P --exclude ".DS_Store" --fast-list public/ www.jeffgeerling.com:/var/www/www.jeffgeerling.com/
 ```
 
 ## License
