@@ -11,6 +11,7 @@ drupal:
     - /ar-4i
 aliases:
   - /ar-4i
+  - /review/audio-and-video/fostex-ar-4i-iphone-4-stereo-a
 tags:
   - AR-4i
   - audio
@@ -20,8 +21,6 @@ tags:
   - recording
   - reviews
   - sound
-aliases:
-  - /review/audio-and-video/fostex-ar-4i-iphone-4-stereo-a
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">
