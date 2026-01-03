@@ -6,88 +6,23 @@ name: CI
       - master
   pull_request:
   schedule:
-    - cron: '0 6 * * 0'
+    - cron: '2 6 * * 0'
 
 jobs:
-
-  phpcs:
+  test:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        php_version: ['8.2']
 
     steps:
       - name: Check out code
         uses: actions/checkout@v2
 
-      - name: Set up PHP ${{ matrix.php_version }}
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: ${{ matrix.php_version }}
+      # - name: Build site with Hugo.
+      #   run: hugo
 
-      - name: Install dependencies
-        run: composer install --dev
+      # - name: Test loading the home page.
+      #   run: >
+      #     curl http://localhost/
 
-      - name: Run phpcs with Drupal coding standards.
-        run: >
-          ./vendor/bin/phpcs \
-            --standard="Drupal,DrupalPractice" -n \
-            --extensions="php,module,inc,install,test,profile,theme" \
-            web/themes/jeffgeerling \
-            web/modules/custom
-
-  install:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        php_version: ['8.2']
-
-    steps:
-      - name: Stop the GitHub Actions MySQL instance.
-        run: sudo service mysql stop
-
-      - name: Check out code
-        uses: actions/checkout@v2
-
-      - name: Set up PHP ${{ matrix.php_version }}
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: ${{ matrix.php_version }}
-
-      - name: Install dependencies
-        run: composer install
-
-      - name: Build container
-        run: >
-          docker build
-          --build-arg DRUPAL_BASE_IMAGE="geerlingguy/drupal:latest"
-          -t jeffgeerling-com:latest .
-
-      - name: Start Docker environment
-        run: |
-          rm -f docker-compose.override.yml
-          mv .github/docker-compose.override.yml docker-compose.override.yml
-          docker compose up -d
-
-      - name: Wait for MySQL to start.
-        run: |
-          while ! mysqladmin ping -h"127.0.0.1" -P"3306" --silent; do
-            sleep 1
-          done
-
-      # Note: -T option required to avoid creating pseudo-TTY.
-      - name: Install Drupal
-        run: >-
-          docker compose exec -T drupal bash -c 'vendor/bin/drush site:install minimal
-          --db-url="mysql://drupal:drupal@mysql/drupal"
-          --site-name="Jeff Geerling" --existing-config -y'
-        env:
-         COMPOSE_INTERACTIVE_NO_CLI: '1'
-
-      - name: Test loading the home page.
-        run: >
-          curl http://localhost/
-
-      - name: Verify the home page has the site name in it.
-        run: >
-          curl -s http://localhost/ | grep "Jeff Geerling"
+      # - name: Verify the home page has the site name in it.
+      #   run: >
+      #     curl -s http://localhost/ | grep "Jeff Geerling"

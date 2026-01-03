@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "header.html" . -}}
+    <body>
+        <div class="content">
+        {{- partial "head.html" . -}}
+        {{- block "main" . }}{{- end }}
+        {{- partial "footer.html" . -}}
+        </div>
+    </body>
+    {{ if not hugo.IsServer }}
+    {{ partial "analytics.html" . }}
+    {{ end }}
+</html>

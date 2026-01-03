@@ -1,0 +1,3 @@
+---
+title: "All Blog Posts"
+---

@@ -1,0 +1,131 @@
+baseURL = 'https://www.jeffgeerling.com/'
+languageCode = 'en-us'
+title = 'Jeff Geerling'
+theme = 'archie'
+copyright = 'Jeff Geerling'
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    lineNumbersInTable = false
+    noClasses = true
+    style = "github-dark"
+
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.typographer]
+        disable = true
+
+[pagination]
+  pagerSize = 6 # articles per page
+
+[params]
+  mode="auto" # color-mode → light,dark,toggle or auto
+  useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
+  subtitle = "Father, author, developer, maker. Please consider [sponsoring my work](/sponsor)."
+  customcss = ["css/custom.css"]
+  [params.author]
+    email = 'jeff@jeffgeerling.com'
+    name = 'Jeff Geerling'
+
+[permalinks]
+  blog = "/blog/:year/:slug"
+
+[outputFormats]
+  [outputFormats.RSS]
+    baseName = "blog"
+
+[outputs]
+  home = ['html', 'rss']
+  section = ['html', 'rss']
+  taxonomy = ['html']
+  term = ['html']
+
+[services]
+  [services.rss]
+    limit = 20
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = true
+  [[related.indices]]
+    applyFilter = false
+    cardinalityThreshold = 0
+    name = 'keywords'
+    pattern = ''
+    toLower = true
+    type = 'basic'
+    weight = 100
+  [[related.indices]]
+    applyFilter = false
+    cardinalityThreshold = 0
+    name = 'date'
+    pattern = ''
+    toLower = true
+    type = 'basic'
+    weight = 10
+  [[related.indices]]
+    applyFilter = false
+    cardinalityThreshold = 0
+    name = 'tags'
+    pattern = ''
+    toLower = true
+    type = 'basic'
+    weight = 80
+
+# Social Tags
+[[params.social]]
+  name = "YouTube"
+  icon = "youtube"
+  url = "https://www.youtube.com/c/JeffGeerling"
+
+[[params.social]]
+  name = "GitHub"
+  icon = "github"
+  url = "https://github.com/geerlingguy"
+
+[[params.social]]
+  name = "Sponsor"
+  icon = "dollar-sign"
+  url = "/sponsor/"
+
+[[params.social]]
+  name = "Twitter"
+  icon = "twitter"
+  url = "https://twitter.com/geerlingguy/"
+
+[[params.social]]
+  name = "Instagram"
+  icon = "instagram"
+  url = "https://www.instagram.com/geerlingguy"
+
+# Main menu Items
+[[menu.main]]
+  name = "YouTube"
+  url = "https://www.youtube.com/c/JeffGeerling"
+  weight = 1
+
+[[menu.main]]
+  name = "Merch"
+  url = "https://www.redshirtjeff.com/"
+  weight = 2
+
+[[menu.main]]
+  name = "Blog"
+  url = "/"
+  weight = 3
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 4
+
+[[menu.main]]
+  name = "RSS"
+  url = "/blog.xml"
+  weight = 5

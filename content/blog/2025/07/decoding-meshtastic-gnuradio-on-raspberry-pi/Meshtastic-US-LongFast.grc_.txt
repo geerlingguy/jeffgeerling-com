@@ -1,0 +1,619 @@
+options:
+  parameters:
+    author: Josh Conway (CrankyLinuxUser)
+    catch_exceptions: 'True'
+    category: '[GRC Hier Blocks]'
+    cmake_opt: ''
+    comment: ''
+    copyright: ''
+    description: This flow covers all presets at multiple frequencies , thus needing
+      a HackRF oor better.
+    gen_cmake: 'On'
+    gen_linking: dynamic
+    generate_options: qt_gui
+    hier_block_src_path: '.:'
+    id: Meshtastic_allPresets_HackRF
+    max_nouts: '0'
+    output_language: python
+    placement: (0,0)
+    qt_qss_theme: ''
+    realtime_scheduling: ''
+    run: 'True'
+    run_command: '{python} -u {filename}'
+    run_options: prompt
+    sizing_mode: fixed
+    thread_safe_setters: ''
+    title: Meshtastic_allPresets_HackRF
+    window_size: ''
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [24, 12.0]
+    rotation: 0
+    state: enabled
+
+blocks:
+- name: bandpass250k
+  id: variable_band_pass_filter_taps
+  parameters:
+    beta: '6.76'
+    comment: ''
+    gain: '1.0'
+    high_cutoff_freq: lora_250bandwidth/2
+    low_cutoff_freq: -lora_250bandwidth/2
+    samp_rate: samp_rate
+    type: complex_band_pass
+    value: ''
+    width: lora_250bandwidth/10
+    win: window.WIN_HAMMING
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1200, 12.0]
+    rotation: 0
+    state: enabled
+- name: cr_44
+  id: variable
+  parameters:
+    comment: ''
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [552, 12.0]
+    rotation: 0
+    state: enabled
+- name: cr_45
+  id: variable
+  parameters:
+    comment: ''
+    value: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [624, 12.0]
+    rotation: 0
+    state: enabled
+- name: cr_46
+  id: variable
+  parameters:
+    comment: ''
+    value: '2'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [552, 76.0]
+    rotation: 0
+    state: enabled
+- name: cr_47
+  id: variable
+  parameters:
+    comment: ''
+    value: '3'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [624, 76.0]
+    rotation: 0
+    state: enabled
+- name: cr_48
+  id: variable
+  parameters:
+    comment: ''
+    value: '8'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [696, 76.0]
+    rotation: 0
+    state: enabled
+- name: has_crc
+  id: variable
+  parameters:
+    comment: ''
+    value: 'True'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [856, 12.0]
+    rotation: 0
+    state: enabled
+- name: impl_head
+  id: variable
+  parameters:
+    comment: ''
+    value: 'False'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [776, 12.0]
+    rotation: 0
+    state: enabled
+- name: lora_250bandwidth
+  id: variable
+  parameters:
+    comment: ''
+    value: '250000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [320, 12.0]
+    rotation: 0
+    state: enabled
+- name: payload_length
+  id: variable
+  parameters:
+    comment: ''
+    value: '237'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [984, 76.0]
+    rotation: 0
+    state: enabled
+- name: preamble_length
+  id: variable
+  parameters:
+    comment: ''
+    value: '17'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [776, 76.0]
+    rotation: 0
+    state: enabled
+- name: radio_center_freq
+  id: variable
+  parameters:
+    comment: ''
+    value: '906875000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [192, 12.0]
+    rotation: 0
+    state: enabled
+- name: samp_rate
+  id: variable
+  parameters:
+    comment: ''
+    value: '10000000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [192, 76.0]
+    rotation: 0
+    state: enabled
+- name: soft_decoding
+  id: variable
+  parameters:
+    comment: ''
+    value: 'True'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [928, 12.0]
+    rotation: 0
+    state: enabled
+- name: sync_word
+  id: variable
+  parameters:
+    comment: 'Technically the sync-word here for meshtastic is 0x2b
+
+      Trying this leads to no data gathered.
+
+      Using the [0,0] works.'
+    value: '[0,0]'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [888, 76.0]
+    rotation: 0
+    state: enabled
+- name: blocks_correctiq_0
+  id: blocks_correctiq
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [616, 336.0]
+    rotation: 0
+    state: true
+- name: blocks_throttle_0
+  id: blocks_throttle
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    ignoretag: 'True'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samples_per_second: '2000000'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [424, 332.0]
+    rotation: 0
+    state: true
+- name: freq_xlating_fir_filter_xxx_0
+  id: freq_xlating_fir_filter_xxx
+  parameters:
+    affinity: ''
+    alias: ''
+    center_freq: radio_center_freq
+    comment: 'Set Minoutbuf = 17000
+
+      Frame Sync needs that'
+    decim: int(samp_rate/(lora_250bandwidth * 4))
+    maxoutbuf: '0'
+    minoutbuf: '17000'
+    samp_rate: samp_rate
+    taps: bandpass250k
+    type: ccc
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [408, 412.0]
+    rotation: 0
+    state: enabled
+- name: import_0
+  id: import
+  parameters:
+    alias: ''
+    comment: ''
+    imports: import numpy as np
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [112, 124.0]
+    rotation: 0
+    state: enabled
+- name: lora_sdr_crc_verif_0_2_0
+  id: lora_sdr_crc_verif
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    output_crc_check: 'False'
+    print_rx_msg: '2'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1264, 552.0]
+    rotation: 0
+    state: enabled
+- name: lora_sdr_deinterleaver_0_2_0
+  id: lora_sdr_deinterleaver
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    soft_decoding: soft_decoding
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1112, 508.0]
+    rotation: 180
+    state: enabled
+- name: lora_sdr_dewhitening_0_2_0
+  id: lora_sdr_dewhitening
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1128, 568.0]
+    rotation: 0
+    state: enabled
+- name: lora_sdr_fft_demod_0_2_0
+  id: lora_sdr_fft_demod
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    max_log_approx: 'True'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    soft_decoding: soft_decoding
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [944, 460.0]
+    rotation: 0
+    state: enabled
+- name: lora_sdr_frame_sync_0_2_0
+  id: lora_sdr_frame_sync
+  parameters:
+    affinity: ''
+    alias: ''
+    bandwidth: lora_250bandwidth
+    center_freq: radio_center_freq
+    comment: 'LongFast
+
+      SF=11,CR=5,BW=250KHz'
+    impl_head: impl_head
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    os_factor: '4'
+    preamb_len: preamble_length
+    sf: '11'
+    show_log_port: 'True'
+    sync_word: sync_word
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [744, 444.0]
+    rotation: 0
+    state: enabled
+- name: lora_sdr_gray_mapping_0_2_0
+  id: lora_sdr_gray_mapping
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    soft_decoding: soft_decoding
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1112, 460.0]
+    rotation: 0
+    state: enabled
+- name: lora_sdr_hamming_dec_0_2_0
+  id: lora_sdr_hamming_dec
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    soft_decoding: soft_decoding
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [944, 508.0]
+    rotation: 180
+    state: enabled
+- name: lora_sdr_header_decoder_0_2_0
+  id: lora_sdr_header_decoder
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    cr: cr_45
+    has_crc: has_crc
+    impl_head: impl_head
+    ldro: '2'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    pay_len: payload_length
+    print_header: 'False'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [944, 556.0]
+    rotation: 0
+    state: enabled
+- name: note_0_0
+  id: note
+  parameters:
+    alias: ''
+    comment: 'This flow needs a dependency.
+
+      https://github.com/tapparelj/gr-lora_sdr'
+    note: 'This flow needs a dependency: https://github.com/tapparelj/gr-lora_sdr'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [24, 180.0]
+    rotation: 0
+    state: enabled
+- name: note_0_0_0
+  id: note
+  parameters:
+    alias: ''
+    comment: 'The radio_frequency_center is the center where the SDR tunes to.
+
+      The FIR filter extracts 4x the band size for LoRa processing.
+
+
+      To get data programatically, connect to this machine''s port TCP/20000-20007'
+    note: README
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [256, 148.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_waterfall_sink_x_0
+  id: qtgui_waterfall_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    axislabels: 'True'
+    bw: lora_250bandwidth
+    color1: '0'
+    color10: '0'
+    color2: '0'
+    color3: '0'
+    color4: '0'
+    color5: '0'
+    color6: '0'
+    color7: '0'
+    color8: '0'
+    color9: '0'
+    comment: ''
+    fc: radio_center_freq
+    fftsize: '256'
+    freqhalf: 'True'
+    grid: 'True'
+    gui_hint: ''
+    int_max: '5'
+    int_min: '-80'
+    label1: ''
+    label10: ''
+    label2: ''
+    label3: ''
+    label4: ''
+    label5: ''
+    label6: ''
+    label7: ''
+    label8: ''
+    label9: ''
+    legend: 'True'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: '""'
+    nconnections: '1'
+    showports: 'False'
+    type: complex
+    update_time: '0.025'
+    wintype: window.WIN_BLACKMAN_hARRIS
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1016, 316.0]
+    rotation: 0
+    state: true
+- name: rational_resampler_xxx_0
+  id: rational_resampler_xxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    decim: '5'
+    fbw: '0'
+    interp: '1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    taps: '[]'
+    type: ccc
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [816, 308.0]
+    rotation: 0
+    state: true
+- name: soapy_hackrf_source_0
+  id: soapy_hackrf_source
+  parameters:
+    affinity: ''
+    alias: ''
+    amp: 'False'
+    bandwidth: samp_rate
+    center_freq: radio_center_freq
+    comment: ''
+    dev_args: ''
+    gain: '16'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samp_rate: samp_rate
+    type: fc32
+    vga: '16'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [64, 368.0]
+    rotation: 0
+    state: enabled
+- name: zeromq_pub_sink_0_0_2_3
+  id: zeromq_pub_sink
+  parameters:
+    address: tcp://0.0.0.0:20001
+    affinity: ''
+    alias: ''
+    comment: LongFast
+    drop_on_hwm: 'True'
+    hwm: '-1'
+    key: ''
+    pass_tags: 'False'
+    timeout: '100'
+    type: byte
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1496, 516.0]
+    rotation: 0
+    state: enabled
+
+connections:
+- [blocks_correctiq_0, '0', rational_resampler_xxx_0, '0']
+- [blocks_throttle_0, '0', blocks_correctiq_0, '0']
+- [freq_xlating_fir_filter_xxx_0, '0', lora_sdr_frame_sync_0_2_0, '0']
+- [lora_sdr_crc_verif_0_2_0, '0', zeromq_pub_sink_0_0_2_3, '0']
+- [lora_sdr_deinterleaver_0_2_0, '0', lora_sdr_hamming_dec_0_2_0, '0']
+- [lora_sdr_dewhitening_0_2_0, '0', lora_sdr_crc_verif_0_2_0, '0']
+- [lora_sdr_fft_demod_0_2_0, '0', lora_sdr_gray_mapping_0_2_0, '0']
+- [lora_sdr_frame_sync_0_2_0, '0', lora_sdr_fft_demod_0_2_0, '0']
+- [lora_sdr_gray_mapping_0_2_0, '0', lora_sdr_deinterleaver_0_2_0, '0']
+- [lora_sdr_hamming_dec_0_2_0, '0', lora_sdr_header_decoder_0_2_0, '0']
+- [lora_sdr_header_decoder_0_2_0, '0', lora_sdr_dewhitening_0_2_0, '0']
+- [lora_sdr_header_decoder_0_2_0, frame_info, lora_sdr_frame_sync_0_2_0, frame_info]
+- [rational_resampler_xxx_0, '0', qtgui_waterfall_sink_x_0, '0']
+- [soapy_hackrf_source_0, '0', blocks_throttle_0, '0']
+- [soapy_hackrf_source_0, '0', freq_xlating_fir_filter_xxx_0, '0']
+
+metadata:
+  file_format: 1
+  grc_version: 3.10.5.1

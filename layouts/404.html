@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  {{ partial "header.html" . }}
+  <body>
+    <div class="content">
+      {{ partial "head.html" . }}
+      <main class="list">
+        <h1>404 - Page not found</h1>
+        <p>The requested page could not be found.</p>
+      </main>
+      {{ partial "footer.html" . }}
+    </div>
+    {{ if not hugo.IsServer }}
+    {{ partial "analytics.html" . }}
+    {{ end }}
+  </body>
+</html>
