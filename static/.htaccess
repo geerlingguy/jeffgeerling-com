@@ -1,0 +1,2 @@
+# Redirect rss.xml to blog.xml.
+Redirect 301 /rss.xml /blog.xml
