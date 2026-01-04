@@ -1,2 +1,13 @@
 # Redirect rss.xml to blog.xml.
 Redirect 301 /rss.xml /blog.xml
+
+# Old Drupal tag redirects.
+Redirect 301 /category/tags/android /tags/android/
+Redirect 301 /category/tags/apache /tags/apache/
+Redirect 301 /category/tags/php /tags/php/
+Redirect 301 /category/tags/files /tags/files/
+Redirect 301/taxonomy/term/817/feed /tags/ansible/
+Redirect 301 /category/tags/drupal-planet /tags/drupal-planet/
+
+# Redirect old project pages to the projects page.
+RedirectMatch 301 ^/project/[^/]+/?$ /projects/

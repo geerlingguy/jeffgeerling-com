@@ -1,7 +1,7 @@
 ---
 date: '2026-01-03T13:00:00-06:00'
 title: 'JeffGeerling.com has been Migrated to Hugo'
-tags: ['migration', 'hugo', 'drupal', 'blog', 'go', 'migrate', 'history']
+tags: ['migration', 'hugo', 'drupal', 'drupal-planet', 'blog', 'go', 'migrate', 'history']
 slug: 'migrated-to-hugo'
 ---
 Since 2009, this website has [run on Drupal](/blog/2009/moved-drupal-hello-drupal). Starting with Drupal 6, and progressing through major site upgrades and migrations to 7, 8, 9, and 10, I used the site as a way to dogfood the same CMS (Content Management System) I used in my day job for _over a decade_.
