@@ -143,7 +143,6 @@ header .main a {
 
 /* Comments */
 .comments {
-  background-color: #222;
   padding: 1em 1.5em;
   margin: 0;
 }
@@ -181,6 +180,11 @@ figure img,
   body {
     background-color: #000;
   }
+
+  .related-posts,
+  .comments {
+    background-color: #222;
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -206,6 +210,11 @@ figure img,
     background: var(--color-primary-dark, #50fa7b);
     color: #000000;
     text-shadow: none;
+  }
+
+  .related-posts,
+  .comments {
+    border: 1px solid #222;
   }
 }
 
