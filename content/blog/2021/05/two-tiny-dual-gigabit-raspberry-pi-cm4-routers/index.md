@@ -11,6 +11,7 @@ drupal:
     - /blog/2021/two-tiny-new-dual-gigabit-raspberry-pi-cm4-routers
 aliases:
   - /blog/2021/two-tiny-new-dual-gigabit-raspberry-pi-cm4-routers
+  - /comment/17679
 tags:
   - cm4
   - compute module

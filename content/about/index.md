@@ -1,8 +1,11 @@
-+++
-title = "About"
-aliases = ["about-us","about-jeff-geerling","contact"]
-author = "Jeff Geerling"
-+++
+---
+title: "About"
+aliases:
+  - "about-us"
+  - "about-jeff-geerling"
+  - "contact"
+author: "Jeff Geerling"
+---
 {{< figure
   src="./jeff-geerling-geerling-engineering-shirt.jpg"
   alt="Jeff Geerling"

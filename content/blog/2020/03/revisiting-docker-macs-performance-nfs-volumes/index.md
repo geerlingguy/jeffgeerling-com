@@ -18,6 +18,8 @@ tags:
   - nfs
   - performance
   - volumes
+aliases:
+  - /comment/reply/node/2977/comment_node_blog_post
 ---
 
 > **tl;dr**: Docker's default bind mount performance for projects requiring lots of I/O on macOS is abysmal. It's acceptable (but still very slow) if you use the `cached` or `delegated` option. But it's actually fairly performant using the barely-documented NFS option!

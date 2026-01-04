@@ -11,6 +11,7 @@ drupal:
     - /blog/2025/qualcomm-bought-arduino-what-it-means-makers
 aliases:
   - /blog/2025/qualcomm-bought-arduino-what-it-means-makers
+  - /blog/2025/qualcomms-buying-arduino-–-what-it-means-makers
 tags:
   - acquisition
   - arduino

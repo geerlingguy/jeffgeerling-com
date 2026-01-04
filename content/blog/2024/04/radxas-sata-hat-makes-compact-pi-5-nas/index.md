@@ -13,6 +13,7 @@ drupal:
 aliases:
   - /blog/2024/radxa-updates-sata-hat-compact-pi-5-nas
   - /blog/2024/radxa-sata-hat-makes-compact-pi-5-nas
+  - /comment/34551
 tags:
   - nas
   - omv

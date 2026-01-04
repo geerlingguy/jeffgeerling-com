@@ -14,6 +14,11 @@ tags:
   - red hat
   - video
   - youtube
+aliases:
+  - /comment/32434
+  - /comment/32309
+  - /comment/32286
+  - /comment/32298
 ---
 
 <div class="yt-embed">

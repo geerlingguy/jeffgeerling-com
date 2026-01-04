@@ -22,6 +22,8 @@ tags:
   - vga
   - video
   - youtube
+aliases:
+  - /comment/16889
 ---
 
 Last year I tested two older graphics cards—a [Radeon 5450](https://pipci.jeffgeerling.com/cards_gpu/visiontek-radeon-5450-1gb.html) and a [GeForce GT710](https://pipci.jeffgeerling.com/cards_gpu/zotac-geforce-gt710-1gb.html)—on a Raspberry Pi Compute Module 4.

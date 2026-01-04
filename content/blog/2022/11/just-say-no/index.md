@@ -15,6 +15,8 @@ tags:
   - life
   - maintainer
   - open source
+aliases:
+  - /comment/31486
 ---
 
 Saying yes is easy—at first.

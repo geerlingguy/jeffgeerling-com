@@ -15,6 +15,7 @@ tags:
   - redirect
 aliases:
   - /blogs/jeff-geerling/how-redirect-user-after-login
+  - /comment/reply/node/2432/comment_node_blog_post
 ---
 
 There are some simple Drupal modules that help with login redirection (especially <a href="https://drupal.org/project/login_destination">Login Destination</a>), but I often need more advanced conditions applied to redirects, so I like being able to do the redirect inside a custom module. You can also do something similar with Rules, but if the site you're working on doesn't have Rules enabled, all you need to do is:

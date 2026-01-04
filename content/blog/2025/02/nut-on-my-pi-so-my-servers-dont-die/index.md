@@ -11,6 +11,7 @@ drupal:
     - /blog/2025/i-have-nut-on-my-pi-so-my-servers-dont-die
 aliases:
   - /blog/2025/i-have-nut-on-my-pi-so-my-servers-dont-die
+  - /comment/35106
 tags:
   - homelab
   - nut
