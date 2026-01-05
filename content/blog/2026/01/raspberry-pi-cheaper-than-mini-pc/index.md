@@ -1,5 +1,5 @@
 ---
-date: '2026-01-05T15:34:19-06:00'
+date: '2026-01-05T16:00:00-06:00'
 title: "Raspberry Pi is cheaper than a Mini PC again (that's not good)"
 slug: 'raspberry-pi-cheaper-than-mini-pc'
 tags: ['raspberry pi', 'pi 5', 'mini pc', 'gmktec', 'youtube', 'video', 'level2jeff']
