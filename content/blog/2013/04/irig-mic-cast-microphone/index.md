@@ -11,7 +11,7 @@ drupal:
     - /irig-mic-cast
 aliases:
   - /irig-mic-cast
-   - /review/audio-and-video/irig-mic-cast-microphone
+  - /review/audio-and-video/irig-mic-cast-microphone
 tags:
   - audio
   - ik multimedia

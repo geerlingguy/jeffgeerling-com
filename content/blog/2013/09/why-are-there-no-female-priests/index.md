@@ -11,7 +11,7 @@ drupal:
     - /religion/2013/why-are-there-no-female-roman
 aliases:
   - /religion/2013/why-are-there-no-female-roman
-   - /articles/religion/why-are-there-no-female-priests
+  - /articles/religion/why-are-there-no-female-priests
 tags:
   - articles
   - catholic

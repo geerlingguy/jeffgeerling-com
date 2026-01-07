@@ -16,7 +16,6 @@ tags:
   - tutorial
 aliases:
   - /blogs/jeff-geerling/how-repair-your-intel-imac
-   - /blogs/jeff-geerling/how-repair-your-intel-imac
 ---
 
 Over on Lifeisaprayer.com, I posted a detailed tutorial/guide on [how to replace the hard drive inside a 24" Intel iMac](http://www.jeffgeerling.com/computing/2010/intel-imac-teardown-and-hard-d) with an aluminum enclosure (the process is similar on other aluminum iMacs). It's a rather intricate process, so in addition to a few illustrations, I posted a video of the process on YouTube (it's embedded over on Lifeisaprayer.com as well!).

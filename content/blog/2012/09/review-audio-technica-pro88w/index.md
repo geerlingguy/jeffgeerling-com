@@ -11,7 +11,7 @@ drupal:
     - /pro88w
 aliases:
   - /pro88w
-   - /review/audio-and-video/review-audio-technica-pro88w
+  - /review/audio-and-video/review-audio-technica-pro88w
 tags:
   - audio
   - microphone

@@ -11,7 +11,7 @@ drupal:
     - /tethering-your-ipad-your-iphon
 aliases:
   - /tethering-your-ipad-your-iphon
-   - /articles/computing/tethering-your-ipad-to-your-iphone
+  - /articles/computing/tethering-your-ipad-to-your-iphone
 tags:
   - ipad
   - iphone

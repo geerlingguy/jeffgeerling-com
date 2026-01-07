@@ -22,7 +22,6 @@ tags:
   - xhprof
 aliases:
   - /blogs/jeff-geerling/nfs-rsync-and-shared-folder
-   - /blogs/jeff-geerling/nfs-rsync-and-shared-folder
 ---
 
 It's been a well-known fact that using native VirtualBox or VMWare shared folders is a terrible idea if you're developing a Drupal site (or some other site that uses thousands of files in hundreds of folders). The most common recommendation is to switch to NFS for shared folders.

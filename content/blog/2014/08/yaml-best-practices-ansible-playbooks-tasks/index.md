@@ -15,7 +15,6 @@ tags:
   - yaml
 aliases:
   - /blog/yaml-best-practices-ansible-playbooks-tasks
-   - /blog/yaml-best-practices-ansible-playbooks-tasks
 ---
 
 <p>This post is a follow-up to a recent <a href="https://groups.google.com/forum/#!topic/ansible-project/GfJBkzuTTNM">discussion about YAML formatting for complex Ansible playbook tasks</a> on the Ansible Project mailing list, and will also be appearing as part of Appendix B: Ansible Best Practices and Conventions in my <a href="http://www.ansiblefordevops.com/">Ansible for DevOps book</a> on LeanPub.</p>

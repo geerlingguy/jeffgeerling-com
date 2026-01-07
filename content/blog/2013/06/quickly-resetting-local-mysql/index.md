@@ -17,7 +17,6 @@ tags:
   - shell
 aliases:
   - /blogs/jeff-geerling/quickly-resetting-local-mysql
-   - /blogs/jeff-geerling/quickly-resetting-local-mysql
 ---
 
 [<strong>Update</strong>: And, as quickly as I finished writing this post, I thought to myself, "surely, this would be a good thing to have drush do out-of-the-box. And... it already does, making my work on this shell script null and void. I present to you: <a href="http://drush.ws/#sql-drop"><code>drush sql-drop</code></a>! Oh, well.]

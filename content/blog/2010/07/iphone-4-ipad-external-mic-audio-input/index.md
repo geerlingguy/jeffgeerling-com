@@ -12,7 +12,7 @@ drupal:
     - /iphone-mics
 aliases:
   - /blog/2010/iphone-4-external-mic-audio
-   - /articles/photography/iphone-4-ipad-external-mic-audio-input
+  - /articles/photography/iphone-4-ipad-external-mic-audio-input
   - /iphone-mics
 tags:
   - articles

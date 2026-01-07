@@ -11,7 +11,7 @@ drupal:
     - /blog/simple-glusterfs-setup-ansible-redux
 aliases:
   - /blog/simple-glusterfs-setup-ansible-redux
-   - /blog/simple-glusterfs-setup-ansible
+  - /blog/simple-glusterfs-setup-ansible
 tags:
   - ansible
   - ansible for devops

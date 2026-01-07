@@ -12,7 +12,7 @@ drupal:
     - /blog/vagrant-15-vastly-improves-filesystem-performance
 aliases:
   - /blog/vagrant-15-makes-team-based-development-1000x
-   - /blog/rsync-vagrant-15-file-performance-windows-dev
+  - /blog/rsync-vagrant-15-file-performance-windows-dev
   - /blog/vagrant-15-vastly-improves-filesystem-performance
 tags:
   - development

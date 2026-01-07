@@ -16,7 +16,6 @@ tags:
   - theming
 aliases:
   - /blogs/jeff-geerling/moving-drupal-6-drupal-7-theme
-   - /blogs/jeff-geerling/moving-drupal-6-drupal-7-theme
 ---
 
 <p>The transition from Drupal 6 to Drupal 7 has taken a bit of time, and I (like many others) simply haven't had enough time in the past few months to do D7 testing while in the midst of tens of other D6 projects.</p>

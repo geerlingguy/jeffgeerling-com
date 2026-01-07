@@ -11,7 +11,7 @@ drupal:
     - /blog/highly-available-infrastructure-provisioning-and
 aliases:
   - /blog/highly-available-infrastructure-provisioning-and
-   - /blog/highly-available-infrastructure-provisioning-ansible
+  - /blog/highly-available-infrastructure-provisioning-ansible
 tags:
   - ansible
   - ansible for devops

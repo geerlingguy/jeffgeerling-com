@@ -11,7 +11,7 @@ drupal:
     - /blog/start-and-run-nodejs-app-forever-and-ansible
 aliases:
   - /blog/start-and-run-nodejs-app-forever-and-ansible
-   - /blog/start-nodejs-app-with-forever-and-ansible
+  - /blog/start-nodejs-app-with-forever-and-ansible
 tags:
   - ansible
   - ansible for devops

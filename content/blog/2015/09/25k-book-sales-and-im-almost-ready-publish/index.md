@@ -11,7 +11,7 @@ drupal:
     - /blog/25k-sales-and-im-almost-ready-publish-book
 aliases:
   - /blog/25k-sales-and-im-almost-ready-publish-book
-   - /blog/25k-book-sales-and-im-almost-ready-publish
+  - /blog/25k-book-sales-and-im-almost-ready-publish
 tags:
   - ansible
   - ansible for devops

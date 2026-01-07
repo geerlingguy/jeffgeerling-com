@@ -18,7 +18,6 @@ tags:
   - photoshop
 aliases:
   - /blogs/jeff-geerling/licensing-product-has-stopped
-   - /blogs/jeff-geerling/licensing-product-has-stopped
 ---
 
 <p>Recently, I had to recover my iMac from a Time Machine backup and a hard drive replacement (my old drive flaked out&mdash;<a href="http://www.jeffgeerling.com/computing/2010/intel-imac-teardown-and-hard-d">see how I repaired my hard drive here (video included!)</a>).</p>

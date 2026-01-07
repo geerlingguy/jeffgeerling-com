@@ -11,7 +11,7 @@ drupal:
     - /guitarjack
 aliases:
   - /guitarjack
-   - /review/audio-and-video/guitarjack-model-2-audio-inter
+  - /review/audio-and-video/guitarjack-model-2-audio-inter
 tags:
   - audio
   - guitarjack

@@ -11,7 +11,7 @@ drupal:
     - /blog/using-vagrant-18s-new-ansiblelocal-provisioner
 aliases:
   - /blog/using-vagrant-18s-new-ansiblelocal-provisioner
-   - /blog/use-vagrant-18s-new-ansiblelocal-provisioner
+  - /blog/use-vagrant-18s-new-ansiblelocal-provisioner
 tags:
   - ansible
   - drupal vm

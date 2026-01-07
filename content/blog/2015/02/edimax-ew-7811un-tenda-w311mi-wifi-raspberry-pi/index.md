@@ -11,7 +11,7 @@ drupal:
     - /blogs/jeff-geerling/edimax-ew-7811un-wifi-raspberry-pi
 aliases:
   - /blogs/jeff-geerling/edimax-ew-7811un-wifi-raspberry-pi
-   - /blogs/jeff-geerling/edimax-ew-7811un-tenda-w311mi-wifi-raspberry-pi
+  - /blogs/jeff-geerling/edimax-ew-7811un-tenda-w311mi-wifi-raspberry-pi
 tags:
   - config
   - edimax

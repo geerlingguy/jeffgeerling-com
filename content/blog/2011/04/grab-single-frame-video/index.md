@@ -17,7 +17,6 @@ tags:
   - video
 aliases:
   - /blogs/jeff-geerling/grab-single-frame-video
-   - /blogs/jeff-geerling/grab-single-frame-video
 ---
 
 <blockquote>

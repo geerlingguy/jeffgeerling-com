@@ -11,7 +11,7 @@ drupal:
     - /blogs/jeff-geerling/thoughts-acquia-certified
 aliases:
   - /blogs/jeff-geerling/thoughts-acquia-certified
-   - /blogs/jeff-geerling/thoughts-acquia-certified-back-end-exam
+  - /blogs/jeff-geerling/thoughts-acquia-certified-back-end-exam
 tags:
   - acquia
   - backend

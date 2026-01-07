@@ -11,7 +11,7 @@ drupal:
     - /articles/computing/2011/my-computing-history-all-compu
 aliases:
   - /articles/computing/2011/my-computing-history-all-compu
-   - /articles/computing/2011/my-computing-history
+  - /articles/computing/2011/my-computing-history
 tags:
   - computer
   - history

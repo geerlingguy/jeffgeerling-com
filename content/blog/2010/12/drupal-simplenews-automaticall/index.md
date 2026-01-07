@@ -15,7 +15,6 @@ tags:
   - simplenews
 aliases:
   - /blogs/jeff-geerling/drupal-simplenews-automaticall
-   - /blogs/jeff-geerling/drupal-simplenews-automaticall
 ---
 
 <p>One of the sites I am setting up requires that all users be subscribed to a certain newsletter (or maybe two, depending on who they are) via <a href="http://drupal.org/project/simplenews">Simplenews</a> when they create their accounts (actually, their accounts are automatically created via LDAP... but that&#39;s another story).</p>

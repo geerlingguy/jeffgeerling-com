@@ -17,7 +17,6 @@ tags:
   - video
 aliases:
   - /review/computing/iphone-4-comprehensive-review
-   - /review/computing/iphone-4-comprehensive-review
 ---
 
 <p><div class="rating" itemprop="Rating" itemscope="itemscope" itemtype="http://schema.org/Rating">

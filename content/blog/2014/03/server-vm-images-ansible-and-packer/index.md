@@ -11,7 +11,7 @@ drupal:
     - /blog/ansible-building-images-ansible-and-packer
 aliases:
   - /blog/ansible-building-images-ansible-and-packer
-   - /blog/server-vm-images-ansible-and-packer
+  - /blog/server-vm-images-ansible-and-packer
 tags:
   - ansible
   - automation

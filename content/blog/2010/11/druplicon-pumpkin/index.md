@@ -16,7 +16,6 @@ tags:
   - pumpkin
 aliases:
   - /blogs/jeff-geerling/druplicon-pumpkin
-   - /blogs/jeff-geerling/druplicon-pumpkin
 ---
 
 <p>My feeble attempt:</p>

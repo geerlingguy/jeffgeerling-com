@@ -11,7 +11,6 @@ drupal:
     - /ar-4i
 aliases:
   - /ar-4i
-   - /review/audio-and-video/fostex-ar-4i-iphone-4-stereo-a
   - /review/audio-and-video/fostex-ar-4i-iphone-4-stereo-a
 tags:
   - AR-4i

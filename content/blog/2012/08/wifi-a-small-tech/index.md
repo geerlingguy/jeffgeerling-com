@@ -11,7 +11,7 @@ drupal:
     - /computing/2012/wifi-a-small-tech
 aliases:
   - /computing/2012/wifi-a-small-tech
-   - /articles/computing/2012/wifi-a-small-tech
+  - /articles/computing/2012/wifi-a-small-tech
 tags:
   - events
   - networking

@@ -14,7 +14,7 @@ drupal:
     - /donate
 aliases:
   - /affiliate
-   - /sponsor
+  - /sponsor
   - /2011/affiliate-links
   - /affiliates
   - /donate

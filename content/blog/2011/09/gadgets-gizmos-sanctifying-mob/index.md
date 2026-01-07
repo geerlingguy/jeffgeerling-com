@@ -12,7 +12,7 @@ drupal:
     - /cnmc-gadgets
 aliases:
   - /religion/2011/gadgets-gizmos-sanctifying-mob
-   - /articles/religion/2011/gadgets-gizmos-sanctifying-mob
+  - /articles/religion/2011/gadgets-gizmos-sanctifying-mob
   - /cnmc-gadgets
 tags:
   - android

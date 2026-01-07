@@ -11,7 +11,7 @@ drupal:
     - /miscellaneous/2012/tips-and-tools-new-homeowners
 aliases:
   - /miscellaneous/2012/tips-and-tools-new-homeowners
-   - /articles/miscellaneous/2012/tips-and-tools-new-homeowners
+  - /articles/miscellaneous/2012/tips-and-tools-new-homeowners
 tags:
   - diy
   - guide

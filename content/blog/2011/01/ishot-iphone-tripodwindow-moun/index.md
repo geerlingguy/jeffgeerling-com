@@ -11,7 +11,7 @@ drupal:
     - /review/audio-and-video/ishot-iphone-tripodwindow-moun
 aliases:
   - /review/audio-and-video/ishot-iphone-tripodwindow-moun
-   - /review/photography/ishot-iphone-tripodwindow-moun
+  - /review/photography/ishot-iphone-tripodwindow-moun
 tags:
   - iphone
   - reviews

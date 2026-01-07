@@ -11,7 +11,7 @@ drupal:
     - /cnmc-word
 aliases:
   - /cnmc-word
-   - /religion/2011/continuity-eternal-word-new-me
+  - /religion/2011/continuity-eternal-word-new-me
 tags:
   - cnmc
   - god

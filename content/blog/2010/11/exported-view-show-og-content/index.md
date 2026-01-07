@@ -15,7 +15,6 @@ tags:
   - views
 aliases:
   - /blogs/jeff-geerling/exported-view-show-og-content
-   - /blogs/jeff-geerling/exported-view-show-og-content
 ---
 
 <p>For a few of my community-based sites, I wanted to give Organic Groups group members the ability to easily see all the content in their group, regardless of published status, content type, etc., in a list form. Kind of like the universal site Content List, except for each group, and only visible by that group&#39;s members.</p>

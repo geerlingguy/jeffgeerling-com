@@ -12,7 +12,7 @@ drupal:
     - /computing/2010/intel-imac-teardown-and-hard-d
 aliases:
   - /computing/2010/intel-imac-teardown-and-hard-dIn
-   - /articles/computing/2010/intel-imac-teardown-and-hard-d
+  - /articles/computing/2010/intel-imac-teardown-and-hard-d
   - /computing/2010/intel-imac-teardown-and-hard-d
 tags:
   - apple

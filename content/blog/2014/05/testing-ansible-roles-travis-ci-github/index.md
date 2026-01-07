@@ -20,7 +20,6 @@ tags:
   - travis ci
 aliases:
   - /blog/testing-ansible-roles-travis-ci-github
-   - /blog/testing-ansible-roles-travis-ci-github
 ---
 
 <blockquote>This post was originally written in 2014, using a technique that only easily allows testing on Ubuntu 12.04; since then, I've been adapting many of my roles (e.g. <a href="https://github.com/geerlingguy/ansible-role-apache">geerlingguy.apache</a>) to use a Docker container-based testing approach, and I've written a new blog post that details the new technique: <a href="/blog/2016/how-i-test-ansible-configuration-on-7-different-oses-docker">How I test Ansible configuration on 7 different OSes with Docker</a>.</blockquote>

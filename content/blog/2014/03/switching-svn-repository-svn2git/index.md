@@ -11,7 +11,7 @@ drupal:
     - /blogs/jeff-geerling/switching-svn-repository-git2svn
 aliases:
   - /blogs/jeff-geerling/switching-svn-repository-git2svn
-   - /blogs/jeff-geerling/switching-svn-repository-svn2git
+  - /blogs/jeff-geerling/switching-svn-repository-svn2git
 tags:
   - ansible
   - git

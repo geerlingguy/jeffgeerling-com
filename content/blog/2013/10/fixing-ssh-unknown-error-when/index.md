@@ -10,7 +10,6 @@ drupal:
   redirects: []
 aliases:
   - /blogs/jeff-geerling/fixing-ssh-unknown-error-when
-   - /blogs/jeff-geerling/fixing-ssh-unknown-error-when
 tags:
   - ansible
   - provisioning

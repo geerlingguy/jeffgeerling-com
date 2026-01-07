@@ -11,7 +11,7 @@ drupal:
     - /computing/2011/removing-a-stuck-disc-cddvd-a
 aliases:
   - /computing/2011/removing-a-stuck-disc-cddvd-a
-   - /articles/computing/2011/removing-a-stuck-disc-cddvd-a
+  - /articles/computing/2011/removing-a-stuck-disc-cddvd-a
 tags:
   - cd
   - drive

@@ -11,7 +11,7 @@ drupal:
     - /irig
 aliases:
   - /irig
-   - /review/audio-and-video/irig-mic
+  - /review/audio-and-video/irig-mic
 tags:
   - broadcast
   - ipad

@@ -12,7 +12,7 @@ drupal:
     - /blog/easily-manage-apache-virtualhosts-ansible-and
 aliases:
   - /blog/easily-manage-multiple-apache-virtualhost
-   - /blog/apache-virtualhosts-with-ansible-and-jinja2
+  - /blog/apache-virtualhosts-with-ansible-and-jinja2
   - /blog/easily-manage-apache-virtualhosts-ansible-and
 tags:
   - ansible

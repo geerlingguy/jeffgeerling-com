@@ -11,7 +11,7 @@ drupal:
     - /miscellaneous/2012/how-build-a-simple-30-standing
 aliases:
   - /miscellaneous/2012/how-build-a-simple-30-standing
-   - /articles/miscellaneous/2012/how-build-a-simple-30-standing
+  - /articles/miscellaneous/2012/how-build-a-simple-30-standing
 tags:
   - cheap
   - desk

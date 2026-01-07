@@ -14,7 +14,6 @@ tags:
   - drush
 aliases:
   - /blogs/jeff-geerling/installing-drush-mac-os-x-snow
-   - /blogs/jeff-geerling/installing-drush-mac-os-x-snow
 ---
 
 <p>To those wishing to install Drush on their Mac, but having difficulty, here&#39;s a surefire way to get it running great:</p>

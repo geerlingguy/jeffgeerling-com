@@ -11,7 +11,7 @@ drupal:
     - /2012/dont-wait-delegate-proper-use
 aliases:
   - /2012/dont-wait-delegate-proper-use
-   - /articles/computing/2012/dont-wait-delegate-proper-use
+  - /articles/computing/2012/dont-wait-delegate-proper-use
 tags:
   - computing
   - latency

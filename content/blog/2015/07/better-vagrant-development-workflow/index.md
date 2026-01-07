@@ -11,7 +11,7 @@ drupal:
     - /blogs/jeff-geerling/modify-etcsudoers-better
 aliases:
   - /blogs/jeff-geerling/modify-etcsudoers-better
-   - /blogs/jeff-geerling/better-vagrant-development-workflow
+  - /blogs/jeff-geerling/better-vagrant-development-workflow
 tags:
   - drupal
   - drupal planet
