@@ -27,6 +27,14 @@ Visit [http://localhost:1313/](http://localhost:1313/) in your browser, to previ
 
 If you're just editing individual content pages (e.g. writing a new blog post or editing an existing piece of content), you can drop the `--disableFastRender` option for a speedier experience.
 
+### Local Dev with Comments
+
+Head over to the (currently private) `mm-comments` project and run:
+
+```
+docker compose --env-file .env.dev --profile debug up
+```
+
 ## Production Deployment
 
 This process currently takes at least 1 minute (usually 3-6 minutes), so I'd like to speed it up. See [#172 - Figure out fast deployment workflow for new posts](https://github.com/geerlingguy/jeffgeerling-com/issues/172).
