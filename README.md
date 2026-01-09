@@ -16,8 +16,12 @@ TODO: Create an alias in my `~/.aliases` file that allows me to type `blog my-bl
 
 ## Local Development
 
-  1. Ensure Hugo is installed (e.g. `brew install hugo`).
-  2. Run `hugo server --disableFastRender`
+After Hugo is installed (`brew install hugo`), run:
+
+```
+# Add `-D` to also render draft posts, add `--gc` if things are stale.
+hugo server --disableFastRender
+```
 
 Visit [http://localhost:1313/](http://localhost:1313/) in your browser, to preview changes live.
 
