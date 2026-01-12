@@ -32,7 +32,10 @@ If you're just editing individual content pages (e.g. writing a new blog post or
 This process currently takes at least 1 minute (usually 3-6 minutes), so I'd like to speed it up. See [#172 - Figure out fast deployment workflow for new posts](https://github.com/geerlingguy/jeffgeerling-com/issues/172).
 
 ```
-# Build the site.
+# In mm infra project directory:
+ansible-playbook deploy.yml
+
+# Or manually: build the site.
 hugo --gc --minify
 
 # Deploy via rclone.
