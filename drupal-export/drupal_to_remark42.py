@@ -218,8 +218,9 @@ def main():
         'password': 'drupal'
     }
 
-    site_url = "https://www.jeffgeerling.com"
-    output_file = "comments.xml"
+    #site_url = "https://www.jeffgeerling.com"
+    site_url = "http://localhost:1313"
+    output_file = "exported-comments.xml"
 
     print("Extracting comments from Drupal...")
     comments = get_drupal_comments(db_config, site_url)

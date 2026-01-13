@@ -45,3 +45,13 @@ Once you have an `mm-comments` instance running locally, run the `drupal_to_rema
 pip3 install mysql-connector-python --break-system-packages
 python3 drupal_to_remark42.py
 ```
+
+Move the generated `exported-comments.xml` file into the shared `var` directory inside `mm-comments`, to prepare for the comment migration.
+
+Then, run:
+
+```
+docker exec -it comments_jeffgeerling import -p wordpress -f /srv/var/exported-comments.xml -s jeffgeerling_com --admin-passwd=[ENTER_HERE]
+```
+
+TODO: This is currently giving me `connect: connection refused` even with a valid admin-passwd...
