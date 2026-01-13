@@ -9,6 +9,7 @@ from xml.dom import minidom
 import mysql.connector
 import datetime
 import sys
+import re
 from typing import Optional, Dict, List
 
 def get_drupal_comments(db_config: dict, site_url: str) -> list:
@@ -109,20 +110,32 @@ def get_drupal_comments(db_config: dict, site_url: str) -> list:
         print(f"Error connecting to Drupal database: {e}")
         sys.exit(1)
 
+def sanitize_xml_text(text: str) -> str:
+    """
+    Remove invalid XML characters from text.
+    Invalid characters are those outside the ranges allowed by XML 1.0 specification.
+    """
+    if not text:
+        return ""
+
+    # Remove invalid XML characters (control characters except tab, newline, carriage return)
+    # XML 1.0 allows: #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF]
+    # So we keep tab (0x09), newline (0x0A), carriage return (0x0D) and printable characters
+    sanitized = re.sub(r'[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]', '', text)
+    return sanitized
+
 def create_wordpress_xml(comments: list, site_url: str, output_file: str):
     """
     Create WordPress XML format for Remark42 import with parent-child relationships
-
-    Args:
-        comments: List of comment dictionaries
-        site_url: Base URL of your site
-        output_file: Output XML file path
     """
 
-    # Create root element
-    rss = ET.Element('rss', {'version': '2.0'})
+    # Create root element with namespace declarations
+    rss = ET.Element('rss', {
+        'version': '2.0',
+        'xmlns:wp': 'http://wordpress.org/export/1.2/',
+        'xmlns:content': 'http://purl.org/rss/1.0/modules/content/',
+    })
 
-    # Add namespace declaration properly
     channel = ET.SubElement(rss, 'channel')
 
     # Site info
@@ -143,9 +156,10 @@ def create_wordpress_xml(comments: list, site_url: str, output_file: str):
             comment['created_timestamp']
         ).strftime('%a, %d %b %Y %H:%M:%S %z')
 
-        # Comment content
+        # Sanitize comment body
+        sanitized_body = sanitize_xml_text(comment['comment_body'] or '')
         content = ET.SubElement(item, 'content:encoded')
-        content.text = comment['comment_body'] or ''
+        content.text = sanitized_body
 
         # Comment author info - using standard WordPress fields
         author_name = ET.SubElement(item, 'wp:comment_author')
@@ -164,7 +178,6 @@ def create_wordpress_xml(comments: list, site_url: str, output_file: str):
         comment_id = ET.SubElement(item, 'wp:comment_id')
         comment_id.text = str(comment['comment_id'])
 
-        # Set parent ID - if parent_id is 0 or None, it's a top-level comment
         parent_id = str(comment['parent_id']) if comment['parent_id'] and comment['parent_id'] != 0 else '0'
         comment_parent = ET.SubElement(item, 'wp:comment_parent')
         comment_parent.text = parent_id
