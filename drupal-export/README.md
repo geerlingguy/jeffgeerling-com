@@ -36,3 +36,12 @@ pip3 install requests --break-system-packages
 ```
 
 Run again without `--dry-run` if you want to actually download files and update the text in the Hugo posts.
+
+### 4 - Migrate comments to Remark42
+
+Once you have an `mm-comments` instance running locally, run the `drupal_to_remark42.py` script:
+
+```
+pip3 install mysql-connector-python --break-system-packages
+python3 drupal_to_remark42.py
+```
