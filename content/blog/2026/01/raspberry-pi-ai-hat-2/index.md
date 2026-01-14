@@ -1,8 +1,7 @@
 ---
-draft: true
 date: '2026-01-15T02:00:00-06:00'
-tags: ['tag_here']
-title: "Raspberry Pi's new AI HAT+ 2 adds 8GB of RAM for local LLMs in 3W"
+tags: ['raspberry pi', 'hat', 'ai', 'hailo', 'video', 'youtube', 'llm', 'pcie', 'pci express', 'review']
+title: "Raspberry Pi's new AI HAT adds 8GB of RAM for local LLMs"
 slug: 'raspberry-pi-ai-hat-2'
 ---
 
@@ -16,7 +15,7 @@ slug: 'raspberry-pi-ai-hat-2'
 
 Today Raspberry Pi launched their new [$130 AI HAT+ 2](https://www.raspberrypi.com/products/ai-hat-2/) which includes a Hailo 10H and 8 GB of [LPDDR4X RAM](https://www.micron.com/products/memory/dram-components/lpddr4/part-catalog/part-detail/mt53e2g32d4de-046-wt-c).
 
-With that RAM, the Hailo 10H is capable of running LLMs entirely separate from the Pi's CPU, freeing it up to do other tasks. The chip runs at a maximum of 3W, with 40 TOPS of INT8 NPU inference performance in addition to the equivalent 26 TOPS INT4 machine vision performance on the earlier AI HAT with Hailo 8.
+With that, the Hailo 10H is capable of running LLMs entirely standalone, freeing the Pi's CPU and system RAM for other tasks. The chip runs at a maximum of 3W, with 40 TOPS of INT8 NPU inference performance in addition to the equivalent 26 TOPS INT4 machine vision performance on the earlier AI HAT with Hailo 8.
 
 In practice, it's not as amazing as it sounds.
 
@@ -30,7 +29,7 @@ Besides feeling like I'm living in the world of the [Turbo Encabulator](https://
 
 For example, the Hailo 10H is advertised as being used for a [Fujitsu demo of automatic shrink detection for a self-checkout](https://www.youtube.com/watch?v=flD-WfJ4pUg).
 
-That's certainly not a worthless use case, but it's not something I've ever really cared to work on. I have a feeling this board is more meant for development purposes, for people who want to deploy the 10H in other devices, rather than as a total solution to a problem many Pi users need to solve.
+That's certainly not a worthless use case, but it's not something I've ever needed to do. I have a feeling this board is meant more for development, for people who want to deploy the 10H in other devices, rather than as a total solution to problems individual Pi owners need to solve.
 
 Especially when it comes to the headline feature: running inference, like with LLMs.
 
