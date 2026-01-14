@@ -39,7 +39,7 @@ Run again without `--dry-run` if you want to actually download files and update 
 
 ### 4 - Migrate comments to Remark42
 
-Once you have an `mm-comments` instance running locally, run the `drupal_to_remark42.py` script:
+Once you have an `mm-comments` instance running locally (as well as the local Hugo static site), run the `drupal_to_remark42.py` script:
 
 ```
 pip3 install mysql-connector-python --break-system-packages

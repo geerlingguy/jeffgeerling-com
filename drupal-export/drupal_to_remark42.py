@@ -14,6 +14,8 @@ from __future__ import annotations
 import datetime
 import re
 import sys
+import urllib.request
+import urllib.error
 from pathlib import Path
 from typing import Dict, List
 
@@ -168,7 +170,7 @@ def build_node_map(comments: List[Dict]) -> Dict[int, Dict]:
 # --------------------------------------------------------------------------- #
 def create_wordpress_xml(node_map: Dict[int, Dict], site_url: str, output_file: str) -> None:
     """
-    Build a proper WordPress export XML from a node‑to‑comments map.
+    Build a proper WordPress export XML from a node-to-comments map.
     """
     # ----------------------------------------------------------------------- #
     # Root element
@@ -195,18 +197,65 @@ def create_wordpress_xml(node_map: Dict[int, Dict], site_url: str, output_file: 
     ET.SubElement(channel, "language").text = "en-US"
 
     # ----------------------------------------------------------------------- #
+    # Track actual exported counts
+    # ----------------------------------------------------------------------- #
+    exported_posts = 0
+    exported_comments = 0
+
+    # ----------------------------------------------------------------------- #
     # One <item> per node (post)
     # ----------------------------------------------------------------------- #
     for nid, node in node_map.items():
         item = ET.SubElement(channel, "item")
 
-        # TODO:
-        # Try to request node["node_link"] (like with curl or wget or a Native
-        # Python method). If it gives a 301, follow the redirect until you get
-        # a 200 or until it errors out. If you get a 200, store *that* URL as
-        # the node["node_link"]. If you get any response other than a 200 or
-        # 301, skip this item entirely, and print a message to the console like
-        # "Skipping node ${node["node_link"]} (${HTTP_error_here})"
+        # Resolve the actual URL by following redirects
+        try:
+            # ---- Build full URL safely ------------------------------------------- #
+            node_link = node["node_link"]
+
+            # Ensure node_link is a valid URL string
+            try:
+                # Parse the URL to extract components
+                from urllib.parse import urlparse, urlunparse, quote
+
+                parsed = urlparse(node_link)
+                # Reconstruct the URL with properly encoded path
+                encoded_path = quote(parsed.path, safe="/")
+                node_link = urlunparse((
+                    parsed.scheme,
+                    parsed.netloc,
+                    encoded_path,
+                    parsed.params,
+                    parsed.query,
+                    parsed.fragment
+                ))
+            except Exception as e:
+                print(f"Warning: Failed to encode URL {node_link}: {e}")
+                # Proceed with original link if encoding fails
+                pass
+
+            # Create a request object
+            req = urllib.request.Request(node_link)
+            # Set a user agent to avoid being blocked
+            req.add_header('User-Agent', 'Mozilla/5.0')
+
+            # Try to open the URL
+            response = urllib.request.urlopen(req)
+            actual_url = response.geturl()
+
+            # If we got a redirect, use the final URL
+            if actual_url != node_link:
+                node["node_link"] = actual_url
+                print(f"Redirected {node_link} -> {actual_url}")
+        except urllib.error.HTTPError as e:
+            print(f"Skipping node {node['node_link']} ({e.code})")
+            continue
+        except urllib.error.URLError as e:
+            print(f"Skipping node {node['node_link']} (URL Error: {e.reason})")
+            continue
+        except Exception as e:
+            print(f"Skipping node {node['node_link']} (Unexpected error: {e})")
+            continue
 
         # ---- Post meta -------------------------------------------------------
         ET.SubElement(item, "title").text = node["node_title"]
@@ -247,8 +296,14 @@ def create_wordpress_xml(node_map: Dict[int, Dict], site_url: str, output_file: 
             ET.SubElement(wp_comment, "wp:comment_approved").text = "1"
             ET.SubElement(wp_comment, "wp:comment_type").text = "comment"
 
+        # ----------------------------------------------------------------------- #
+        # Count this post and its comments
+        # ----------------------------------------------------------------------- #
+        exported_posts += 1
+        exported_comments += len(node["comments"])
+
     # ----------------------------------------------------------------------- #
-    # Write pretty‑printed XML to file
+    # Write pretty-printed XML to file
     # ----------------------------------------------------------------------- #
     rough = ET.tostring(rss, encoding="utf-8")
     parsed = minidom.parseString(rough)
@@ -256,7 +311,8 @@ def create_wordpress_xml(node_map: Dict[int, Dict], site_url: str, output_file: 
 
     Path(output_file).write_bytes(pretty)
 
-    print(f"Exported {len(node_map)} posts with {sum(len(n["comments"]) for n in node_map.values())} comments to {output_file}")
+    print(f"Exported {exported_posts} posts with {exported_comments} comments to {output_file}")
+
 
 
 # --------------------------------------------------------------------------- #
