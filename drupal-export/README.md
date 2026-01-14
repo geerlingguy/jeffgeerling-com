@@ -51,7 +51,9 @@ Move the generated `exported-comments.xml` file into the shared `var` directory 
 Then, run:
 
 ```
-docker exec -it comments_jeffgeerling import -p wordpress -f /srv/var/exported-comments.xml -s jeffgeerling_com --admin-passwd=[ENTER_HERE]
+docker exec -it comments_jeffgeerling import -p wordpress -f /srv/var/exported-comments.xml -s jeffgeerling_com
 ```
 
-TODO: This is currently giving me `connect: connection refused` even with a valid admin-passwd...
+This triggers an import (which takes a while).
+
+After it's complete, you should see comments on the site. DNS matters! If you access the site at `http://localhost` or `http://dev.jeffgeerling.com`, those are different URLs than `https://www.jeffgeerling.com/`, and Remark42 will only show comments matching by URL exactly (including full hostname).

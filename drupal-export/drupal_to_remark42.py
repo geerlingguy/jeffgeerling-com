@@ -1,243 +1,288 @@
 #!/usr/bin/env python3
 """
-Drupal to Remark42 Comment Export Script with Parent-Child Relationships
-Exports Drupal comments in WordPress XML format for Remark42 import
+Drupal → WordPress XML Export (parent‑child comments)
+
+  • Pulls comments from a Drupal 10 database
+  • Builds an <item> per node (post) and nests all comments inside
+  • Uses <wp:comment_content> for the comment body
+  • Handles anonymous / known users, email, IP, etc.
+  • Pretty‑prints the output to disk
 """
 
+from __future__ import annotations
+
+import datetime
+import re
+import sys
+from pathlib import Path
+from typing import Dict, List
+
+import mysql.connector
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
-import mysql.connector
-import datetime
-import sys
-import re
-from typing import Optional, Dict, List
 
-def get_drupal_comments(db_config: dict, site_url: str) -> list:
+# --------------------------------------------------------------------------- #
+# Helpers
+# --------------------------------------------------------------------------- #
+def sanitize_xml_text(text: str) -> str:
+    """Remove characters that are illegal in XML 1.0."""
+    if not text:
+        return ""
+    # Keep #x9, #xA, #xD and printable characters
+    return re.sub(r'[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]', "", text)
+
+
+# --------------------------------------------------------------------------- #
+# Data extraction
+# --------------------------------------------------------------------------- #
+def get_drupal_comments(db_config: Dict[str, str], site_url: str) -> List[Dict]:
     """
-    Extract comments from Drupal 10 database with parent-child relationships.
+    Pull comments (with parent/child data) from Drupal 10.
 
-    Args:
-        db_config: Database connection parameters
-        site_url: Base URL of your site
-
-    Returns:
-        List of comment dictionaries
+    Returns a list of dicts.  Each dict contains all comment fields plus
+    the node title and node creation timestamp – these are used later to
+    build the <item> blocks.
     """
-
-    # Connect to Drupal database
     try:
         conn = mysql.connector.connect(**db_config)
         cursor = conn.cursor(dictionary=True)
 
-        # Query to get comments with their associated node information and parent relationships
-        # Using Drupal 10 table structure with separate path_alias table and comment_body table
+        # One query that returns comment data + node title & created
         query = """
         SELECT
-            c.cid as comment_id,
-            c.entity_id as node_id,
-            c.uid as user_id,
-            c.subject as subject,
-            cb.comment_body_value as comment_body,
-            c.created as created_timestamp,
-            c.changed as changed_timestamp,
-            c.mail as email,
-            c.name as author_name,
-            c.hostname as ip_address,
-            c.pid as parent_id,
-            c.thread as thread,
-            pa.alias as path_alias
+            c.cid                AS comment_id,
+            c.entity_id          AS node_id,
+            c.uid                AS user_id,
+            c.subject            AS subject,
+            cb.comment_body_value AS comment_body,
+            c.created            AS created_timestamp,
+            c.changed            AS changed_timestamp,
+            c.mail               AS email,
+            c.name               AS author_name,
+            c.hostname           AS ip_address,
+            c.pid                AS parent_id,
+            c.thread             AS thread,
+            pa.alias              AS path_alias,
+
+            -- Node data – required for the <item> header
+            n.title               AS node_title,
+            n.created             AS node_created
         FROM comment_field_data c
-        LEFT JOIN comment__comment_body cb ON c.cid = cb.entity_id
-        LEFT JOIN path_alias pa ON CONCAT('/node/', c.entity_id) = pa.path
+        LEFT JOIN comment__comment_body cb
+               ON c.cid = cb.entity_id
+        LEFT JOIN path_alias pa
+               ON CONCAT('/node/', c.entity_id) = pa.path
+        LEFT JOIN node_field_data n
+               ON n.nid = c.entity_id
         WHERE c.status = 1
-            AND c.entity_id >= 1814
+          AND c.entity_id >= 1814
         ORDER BY c.created
         """
-
         cursor.execute(query)
-        comments = cursor.fetchall()
+        rows = cursor.fetchall()
 
-        # Process comments to get proper URLs and handle user mapping
-        processed_comments = []
-        for comment in comments:
-            # Handle user mapping
-            if comment['user_id'] == 0:
-                # If user_id is 0, use author_name from comment or fallback to Anonymous
-                author_name = comment['author_name'] if comment['author_name'] else 'Anonymous'
-                email = comment['email'] if comment['email'] else ''
-            elif comment['user_id'] == 1:
-                author_name = 'Jeff Geerling'
-                email = 'jeff@jeffgeerling.com'  # You can adjust this email as needed
+        comments = []
+
+        for row in rows:
+            # ---- User mapping -------------------------------------------------
+            if row["user_id"] == 0:
+                # Anonymous – use name/email from comment if present
+                author_name = row["author_name"] or "Anonymous"
+                email = row["email"] or ""
+            elif row["user_id"] == 1:
+                # Example: you can map user #1 to a real name/email
+                author_name = "Jeff Geerling"
+                email = "jeff@jeffgeerling.com"
             else:
-                author_name = comment['author_name'] or 'Anonymous'
-                email = comment['email'] or ''
+                author_name = row["author_name"] or "Anonymous"
+                email = row["email"] or ""
 
-            # Get the path alias or construct URL
-            if comment['path_alias']:
-                path = comment['path_alias']
-                if not path.startswith('/'):
-                    path = '/' + path
+            # ---- URL construction ---------------------------------------------
+            if row["path_alias"]:
+                path = row["path_alias"] + "/"
+                if not path.startswith("/"):
+                    path = "/" + path
             else:
-                # Fallback to node path
-                path = f'/node/{comment["node_id"]}'
+                path = f"/node/{row['node_id']}/"
 
-            # Construct full URL
-            full_url = f"{site_url}{path}"
+            full_url = f"{site_url.rstrip('/')}{path}"
 
-            processed_comments.append({
-                'comment_id': comment['comment_id'],
-                'node_id': comment['node_id'],
-                'user_id': comment['user_id'],
-                'subject': comment['subject'],
-                'comment_body': comment['comment_body'],
-                'created_timestamp': comment['created_timestamp'],
-                'changed_timestamp': comment['changed_timestamp'],
-                'email': email,
-                'author_name': author_name,
-                'ip_address': comment['ip_address'],
-                'parent_id': comment['parent_id'],
-                'thread': comment['thread'],
-                'path_alias': path,
-                'full_url': full_url
-            })
+            comments.append(
+                {
+                    "comment_id": row["comment_id"],
+                    "node_id": row["node_id"],
+                    "user_id": row["user_id"],
+                    "subject": row["subject"],
+                    "comment_body": row["comment_body"],
+                    "created_timestamp": row["created_timestamp"],
+                    "changed_timestamp": row["changed_timestamp"],
+                    "email": email,
+                    "author_name": author_name,
+                    "ip_address": row["ip_address"],
+                    "parent_id": row["parent_id"],
+                    "thread": row["thread"],
+                    "path_alias": path,
+                    "full_url": full_url,
+                    # node‑level data
+                    "node_title": row["node_title"] or f"Node {row['node_id']}",
+                    "node_created": row["node_created"],
+                }
+            )
 
         cursor.close()
         conn.close()
 
-        return processed_comments
+        return comments
 
-    except Exception as e:
-        print(f"Error connecting to Drupal database: {e}")
+    except Exception as exc:
+        print(f"Error connecting to Drupal database: {exc}", file=sys.stderr)
         sys.exit(1)
 
-def sanitize_xml_text(text: str) -> str:
-    """
-    Remove invalid XML characters from text.
-    Invalid characters are those outside the ranges allowed by XML 1.0 specification.
-    """
-    if not text:
-        return ""
 
-    # Remove invalid XML characters (control characters except tab, newline, carriage return)
-    # XML 1.0 allows: #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF]
-    # So we keep tab (0x09), newline (0x0A), carriage return (0x0D) and printable characters
-    sanitized = re.sub(r'[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]', '', text)
-    return sanitized
-
-def create_wordpress_xml(comments: list, site_url: str, output_file: str):
+# --------------------------------------------------------------------------- #
+# Build a node‑to‑comments map
+# --------------------------------------------------------------------------- #
+def build_node_map(comments: List[Dict]) -> Dict[int, Dict]:
     """
-    Create WordPress XML format for Remark42 import with parent-child relationships
+    Convert the flat comment list into a dict keyed by node_id.
+    Each value contains node metadata and a list of comments.
     """
+    node_map: Dict[int, Dict] = {}
 
-    # Create root element with namespace declarations
-    rss = ET.Element('rss', {
-        'version': '2.0',
-        'xmlns:wp': 'http://wordpress.org/export/1.2/',
-        'xmlns:content': 'http://purl.org/rss/1.0/modules/content/',
-    })
+    for c in comments:
+        nid = c["node_id"]
+        if nid not in node_map:
+            node_map[nid] = {
+                "node_title": c["node_title"],
+                "node_created": c["node_created"],
+                "node_link": c["full_url"],
+                "comments": [],
+            }
+        node_map[nid]["comments"].append(c)
 
-    channel = ET.SubElement(rss, 'channel')
+    return node_map
+
+
+# --------------------------------------------------------------------------- #
+# XML creation
+# --------------------------------------------------------------------------- #
+def create_wordpress_xml(node_map: Dict[int, Dict], site_url: str, output_file: str) -> None:
+    """
+    Build a proper WordPress export XML from a node‑to‑comments map.
+    """
+    # ----------------------------------------------------------------------- #
+    # Root element
+    # ----------------------------------------------------------------------- #
+    rss = ET.Element(
+        "rss",
+        {
+            "version": "2.0",
+            "xmlns:wp": "http://wordpress.org/export/1.2/",
+            "xmlns:content": "http://purl.org/rss/1.0/modules/content/",
+            "xmlns:dc": "http://purl.org/dc/elements/1.1/",
+        },
+    )
+
+    channel = ET.SubElement(rss, "channel")
 
     # Site info
-    ET.SubElement(channel, 'title').text = 'Comments'
-    ET.SubElement(channel, 'link').text = site_url
-    ET.SubElement(channel, 'description').text = 'Comments from Drupal site'
-    ET.SubElement(channel, 'pubDate').text = datetime.datetime.now().strftime('%a, %d %b %Y %H:%M:%S %z')
-    ET.SubElement(channel, 'language').text = 'en-US'
+    ET.SubElement(channel, "title").text = "Comments"
+    ET.SubElement(channel, "link").text = site_url
+    ET.SubElement(channel, "description").text = "Comments from Drupal site"
+    ET.SubElement(
+        channel, "pubDate"
+    ).text = datetime.datetime.now().strftime("%a, %d %b %Y %H:%M:%S %z")
+    ET.SubElement(channel, "language").text = "en-US"
 
-    # Add comments in order, handling parent-child relationships
-    for comment in comments:
-        item = ET.SubElement(channel, 'item')
+    # ----------------------------------------------------------------------- #
+    # One <item> per node (post)
+    # ----------------------------------------------------------------------- #
+    for nid, node in node_map.items():
+        item = ET.SubElement(channel, "item")
 
-        # Comment metadata
-        ET.SubElement(item, 'title').text = comment['subject'] or 'Comment'
-        ET.SubElement(item, 'link').text = comment['full_url']
-        ET.SubElement(item, 'pubDate').text = datetime.datetime.fromtimestamp(
-            comment['created_timestamp']
-        ).strftime('%a, %d %b %Y %H:%M:%S %z')
+        # ---- Post meta -------------------------------------------------------
+        ET.SubElement(item, "title").text = node["node_title"]
+        ET.SubElement(item, "link").text = node["node_link"]
 
-        # Sanitize comment body
-        sanitized_body = sanitize_xml_text(comment['comment_body'] or '')
-        content = ET.SubElement(item, 'content:encoded')
-        content.text = sanitized_body
+        pubdate = datetime.datetime.fromtimestamp(
+            node["node_created"]
+        ).strftime("%a, %d %b %Y %H:%M:%S %z")
+        ET.SubElement(item, "pubDate").text = pubdate
+        ET.SubElement(item, "guid").text = node["node_link"]
 
-        # Comment author info - using standard WordPress fields
-        author_name = ET.SubElement(item, 'wp:comment_author')
-        author_name.text = comment['author_name'] or 'Anonymous'
+        # ---- Comments ---------------------------------------------------------
+        for com in node["comments"]:
+            wp_comment = ET.SubElement(item, "wp:comment")
 
-        author_email = ET.SubElement(item, 'wp:comment_author_email')
-        author_email.text = comment['email'] or ''
+            ET.SubElement(wp_comment, "wp:comment_author").text = com["author_name"]
+            ET.SubElement(wp_comment, "wp:comment_author_email").text = com["email"]
+            ET.SubElement(wp_comment, "wp:comment_author_url").text = ""
+            ET.SubElement(wp_comment, "wp:comment_author_IP").text = com["ip_address"]
 
-        author_url = ET.SubElement(item, 'wp:comment_author_url')
-        author_url.text = ''
+            sanitized_body = sanitize_xml_text(com["comment_body"] or "")
+            ET.SubElement(wp_comment, "wp:comment_content").text = sanitized_body
 
-        author_ip = ET.SubElement(item, 'wp:comment_author_IP')
-        author_ip.text = comment['ip_address'] or ''
+            comment_date = datetime.datetime.fromtimestamp(
+                com["created_timestamp"]
+            ).strftime("%Y-%m-%d %H:%M:%S")
+            ET.SubElement(wp_comment, "wp:comment_date").text = comment_date
+            ET.SubElement(wp_comment, "wp:comment_date_gmt").text = comment_date
 
-        # Comment ID and parent info
-        comment_id = ET.SubElement(item, 'wp:comment_id')
-        comment_id.text = str(comment['comment_id'])
+            ET.SubElement(wp_comment, "wp:comment_id").text = str(com["comment_id"])
+            parent_id = (
+                str(com["parent_id"])
+                if com["parent_id"] and com["parent_id"] != 0
+                else "0"
+            )
+            ET.SubElement(wp_comment, "wp:comment_parent").text = parent_id
 
-        parent_id = str(comment['parent_id']) if comment['parent_id'] and comment['parent_id'] != 0 else '0'
-        comment_parent = ET.SubElement(item, 'wp:comment_parent')
-        comment_parent.text = parent_id
+            ET.SubElement(wp_comment, "wp:comment_approved").text = "1"
+            ET.SubElement(wp_comment, "wp:comment_type").text = "comment"
 
-        comment_type = ET.SubElement(item, 'wp:comment_type')
-        comment_type.text = 'comment'
+    # ----------------------------------------------------------------------- #
+    # Write pretty‑printed XML to file
+    # ----------------------------------------------------------------------- #
+    rough = ET.tostring(rss, encoding="utf-8")
+    parsed = minidom.parseString(rough)
+    pretty = parsed.toprettyxml(indent="  ", encoding="utf-8")
 
-        comment_status = ET.SubElement(item, 'wp:comment_status')
-        comment_status.text = 'approved'
+    Path(output_file).write_bytes(pretty)
 
-    # Convert to string and format properly
-    rough_string = ET.tostring(rss, encoding='unicode')
+    print(f"Exported {len(node_map)} posts with {sum(len(n["comments"]) for n in node_map.values())} comments to {output_file}")
 
-    # Parse and pretty print to avoid namespace issues
-    try:
-        reparsed = minidom.parseString(rough_string)
-        pretty_xml = reparsed.toprettyxml(indent="  ")
 
-        # Write to file
-        with open(output_file, 'w', encoding='utf-8') as f:
-            f.write(pretty_xml)
-
-        print(f"Exported {len(comments)} comments to {output_file}")
-    except Exception as e:
-        print(f"Error creating XML: {e}")
-        # Fallback to basic XML without pretty printing
-        with open(output_file, 'w', encoding='utf-8') as f:
-            f.write(rough_string)
-        print(f"Exported {len(comments)} comments to {output_file} (basic format)")
-
-def main():
-    # Hardcoded configuration for Drupal 10
+# --------------------------------------------------------------------------- #
+# CLI entry point
+# --------------------------------------------------------------------------- #
+def main() -> None:
+    # Hard‑coded connection details – change for your environment
     db_config = {
-        'host': 'localhost',
-        'port': 3306,
-        'database': 'drupal',
-        'user': 'drupal',
-        'password': 'drupal'
+        "host": "localhost",
+        "port": 3306,
+        "database": "drupal",
+        "user": "drupal",
+        "password": "drupal",
     }
 
+    site_url = "http://dev.jeffgeerling.com:1313"
     #site_url = "https://www.jeffgeerling.com"
-    site_url = "http://localhost:1313"
     output_file = "exported-comments.xml"
 
-    print("Extracting comments from Drupal...")
-    comments = get_drupal_comments(db_config, site_url)
+    print("Extracting comments from Drupal…")
+    raw_comments = get_drupal_comments(db_config, site_url)
 
-    print(f"Found {len(comments)} comments")
-
-    if not comments:
-        print("No comments found to export")
+    if not raw_comments:
+        print("No comments found – aborting.")
         return
 
-    # Sort comments by creation timestamp to maintain proper order
-    comments.sort(key=lambda x: x['created_timestamp'])
+    print(f"Found {len(raw_comments)} comments across {len({c['node_id'] for c in raw_comments})} nodes")
 
-    print("Creating WordPress XML export with parent-child relationships...")
-    create_wordpress_xml(comments, site_url, output_file)
+    # Build the hierarchical structure
+    node_map = build_node_map(raw_comments)
 
-    print("Export complete!")
+    # Create the XML
+    create_wordpress_xml(node_map, site_url, output_file)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
