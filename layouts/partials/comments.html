@@ -3,7 +3,7 @@
   <h2 class="title">Comments</h2>
   {{ $site_url := "https://comments.jeffgeerling.com" }}
   {{ if hugo.IsServer }}
-    {{ $site_url = "http://localhost:8022" }}
+    {{ $site_url = "http://dev-comments.jeffgeerling.com:8022" }}
   {{ end }}
   <script>
     var remark_config = {

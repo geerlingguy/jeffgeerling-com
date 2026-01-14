@@ -200,6 +200,14 @@ def create_wordpress_xml(node_map: Dict[int, Dict], site_url: str, output_file: 
     for nid, node in node_map.items():
         item = ET.SubElement(channel, "item")
 
+        # TODO:
+        # Try to request node["node_link"] (like with curl or wget or a Native
+        # Python method). If it gives a 301, follow the redirect until you get
+        # a 200 or until it errors out. If you get a 200, store *that* URL as
+        # the node["node_link"]. If you get any response other than a 200 or
+        # 301, skip this item entirely, and print a message to the console like
+        # "Skipping node ${node["node_link"]} (${HTTP_error_here})"
+
         # ---- Post meta -------------------------------------------------------
         ET.SubElement(item, "title").text = node["node_title"]
         ET.SubElement(item, "link").text = node["node_link"]
