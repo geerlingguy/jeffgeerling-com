@@ -13,7 +13,7 @@ slug: 'raspberry-pi-ai-hat-2'
   class="insert-image"
 >}}
 
-Today Raspberry Pi launched their new [$130 AI HAT+ 2](https://www.raspberrypi.com/products/ai-hat-2/) which includes a Hailo 10H and 8 GB of [LPDDR4X RAM](https://www.micron.com/products/memory/dram-components/lpddr4/part-catalog/part-detail/mt53e2g32d4de-046-wt-c).
+Today Raspberry Pi launched their new [$130 AI HAT+ 2](https://www.raspberrypi.com/products/ai-hat-plus-2/) which includes a Hailo 10H and 8 GB of [LPDDR4X RAM](https://www.micron.com/products/memory/dram-components/lpddr4/part-catalog/part-detail/mt53e2g32d4de-046-wt-c).
 
 With that, the Hailo 10H is capable of running LLMs entirely standalone, freeing the Pi's CPU and system RAM for other tasks. The chip runs at a maximum of 3W, with 40 TOPS of INT8 NPU inference performance in addition to the equivalent 26 TOPS INT4 machine vision performance on the earlier AI HAT with Hailo 8.
 
