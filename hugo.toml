@@ -29,6 +29,7 @@ enableRobotsTXT = true
   useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
   subtitle = "Father, author, developer, maker. Please consider [sponsoring my work](/sponsor)."
   customcss = ["css/custom.css"]
+  commentsGlobalEnable = true # set to 'true' to enable Remark42 comments.
   [params.author]
     email = 'jeff@jeffgeerling.com'
     name = 'Jeff Geerling'

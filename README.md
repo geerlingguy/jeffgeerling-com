@@ -23,9 +23,23 @@ After Hugo is installed (`brew install hugo`), run:
 hugo server --disableFastRender
 ```
 
-Visit [http://localhost:1313/](http://localhost:1313/) in your browser, to preview changes live.
+And make sure the following is added to your `/etc/hosts` file:
+
+```
+127.0.0.1 dev.jeffgeerling.com
+```
+
+Visit [http://dev.jeffgeerling.com:1313/](http://dev.jeffgeerling.com:1313/) in your browser, to preview changes live.
 
 If you're just editing individual content pages (e.g. writing a new blog post or editing an existing piece of content), you can drop the `--disableFastRender` option for a speedier experience.
+
+### Local Dev with Comments
+
+Head over to the (currently private) `mm-comments` project and run:
+
+```
+docker compose --env-file .env.dev --profile debug up
+```
 
 ## Production Deployment
 

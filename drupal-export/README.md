@@ -36,3 +36,24 @@ pip3 install requests --break-system-packages
 ```
 
 Run again without `--dry-run` if you want to actually download files and update the text in the Hugo posts.
+
+### 4 - Migrate comments to Remark42
+
+Once you have an `mm-comments` instance running locally (as well as the local Hugo static site), run the `drupal_to_remark42.py` script:
+
+```
+pip3 install mysql-connector-python --break-system-packages
+python3 drupal_to_remark42.py
+```
+
+Move the generated `exported-comments.xml` file into the shared `var` directory inside `mm-comments`, to prepare for the comment migration.
+
+Then, run:
+
+```
+docker exec -it comments_jeffgeerling import -p wordpress -f /srv/var/exported-comments.xml -s jeffgeerling_com
+```
+
+This triggers an import (which takes a while).
+
+After it's complete, you should see comments on the site. DNS matters! If you access the site at `http://localhost` or `http://dev.jeffgeerling.com`, those are different URLs than `https://www.jeffgeerling.com/`, and Remark42 will only show comments matching by URL exactly (including full hostname).
