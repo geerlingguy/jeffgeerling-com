@@ -328,8 +328,8 @@ def main() -> None:
         "password": "drupal",
     }
 
-    site_url = "http://dev.jeffgeerling.com:1313"
-    #site_url = "https://www.jeffgeerling.com"
+    #site_url = "http://dev.jeffgeerling.com:1313"
+    site_url = "https://www.jeffgeerling.com"
     output_file = "exported-comments.xml"
 
     print("Extracting comments from Drupal…")
