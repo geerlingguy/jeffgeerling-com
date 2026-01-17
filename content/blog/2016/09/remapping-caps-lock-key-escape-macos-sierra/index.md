@@ -11,6 +11,7 @@ drupal:
     - /blog/2016/remapping-caps-lock-key-escape-macos-sierra
 aliases:
   - /blog/2016/remapping-caps-lock-key-escape-macos-sierra
+  - /blog/2017/remapping-caps-lock-key-escape-macos-sierra
 tags:
   - caps lock
   - escape
