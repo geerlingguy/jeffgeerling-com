@@ -176,13 +176,9 @@ figure img,
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
-    background-color: #000;
-  }
-
   .related-posts,
   .comments {
-    background-color: #222;
+    background-color: #343434;
   }
 }
 
