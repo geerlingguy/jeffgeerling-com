@@ -37,7 +37,7 @@ p {
 }
 
 a {
-  border-block-end: 1px solid var(--color-primary-dark, #50fa7b);
+  border-block-end: 1px solid 1px solid rgba(80, 250, 123, 0.45);
 }
 
 .border:hover {
@@ -176,6 +176,10 @@ figure img,
 }
 
 @media (prefers-color-scheme: dark) {
+  a {
+    border-block-end: 1px solid rgba(80, 250, 123, 0.45);
+  }
+
   .related-posts,
   .comments {
     background-color: #343434;
@@ -210,6 +214,23 @@ figure img,
   .related-posts,
   .comments {
     border: 1px solid #222;
+  }
+}
+
+@media screen {
+  a {
+    border-block-end: 1px solid rgba(80, 250, 123, 0.45);
+  }
+
+  @media (prefers-color-scheme: light) {
+    a {
+      border-block-end: 1px solid rgba(80, 250, 123, 0.9);
+    }
+  }
+
+  article .title {
+    margin-block-end: 0.5em;
+    margin-bottom: 0.5em;
   }
 }
 
