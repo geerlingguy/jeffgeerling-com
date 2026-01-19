@@ -6,13 +6,17 @@ This repository contains the [Hugo](https://gohugo.io) source to build [JeffGeer
 
 ## Create a new blog post
 
-Since this is the thing I will do most of the time...
+To create a new blog post, either run this command from within this directory:
 
 ```
 hugo new content blog/2026/01/my-blog-post/index.md
 ```
 
-TODO: Create an alias in my `~/.aliases` file that allows me to type `blog my-blog-post` and it will fill in the rest of the above line automatically...
+Or use the alias `blog` to create a new post (from anywhere on the computer) based on a given title:
+
+```
+blog "My blog post"
+```
 
 ## Local Development
 
