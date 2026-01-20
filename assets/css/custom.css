@@ -75,6 +75,10 @@ li p:first-child {
   margin-top: 0;
 }
 
+section.body li {
+  margin-bottom: 1em;
+}
+
 pre {
   margin-block: 0;
 }
