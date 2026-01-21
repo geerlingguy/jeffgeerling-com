@@ -1,6 +1,5 @@
 ---
-draft: true
-date: '2026-01-18T16:08:49-06:00'
+date: '2026-01-20T20:43:00-06:00'
 tags: ['remark42', 'site', 'news', 'drupal', 'migration', 'hugo', 'comments', 'ai', 'llm', 'ollama', 'development', 'programming']
 title: 'Migrating 13,000 Comments from Drupal to Hugo'
 slug: 'migrating-13000-comments-from-drupal-to-hugo'
@@ -18,7 +17,7 @@ But over time...
   - **2009**: I finished manually migrating my old Thingamablog site [into Drupal](/blog/2009/moved-drupal-hello-drupal/).
   - **2011**: Spam became more prevalent, so for use on both JeffGeerling.com and [Flocknote](https://flocknote.com), I built the [Honeypot](https://www.drupal.org/project/usage) spam prevention module, which grew to become one of the [top 50 installed projects](https://www.drupal.org/project/usage) across all Drupal sites.
   - **2020**: I [live-streamed the entire Drupal 7 to 8 migration](https://www.jeffgeerling.com/blog/2020/migrating-jeffgeerlingcom-drupal-7-drupal-8-how-video-series/), a process which spanned 16 streams and ultimately motivated a career shift to [my YouTube channel](https://www.youtube.com/c/JeffGeerling).
-  - **2022**: After dealing with [three major DDoS attacks](/blog/2022/three-ddos-attacks-on-my-personal-website/), I decided started thinking about using an SSG to make it easier to stave off such attacks. Drupal has many caching mechanisms (which I've [written](/blog/2016/use-drupal-8-cache-tags-varnish-and-purge/) [about](/blog/2015/always-getting-x-drupal-cache/) [frequently](/blog/2022/clearing-cloudflare-and-nginx-caches-ansible/)), and can scale quite well—but it's easier to not have _any_ backend attack surface.
+  - **2022**: After dealing with [three major DDoS attacks](/blog/2022/three-ddos-attacks-on-my-personal-website/), I started thinking about using an SSG to make it easier to stave off such attacks. Drupal has many caching mechanisms (which I've [written](/blog/2016/use-drupal-8-cache-tags-varnish-and-purge/) [about](/blog/2015/always-getting-x-drupal-cache/) [frequently](/blog/2022/clearing-cloudflare-and-nginx-caches-ansible/)), and can scale quite well—but it's easier to not have _any_ backend attack surface.
 
 And that brings us to **2026**: the blog is running on Hugo, and I _just_ finished migrating 13,189 comments across 1,119 Drupal posts.
 
@@ -152,7 +151,7 @@ I built a local environment for testing on the Hugo site, and built a little con
 
 I then use the conditional `{{ if .Site.Params.commentsGlobalEnable }}` in my [`comments.html`](https://github.com/geerlingguy/jeffgeerling-com/blob/master/layouts/partials/comments.html) partial template, to either display the Remark42 embed, or a 'Comments disabled' message.
 
-I spent a couple hours testing and re-testing the entire migration, spot-checking a number of posts with different features (many comments, no comments, deeply-threaded comments, etc.).
+I spent a couple of hours testing and re-testing the entire migration, spot-checking a number of posts with different features (many comments, no comments, deeply-threaded comments, etc.).
 
 To get all features working locally, I also had to set up local domains for my website inside `/etc/hosts`:
 
@@ -226,7 +225,7 @@ remark42 v1.15.0-307e69e-20251224T02:45:51
 2026/01/15 23:54:29.852 [INFO]  completed, status=202, {"status":"import request accepted"}
 ```
 
-It took a while, because Remark42 _also_ verifies each comment post URL prior to importing the comments (you can't run the comment server standalone for an import).
+It took a while, because Remark42 _also_ verifies each comment post URL prior to importing the comments (the comment server can't run standalone for an import).
 
 After twiddling with some of my DDoS prevention rules in Cloudflare, I was able to get all Remark42 functionality running—along with all 13,000+ Drupal comments—on this website!
 
