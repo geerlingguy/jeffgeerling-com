@@ -1,6 +1,5 @@
 +++
 title = "Books"
-aliases = ["about-us","about-jeff-geerling","contact"]
 author = "Jeff Geerling"
 +++
 <!-- {{< figure

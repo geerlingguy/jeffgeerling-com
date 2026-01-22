@@ -1,9 +1,14 @@
-+++
-title = "Sponsorship, Donation, and Affiliate Links"
-description = "Support my work"
-aliases = ["sponsorship","donate","donations","affiliate","affiliates"]
-author = "Jeff Geerling"
-+++
+---
+title: "Sponsorship, Donation, and Affiliate Links"
+description: "Support my work"
+aliases:
+  - sponsorship
+  - donate
+  - donations
+  - affiliate
+  - affiliates
+author: "Jeff Geerling"
+---
 You can support my work directly by:
 
   - [Sponsoring me on GitHub](https://github.com/sponsors/geerlingguy)
