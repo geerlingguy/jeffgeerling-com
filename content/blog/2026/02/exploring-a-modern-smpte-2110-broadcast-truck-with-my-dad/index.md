@@ -1,5 +1,4 @@
 ---
-draft: true
 date: '2026-02-07T09:00:00-06:00'
 tags: ['smpte 2110', 'geerling engineering', 'youtube', 'video', 'truck', 'broadcast', 'time', 'ptp']
 title: 'Exploring a Modern SMTPE 2110 Broadcast Truck With My Dad'
