@@ -23,8 +23,8 @@ blog "My blog post"
 After Hugo is installed (`brew install hugo`), run:
 
 ```
-# Add `-D` to also render draft posts, add `--gc` if things are stale.
-hugo server --disableFastRender
+# Add `-D` to render drafts, `-F` to render future posts, and `--gc` if stale.
+hugo server --disableFastRender -D -F --gc
 ```
 
 And make sure the following is added to your `/etc/hosts` file:
