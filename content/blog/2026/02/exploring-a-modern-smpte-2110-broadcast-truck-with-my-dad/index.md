@@ -112,7 +112,7 @@ The SMTPE cabling has a hybrid fiber + copper connection. Data is transferred ov
 
 Speaking to Chris Frome, the building's engineer who worked on the renovations, digital has made video and audio signaling issues a thing of the past—for the most part. He said because so many events come through, each with their own equipment and connections, dirt is one of the greatest enemies. Even with covers on all the patch bay ports and cables, dirt can cause a digital connection to go down enough they know to clean the connectors first, before debugging problems further down the stack.
 
-They problably deal with more 'Layer 0' problems than most!
+They probably deal with more 'Layer 0' problems than most!
 
 ## Conclusion
 
