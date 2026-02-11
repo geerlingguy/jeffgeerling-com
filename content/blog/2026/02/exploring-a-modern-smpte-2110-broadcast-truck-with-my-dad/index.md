@@ -1,7 +1,7 @@
 ---
 date: '2026-02-07T09:00:00-06:00'
 tags: ['smpte 2110', 'geerling engineering', 'youtube', 'video', 'truck', 'broadcast', 'time', 'ptp']
-title: 'Exploring a Modern SMTPE 2110 Broadcast Truck With My Dad'
+title: 'Exploring a Modern SMPTE 2110 Broadcast Truck With My Dad'
 slug: 'exploring-a-modern-smpte-2110-broadcast-truck-with-my-dad'
 ---
 In October, my Dad and I got to go behind the scenes at two St. Louis Blues (NHL hockey) games, and observe the massive team effort involved in putting together a modern digital sports broadcast.
