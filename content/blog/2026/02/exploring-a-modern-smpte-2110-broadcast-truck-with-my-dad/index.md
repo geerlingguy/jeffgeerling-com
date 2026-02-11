@@ -108,7 +108,7 @@ In the middle there are dozens of yellow fiber patches for data and video routin
 
 When they [renovated the facility in 2016](https://www.archkey.com/project/enterprise-center/), the Enterprise Center made a ton of infrastructure upgrades, including running fiber all over the place (sometimes alongside old coax runs, which could still be used for older analog productions!).
 
-The SMTPE cabling has a hybrid fiber + copper connection. Data is transferred over the fiber pair, while power is delivered over copper, for up to 8K camera signals over hundreds of meters. Pretty neat stuff, and the connectors are quite rugged.
+The SMPTE cabling has a hybrid fiber + copper connection. Data is transferred over the fiber pair, while power is delivered over copper, for up to 8K camera signals over hundreds of meters. Pretty neat stuff, and the connectors are quite rugged.
 
 Speaking to Chris Frome, the building's engineer who worked on the renovations, digital has made video and audio signaling issues a thing of the past—for the most part. He said because so many events come through, each with their own equipment and connections, dirt is one of the greatest enemies. Even with covers on all the patch bay ports and cables, dirt can cause a digital connection to go down enough they know to clean the connectors first, before debugging problems further down the stack.
 
