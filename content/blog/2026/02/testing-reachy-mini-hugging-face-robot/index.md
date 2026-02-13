@@ -17,7 +17,7 @@ When I saw [Jensen Huang introduce the Reachy Mini at CES](https://www.youtube.c
   class="insert-image"
 >}}
 
-HuggingFace and Pollen robotics sent me a [Reachy Mini](https://reachymini.net) to test, and, well, at least if you're looking to replicate that setup in the keynote, it's not, as Jensen put it, "utterly trivial now."
+HuggingFace and Pollen robotics sent me a [Reachy Mini](https://huggingface.co/spaces/pollen-robotics/Reachy_Mini) to test, and, well, at least if you're looking to replicate that setup in the keynote, it's not, as Jensen put it, "utterly trivial now."
 
 On the promise of that keynote, I accepted a review unit, and promptly put it together, with some assistance from my kids. The older kids were interested throughout, but my youngest (1-year-old) was more interested in slamming various parts into the table to make loud sounds, so he had to sit out most of the build.
 
