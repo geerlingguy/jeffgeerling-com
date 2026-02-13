@@ -4,7 +4,7 @@ tags: ['reachy mini', 'robot', 'raspberry pi', 'compute module', 'ai', 'huggingf
 title: "Testing Reachy Mini - Hugging Face's Pi powered robot"
 slug: 'testing-reachy-mini-hugging-face-robot'
 aliases:
-  - /blog/2026/reachy-mini-didn-t-replace-my-parent-child-interactions/
+  - /blog/2026/reachy-mini-didn-t-replace-my-parent-child-interactions
 ---
 When I saw [Jensen Huang introduce the Reachy Mini at CES](https://www.youtube.com/watch?v=acBv3G8r-1Y), I thought it was a gimmick. His keynote showed this little robot responding to human input, turning its head to look at a TODO list on the wall, sending emails, and turning drawings into architectural renderings with motion.
 
