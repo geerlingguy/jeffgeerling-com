@@ -54,7 +54,7 @@ This process currently takes at least 1 minute (usually 3-6 minutes), so I'd lik
 ansible-playbook deploy.yml
 
 # Or manually: build the site.
-hugo --gc --minify
+hugo --gc --minify --cleanDestinationDir
 
 # Deploy via rclone.
 rclone sync -P --exclude ".DS_Store" --fast-list public/ www.jeffgeerling.com:/var/www/www.jeffgeerling.com/
