@@ -6,7 +6,7 @@ slug: 'ai-is-destroying-open-source'
 ---
 Over the weekend Ars Technica [retracted an article](https://arstechnica.com/ai/2026/02/after-a-routine-code-rejection-an-ai-agent-published-a-hit-piece-on-someone-by-name/) because the AI a writer used [hallucinated quotes](https://bsky.app/profile/benjedwards.com/post/3mewgow6ch22p) from an open source library maintainer.
 
-The irony here is the maintainer in question, Scott Shambaugh, was [harassed by someone's AI agent](https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/) over not merging it's AI slop code.
+The irony here is the maintainer in question, Scott Shambaugh, was [harassed by someone's AI agent](https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/) over not merging its AI slop code.
 
 It's likely the bot was running through someone's local 'agentic AI' instance (likely using OpenClaw). The guy who built OpenClaw was just hired by OpenAI to "work on bringing agents to everyone." You'll have to forgive me if I'm not enthusastic about that.
 
