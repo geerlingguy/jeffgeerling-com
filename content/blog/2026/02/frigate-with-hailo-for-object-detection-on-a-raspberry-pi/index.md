@@ -1,6 +1,5 @@
 ---
-draft: true
-date: '2026-02-18T14:40:00-06:00'
+date: '2026-02-18T14:50:00-06:00'
 tags: ['hailo', 'ai', 'hat', 'raspberry pi', 'frigate', 'nvr', 'dvr', 'docker', 'pcie']
 title: 'Frigate with Hailo for object detection on a Raspberry Pi'
 slug: 'frigate-with-hailo-for-object-detection-on-a-raspberry-pi'
