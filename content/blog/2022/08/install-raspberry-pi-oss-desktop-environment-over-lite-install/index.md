@@ -15,6 +15,7 @@ tags:
   - raspberry pi
   - raspbian
 ---
+> **Update**: I will keep this blog post up to date with future releases of Pi OS. If you see something missing, please let me know in the comments!
 
 Almost every time I set up a Raspberry Pi these days, I use the 'Lite' version of Raspberry Pi OS. That version doesn't come with a GUI, it just boots to the console. It's much smaller in size and contains most things you'd need for a 'headless' Pi setup.
 
@@ -24,14 +25,46 @@ But every so often, I've had a Lite install that I wanted to switch to GUI, but 
 
 And that's why it's nice to be able to just install the GUI on top of an existing Lite install!
 
-To do that (assuming you're running the latest Pi OS version, Bullseye as of this writing), just install Xorg and the Raspberry Pi 'PIXEL' environment:
+The instructions differ for various Pi OS releases, so I've split them up below:
+
+## Pi OS 11 'Bullseye'
+
+Install Xorg and the Raspberry Pi 'PIXEL' environment:
 
 ```
 sudo apt install xserver-xorg raspberrypi-ui-mods
 ```
 
-> **2024 Update**: If running Bookworm, just use `sudo apt install raspberrypi-ui-mods`, since Xorg is not installed in Bookworm anymore.
+## Pi OS 12 'Bookworm'
 
-Then run `sudo raspi-config` and change the system boot option to boot to desktop, instead of the CLI. Then reboot, and you should be in the graphical environment!
+Xorg is not in use by default, so just install the ui-mods package to get the full GUI:
 
-There are other useful bits of software you can install if you want, like `chromium-browser` (which gives you a web browser), and `arandr`, which gives you the 'Screen Configuration' GUI, and you could even use an alternate desktop environment if you want—check out [This raspberrytips.com article](https://raspberrytips.com/upgrade-raspbian-lite-to-desktop/) for more on that.
+```
+sudo apt install raspberrypi-ui-mods
+```
+
+## Pi OS 13 'Trixie'
+
+Raspberry Pi changed quite a bit in the desktop environment, and they don't offer the `ui-mods` package anymore. So, to install the desktop environment:
+
+```
+# Basic X desktop:
+sudo apt install --no-install-recommends rpd-x-core
+
+# Wayland desktop:
+sudo apt install --no-install-recommends rpd-wayland-core
+```
+
+If you'd like Raspberry Pi's theme and preferences apps, install them too:
+
+```
+sudo apt install rpd-theme rpd-preferences
+```
+
+## After installing the desktop environment
+
+Run `sudo raspi-config` and change the system boot option to boot to desktop, instead of the CLI. Reboot, and you should be in the graphical environment!
+
+There are other useful bits of software you can install if you want, like `chromium-browser` or `firefox` (which gives you a web browser).
+
+You can even use an alternate desktop environment if you want—check out [This raspberrytips.com article](https://raspberrytips.com/upgrade-raspbian-lite-to-desktop/) for more on that.
