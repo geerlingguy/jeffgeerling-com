@@ -63,7 +63,9 @@ sudo apt install rpd-theme rpd-preferences
 
 ## After installing the desktop environment
 
-Run `sudo raspi-config` and change the system boot option to boot to desktop, instead of the CLI. Reboot, and you should be in the graphical environment!
+Run `sudo raspi-config` and change the system boot option to boot to desktop, instead of the CLI (navigate to System Options > Boot, and select the "Desktop GUI" option).
+
+Reboot, and you should be in the graphical environment!
 
 There are other useful bits of software you can install if you want, like `chromium-browser` or `firefox` (which gives you a web browser).
 
