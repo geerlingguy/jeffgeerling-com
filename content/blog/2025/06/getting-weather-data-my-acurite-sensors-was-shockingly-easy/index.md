@@ -110,3 +110,27 @@ Finally, after all that (and waiting 5+ minutes for the first report to be gener
 {{< figure src="./weewx-dashboard-jeffgeerling-shrewsbury-acurite-sdr-433.jpg" alt="WeeWX Dashboard for Shrewsbury, MO" width="700" height="425" class="insert-image" >}}
 
 If you want to serve it up to the local network, you can [use Apache or another webserver](https://github.com/weewx/weewx/wiki/Configure-a-web-server-(Apache,-NGINX-or-lighttpd)), but that exercise is left to the reader.
+
+### Fixing Weewx soft lockups in rendering thread
+
+After running this setup for a few months, I noticed Weewx must have a memory leak or some other bug, as CPU usage would often spike to 25% (one full CPU core at 100%) continuously, and then the reporting threads would lock up, leaving the rendered web content stale until a reboot.
+
+The log messages (seen with `journalctl -u weewx`) would reveal:
+
+```
+Feb 19 22:55:27 pi-sdr weewxd[1167]: WARNING weewx.engine: Previous report thread has been running 896.363573551178 seconds.  Launching report thread anyway.
+```
+
+If I just restart `weewx` (with `sudo systemctl restart weewx`), after 5 minutes when it tries to update the report, it will show:
+
+```
+Feb 19 23:05:26 pi-sdr weewxd[963732]: INFO weewx.engine: Launch of report thread aborted: existing report thread still running
+```
+
+So to fix that, I decided to completely reboot the Pi every night at 2 AM. I ran `sudo crontab -e`, and added the following crontab entry:
+
+```
+0 2 * * * /usr/sbin/shutdown -r now
+```
+
+After saving this file, the Pi reboots itself every night. It's not ideal, but _so far_ it seems to work.
