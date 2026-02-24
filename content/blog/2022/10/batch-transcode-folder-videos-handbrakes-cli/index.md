@@ -22,6 +22,8 @@ I've used [Handbrake](https://handbrake.fr) for years, to transcode practically 
 
 But Handbrake's achilles heel, as a GUI-first application, is in a lack of easy batch operation. You can queue videos up one at a time, which is nice, but more recently, as I've ripped more TV seasons onto my NAS, I've wanted to transcode 5, 10, or 20 files at a time.
 
+> **2026 Update**: I've since noticed an option File > Add Titles to Queue... (Shift + Command + B), or you can click the dropdown next to 'Add To Queue' and select "Add All Titles To Queue". I'm not sure if the options were always there or not, but it seems like that's an easy enough way to do this in the GUI.
+
 Enter [HandBrakeCLI](https://handbrake.fr/downloads2.php). Assuming you're on a Mac and installed Handbrake already (e.g. with `brew install --cask handbrake`), download `HandBrakeCLI`, mount the downloaded disk image, and copy the executable into a system path:
 
 ```
