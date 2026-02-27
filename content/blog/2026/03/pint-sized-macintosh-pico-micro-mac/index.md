@@ -1,13 +1,15 @@
 ---
 draft: true
 date: '2026-02-20T09:50:09-06:00'
-tags: ['mac', 'macintosh', 'youtube', 'video', 'pico', 'raspberry pi', 'open source', 'micro', '3d printing']
-title: "For Apple's 50th, a pint-sized Macintosh"
-slug: 'pint-sized-macintosh'
+tags: ['mac', 'macintosh', 'youtube', 'video', 'pico', 'raspberry pi', 'open source', 'micro', 'marchintosh']
+title: "I built a pint-sized Macintosh"
+slug: 'pint-sized-macintosh-pico-micro-mac'
 ---
-TODO: Hero photo
+To kick off [MARCHintosh](https://marchintosh.com), I built this tiny pint-sized Macintosh with a Raspberry Pi Pico:
 
-TODO: Intro
+TODO: Hero photo.
+
+TODO: Quick description.
 
 ## Hardware
 
@@ -39,7 +41,7 @@ You can set up the Pico before or after putting together all the hardware, all y
 
 First, you need a `.uf2` file to flash the Pico. This is the firmware based on [pico-mac](https://github.com/evansm7/pico-mac) which runs an early version of Mac OS, and contains all the necessary system files to boot and display VGA.
 
-In my case, since I am using the [microSD Card HAT](TODO), I downloaded the [Firmware for Pico with SD Card Hat (208K + VGA Resolution)](https://retro.bluescsi.com/pico-umac-208k-sd-vga.uf2) directly from the [PicoMicroMac UF2 Creator](https://picomac.bluescsi.com) page.
+In my case, since I am using the microSD Card HAT, I downloaded the [Firmware for Pico with SD Card Hat (208K + VGA Resolution)](https://retro.bluescsi.com/pico-umac-208k-sd-vga.uf2) directly from the [PicoMicroMac UF2 Creator](https://picomac.bluescsi.com) page.
 
 {{< figure
   src="./pico-micro-mac-plug-in-usb.jpg"
