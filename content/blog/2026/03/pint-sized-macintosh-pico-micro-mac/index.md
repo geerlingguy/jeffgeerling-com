@@ -7,11 +7,23 @@ slug: 'pint-sized-macintosh-pico-micro-mac'
 ---
 To kick off [MARCHintosh](https://marchintosh.com), I built this tiny pint-sized Macintosh with a Raspberry Pi Pico:
 
-TODO: Hero photo.
+{{< figure
+  src="./pico-micro-mac-screen-system-folder.jpg"
+  alt="Pico Micro Mac running System 5.3"
+  width="700"
+  height="auto"
+  class="insert-image"
+>}}
 
-TODO: Quick description.
+This is not my own doing—I just assembled the parts to run Matt Evans' [Pico Micro Mac](https://github.com/evansm7/pico-mac) firmware on a Raspberry Pi Pico (with an RP2040).
+
+The version I built outputs to a 640x480 VGA display at 60 Hz, and allows you to plug in a USB keyboard and mouse.
+
+Since the original Pico's RAM is fairly constrained, you get a maximum of 208 KB of RAM with this setup—which is 63% more RAM than you got on the original '128K' Macintosh!
 
 ## Hardware
+
+I was inspired to try this out after seeing the setup on [Ron's Computer Videos](https://www.youtube.com/watch?v=G3bW4f5Gn4o) and [Action Retro](https://www.youtube.com/watch?v=jYOTAGBqoW0).
 
 {{< figure
   src="./pico-micro-mac-pre-assembly.jpg"
@@ -21,9 +33,20 @@ TODO: Quick description.
   class="insert-image"
 >}}
 
-TODO: Mention all the parts, including SD card header
+And almost two years ago now, I bought all the parts for the build:
 
-TODO: Mention assembly
+  - [JCM - PicoMicroMac (v3) hardware](https://jcm-1.com/product/picomicromac/) (I had the now-discontinued v2)
+  - PicoMicroMac microSD card adapter (discontinued)
+  - [Eyoyo 5" VGA Monitor](https://amzn.to/4cOULz9)
+  - [1ft VGA cable](https://amzn.to/4bdaaIq)
+  - [Micro USB to USB OTG cable](https://amzn.to/3OGeXt9)
+
+As with most of my projects, the parts have been sitting in a box long enough that a new version exists which makes the build even easier! Ron (of Ron's Computer Videos) designed a ['V3' version](https://jcm-1.com/product/picomicromac/) of the Pico Micro Mac adapter, which makes the setup much easier:
+
+  - It integrates the microSD card adapter right into the main board (no need for a little 'microSD card HAT' soldered precariously on top of some header pins)
+  - It has two rows of female headers, so you can just buy a [Pico WH](https://www.adafruit.com/product/5525) ('With Headers') and plug it in—no soldering required!
+
+Since I had purchased the V2 version a couple years ago, I had to do a little soldering before I could flash it with a Macintosh ROM and OS image:
 
 {{< figure
   src="./pico-micro-mac-soldering-sd-hat.jpg"
@@ -33,7 +56,13 @@ TODO: Mention assembly
   class="insert-image"
 >}}
 
-> The [V3 edition of the Pico Micro Mac](https://jcm-1.com/product/picomicromac/) allows you to plug a Pi Pico directly into the headers on top, _and_ includes a built-in microSD card slot. Very fancy! My PCBs were purchased a bit earlier, when you still had to stack things a bit odd and add on your own headers to the Pico. So if you get the V3 board and a [Pico with Headers](https://www.adafruit.com/product/5525), you don't have to solder at all!
+If you'd like to see the full setup, along with some video of me trying out games and applications on System 5.3 (pre 'Mac OS' days!), you can watch the video below:
+
+<div class="yt-embed">
+  TODO
+</div>
+
+If you just want to see how to finish setting up a Pico Micro Mac (any version, including v3), read on!
 
 ## Pico setup (Mac OS on a Pi Pico)
 
@@ -66,14 +95,12 @@ The Pico Micro Mac firmware will mount this disk during startup.
 ## Plugging it all in
 
 {{< figure
-  src="./pico-micro-mac-plugged-in.jpg"
-  alt="Pico Micro Mac - everything plugged in"
+  src="./pico-micro-mac-booted.jpg"
+  alt="Pico Micro Mac - booted into Mac OS System 5.3"
   width="700"
   height="auto"
   class="insert-image"
 >}}
-
-TODO: SWAP OUT THIS PICTURE FOR ONE OF IT ACTUALLY DOING THE THING
 
 To boot up the Pico Mac:
 
@@ -105,14 +132,10 @@ But if you want to run larger applications, or games that were built specificall
 
 Sound also doesn't work—see [this issue](https://github.com/evansm7/pico-mac/issues/23), and we probably won't see more specialized features like AppleTalk, SCSI, and printer support any time soon.
 
-## Building it into a pint-sized enclosure
-
-TODO: This is the challenge.
-
 ## Conclusion
 
 Early Macintosh computers were very limited in what they could do—despite the $2,495 price tag (almost $8,000 today, adjusted for inflation).
 
-The Pico Micro Mac is even _more_ limited... but what do you expect for a setup that costs around $20 (re-inflated, would be about $5!)?
+The Pico Micro Mac is even _more_ limited... but what do you expect for a setup that cost me around $20 (about $5 in 1984 dollars!)?
 
 In reality, this setup is mostly useful for learning and the novelty.
