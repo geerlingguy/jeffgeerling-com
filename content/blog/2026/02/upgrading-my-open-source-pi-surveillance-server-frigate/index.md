@@ -16,7 +16,7 @@ In 2024 I built a [Pi Frigate NVR with Axzez's Interceptor 1U Case](/blog/2024/b
 
 I've wanted to downsize the setup while keeping ~~cheap~~ large hard drives[^hdds], and an AI accelerator.
 
-Luckily, Exaviz sent me their new [Cruiser](https://exa-pedia.com/docs/cruiser/) board to test, and DeskPi sent me a prototype mini rack enclosure for it.
+Luckily, Exaviz sent me their new [Cruiser](https://exa-pedia.com/docs/cruiser/) board to test, and DeskPi sent me a prototype mini rack enclosure for it (the [DeskPi 2U Mini Rack Mount Case for Cruiser](https://deskpi.com/products/deskpi-2u-mini-rack-mount-case-pre-order-for-the-exaviz-cruiser-carrier-board)).
 
 I bought a couple Dell R720 drive sleds, plugged in a Compute Module 5, and tested it. I made a video on the upgrade here:
 
@@ -53,7 +53,7 @@ The board doesn't fit in an ITX-sized chassis, but all the important IO is on on
 
 ## DeskPi's mini rack case
 
-Installing the Cruiser in DeskPi's prototype mini rack enclosure (which is not public yet—I'll try to link to it when available) was easy enough:
+Installing the Cruiser in DeskPi's [prototype 2U mini rack enclosure](https://deskpi.com/products/deskpi-2u-mini-rack-mount-case-pre-order-for-the-exaviz-cruiser-carrier-board) was easy enough:
 
 {{< figure
   src="./exaviz-cruiser-front-built.jpg"
