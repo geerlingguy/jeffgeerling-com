@@ -1,7 +1,7 @@
 ---
 date: '2026-03-01T16:00:00-06:00'
 tags: ['llm', 'ai', 'coding', 'programming', 'expert beginner', 'essay']
-title: 'Expert Beginners and Lone Wolves Will Dominate This Early Llm Era'
+title: 'Expert Beginners and Lone Wolves will dominate this early LLM era'
 slug: 'expert-beginners-and-lone-wolves-dominate-llm-era'
 ---
 After migrating this blog [from a static site generator into Drupal in 2009](/blog/2009/moved-drupal-hello-drupal/), I noted:
