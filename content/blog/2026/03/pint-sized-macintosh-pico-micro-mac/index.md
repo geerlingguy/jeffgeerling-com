@@ -1,5 +1,4 @@
 ---
-draft: true
 date: '2026-03-02T15:30:00-06:00'
 tags: ['mac', 'macintosh', 'youtube', 'video', 'pico', 'raspberry pi', 'open source', 'micro', 'marchintosh']
 title: "I built a pint-sized Macintosh"
