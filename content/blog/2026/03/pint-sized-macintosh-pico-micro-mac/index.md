@@ -1,6 +1,6 @@
 ---
 draft: true
-date: '2026-02-20T09:50:09-06:00'
+date: '2026-03-02T15:30:00-06:00'
 tags: ['mac', 'macintosh', 'youtube', 'video', 'pico', 'raspberry pi', 'open source', 'micro', 'marchintosh']
 title: "I built a pint-sized Macintosh"
 slug: 'pint-sized-macintosh-pico-micro-mac'
@@ -59,7 +59,7 @@ Since I had purchased the V2 version a couple years ago, I had to do a little so
 If you'd like to see the full setup, along with some video of me trying out games and applications on System 5.3 (pre 'Mac OS' days!), you can watch the video below:
 
 <div class="yt-embed">
-  TODO
+  <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/-gOS22wEpmU' frameborder='0' allowfullscreen></iframe></div>
 </div>
 
 If you just want to see how to finish setting up a Pico Micro Mac (any version, including v3), read on!
@@ -128,7 +128,7 @@ If you use the sample images provided by the UF2 Creator page, the applications 
 
 But if you want to run larger applications, or games that were built specifically to run on later Macs like the 512K or Mac Plus, they'll likely complain about running out of memory.
 
-[Action Retro tried running \\]\\[ in a Mac](https://archive.org/details/2InaMac), but it also complained there wasn't enough RAM to emulate an Apple II.
+Action Retro tried running [`][ in a Mac`](https://archive.org/details/2InaMac), but it also complained there wasn't enough RAM to emulate an Apple II.
 
 Sound also doesn't work—see [this issue](https://github.com/evansm7/pico-mac/issues/23), and we probably won't see more specialized features like AppleTalk, SCSI, and printer support any time soon.
 
