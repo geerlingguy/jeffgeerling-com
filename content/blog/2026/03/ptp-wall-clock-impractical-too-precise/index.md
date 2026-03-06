@@ -4,7 +4,7 @@ tags: ['ptp', 'time', 'clock', 'open source', 'raspberry pi', 'make', 'led', 'ma
 title: 'A PTP Wall Clock is impractical and a little too precise'
 slug: 'ptp-wall-clock-impractical-too-precise'
 ---
-After seeing Oliver Ettlin's 39C3 presentation [Excuse me, what precise time is It?](https://media.ccc.de/v/39c3-excuse-me-what-precise-time-is-it), I wanted the PTP ([Precision Time Protocol](https://en.wikipedia.org/wiki/Precision_Time_Protocol)) clock he used live to demonstrate PTP clock sync:
+After seeing Oliver Ettlin's 39C3 presentation [Excuse me, what precise time is It?](https://media.ccc.de/v/39c3-excuse-me-what-precise-time-is-it), I wanted to replicate the PTP ([Precision Time Protocol](https://en.wikipedia.org/wiki/Precision_Time_Protocol)) clock he used live to demonstrate PTP clock sync:
 
 {{< figure
   src="./39c3-oliver-ettlin-ptp-clock.jpg"
@@ -35,7 +35,7 @@ In this post, I'll detail the hardware used, the physical build, and how to get 
 I also published a YouTube video of the process, in case you want a more visual guide:
 
 <div class="yt-embed">
-  TODO: Insert YouTube video here.
+  <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/7r-cH1tcl_g' frameborder='0' allowfullscreen></iframe></div>
 </div>
 
 ## Required Hardware
