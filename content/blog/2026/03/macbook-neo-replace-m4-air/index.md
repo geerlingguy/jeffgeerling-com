@@ -128,6 +128,6 @@ But the achilles heel for performance is how it handles sustained load.
 
 My MacBook Air can render video okay. It throttles, but only after a few minutes, and only a little. The CPU cores on the Neo start throttling after just a few seconds full-tilt, and it's definitely not snappy the same way my Air is under heavy load.
 
-Follow my sbc-reviews issue on the Neo for more benchmarks (like [Geekbench 6, which scored 3566 single core / 8646 multi core](https://browser.geekbench.com/v6/cpu/17022784), or I guess check out the literally _hundreds_ of other reviews this week.
+Follow my [sbc-reviews issue on the MacBook Neo](https://github.com/geerlingguy/sbc-reviews/issues/102) for more benchmarks (like [Geekbench 6, which scored 3566 single core / 8646 multi core](https://browser.geekbench.com/v6/cpu/17022784), or I guess check out the literally _hundreds_ of other reviews this week.
 
 Bottom line: for people who use laptops like my wife (filling out paperwork, looking up info, grading student work), the Neo is certainly 'the one'. But for me, I'll stick with my Air. It hits the right tradeoffs for power and portability for video editing and coding.
