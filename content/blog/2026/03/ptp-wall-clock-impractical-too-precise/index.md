@@ -164,6 +164,13 @@ git clone https://github.com/Gemini2350/ptp-wallclock.git
 cd ptp-wallclock
 ```
 
+> Until [PR #8](https://github.com/Gemini2350/ptp-wallclock/pull/8) and [PR #11](https://github.com/Gemini2350/ptp-wallclock/pull/11) are merged, you need to apply those patches to the project to make it work correctly:
+>
+> ```
+> curl -sL https://github.com/Gemini2350/ptp-wallclock/pull/8.patch | git apply -
+> curl -sL https://github.com/Gemini2350/ptp-wallclock/pull/11.patch | git apply -
+> ```
+
 To compile the app, copy the `ptp-clock.cpp` file into the `rpi-rgb-led-matrix` directory, and then run this command in there:
 
 ```
