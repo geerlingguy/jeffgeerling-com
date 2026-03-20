@@ -49,7 +49,7 @@ I think some Python developers _really_ want people like me to [use virtual envi
 The easiest solution is to delete the `EXTERNALLY-MANAGED` file in your system Python installation:
 
 ```
-sudo rm -rf /usr/lib/python3.11/EXTERNALLY-MANAGED
+sudo rm -rf /usr/lib/python*/EXTERNALLY-MANAGED
 ```
 
 If using Ansible, you can add this task to your playbook prior to running any `pip` tasks:
@@ -74,7 +74,7 @@ Ansible also has a new `break_system_packages` option for the pip module, so if 
 
 Note that the `python3.11` version number should match whatever you have installed—it was 3.11 at the time of this blog post's writing.
 
-  - For Ubuntu 24.02, the version is `python3.12`
+  - For Ubuntu 24.04, the version is `python3.12`, and for 26.04, `python3.13`
   - For macOS, use `find /opt/homebrew -name EXTERNALLY-MANAGED` to find the location (or `find /usr/local -name EXTERNALLY-MANAGED` on Intel Macs)
 
 See [this answer on Stack Overflow](https://stackoverflow.com/a/75722775/100134) for more. Another interesting option is to install and use [pipx](https://pypa.github.io/pipx/), which does the grunt work of managing the `venv`s for you.
