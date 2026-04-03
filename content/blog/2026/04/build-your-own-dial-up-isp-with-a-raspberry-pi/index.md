@@ -77,7 +77,7 @@ With this setup, assuming you haven't changed any other defaults on the DLE-200B
   class="insert-image"
 >}}
 
-If you want to get fancy like I did, you can add in a bell-style telephone in the mix (pictured above). Plug the 'Line' jack into the phone line simulator, and the 'Data' jack into the Pi's modem.
+If you want to get fancy like I did, you can add in a [bell-style telephone](https://amzn.to/4vabe7V) in the mix (pictured above). Plug the 'Line' jack into the phone line simulator, and the 'Data' jack into the Pi's modem.
 
 With this setup, whenever the computer calls into the ISP, any rings will result in a nice, loud _physical_ ring on the phone before the ISP modem picks up (useful for debugging!).
 
