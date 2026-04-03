@@ -173,6 +173,14 @@ figure img,
   height: auto;
 }
 
+figure.insert-image figcaption p {
+  display: block;
+  text-align: center;
+  max-width: min(700px, 100%);
+  font-style: italic;
+  margin: 0.25em auto 0;
+}
+
 .soc:hover,
 .soc:focus {
   background: none;
