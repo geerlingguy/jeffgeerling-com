@@ -20,6 +20,9 @@ tags:
   - nas
   - transcoding
 ---
+> **2026 Update**: I still use the same process below, but skip the file metadata, since naming a movie like "Top Gun Maverick (2024)", and placing it in a folder of the same name allows Jellyfin to grab the correct metadata.
+>
+> To process discs more quickly, there are also two great tools I recommend: [Automatic Ripping Machine](https://github.com/automatic-ripping-machine/automatic-ripping-machine) for bulk ripping, and [HandyMKV](https://github.com/dmars8047/handymkv) to automate MakeMKV and Handbrake.
 
 It's been more than a decade since I wrote [Ripping Movies from Blu-Ray, HD-DVD and DVD, Getting them onto Apple TV, iPad, iPhone, etc.](/articles/audio-and-video/2010/ripping-movies-blu-ray-and-dvd). Heck, back then I didn't write everything as a 'blog post'—that was labeled as an 'article' :P
 
