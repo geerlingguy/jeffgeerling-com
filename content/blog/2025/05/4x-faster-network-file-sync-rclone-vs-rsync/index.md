@@ -93,7 +93,7 @@ rclone sync \
   --exclude='**/._*' \
   --exclude='.fcpcache/**' \
   --multi-thread-streams=32 \
-  --backup-dir /Volumes/Shuttle/rclone_backups/$(date +%Y-%m-%d_%H-%M-%S)
+  --backup-dir /Volumes/Shuttle/rclone_backups/$(date +%Y-%m-%d_%H-%M-%S) \
   -P -L --metadata \
   /Volumes/mercury/ /Volumes/Shuttle/Video_Projects
 ```
@@ -105,7 +105,7 @@ $ rclone sync \
   --exclude='**/._*' \
   --exclude='.fcpcache/**' \
   --multi-thread-streams=32 \
-  --backup-dir /Volumes/Shuttle/rclone_backups/$(date +%Y-%m-%d_%H-%M-%S)
+  --backup-dir /Volumes/Shuttle/rclone_backups/$(date +%Y-%m-%d_%H-%M-%S) \
   --progress --links --metadata \
   /Volumes/mercury/ /Volumes/Shuttle/Video_Projects
 2025/05/06 12:03:57 NOTICE: Config file "/Users/jgeerling/.config/rclone/rclone.conf" not found - using defaults
