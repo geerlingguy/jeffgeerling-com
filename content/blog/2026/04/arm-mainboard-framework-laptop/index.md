@@ -1,5 +1,5 @@
 ---
-date: '2026-04-15T09:00:00-05:00'
+date: '2026-04-15T09:49:00-05:00'
 tags: ['arm', 'framework', 'laptop', 'linux', 'right to repair', 'video', 'youtube', 'metacomputing']
 title: 'An Arm Mainboard for the Framework Laptop'
 slug: 'arm-mainboard-for-framework-laptop'
