@@ -33,7 +33,7 @@ The AI PC Mainboard features the Cix P1 CP8180, a chip that's also found in Radx
 RAM chips are soldered to the mainboard (16GB of LPDDR5 in the review sample I was provided), and all the typical I/O for a Framework Mainboard is present (a M.2 NVMe slot, a WiFi module slot, display, keyboard, sound, and battery connections, and four USB-C ports for high-speed peripherals, power input, and display out).
 
 {{< figure
-  src="./metacomputing-arm-framework-hero.jpg"
+  src="./metacomputing-arm-framework-install-mainboard.jpg"
   alt="MetaComputing AI PC Mainboard installed inside Framework 13"
   width="700"
   height="auto"
