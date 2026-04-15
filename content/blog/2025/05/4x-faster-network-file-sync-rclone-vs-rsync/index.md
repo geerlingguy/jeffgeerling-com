@@ -93,6 +93,7 @@ rclone sync \
   --exclude='**/._*' \
   --exclude='.fcpcache/**' \
   --multi-thread-streams=32 \
+  --backup-dir /Volumes/Shuttle/rclone_backups/$(date +%Y-%m-%d_%H-%M-%S)
   -P -L --metadata \
   /Volumes/mercury/ /Volumes/Shuttle/Video_Projects
 ```
@@ -104,6 +105,7 @@ $ rclone sync \
   --exclude='**/._*' \
   --exclude='.fcpcache/**' \
   --multi-thread-streams=32 \
+  --backup-dir /Volumes/Shuttle/rclone_backups/$(date +%Y-%m-%d_%H-%M-%S)
   --progress --links --metadata \
   /Volumes/mercury/ /Volumes/Shuttle/Video_Projects
 2025/05/06 12:03:57 NOTICE: Config file "/Users/jgeerling/.config/rclone/rclone.conf" not found - using defaults
@@ -119,3 +121,5 @@ Elapsed time:      2m15.3s
 But the conclusion—especially after seeing my 10 Gbps connection _finally_ being fully utilized—is that `rclone` is about 4x faster working in parallel.
 
 I also ran comparisons just changing out a couple files, and `rclone` and `rsync` were almost identical, as the full scan of the directory tree for metadata changes takes about the same time on both (about 18 seconds). It's just the parallel file transfers that help `rclone` pull ahead.
+
+Note: I am also using `--backup-dir` to ensure any deleted files during the `sync` operation are moved into that directory instead of deleted outright. Without this, rclone will effectively `rm` any files that aren't in your Source directory... and that could be bad if you're like me and forget to only work on files in the 'Source' :)
