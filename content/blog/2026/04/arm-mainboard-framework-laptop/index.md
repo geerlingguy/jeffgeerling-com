@@ -44,7 +44,13 @@ It was easy to swap out mainboards so I could test this build in a chassis. And 
 
 And it does... a little. Compared to the other Cix P1 systems I've tested:
 
-TODO Graph idle power 1
+{{< figure
+  src="./metacomputing-ai-pc-mainboard-idle-power-compared-o6-ms-r1.jpg"
+  alt="MetaComputing AI PC Mainboard compared to Radxa Orion O6 and Minisforum MS-R1 Idle Power Draw"
+  width="700"
+  height="auto"
+  class="insert-image"
+>}}
 
 But we're still far from ideal—here's a comparison to the MacBook Neo, and Framework's lowest-spec AMD Mainboard (which is also faster and about as efficient as the Cix CPU in heavy workloads):
 
@@ -82,16 +88,31 @@ But rather than compare the chip against itself, let's put the numbers in contex
   class="insert-image"
 >}}
 
-TODO... Neo throttling and stuff. But in price class of Air
+Apple Silicon takes the cake in single core performance, but the Cix chip having 12 cores almost makes up for that. Having a _fan_ also helps with sustained loads—the Framework Mainboard just about ties the MacBook Neo when running HPL, since the Neo starts throttling after a minute or two of sustained load.
+
+But when comparing this mainboard to the one closest in price (taking RAM into account) made by Framework themselves—the [Ryzen AI 5 340](https://frame.work/products/mainboard-amd-ai300?v=FRANTE0005)—it falls both in single and multi-core performance. Add in the compatibility issues with Arm Linux and Windows for Arm which currently exist, and it really limits the potential to grow beyond the niche of Arm devs who might be interested in the AI PC Mainboard.
 
 ## Fex for Steam Games on Arm
 
-TODO: Quickly summarize, maybe have embed of slideshowness
+<div style="text-align: center;">
+<video style="max-width: 95%; width: 640px; height: auto;" autoplay loop muted>
+  <source src="./metacomputing-ai-pc-fex-steam-horizon-chase-turbo.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+</div>
+
+Just to see whether this system would be useful for Steam games in its current form, I followed Ubuntu's [guide for running Steam games on arm64 with FEX](https://discourse.ubuntu.com/t/tutorial-running-steam-games-on-arm64-with-fex/70215/2), which worked without a hitch. I had also tried installing [box86/box64](https://box86.org) for comparison, but ran into some problems.
+
+Steam ran without issue (albeit a little slow), and I could download games like Doom Eternal at 500+ Mbps. But when it came to gameplay, the games were quite choppy—even older, simpler games like Horizon Chase Turbo at the lowest resolution settings (see embed above).
+
+Portal 2 ran, but stuttered quite a bit (to the point of being unplayable), and I couldn't get either Obduction or Doom Eternal to launch, possibly due to memory requirements (the 16 GB of RAM is shared between the system and the iGPU).
 
 ## Conclusion
-
-TODO, copy from video conclusion?
 
 You can find all my test data and any further updates in the [MetaComputing AI PC issue](https://github.com/geerlingguy/sbc-reviews/issues/103) in my SBC Reviews project.
 
 And you can buy the MetaComputing AI PC Mainboard (either standalone, or as part of a Framework 13 build) direct from MetaComputing: [AI PC Arm Mainboard](https://metacomputing.io/products/metacomputing-aipc?variant=50604798574898).
+
+In the end, I think this Mainboard has a lot more potential at the launch price of $550. Unfortunately, with the DRAM crisis, the price is pushed a little above the 'maybe I'll pick one up and tinker with it' range, and thus I can only recommend the AI PC Mainboard to Arm enthusiasts.
+
+For everyone else looking for the best value low-end Arm laptop: get a MacBook Neo.
