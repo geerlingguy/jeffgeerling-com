@@ -1,10 +1,10 @@
 ---
-date: '2026-04-18T09:00:00-05:00'
+date: '2026-04-24T09:00:00-05:00'
 tags: ['youtube', 'video', '10g', '10gbe', 'ethernet', 'networking', 'homelab', 'wisdpi', 'usb', 'reviews']
 title: 'New 10 GbE USB adapters are cooler, smaller, cheaper'
 slug: 'new-10-gbe-usb-adapters-cooler-smaller-cheaper'
 ---
-For years, the best way to get 10 gigabit networking on laptops was to buy an expensive, large, and hot 10 GbE Thunderbolt adapter. With new RTL8159-based 10G USB 3.2 adapters coming onto the market, the bulky adapters might be a thing of the past. Just look at the size of the thing in comparison to my Thunderbolt adapters.
+For years, the best way to get 10 gigabit networking on laptops was to buy an expensive, large, and hot 10 GbE Thunderbolt adapter. With new RTL8159-based 10G USB 3.2 adapters coming onto the market, the bulky adapters might be a thing of the past. Just look at the size of the thing in comparison to my Thunderbolt adapters:
 
 {{< figure
   src="./thunderbolt-and-usb-c-10g-ethernet-adapters.jpg"
@@ -14,29 +14,19 @@ For years, the best way to get 10 gigabit networking on laptops was to buy an ex
   class="insert-image"
 >}}
 
-[2.5G](https://amzn.to/3QIkfFm) and even [5G USB adapters](https://amzn.to/4mytCmZ) have been out for a while, but sometimes you need more bandwidth, and most computers have at least one high-speed USB port.
+[2.5G](https://amzn.to/3QIkfFm) and even [5G USB adapters](https://amzn.to/4mytCmZ) have been out for a while, but sometimes you need more bandwidth.
 
 The 10G adapter I'm testing is [this $80 model from WisdPi](https://www.wisdpi.com/products/usb-c-to-10gb-ethernet-adapter). That's double the price of most 5G/2.5G adapters, but less than half what I paid for my Thunderbolt 10G adapters.
 
-If you _need_ 10 gigs, this might be the best option now. At least if you're using RJ45 and not SFP+. But if you _don't_ need 10 gigs, a 2.5 or 5 gig adapter's still gonna be the best value.
+If you _need_ 10 gigs, this might be the best option, if you use RJ45 and not SFP+. If you _don't_ need 10 gigs, a 2.5 or 5 Gbps adapter is still the best value.
 
-Also, you might not even _get_ 10 gigs with these new adapters, depending on your computer. Why? Well, I'll demonstrate that using my _own_ computers.
-
-This blog post is a companion to today's video, which is embedded below if you'd like to watch instead of read:
+Also, you might not even _get_ 10 Gbps with these new adapters, depending on your computer. I'll summarize why after the video:
 
 <div class="yt-embed">
   <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/zYZbZJZfCFI' frameborder='0' allowfullscreen></iframe></div>
 </div>
 
-## USB is something special
-
-{{< figure
-  src="./framework-13-amd-ryzen-ai-5-340-10g-usb-ethernet-test.jpg"
-  alt="Framework 13 with AMD Ryzen AI 5 340 running 10G USB Ethernet Test over USB 3.2 Gen 2x1"
-  width="700"
-  height="auto"
-  class="insert-image"
->}}
+## USB is <s>fast</s> frustrating
 
 I tested this adapter on four computers:
 
@@ -46,6 +36,14 @@ I tested this adapter on four computers:
   - Desktop with AMD Ryzen 7900x with B650 motherboard (USB 3.2 Gen 2x2)
 
 Getting those specific USB port specs is a bit of a chore (some websites don't even tell you if it's '3.2 Gen 2' or '3.0', and Windows itself only says "USB 3.0" when you plug in a USB 3.2 Gen 2x2 device like the 10 Gbps NIC!)
+
+{{< figure
+  src="./framework-13-amd-ryzen-ai-5-340-10g-usb-ethernet-test.jpg"
+  alt="Framework 13 with AMD Ryzen AI 5 340 running 10G USB Ethernet Test over USB 3.2 Gen 2x1"
+  width="700"
+  height="auto"
+  class="insert-image"
+>}}
 
 I was only able to get _full_ 10 Gbps speed (minus a little overhead) on the AMD Desktop, which has a single USB 3.2 Gen 2x2 port good for 20 Gbps of throughput. The other machines got around 6-7 Gbps:
 
@@ -112,7 +110,7 @@ If you don't need 10 Gbps, though, stick to 2.5 or 5 Gbps adapters—they are st
 I also checked thermals and power draw—though my tests are not comprehensive. Measuring the absolute power draw is difficult because my USB-C power measurement devices downgrade the connection speed to USB 2, which means I'm not testing at full performance.
 
 {{< figure
-  src="./TODO POWER"
+  src="./wisdpi-10g-power-0_86w.jpg"
   alt="Power Draw for WisdPi 10 Gbps USB-C Ethernet Adapter"
   width="700"
   height="auto"
@@ -121,21 +119,19 @@ I also checked thermals and power draw—though my tests are not comprehensive. 
 
 At the slower USB 2 speed, the adapter uses about 0.86 Watts of power.
 
-TODO HERE.
-
-And it doesn't get that hot, which was surprising to me. All my Aquantia-based 10 gig adapters turn into little ovens, and that's a big reason they're so... big. The enclosures are giant heatsinks.
+And it doesn't get that hot, which was surprising. All my Aquantia-based 10 gig adapters turn into little ovens. That's why they're so big: the enclosures are giant heatsinks.
 
 {{< figure
-  src="./TODO THERMALS"
+  src="./wisdpi-10g-thermals-42c.jpg"
   alt="Thermals for WisdPi 10 Gbps USB-C Ethernet Adapter"
   width="700"
   height="auto"
   class="insert-image"
 >}}
 
-But this one only got up to like 42 degrees celsius after I was running a bidirectional test for a few minutes.
+But the WisdPi only got up to 42.5°C after running a bidirectional iperf3 test for a few minutes.
 
-That's warm, for sure, but not so hot that I'd burn myself touching it like I have with some of my other 10 gig adapters.
+That's warm, but not so hot that I'd burn myself touching it like I have with other 10 gig adapters.
 
 ## Conclusion
 
