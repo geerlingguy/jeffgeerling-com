@@ -43,7 +43,7 @@ The video has more detail about other board features, but I mention that it's ki
   class="insert-image"
 >}}
 
-Not that I recommend a cluster like this for _value_. The reason you'd buy something like this is for HPC tinkering, on a tiny scale, at your desk, without a bunch of power-hungry used mini PCs or old servers heating up your room.
+I don't recommend a cluster like this for _value_. The reason you'd buy something like this is for HPC tinkering, on a tiny scale, at your desk, without a bunch of power-hungry used mini PCs or old servers heating up your room.
 
 It could also be useful in some other niche use cases:
 
