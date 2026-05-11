@@ -58,6 +58,10 @@ A viewer of my YouTube channel messaged me (and for the life of me, I can't reme
 
 I tried to enable Monitor mode on my Mac Studio's WiFi connection, but I wasn't able to get any packets that way. It works on wired Ethernet, but not WiFi. Probably some security issue in macOS 26 Tahoe.
 
+> **Update**: One of this blog's readers emailed me and said Wireshark can show the live traffic if you disassociate with the current WiFi network before beginning Monitor mode. 
+>
+> I did that (just click on the connected network in the WiFi menu to disconnect, while leaving WiFi on), checked the 'Monitor' checkbox in Wireshark's options for the WiFi connection (`en1` on my Mac Studio), and can confirm you can monitor that way. Nice!
+
 Luckily, Apple includes a 'Wireless Diagnostics' app on modern Macs which has a built in Sniffer tool, which sniffs all traffic given a Channel and Width setting.
 
 The app is located in `/System/Library/CoreServices/Applications` alongside other gems like DVD Player and About This Mac. Open it, then before clicking anything in the diagnostics wizard that appears, click the Window menu and choose "Sniffer":
