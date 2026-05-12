@@ -22,7 +22,7 @@ Bambu Lab could've left the status quo at that, and I wouldn't be writing this b
 But they didn't.
 
 <div class="yt-embed">
-  TODO
+  <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/eb48MdtNaDQ' frameborder='0' allowfullscreen></iframe></div>
 </div>
 
 ## What happened _this_ time?
@@ -37,7 +37,7 @@ Some people _are_ okay with using OrcaSlicer and printing through Bambu's cloud.
 
 I run my own WireGuard VPN, so I don't need that, but I understand not everyone has the resources to manage their own remote access.
 
-Bambu saw a fork of OrcaSlicer that did that called [OrcaSlicer-bambulab](https://github.com/jarczakpawel/OrcaSlicer-bambulab) and was like, "You know what? No. For the 0.1% of power users who want to run OrcaSlicer with the same cloud delivery mechanism we use in the AGPL-licensed Linux Bambu Studio code... no. You _have_ to use our app, and _only_ our app."
+Bambu saw a fork of OrcaSlicer that allowed you to use all your printer's features without having to route prints through Bambu's cloud called [OrcaSlicer-bambulab](https://github.com/jarczakpawel/OrcaSlicer-bambulab) and was like, "You know what? No. For the 0.1% of power users who want to run OrcaSlicer without the cloud delivery mechanism like we have in our AGPL-licensed Linux Bambu Studio code... no. You _have_ to use our app, and _only_ our app."
 
 So they threatened that OrcaSlicer fork's developer with legal action for things that developer _didn't_ do. For example, they indicated the fork used an impersonation attack, despite the fork using Bambu Studio's upstream code _verbatim_.
 
@@ -61,7 +61,7 @@ It seems dumb to me, because it would've been easier (and more profitable) to do
 
 I don't think they understand open source culture. Security either, if a public user agent string is their only protection against DDoS attacks...
 
-Instead of finding solutions to ecosystem problems and building a more secure platform, Bambu is putting devoted users like the fork's developer on blast[^devoted].
+Instead of finding solutions to ecosystem problems and building a more secure platform, Bambu is putting devoted power users like the fork's developer on blast[^devoted].
 
 When tensions flared last year, they wrote a [similar blog post](https://blog.bambulab.com/updates-and-third-party-integration-with-bambu-connect/) blaming community backlash on 'unfortunate misinformation'. I imagine they meant speculation from community members (like myself) frustrated the whole software ecosystem and ownership model was turned upside down post-purchase.
 
