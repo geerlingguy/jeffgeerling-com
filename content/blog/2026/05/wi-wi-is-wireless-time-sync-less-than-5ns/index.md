@@ -1,6 +1,6 @@
 ---
 date: '2026-05-19T09:00:00-05:00'
-tags: ['TODO']
+tags: ['wi-wi', 'wireless', 'time', 'video', 'level 2 jeff', 'youtube']
 title: 'Wi-Wi Is Wireless Time Sync at 1 nanosecond'
 slug: 'wi-wi-is-wireless-time-sync-less-than-5ns'
 ---
