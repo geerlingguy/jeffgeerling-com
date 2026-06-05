@@ -90,7 +90,7 @@ The [BliKVM](https://blikvm.com) is basically a PiKVM, but cheaper, because the 
   class="insert-image"
 >}}
 
-GL-iNet is quickly expanding their IP KVM offering. They kicked off their KVM journey with the $99 [Comet](https://www.gl-inet.com/products/gl-rm1/). Like BliKVM, their software is a fork of [PiKVM](https://github.com/gl-inet/glkvm). So between that and using a cheaper RISC-V computer instead of Raspberry Pi, they can cut down the cost a _lot_. They also bump the supported resolution up to 4K, and they have external options for ATX power control or even a cute little [FingerBot](https://store.gl-inet.com/products/fingerbot?srsltid=AfmBOooVd-SoOD3NIQE85CidPce03_o-Uz4GrWjPoBkwDisFKfWTBrSx) add-on, for remotely pushing buttons.
+GL-iNet is quickly expanding their IP KVM offering. They kicked off their KVM journey with the $99 [Comet](https://www.gl-inet.com/products/gl-rm1/). Like BliKVM, their software is a fork of [PiKVM](https://github.com/gl-inet/glkvm). So between that and using a cheaper single-core Arm SoC instead of Raspberry Pi, they can cut down the cost a _lot_. They also bump the supported resolution up to 4K, and they have external options for ATX power control or even a cute little [FingerBot](https://store.gl-inet.com/products/fingerbot?srsltid=AfmBOooVd-SoOD3NIQE85CidPce03_o-Uz4GrWjPoBkwDisFKfWTBrSx) add-on, for remotely pushing buttons.
 
   - $99.99 from [GL-iNet](https://store.gl-inet.com/products/comet-gl-rm1-remote-keyboard-video-mouse)
   - Chipset: RV1126
@@ -195,7 +195,7 @@ I [tested the JetKVM](https://www.jeffgeerling.com/blog/2024/jetkvm-tiny-ip-kvm-
 
 I don't know if it's just me, but this whole setup feels like one of the most polished. From the packaging, to the solid metal unit, to the snappy UI, I still use JetKVMs around the studio more than any other device.
 
-These use a RISC-V chip, which helps them stay around $100, but because of import issues, they never got to ship in quantity at the same low price I think they intended.
+These use a single core Arm SoC, which helps them stay around $100, but because of import issues, they never got to ship in quantity at the same low price I think they intended.
 
 There are some quirks, like no built-in PoE, and a mini HDMI port on the back that needs an adapter, but overall this is one of my favorite little IP KVMs.
 
