@@ -197,7 +197,7 @@ I don't know if it's just me, but this whole setup feels like one of the most po
 
 These use a single core Arm SoC, which helps them stay around $100, but because of import issues, they never got to ship in quantity at the same low price I think they intended.
 
-There are some quirks, like no built-in PoE, and a mini HDMI port on the back that needs an adapter, but overall this is one of my favorite little IP KVMs.
+There are some quirks with the first version, like no built-in PoE, and a mini HDMI port on the back that needs an adapter, but overall this is one of my favorite little IP KVMs. There's apparently a new [PoE version](https://wisdpi.com/products/jetkvm?variant=48122311442686) that also has full-size HDMI and a microSD card slot, but I haven't been able to buy one yet.
 
 WisdPi makes a [PoE splitter](https://wisdpi.com/products/jet-poe-splitter) you can use to power it over Ethernet (that's how I'm powering it in my clock rack).
 
@@ -368,7 +368,7 @@ If this were $200 I'd complain, but not for $25. For that, it's a neat little bo
   class="insert-image"
 >}}
 
-The crowdfunded [ArkKVM](https://store.arkkvm.com/products/arkkvm-open-source-ip-kvm) looks like a JetKVM clone that fixes a few minor annoyances by using full-size HDMI and including PoE support out of the box.
+The crowdfunded [ArkKVM](https://store.arkkvm.com/products/arkkvm-open-source-ip-kvm) looks like a JetKVM clone that fixes a few minor annoyances I had with the first-gen version by using full-size HDMI and including PoE support out of the box.
 
   - $99 on [ArkKVM store](https://store.arkkvm.com/products/arkkvm-open-source-ip-kvm)
   - Chipset: RV1106B
