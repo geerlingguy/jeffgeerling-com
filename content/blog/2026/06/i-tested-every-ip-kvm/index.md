@@ -4,7 +4,13 @@ tags: ['ip', 'kvm', 'pikvm', 'jetkvm', 'sipeed', 'glinet', 'homelab', 'youtube',
 title: 'I tested every IP KVM in my Homelab'
 slug: 'i-tested-every-ip-kvm'
 ---
-TODO: PHOTO HERE
+{{< figure
+  src="./all-ip-kvms.jpg"
+  alt="IP KVMs on desk"
+  width="700"
+  height="auto"
+  class="insert-image"
+>}}
 
 Since the PiKVM came out in 2017, there's been an _explosion_ of IP KVMs. I've tested _almost every one_. But what are they good for?
 
