@@ -29,11 +29,11 @@ Macs gained ['Wake on LAN'](https://en.wikipedia.org/wiki/Wake-on-LAN) support i
   class="insert-image"
 >}}
 
-This setting allows you to wake a Mac from _sleep_ remotely, by sending it a [magic packet](https://superuser.com/questions/1066619/what-is-a-magic-packet-for-waking-a-computer). They also added 'reboot after power failure' in 10.4, which is great if you're okay hard-cutting power to your Mac so it'll boot when you turn power back on. That's fine for emergencies or when your UPS dies, but is's risky since it's not a safe shutdown scenario.
+This setting allows you to wake a Mac from _sleep_ remotely, by sending it a [magic packet](https://superuser.com/questions/1066619/what-is-a-magic-packet-for-waking-a-computer). They also added 'reboot after power failure' in 10.4, which is great if you're okay hard-cutting power to your Mac so it'll boot when you turn power back on. That's fine for emergencies or when your UPS dies, but it's risky since it's not a safe shutdown scenario.
 
-Finally, macOS 26.5 allows you to boot a Mac whenever power is restored—regardless of how it was shut down.
+Starting in macOS 26.5, you can set your Mac to 'Always' boot whenever power is restored, regardless of how it was shut down.
 
-My workbench mac is an M4 Mac mini, which is one of the set of newer Macs that support this feature:
+I tested this feature on my M4 Mac mini, which is in the limited set of Macs supporting this feature:
 
   - Mac mini introduced in 2024 or later
   - Mac Studio introduced in 2025 or later
@@ -99,7 +99,15 @@ If I booted up the Mac (either with the power button or by switching on the outl
 
 I tested this four times, and also tested logging in and shutting down normally, and in all cases this bug was confirmed.
 
-I was going to file a bug in Apple's '[Radar](https://radar.apple.com)' system, but apparently my Developer account is not an 'AppleConnect' account, so I'm not quite sure how to do that.
+I was going to file a bug in Apple's '[Radar](https://radar.apple.com)' system, but I don't have an 'AppleConnect' account. So then I found macOS has a built in 'Feedback Assistant' app, so I used that instead. I created report `FB23071345: Boot after power restore fails if Mac is shut down from login screen` in case anyone at Apple is listening :)
+
+{{< figure
+  src="./feedback-for-macos-boot-fails.jpg"
+  alt="Submitting my bug report to Apple Feedback"
+  width="700"
+  height="auto"
+  class="insert-image"
+>}}
 
 ## Conclusion
 
