@@ -31,7 +31,9 @@ Macs gained ['Wake on LAN'](https://en.wikipedia.org/wiki/Wake-on-LAN) support i
 
 This setting allows you to wake a Mac from _sleep_ remotely, by sending it a [magic packet](https://superuser.com/questions/1066619/what-is-a-magic-packet-for-waking-a-computer). They also added 'reboot after power failure' in 10.4, which is great if you're okay hard-cutting power to your Mac so it'll boot when you turn power back on. That's fine for emergencies or when your UPS dies, but it's risky since it's not a safe shutdown scenario.
 
-Starting in macOS 26.5, you can set your Mac to 'Always' boot whenever power is restored, regardless of how it was shut down.
+PCs [had the ability](https://web.archive.org/web/20130828233419/http://www.pcguide.com/ref/power/sup/func_SoftPower.htm) to boot from power off (regardless of shutdown state) on most systems complying with Intel's ATX standard, since 1995.
+
+Three decades later, with the release of macOS 26.5, Apple caught up: you can finally set your Mac to 'Always' boot whenever power is restored, regardless of how it was shut down.
 
 I tested this feature on my M4 Mac mini, which is in the limited set of Macs supporting this feature:
 
