@@ -45,4 +45,6 @@ I made a quick video on my 2nd channel documenting this process and how it looks
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src="https://www.youtube.com/embed/bSLBkZB5o1o" frameborder='0' allowfullscreen></iframe></div>
 </div>
 
-One quirk: if my Mac was only connected to WiFi, I couldn't get connected pre-login. If I plugged it into Ethernet (wired networking), it worked fine. Not sure if that's a bug or if that's by design (maybe the WiFi password, which is stored in the account's Keychain, isn't accessible during early boot stages when the 'lightweight SSH' server is running?).
+<s>One quirk: if my Mac was only connected to WiFi, I couldn't get connected pre-login. If I plugged it into Ethernet (wired networking), it worked fine. Not sure if that's a bug or if that's by design (maybe the WiFi password, which is stored in the account's Keychain, isn't accessible during early boot stages when the 'lightweight SSH' server is running?).</s>
+
+**Update on WiFi**: As of macOS 26.5, I was able to unlock the Mini over WiFi as well, so maybe Apple's fixed whatever bug was causing it to not connect to WiFi pre-unlock.
