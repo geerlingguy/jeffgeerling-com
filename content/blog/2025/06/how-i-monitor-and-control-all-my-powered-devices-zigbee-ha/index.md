@@ -103,3 +103,46 @@ In the Home Assistant card configuration, I manually edited the YAML to add a `t
     entity: switch.hl15_switch
     name: HL15 NAS01
 ```
+
+## A large graph with selectable device monitoring
+
+A number of people have asked about my 'Single Power Monitor' dashboard, where I just have one giant power usage graph, along with a 'select' menu below.
+
+Here's how I have that dashboard set up, using a [config-template-card](https://github.com/iantrich/config-template-card) (install using HACS), with an ApexCharts graph:
+
+```
+type: custom:config-template-card
+entities:
+  - input_select.power_monitor
+variables:
+  sensor_map:
+    Utility1: sensor.utility_power_monitor_power
+    Utility2: sensor.utility2_power_monitor_power
+    Utility3 Left: sensor.utility3_power_monitor_power
+    Utility3 Right: sensor.utility3_power_monitor_power_2
+    Video Desk 01: sensor.video_desk_01_power
+card:
+  type: custom:apexcharts-card
+  apex_config:
+    chart:
+      height: 400px
+  header:
+    show: true
+    title: ${ 'Power - ' + states['input_select.power_monitor'].state }
+    show_states: true
+    colorize_states: true
+  update_interval: 3s
+  graph_span: 30m
+  yaxis:
+    - min: 0
+  series:
+    - name: ${ states['input_select.power_monitor'].state }
+      entity: ${ sensor_map[states['input_select.power_monitor'].state] }
+      stroke_width: 2
+      curve: stepline
+      fill_raw: zero
+      type: area
+      opacity: 0.2
+      show:
+        name_in_header: false
+```
