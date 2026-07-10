@@ -40,7 +40,7 @@ I think Martin took inspiration from [Dishy](https://arstechnica.com/information
 
 Instead of locking this phased array antenna system into a proprietary satellite system, licensed operators will ideally be able to chain multiple QuadRF modules together for interesting radio experiments, with up to 1.15 MW EIRP—basically, a massive amount of directional antenna gain, for high power RF fun.
 
-But QuadRF is scaled down to handheld-size, and while it isn't powerful enough to send a signal to the moon, it's still quite useful in local SDR applications and visualizing the RF environment—at least in it's frequency range of 4.9-6 GHz.
+But QuadRF is scaled down to handheld-size, and while it isn't powerful enough to send a signal to the moon, it's still quite useful in local SDR applications and visualizing the RF environment—at least in its frequency range of 4.9-6 GHz.
 
 ## Testing QuadRF
 
@@ -98,7 +98,7 @@ One aspect that intrigued me was the use of the Raspberry Pi's MIPI lanes for lo
 
 > The novel approach of streaming I/Q over the Pi’s camera and display FFC MIPI connectors has many benefits. MIPI can handle >5 Gbps, low-latency, full-duplex data transfer through the Pi’s RP1 chip. It is simpler and more reliable than USB, adds almost zero hardware cost to the RF board, and can sustain hundreds of MSPS of I/Q with no hiccups or sample loss. Considering cameras and displays are the ultimate form of high-bandwidth signal streaming, it makes sense their standard digital interface is a great match for SDR! We think the industry should adopt it more widely!
 
-It sounds like they had to reverse-engineer the MIPI protocol used on the Pi 5 to do this (since it goes through the RP1 chip), and the way it's architected, you can daisy-chain multiple QuadRF modules together, letting each module calculate it's own phase shift.
+It sounds like they had to reverse-engineer the MIPI protocol used on the Pi 5 to do this (since it goes through the RP1 chip), and the way it's architected, you can daisy-chain multiple QuadRF modules together, letting each module calculate its own phase shift.
 
 I'm not sure how that will work in practice, but it sounds pretty neat. PCIe could probably work in a pinch, too, but this implementation frees up the PCIe connector in case you want high speed storage or even higher speed networking than the Pi offers.
 
