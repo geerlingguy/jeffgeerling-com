@@ -16,7 +16,7 @@ It's ironic, then, that I used Claude to vibe code my [Tufty GPS Time Badge](htt
   class="insert-image"
 >}}
 
-Partly due to time constraints, and partly because I wanted to see if I could complete a personal project end-to-end, without editing a line of code, I throw my [requirements](https://github.com/geerlingguy/tufty-gps-time/blob/master/Requirements.md) at Claude and ultimately came up with [this 2141 MicroPython app](https://github.com/geerlingguy/tufty-gps-time/blob/master/gps_time/__init__.py) for Pimoroni's Badgeware ecosystem.
+Partly due to time constraints, and partly because I wanted to see if I could complete a personal project end-to-end, without editing a line of code, I throw my [requirements](https://github.com/geerlingguy/tufty-gps-time/blob/master/Requirements.md) at Claude and ultimately came up with [this 2141-line MicroPython app](https://github.com/geerlingguy/tufty-gps-time/blob/master/gps_time/__init__.py) for Pimoroni's Badgeware ecosystem.
 
 ## GPS Time Badge
 
