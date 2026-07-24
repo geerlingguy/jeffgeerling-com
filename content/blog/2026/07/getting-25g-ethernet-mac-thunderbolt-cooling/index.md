@@ -1,35 +1,40 @@
 ---
-draft: true
-date: '2026-07-30T09:00:00-05:00'
+date: '2026-07-31T09:00:00-05:00'
 tags: ['thunderbolt', '25g', 'ethernet', 'mac', 'macos', 'noctua', 'youtube', 'video', 'tutorial', '3d printing']
 title: 'Getting 25 Gbps Thunderbolt Ethernet on my Mac Studio'
 slug: 'getting-25g-ethernet-mac-thunderbolt'
 ---
-Mentioned in this blog post:
+{{< figure
+  src="./mac-studio-ports-full-back-ethernet.jpg"
+  alt="Mac Studio with all ports plugged in Ethernet 10G"
+  width="700"
+  height="auto"
+  class="insert-image"
+>}}
 
-  - Generic OCP 25G Thunderbolt Adapter: https://amzn.to/4vGLjDG
-  - Dual 25GbE TB Dock: https://store.raidendigit.com/products/lightone-25gbe-thunderbolt-docking-station
-  - Sonnet Twin25G: https://amzn.to/4tVqlAM
-  - Atto ThunderLink: https://amzn.to/48Tj0cG
-  - Blog post where I found out about the 25G adapter: https://kohlschuetter.github.io/blog/posts/2026/01/27/tb25/
-  - Aluminum Heatsinks: https://amzn.to/48DSiVn
-  - Noctua NF-A8 80mm 5V fan: https://amzn.to/4gUpZqK
-  - Noctua NA-FC1 Speed Controller: https://amzn.to/4vQq8iB
-  - Generic USB 5V fan (louder but cheaper): https://amzn.to/4cCM6OS
-  - 3D print - 80mm fan duct: https://www.printables.com/model/1789472-80mm-fan-mod-for-25g-thunderbolt-nic
-  - 3D print - Noctua 80mm fan grill: https://www.printables.com/model/1098017-high-efficiency-noctua-80mm-fan-grill
+I've been using the built-in 10 Gigabit Ethernet on my Mac Studio for a few years. It works fine: I can edit 4K video straight off my NAS over the network, and run backups at around 1 GB/sec.
 
-TODO: PHoto of mac back port
+But... I want _more_. I upgraded my rack and my NAS to 25 GbE a couple years ago, and wanted to upgrade my main workstation, too.
 
-I've been using the 10 gig Ethernet port on my Mac Studio. I can edit 4K video straight off my NAS over the network. I can also run backups at like a gigabyte per second.
+I looked up 25G networking options for the Mac, and they're all _crazy_ expensive:
 
-But... I want _more_. I upgraded my rack and my NAS to 25 gigs a couple years ago, but nothing else in the Studio takes advantage of it yet.
+  - [Sonnet's Twin25G Adapter](https://amzn.to/4tVqlAM) is $999
+  - [Atto's ThunderLink](https://amzn.to/48Tj0cG) is $1,099
+  - [Raiden Digit's LightOne 25GbE Docking Station](https://store.raidendigit.com/products/lightone-25gbe-thunderbolt-docking-station) is $399 (which honestly, isn't bad)
 
-I looked up 25 gig networking options for the Mac, and they're all _crazy_ expensive. Like [this Sonnet adapter](https://www.sonnetstore.com/products/twin25gt5-thunderbolt5-adapter) is a _thousand_ dollars. That's... way more than I'm willing to pay. But if you need it on a Mac, you _have_ to pay, because you can't just use PCI Express. You have to use Thunderbolt.
+The problem is Macs all require Thunderbolt adapters; you can't just plug an inexpensive(ish) PCIe card into a Mac (RIP Mac Pro).
 
-So I shelved the idea, until I saw [_this_ blog post](https://kohlschuetter.github.io/blog/posts/2026/01/27/tb25/). Someone found a cheap 25 gig Thunderbolt adapter that looks like it's using server-pull hardware with a little adapter board. And you can get it going on a Mac.
+I stopped looking until I saw [this blog post](https://kohlschuetter.github.io/blog/posts/2026/01/27/tb25/). Christian Kohlschütter found a [cheap 25G Thunderbolt adapter](https://amzn.to/4vGLjDG) that uses a server-pulled OCP 2 NIC with a little Thunderbolt 3 adapter board. And it works on any computer with Thunderbolt.
 
-Back in January, it was only $160, which for me—that's an insta-buy. Since that time, it jumped up to $299, which still might be good compared to the Sonnet... but I don't blame you if 10 gigs is enough at that price point.
+{{< figure
+  src="./166.71-price-paid-25g-january.jpg"
+  alt="I paid $166.71 in January for the 25G Thunderbolt NIC"
+  width="700"
+  height="auto"
+  class="insert-image"
+>}}
+
+Back in January, it was only $160, which was insta-buy territory for me. Since that time, the Amazon listing jumped to **$299**, which still might be good compared to the Sonnet... but you might have to go digging through some Chinese sites to find a non-marked-up version now.
 
 _This blog post is a companion to the following YouTube video:_
 
@@ -39,70 +44,90 @@ _This blog post is a companion to the following YouTube video:_
 
 ## First Test - Two Problems to Solve
 
-But before I could test 25 gigs, I actually had to run some new fiber to my desk. When I built out the studio, I ran fiber up to the front room, where I _thought_ I'd set up my desk.
+Once I had pulled some new fiber to my desk (where I only had Cat6A cabling before), I tested the bandwidth using `iperf3` between my Mac and my NAS. That's when I ran into two problems:
 
-But then once I moved in, I realized the studio space was a way better environment for sound. So I set up shop in here... where I only dropped Cat6A, which is only good for 10 gigs.
+  1. The version of `iperf3` I was running on the NAS was too old. Without multi-threading, it maxed out at 15 Gbps.
 
-After I pulled some fiber, I wound up plugging in this short patch cable, which has been there for a couple months now. I'm sure if you subscribe to Level 2 Jeff, you've seen it a few times. Well, while recording this video, I finally fixed that by buying a 5 meter cable and putting it in the cable channel. Much better.
+  2. The 25G NIC enclosure was getting _hot_. Painful to the touch.
 
-But with that direct 25 gig fiber connection, I tested the bandwidth. That's when I ran into two problems:
+I could solve the first problem easily: I compiled the latest version of `iperf3`. That got me to 20 gigabits, since more than one CPU core could hand the transfers on my NAS. As Christian mentioned in his blog post, 20 Gpbs single direction and 25 Gbps bidirectional is about the limit for the Thunderbolt 3 chipset being used (even if you plug into a Thunderbolt 5 port).
 
-First, the version of iperf3 I was running on the NAS was too old. Multi-threading wasn't working, so no matter what, I was TCPmaxxing around 15 gigabits.
+{{< figure
+  src="./thunderbolt3-to-25g-ethernet-pcie-board.jpg"
+  alt="Thunderbolt 3 to PCIe NIC OCP 2 adapter board"
+  width="700"
+  height="auto"
+  class="insert-image"
+>}}
 
-And second, the enclosure was getting _hot_. Like... I completely forgot to get footage before I stuck on these heatsinks, but it was painful to touch it.
+But the second problem was more tricky.
 
-I could solve the first problem pretty easily, though; I just compiled the latest version of iperf3. That got me to 20 gigabits, since more than one CPU core could hand the transfers on my NAS. But the second problem... that was a little more tricky.
+The burning-hot enclosure wasn't thermally bonded to the OCP 2 network card, meaning the NIC chips were _cooking_.
 
-You see, the enclosure got hot, but it wasn't even thermally bonded to the OCP 2 network card that was running inside! That means the actual chips that handle the network traffic? Those things were _cooking_.
+They had tiny heatsinks on them, but OCP 2 NICs are meant to be inside servers with high pressure fans, not in a little passively-cooled enclosure.
 
-And they had little heatsinks on them, but these things are meant to be inside servers with high pressure fans like this one, not in a little passively-cooled enclosure.
+It was acting like a little oven.
 
-It was basically acting like a little oven.
+## Fixing the NIC's cooling problem
 
-## Fixing the Heating issue
+Christian mentioned he slapped a couple giant heatsinks on the enclosure. That brought the chip down to a temperature that wouldn't cause NIC dropouts, but it was still getting pretty hot.
 
-Now in that original blog post, Christian mentioned he slapped a couple giant heatsinks on the enclosure. That brought the chip down to a temperature it wasn't cooking itself, but it was still getting pretty hot.
+I wanted to make sure things were stable, and that meant active cooling.
 
-I wanted to make sure things were stable, because this is my main workstation, and there are times I'll be pushing through 25 gigs for minutes, maybe even _hours_ at a time. And that meant active cooling.
+My first idea was to stick on [these low-profile heatsinks](https://amzn.to/48DSiVn) and set [this speed-controlled USB fan](https://amzn.to/4cCM6OS) in front. I had to remove the enclosure's barely-ventilated front plate to get more airflow inside, but the back plate also created a ton of resistance.
 
-[hold: USB fan]
+It would still get hot, and the fan was just loud enough to be distracting, even on its lowest setting.
 
-My first idea was to just set this fan in front of the thing, with a couple small heatsinks.
+A Prusa rep had reached out around this time asking if I had any use for their new [Prusament PLA in Noctua Brown and Beige](https://www.noctua.at/en/news/noctua-and-prusa-research-introduce-3d-printing-filaments-in-signature-noctua-colours)... and I decided to switch tracks once they offered to send a spool of each. I purchased a [Noctua NF-A8 80mm 5V fan](https://amzn.to/4gUpZqK), and an [NA-FC1 Speed Controller](https://amzn.to/4vQq8iB) to silence it.
 
-That _kinda_ worked, but it would still get a little hot. Plus, the fan was just loud enough to be distracting, even on its lowest setting.
+I designed a [fan duct for the 25G Thunderbolt NIC enclosure](https://www.printables.com/model/1789472-80mm-fan-mod-for-25g-thunderbolt-nic), and printed it in Noctua beige PLA.
 
-And it was right around this time that Prusa actually sent me an email, asking if I wanted to try out some of their new filament they worked on with Noctua, to match the color of their fans.
+Then I printed this [airflow-optimized 80mm fan grill](https://www.printables.com/model/1098017-high-efficiency-noctua-80mm-fan-grill), and screwed that on the front of the 80mm fan.
 
-I had just finished upgrading my MK4 to an MK4S with my son, and they also offered to send a Core One if I wanted to test their latest and greatest. And that was an offer I couldn't refuse, so here's what I did.
+I was able to use the screws from the 25G NIC enclosure (I removed the front plate entirely), and the fan screws and extra cable that came with the Noctua 80mm fan, to secure everything together.
 
-I printed this prototype fan cowling in orange since I was still waiting on the Noctua spools after the Core One showed up.
+I chose to splice the braided fan extension cable Noctua includes, and taped it down inside the enclosure with kapton tape for some strain relief.
 
-I made it so you take off one side of the enclosure, screw this shroud on, and screw in an 80mm fan. It fits together nicely, but there were a couple small issues. One was this little gap between the fan and the shroud. I know from past experience, air has a funny way of not pushing through higher pressure zones if you give it room to escape. So that has to go.
+I soldered the cut end of the fan cable into these through-holes on the Thunderbolt-to-OCP adapter PCB to get the needed 5V power (well, 4.8V, but it's close enough):
 
-The other was this USB cable for fan power, which just looks bad. So I tweaked the final design a bit to make the fan flush, and here's that version. I printed it in Noctua's beige-colored PLA, along with a Noctua-brown fan grill. It printed perfectly, though I did have a few gripes with the Core One I'll get to in a separate video.
+{{< figure
+  src="./noctua-fan-mod-25g-nic-solder-fan-header.jpeg"
+  alt="Soldering the fan connector on the NIC adapter board for 5V power"
+  width="700"
+  height="auto"
+  class="insert-image"
+>}}
 
-For power, though, I figured there has to be a way to tap into the NIC's power supply, right?
+The fan only used about 0.5W of power, so I don't think it'll cause any brownout conditions on the NIC itself (which uses 4-5W total at idle).
 
-I probed around and found out I could get _almost_ 5 volts on these through holes over here. And _almost_ 5 volts should be good enough for a fan. Assuming it's a 5 volt fan and not a more standard 12 volt.
+After final assembly, this is what it looks like:
 
-So I took a fan connector that came with my Noctua 80mm 5 volt fan, soldered its wires to the ground and 5 volt pin I found on the NIC, and tested it out just using a normal USB-C power supply.
+{{< figure
+  src="./noctua-fan-mod-25g-nic-handheld.jpeg"
+  alt="Holding the finished NIC with a Noctua 80mm fan and grill cover"
+  width="700"
+  height="auto"
+  class="insert-image"
+>}}
 
-It looks like the fan only used around half a watt as measured by my Sabrent power meter. So the next step was to put everything together.
-
-I stuck on a braided fan connector I had cut down to size with some kapton tape, then I screwed everything back together.
-
-[Noctua Fan Mod 19 Fan final assembly.MP4]
-
-And it wouldn't be a networking project if I didn't end up slicing a finger? Right on the tip.
-
-But I plugged it in, started running some iperf tests, and checked the temperature. It was sitting at less than 36°C after 10 minutes, with the fan on low. And this being a Noctua fan, I couldn't hear it at all under the desk.
-
-But how does it actually _perform_, now that I went through all this work to keep it cool?
+I plugged it in, re-tested with `iperf3`, and checked the temperature. It was sitting at less than 36°C after 10 minutes, with the fan on low. And this being a Noctua fan, I couldn't hear it at all under the desk.
 
 ## How does 25 Gbps perform on the Mac?
 
-Well, just like earlier, it maxes out around 20 to 25 Gigabits total, because of Thunderbolt limitations. Even if you have Thunderbolt 5, like I do, you're not gonna get any more bandwidth.
+Like earlier, it maxes out around 20-25 Gbps, because of the slower Thunderbolt 3 connection.
 
-But testing samba file copies between my NAS and my Mac, I got around 1.4 gigabytes per second of read, and 1 gigabyte per second for write. Now the crazy thing is, that's only marginally better than the built-in 10 gig Ethernet. It's an improvement, sure... but was all the work pulling cable, designing a fan cowling, paying $200 for all the parts, and assembling everything worth it?
+{{< figure
+  src="./mac-activity-monitor-1.43gb-per-second.jpg"
+  alt="Activity Monitor showing 1.43 GB/sec on macOS with 25G NIC"
+  width="700"
+  height="auto"
+  class="insert-image"
+>}}
 
-Maybe. At least I got this blog post out of it. And if you're watching this part, you're one of the like 30% of viewers who actually watch past the first 30 seconds, so thanks for that.
+Testing Samba file copies between my NAS and my Mac, I got around 1.4 GB/sec read, and 1 GB/sec write[^samba].
+
+That's only marginally better than the built-in 10G Ethernet. It's an improvement, sure... but was all the work pulling fiber, designing a fan cowling, paying $200 for all the parts, and assembling everything worth it?
+
+Maybe. At least I got this blog post out of it.
+
+[^samba]: I have SMB multichannel enabled, but this real-world speed limitation could also be related to my use of my lower-power Arm NAS (running on Ampere Altra, with 32 fairly-slow CPU cores). I was testing writing to an array of fast enterprise NVMe SSDs, so they _shouldn't_ be the bottleneck here.
