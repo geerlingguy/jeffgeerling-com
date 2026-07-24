@@ -8,7 +8,13 @@ _AKA "Spectrum has gone down two weeks in a row and I'm sick of it"._
 
 I've been borrowing a portable 5G gateway from my Dad for a few weeks, for testing... and two weeks in a row, I've used it as a backup Internet option, since my Spectrum Business cable Internet has gone down.
 
-TODO: IMAGE OF ROUTER IN BACK
+{{< figure
+  src="./spectrum-cable-modem-online-offline.jpg"
+  alt="Spectrum Business Cable Modem offline"
+  width="700"
+  height="auto"
+  class="insert-image"
+>}}
 
 And yes, I'd get AT&T Fiber if I had the option, sadly they don't yet provide service at my studio. So I'm stuck with only one high speed wired provider. I may add on my own 5G backup Internet connection in the future, but we're getting off track.
 
@@ -20,7 +26,13 @@ Wouldn't it be easier if I could just... do it in software?
 
 ## OPNsense and dual WAN
 
-TODO: PHOTO OF ETH2
+{{< figure
+  src="./opnsense-wan2-port.jpg"
+  alt="OPNsense router WAN2 port on back"
+  width="700"
+  height="auto"
+  class="insert-image"
+>}}
 
 My plan was to plug the 5G gateway into 'ETH2' (the third Ethernet port on my OPNsense box; ETH0 went to my LAN, ETH1 was for the Cable modem, and ETH2 and ETH3 are available—all are 2.5 Gbps ports).
 
@@ -62,6 +74,6 @@ To actually failover to WAN2:
   1. Edit WAN_DHCP, and set the Priority to "2"
   1. Click 'Apply' and wait a few seconds
 
-I usually use `curl icanhazip.com` or visit fast.com to determine which connection my computer's _actually_ using at any given moment.
+I usually use `curl icanhazip.com` or visit [fast.com](https://fast.com/) to determine which connection my computer's _actually_ using at any given moment.
 
 To switch back, set WAN2_DHCP to "2" (or more), and WAN_DHCP to "1" (making sure it is not 'Disabled'), and click 'Apply' again.
