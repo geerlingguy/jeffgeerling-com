@@ -16,7 +16,7 @@ I tested it on my [Ampere Altra Dev Platform](/blog/2023/testing-96-core-ampere-
   class="insert-image"
 >}}
 
-Install was easy, as the Ampere Altra uses UEFI / ACPI for its hardware, meaning Proxmox didn't have to tailor it's ISO to specific platforms, like you have to do with Raspberry Pis and most SBCs using a Device Tree setup.
+Install was easy, as the Ampere Altra uses UEFI / ACPI for its hardware, meaning Proxmox didn't have to tailor its ISO to specific platforms, like you have to do with Raspberry Pis and most SBCs using a Device Tree setup.
 
 I just went into the BIOS, selected my USB stick with the [official Proxmox VE 9.2 for ARM64 ISO](https://www.proxmox.com/en/downloads) flashed to it, and ran the graphical installer.
 
@@ -33,6 +33,8 @@ For other platforms:
 > - Device-tree-only single-board computers, such as the Raspberry Pi, are not supported
 
 I don't think that precludes this flavor of Proxmox from running on the Raspberry Pi. The forked [Raspberry Pi 5 UEFI](https://github.com/NumberOneGit/rpi5-uefi) project enables UEFI support (with some limiations) on the Pi 5, and similar projects exist for other popular SBCs, like the [Rockchip RK3588](https://github.com/edk2-porting/edk2-rk3588).
+
+> **Update**: Mastodon user [@luna@catgirl.center got it running on Pi 4](https://mastodon.social/@luna@catgirl.center/117043938463789909) already, using [this UEFI firmware from pftf](https://github.com/pftf/RPi4).
 
 The other main Armv9 platforms I've used are Apple's M-series computers (some older M-series systems may work via Asahi Linux, maybe?), and systems built around the Cix P1 SoC in the [Radxa Orion O6](/blog/2025/radxa-orion-o6-brings-arm-midrange-pc/), [Minisforum MS-R1](/blog/2025/minisforum-stuffs-entire-arm-homelab-ms-r1/), and [Framework AI PC Mainboard](/blog/2026/arm-mainboard-for-framework-laptop/).
 
