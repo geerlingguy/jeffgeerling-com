@@ -36,6 +36,8 @@ I don't think that precludes this flavor of Proxmox from running on the Raspberr
 
 > **Update**: Mastodon user [@luna@catgirl.center got it running on Pi 4](https://mastodon.social/@luna@catgirl.center/117043938463789909) already, using [this UEFI firmware from pftf](https://github.com/pftf/RPi4).
 
+> **Update 2**: And YouTube user [@\_Jonny\_ got it working on a Pi 5](https://www.youtube.com/watch?v=Lg263L1W97w&lc=Ugz7B8Dia-O1P1qogyV4AaABAg), installing things manually on top of Pi OS 13 ("Trixie"), and disabling NetworkManager and cloud-init.
+
 The other main Armv9 platforms I've used are Apple's M-series computers (some older M-series systems may work via Asahi Linux, maybe?), and systems built around the Cix P1 SoC in the [Radxa Orion O6](/blog/2025/radxa-orion-o6-brings-arm-midrange-pc/), [Minisforum MS-R1](/blog/2025/minisforum-stuffs-entire-arm-homelab-ms-r1/), and [Framework AI PC Mainboard](/blog/2026/arm-mainboard-for-framework-laptop/).
 
 Here's a video of the entire install and first look on my Ampere Altra Developer Platform:
