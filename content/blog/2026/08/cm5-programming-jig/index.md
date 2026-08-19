@@ -1,5 +1,5 @@
 ---
-date: '2026-08-19T09:00:00-05:00'
+date: '2026-08-19T02:13:00-05:00'
 tags: ['raspberry pi', 'programming jig', 'cm5', 'compute module', 'video', 'youtube']
 title: "Hands-on with Raspberry Pi's CM5 Programming Jig"
 slug: 'cm5-programming-jig'
