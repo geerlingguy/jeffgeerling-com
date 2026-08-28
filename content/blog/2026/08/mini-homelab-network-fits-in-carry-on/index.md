@@ -4,11 +4,7 @@ tags: ['tag_here']
 title: 'Building a mini Homelab that fits in my carry-on'
 slug: 'mini-homelab-network-fits-in-carry-on'
 ---
-I'm traveling to Chicago for VCF Midwest next month. This year I'll be demoing NTP time through the years on Macs, with my own GPS-derived NTP services hosted on an Xserve G5.
-
-The demo involves some vintage Macs since Apple actually has an interesting history with Internet time (which I'll get into in a future blog post), but underneath the table, I'd like to have a little 'portable homelab' I can preconfigure so I don't have to worry about networking at the show.
-
-This is what I built:
+I'm traveling to Chicago for [VCF Midwest](https://vcfmw.org) next month. I'll be demoing NTP time history on vintage Macs, with my own GPS-derived NTP service hosted on an Xserve G5, synced via NTP or a strange [AppleTalk timing extension from the 1990s](https://netatalk.io/manual/en/timelord.8).
 
 {{< figure
   src="./ubiquiti-mini-rack-network-with-ups.jpg"
@@ -18,23 +14,34 @@ This is what I built:
   class="insert-image"
 >}}
 
+So I built a little 'portable homelab' (pictured above) that supports 1-10 Gbps networking, can run off a small battery for at least an hour, switches between multiple WANs (so I can get my own 5G Internet connection, in case I need it), and gives me 12 wired Ethernet connections.
+
 Is it overkill for this particular scenario? _Absolutely_. Would it look different if Micro Center hadn't sponsored the build as part of their [Columbus OH grand re-opening event](https://www.youtube.com/@Level2Jeff)? _You bet_.
 
-That said, it's not far off some of the other networking mini-rack builds I've seen in the [Project MINI RACK Build Showcase](https://mini-rack.jeffgeerling.com/#build-showcase). And I'm usually happier to have more flexibility (like having 8 PoE++ ports, a solid WiFi AP, and an independent 5G Internet connection) when I'm on the road and trying to keep _other_ weird stuff (like vintage computers) running. It's better to go overkill on the network stack since I don't want to debug my network setup alongside the Macs.
+That said, it's not far off some of the other networking mini-rack builds I've seen in the [Project MINI RACK Build Showcase](https://mini-rack.jeffgeerling.com/#build-showcase). And I'm happy to have more flexibility when I'm on the road trying to keep _other_ weird stuff (like vintage computers) running. It's better to go overkill on the network stack since I don't want to debug _that_ alongside the Macs.
 
 ## Ubiqiti
 
-Until this summer, I'd never used a piece of Ubiquiti hardware. I've run routers built on top of bare Debian Linux installs, consumer routers with OpenWRT or AsusWRT-Merlin (my home router is still running that!), and my studio router is a mini PC running OPNsense.
+This is my first experience with UniFi. I've run routers on bare Debian Linux installs, consumer routers with OpenWRT/AsusWRT (my home router is still running that!), and my studio router is currently a mini fanless PC running OPNsense.
 
 I figured it was time to see if the UniFi kool-aid is as good as all the influencers say it is.
 
-And overall? It's a nice proprietary ecosystem.
+First impressions? It's a nice walled garden.
 
-There are plenty of pitfalls to the walled-garden approach with UniFi, but if you want to play in their ecosystem, it's pretty coherent. Everything under one local controller. Optional cloud functionality to manage it remotely or set up site-to-site VPN links. No licensing like some other proprietary vendors...
+There are plenty of pitfalls to the UniFi's proprietary ecosystem, but if you want to play in their sandbox, it's easy to pick up.
 
-And the hardware lineup is hard to match—almost everything I tested was plug-and-play.
+The things I like after messing with this particular Ubiquiti setup:
 
-The main thing I wanted to see: could I set up the entire network from scratch without connecting the Cloud Gateway to the Internet, and never connect any sort of Ubiquiti account to the hardware at all?
+  - Everything is local-first, and doesn't need any account tie-in
+  - Optional cloud integration adds on functionality like remote management and easier site-to-site VPN setup
+  - There's no licensing fees for core functionality
+  - Most of the hardware is plug-and-play, and easy to manage in one web UI
+
+There are two sides to every coin, and the big sore point I have is the lack of control over the hardware I bought. I don't see any way to unlock the bootloader, so even though the Gateway is running an Arm SoC, there's no way to load my own OS on it.
+
+Not that I'd want to, _today_... but in 10, 20, or however many years, when Ubiquiti drops support for the Gateway I bought, it looks like it'll go straight to e-waste.
+
+But my main goal was to test if I set up everything from scratch without connecting the Cloud Gateway to the Internet, and never connect any sort of Ubiquiti account to the hardware at all. And I could!
 
 ## The Build
 
