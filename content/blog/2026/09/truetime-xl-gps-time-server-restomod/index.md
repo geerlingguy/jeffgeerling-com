@@ -164,7 +164,7 @@ The RTC battery won't help the Pi's timekeeping stability, but it does help keep
 
 ### Isolating PPS interrupts on a single CPU core
 
-I wanted to see if dedicating one CPU core entirely to handling PPS interrupts would help, and it did. One reason serious timing gear runs on FPGAs (or uses PHCs like in timing-specific network cards) is determinstic PPS handling. If you use the Linux kernel's PPS functionality, even in the best case you're dealing with hundreds of nanoseconds of delays waiting for the interrupt to be dealt with!
+I wanted to see if dedicating one CPU core entirely to handling PPS interrupts would help, and it did. One reason serious timing gear runs on FPGAs (or uses PHCs like in timing-specific network cards) is deterministic PPS handling. If you use the Linux kernel's PPS functionality, even in the best case you're dealing with hundreds of nanoseconds of delays waiting for the interrupt to be dealt with!
 
 To help give PPS a fighting chance, you can assign PPS handling to a single dedicated CPU core. In my case, I wanted to put all PPS handling on CPU3 (the 4th core).
 
