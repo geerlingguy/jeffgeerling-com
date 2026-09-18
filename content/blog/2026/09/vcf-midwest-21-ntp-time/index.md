@@ -24,6 +24,37 @@ But I made this video summarizing my experience:
   <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/oW-Hp8-DAB0' frameborder='0' allowfullscreen></iframe></div>
 </div>
 
+## My NTP Time exhibit
+
+{{< figure
+  src="jeff-geerling-ntp-time-booth.jpg"
+  alt="Jeff Geerling's NTP Time demo table layout"
+  width="700"
+  height="auto"
+  class="insert-image"
+>}}
+
+Pictured above is the table layout going into day one of VCF Midwest. I demonstrated NTP Stratum 0, 1, 2, and 3 across three generations of Macs. And I was tracking NTP access on the Xserve G5, which was exposed through a Ubiquiti router to the show's internal network on the domain `time.vcf`, on port 123. As an easter egg, I was also serving [`Time` and `Daytime`](/blog/2026/rfc-867-868-time/) from the TrueTime Pi over the show's network, and local Wi-Fi.
+
+As a _further_ bonus, I was running [`netatalk`](https://netatalk.io) on the Pi inside the TrueTime Pi server on the far left, which includes [Timelord](https://macintoshgarden.org/apps/tardis-and-timelord), an AppleTalk-based time server which is accessible through the companion Tardis Chooser plugin.
+
+I covered a few parts of the setup in previous videos:
+
+  - [Building a mini homelab that fits in my carry-on](/blog/2026/mini-homelab-network-fits-in-carry-on/)\
+  This was positioned under the table, and ran the LAN and Wi-Fi for my NTP demo.
+  - [Rebuilding a 1995 GPS Time Server](/blog/2026/truetime-xl-gps-time-server-restomod/)\
+  This was the 'TrueTime Pi' that ran as a Stratum 0 GNSS reference and Stratum 1 NTP server.
+  - [I'm completely out of time](https://www.youtube.com/watch?v=h3RW3bSp9v8)\
+  A video going over the Xserve G5 Stratum 2 server setup, as well as a Stratum 3 Mac SE/30 running 'BigMaclock' and an iBook G3 on Mac OS 9.2.
+
+But generally, from right to left:
+
+  1. The TrueTime Pi is receiving time from multiple GNSS satellite constellations through an antenna Meinberg generously donated to ShadyTel. It was positioned about 50m away through the loading dock door.
+  2. The Xserve G5 (with a clear acrylic lid to reveal the great industrial design inside) is running Mac OS X 10.3 Server and `ntpd`, serving time as a Stratum 2 NTP server.
+  3. The iBook G3 and Mac SE/30 are recieving time using Apple's built-in NTP service (Mac OS 9.2) and the [Network Time](https://macintoshgarden.org/apps/network-time) control panel, respectively. (The SE/30 is also running Tardis, which only set the time once at system startup).
+  4. A Maclock and NTP PoE time display showed free-running and close-to-NTP time for comparison with the other two Stratum 3 Macs.
+  5. The Mac IIcx on the right side demonstrated the tragedy of the 'battery bomb', as its motherboard, floppy drive, hard drive, and power supply were all completely ruined by an explosive 1/2 AA battery. If you ever find an old Mac, and it hasn't already been battery bombed, rip out the battery immediately—it's only a matter of time!
+
 ## A few highlights at VCF Midwest 21
 
 I wasn't the only one having a good time this year; I was told to head over to [Pumping Station One's](https://pumpingstationone.org) table, where not only did they have a clock made out of a 60MB hard drive platter (much larger than a dinner plate!), with the seconds ticking by on the read/write arm[^actuator]... they also had a Cesium Atomic Clock!
