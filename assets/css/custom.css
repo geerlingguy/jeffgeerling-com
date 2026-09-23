@@ -37,7 +37,7 @@ p {
 }
 
 a {
-  border-block-end: 1px solid 1px solid rgba(80, 250, 123, 0.45);
+  border-block-end: 1px solid rgba(80, 250, 123, 0.45);
 }
 
 .border:hover {
@@ -171,6 +171,14 @@ figure img,
   display: block;
   max-width: min(700px, 100%);
   height: auto;
+}
+
+figure a,
+.insert-image a {
+  display: block;
+  width: fit-content;
+  margin-inline: auto;
+  border-block-end: none;
 }
 
 figure.insert-image figcaption p {
