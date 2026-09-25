@@ -1,5 +1,5 @@
 ---
-date: '2026-09-25T09:00:00-05:00'
+date: '2026-09-25T10:16:00-05:00'
 tags: ['homelabfest', 'homelab', 'stl', 'saint louis', 'events', 'appearances']
 title: "I'm starting HomelabFest (in St. Louis, Sep 2027)"
 slug: 'homelabfest-announcement'
