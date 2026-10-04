@@ -144,7 +144,7 @@ Here's a list of all the hardware I used for my setup (some links are affiliate 
   - [AMD Radeon PRO W7700](https://amzn.to/40MXNxO)
   - [OCuLink M.2 to GPU dock](https://amzn.to/4hQxCg0)
   - [OCuLink cable](https://amzn.to/3YMXIHT)
-  - [Pineboards M.2 HAT](https://pineboards.io/products/hatdrive-bottom-2230-2242-2280-for-rpi5)
+  - [Pineboards M.2 HAT](dead_link)
   - [Raspberry Pi 5 8GB](https://www.raspberrypi.com/products/raspberry-pi-5/)
   - [Acer Nitro 27" 4K monitor](https://amzn.to/4hLBDlN)
   - [Lian-Li 750W SFX PSU](https://amzn.to/3AKIefE)

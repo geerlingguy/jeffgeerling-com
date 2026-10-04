@@ -28,7 +28,7 @@ I'm in full-on procrastination mode with [Open Sauce](https://opensauce.com) com
   - 2x Coral Dual Edge TPU (8+8 = 16 TOPS)
   - 2x Coral Edge TPU (4+4 = 8 TOPS)
 
-After my first faltering attempt in my [testing of Raspberry Pi's new AI Kit](/blog/2024/testing-raspberry-pis-ai-kit-13-tops-70), I decided to try building it again, but with a more 'proper' PCIe setup, with external 12V power to the PCIe devices, courtesy of an [uPCIty Lite PCIe HAT](https://pineboards.io/products/hat-upcity-lite-for-raspberry-pi-5) for the Pi 5.
+After my first faltering attempt in my [testing of Raspberry Pi's new AI Kit](/blog/2024/testing-raspberry-pis-ai-kit-13-tops-70), I decided to try building it again, but with a more 'proper' PCIe setup, with external 12V power to the PCIe devices, courtesy of an [uPCIty Lite PCIe HAT](dead_link) for the Pi 5.
 
 {{< figure src="./raspberry-pi-55-tops-ai-board.jpg" alt="Raspberry Pi 55 TOPS AI Board" width="700" height="auto" class="insert-image" >}}
 

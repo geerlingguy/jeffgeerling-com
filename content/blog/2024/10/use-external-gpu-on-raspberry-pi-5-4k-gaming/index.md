@@ -50,9 +50,9 @@ There are a few different routes you can go to physically plug a graphics card i
 
 My preferred setup is [this JMT External Graphics Card stand](https://amzn.to/3U0obQR) that uses Oculink with an M.2 to Oculink adapter (included). To use it, you also need an [Oculink cable](https://amzn.to/47YtVAi), and those together run $80.
 
-On top of that (or more specifically, on top of the _Pi_), you need a HAT that converts the PCIe FFC connection on the Pi 5 to an M.2 slot, and my choice is the [Pineboards HatDrive! Bottom](https://pineboards.io/products/hatdrive-bottom-2230-2242-2280-for-rpi5), though there are [tons of other options](https://pipci.jeffgeerling.com/hats). That adds on another $20 or so.
+On top of that (or more specifically, on top of the _Pi_), you need a HAT that converts the PCIe FFC connection on the Pi 5 to an M.2 slot, and my choice is the [Pineboards HatDrive! Bottom](dead_link), though there are [tons of other options](https://pipci.jeffgeerling.com/hats). That adds on another $20 or so.
 
-The other option is to skip the external GPU stand entirely and mount it right on top of the Pi 5. You can do that with the [uPCIty Lite](https://pineboards.io/products/hat-upcity-lite-for-raspberry-pi-5), which is $30, and has an open-ended x4 PCIe slot.
+The other option is to skip the external GPU stand entirely and mount it right on top of the Pi 5. You can do that with the [uPCIty Lite](dead_link), which is $30, and has an open-ended x4 PCIe slot.
 
 That takes care of the PCIe signaling—but you also need to provide adequate power.
 

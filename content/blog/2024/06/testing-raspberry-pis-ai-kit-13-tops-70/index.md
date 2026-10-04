@@ -28,7 +28,7 @@ The Hailo-8L's claim to fame is 3-4 TOPS/W efficiency, which, along with the Pi'
 
 Google's [Coral TPU](https://coral.ai) has been a popular choice for a machine learning/AI accelerator for the Pi for years now, but Google seems to have left the project on life support, after the Coral hardware was scalped for a couple years about as badly as the Raspberry Pi itself!
 
-Pineboards offers a $50 [Coral Edge TPU bundle](https://pineboards.io/products/hat-mpcie-coral-edge-tpu-bundle-for-raspberry-pi-5) as well as a $100 [Dual Edge TPU bundle](https://pineboards.io/products/hat-ai-dual-edge-coral-tpu-bundle-for-raspberry-pi-5) offering 4 and 8 TOPS, respectively. But the Pi AI Kit undercuts those offerings both on price and power efficiency.
+Pineboards offers a $50 [Coral Edge TPU bundle](dead_link) as well as a $100 [Dual Edge TPU bundle](dead_link) offering 4 and 8 TOPS, respectively. But the Pi AI Kit undercuts those offerings both on price and power efficiency.
 
 The Coral can be had (sometimes) for as little as $25 as a standalone PCIe device, but at 2 TOPS/W, the speed and efficiency of its 6-year-old chip design is a little behind the times. It's still [quite useful for projects like a Frigate NVR](/blog/2024/building-pi-frigate-nvr-axzezs-interceptor-1u-case), but it's far behind even the built-in NPUs on modern chips like the Rockchip RK3588.
 
@@ -66,7 +66,7 @@ This configuration is _completely unsupported_ by any of the vendors involved—
 
 And the Pi could _see_ everything in this unholy mess on my desk... I just couldn't get the chips to completely initialize. Likely a power issue, as `dmesg` showed the drivers dying off after PCIe device enumeration, while the driver was loading.
 
-I didn't have time (due to the tight deadline publishing this post) to go much further, but I suspect I'd have more luck using a single PCIe switch instead of chaining together two of Pineboards' [HatBrick! Commander](https://pineboards.io/products/hatbrick-commander-2-ports-gen2-for-raspberry-pi-5) boards.
+I didn't have time (due to the tight deadline publishing this post) to go much further, but I suspect I'd have more luck using a single PCIe switch instead of chaining together two of Pineboards' [HatBrick! Commander](dead_link) boards.
 
 That, and I could supply external power so I don't tempt fate drawing more than 5W through the Pi 5's PCIe FPC header!
 

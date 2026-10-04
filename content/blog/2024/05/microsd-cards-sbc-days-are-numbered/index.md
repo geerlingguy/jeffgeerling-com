@@ -56,7 +56,7 @@ But I know for me, except in cases where I use a Pi in a more 'embedded' style u
 
 Sure, mini PCs in the $150-200 range are faster, and in many cases better for desktop use. But a Pi is great, too (especially if you do need to add on some embedded integration using GPIO or cameras or displays). Now that the shortages are over, Pi's are also available, which is nice :D
 
-I'm especially excited Raspberry Pi finally has [NVMe boot behind a PCIe switch working](https://github.com/raspberrypi/firmware/issues/1833). Even though current multi-drive HATs take a hit on PCIe speeds, they add to the Pi's potential utility, especially with HAT's like Pineboards' [HatDrive! AI Coral bundle](https://pineboards.io/products/hatdrive-ai-coral-edge-tpu-bundle-nvme-2230-2242-gen-2-for-raspberry-pi-5), which matches up a Coral TPU (included) with an NVMe slot, for a tidy little 5W setup for something like Frigate with object detection.
+I'm especially excited Raspberry Pi finally has [NVMe boot behind a PCIe switch working](https://github.com/raspberrypi/firmware/issues/1833). Even though current multi-drive HATs take a hit on PCIe speeds, they add to the Pi's potential utility, especially with HAT's like Pineboards' [HatDrive! AI Coral bundle](dead_link), which matches up a Coral TPU (included) with an NVMe slot, for a tidy little 5W setup for something like Frigate with object detection.
 
 I made a video where I did some more testing of the Pi M.2 HAT+ and other HATs, which you can watch below:
 
