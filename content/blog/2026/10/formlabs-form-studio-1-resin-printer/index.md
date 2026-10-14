@@ -12,8 +12,7 @@ slug: 'formlabs-form-studio-1-resin-printer'
   class="insert-image"
 >}}
 
-Formlabs sent me a [Form Studio 1](https://formlabs.com/3d-printers/form-studio-1/?utm_source=youtube&utm_medium=refe
-rral&utm_campaign=jeffgeerling-fs1-2026-07-26-global) resin 3D printer to test after years of back-and-forth about their Form 4 printer.
+Formlabs sent me a [Form Studio 1](https://formlabs.com/3d-printers/form-studio-1/?utm_source=youtube&utm_medium=referral&utm_campaign=jeffgeerling-fs1-2026-07-26-global) resin 3D printer to test after years of back-and-forth about their Form 4 printer.
 
 Like the Form 4, it's an SLA (stereolithography) printer, but unlike the Form 4 (which starts at $2,600), it's affordable for a hobbyist. It's not _cheap_, coming in at $699 (or $749 with a flex build platform, which I highly recommend), but it is affordable.
 
@@ -39,8 +38,7 @@ Anyway, I posted my full experience, and a review of the Form Studio 1, in today
   <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/4l9xU3_36Xs' frameborder='0' allowfullscreen></iframe></div>
 </div>
 
-Formlabs also provided [this link to the Form Studio 1](https://formlabs.com/3d-printers/form-studio-1/?utm_source=youtube&utm_medium=refe
-rral&utm_campaign=jeffgeerling-fs1-2026-07-26-global) that tracks where people visit from, but I don't participate in their affiliate program (I only participate in Amazon Affiliates). They are selling four 'special edition' colored plastic versions for a limited time, and I only wish those were permanent options (only grey will be permanent).
+Formlabs also provided [this link to the Form Studio 1](https://formlabs.com/3d-printers/form-studio-1/?utm_source=youtube&utm_medium=referral&utm_campaign=jeffgeerling-fs1-2026-07-26-global) that tracks where people visit from, but I don't participate in their affiliate program (I only participate in Amazon Affiliates). They are selling four 'special edition' colored plastic versions for a limited time, and I only wish those were permanent options (only grey will be permanent).
 
 The video above goes into a few more details about their value engineering, as well—it takes a lot to go from $2,600 down to $700—and I even had the honor of speaking to KRALYN (who built the Positron, and headed the Studio 1 project) about how they tackled a number of engineering challenges.
 
