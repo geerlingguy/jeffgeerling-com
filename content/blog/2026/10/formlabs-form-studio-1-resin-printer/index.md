@@ -36,7 +36,7 @@ But I printed a number of items, including the one I was most excited to try—G
 Anyway, I posted my full experience, and a review of the Form Studio 1, in today's video on YouTube:
 
 <div class="yt-embed">
-  TODO
+  <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/4l9xU3_36Xs' frameborder='0' allowfullscreen></iframe></div>
 </div>
 
 Formlabs also provided [this link to the Form Studio 1](https://formlabs.com/3d-printers/form-studio-1/?utm_source=youtube&utm_medium=refe
