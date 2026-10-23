@@ -47,17 +47,10 @@ docker compose --env-file .env.dev --profile debug up
 
 ## Production Deployment
 
-This process currently takes at least 1 minute (usually 3-6 minutes), so I'd like to speed it up. See [#172 - Figure out fast deployment workflow for new posts](https://github.com/geerlingguy/jeffgeerling-com/issues/172).
+This site can be deployed in less than a minute using the `deploy-site.sh` shell script on the production server:
 
 ```
-# In mm infra project directory:
-ansible-playbook deploy.yml
-
-# Or manually: build the site.
-hugo --gc --minify --cleanDestinationDir
-
-# Deploy via rclone.
-rclone sync -P --exclude ".DS_Store" --fast-list public/ www.jeffgeerling.com:/var/www/www.jeffgeerling.com/
+git push && ssh sshjg.jeffgeerling.com ./deploy-site.sh
 ```
 
 ## License
