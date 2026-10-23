@@ -4,6 +4,7 @@ title = 'Jeff Geerling'
 theme = 'archie'
 copyright = 'Jeff Geerling'
 enableRobotsTXT = true
+timeZone = "America/Chicago"
 
 [markup]
   [markup.highlight]
