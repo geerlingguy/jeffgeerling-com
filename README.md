@@ -50,7 +50,7 @@ docker compose --env-file .env.dev --profile debug up
 This site can be deployed in less than a minute using the `deploy-site.sh` shell script on the production server:
 
 ```
-git push && ssh sshjg.jeffgeerling.com ./deploy-site.sh
+git push && ssh geerlingguy@sshjg.jeffgeerling.com ./deploy-site.sh
 ```
 
 ## License
