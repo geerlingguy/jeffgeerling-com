@@ -18,7 +18,7 @@ There will never be a leap second again. At least not for UTC.
 
 Of _course_ they made that decision while I was out on vacation, so I'm just getting this video up now:
 
-<div class="yt-dlp">
+<div class="yt-embed">
   <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/vFMU2m-TZ3s' frameborder='0' allowfullscreen></iframe></div>
 </div>
 
