@@ -124,7 +124,7 @@ One other quirk I ran into was Debian's default `sourcedir /run/chrony-dhcp` dir
 
 I'm hosting my public Stratum 2 server with [Oxtrys](https://www.oxtrys.com), a VPS provider I'd never used before—and one thing I was nervous about was how they'd react to a VPS handling only UDP packets like this.
 
-Some automated firewalls shut down public NTP servers because they can _look_ like abuse vectors. I wondered if that was the case late on the night of November 16, as I was _writing this blog post_:
+Some automated firewalls shut down public NTP servers because NTP traffic may _look_ like abuse. I wondered if that was the case late on the night of November 16, because the server dropped offline _while I was writing this blog post_:
 
 {{< figure
   src="ntp-01-server-offline-pool-score.png"
@@ -134,11 +134,11 @@ Some automated firewalls shut down public NTP servers because they can _look_ li
   class="insert-image"
 >}}
 
-But looking at the logs further, it _might_ be related to an unattended upgrade and automatic reboot for a new Debian Linux kernel version. It will take a few more days' debugging to figure out if that's definitely the cause.
+But looking at the logs further, it seems an unattended upgrade installed a new Debian kernel, then rebooted the server, and the new kernel caused problems. For now the server still runs automatic upgrades, but leaves reboots to me.
 
-For now I've set the server to run automatic upgrades, but leave reboots to me!
+Oxtrys' live chat support has been responsive enough, though their account dashboard is broken until November 22, so it doesn't list my server's out-of-band management options.
 
-Oxtrys' live chat support has been responsive enough, though right now (until November 22, apparently) their account dashboard is broken and does not give me out-of-band VPS management options I'm used to with other providers.
+As you can see in the graph above, the NTP Pool monitors have slowly brought the server's score back up past '10', at which point it can serve time in the pool again. It takes maybe 6–12 hours to recover if the server's been down long enough.
 
 ## Conclusion
 
